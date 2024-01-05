@@ -1,6 +1,6 @@
 # DGMD - Dataset Generator for Musical Devices
 
-The DGMD (Dataset Generator for Musical Devices) is a collection of MAX patches and JavaScript files for the generation of datasets from hardware and musical devices.
+The DGMD (Dataset Generator for Musical Devices) is a collection of MAX patches and JavaScript files for the generation of datasets from hardware and software and musical devices.
 
 There are two version of the DGMD:
 * for Audio Effects
