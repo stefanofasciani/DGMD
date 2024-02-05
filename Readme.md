@@ -18,6 +18,6 @@ If you use the DGMD or any part of it in any system or publication, please ackno
 its authors by adding a reference to this publication:
  
 S. Fasciani, R. Simionato, A. Tidemann  "A universal tool to generate datasets from audio effects"
-in Proceedings of the Sound and Music Computing Conference 2024.
+submitted to Sound and Music Computing Conference 2024.
 
 ![DGMD_effects](https://stefanofasciani.com/wp-content/uploads/2024/01/DGMD_effects.png)
