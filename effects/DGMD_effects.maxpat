@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 87.0, 2374.0, 934.0 ],
+		"rect" : [ 950.0, 87.0, 1658.0, 1081.0 ],
 		"openrect" : [ 0.0, 0.0, 1657.799999999999955, 574.16922999999997 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -47,7 +47,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2404.202032345966472, 1275.061905264854431, 124.0, 20.0 ],
-					"presentation_linecount" : 2,
 					"text" : "set \"Current Combination\""
 				}
 
@@ -3381,12 +3380,12 @@
 					"bgcolor" : [ 1.0, 0.717647058823529, 0.717647058823529, 1.0 ],
 					"fontsize" : 14.0,
 					"id" : "obj-2",
-					"linecount" : 4,
+					"linecount" : 8,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1785.143158036029945, 68.300078212341305, 574.319407392028893, 69.0 ],
-					"text" : "Latency/syncronization with internal and external device (sweep a square instead of traignle)? check duration stimulus vs recording\n\nLatency vs I/O vector size with external device."
+					"patching_rect" : [ 1785.143158036029945, 68.300078212341305, 574.319407392028893, 132.0 ],
+					"text" : "Latency/syncronization with internal and external device (sweep a square instead of traignle)? check duration stimulus vs recording\n\nLatency vs I/O vector size with external device.\n\n@chan warning\n\nvst` shapshot warning"
 				}
 
 			}
@@ -3399,7 +3398,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 901.959104888446745, 394.582277573501585, 129.0, 20.0 ],
 					"saved_object_attributes" : 					{
-						"filename" : "DGMD_scale_app_width",
+						"filename" : "DGMD_scale_app_width.js",
 						"parameter_enable" : 0
 					}
 ,
@@ -3636,11 +3635,11 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 36.243157463825355, 92.800078212341305, 330.0, 462.0 ],
+									"patching_rect" : [ 36.243157463825355, 92.800078212341305, 332.0, 462.0 ],
 									"presentation" : 1,
 									"presentation_linecount" : 23,
 									"presentation_rect" : [ 36.243157463825355, 92.800078212341305, 588.0, 328.0 ],
-									"text" : "This file is part of the DGMD (Dataset Generator for Musical Devices)\n\nThe DGMD can be obtained at http://stefanofasciani.com/dgmd.html\n\nDGMD Copyright (C) 2024 Stefano Fasciani, Aleksander Tidemann, Riccardo Simionato, University of Oslo\nInquiries: stefanofasciani@stefanofasciani.com\n \nThe DGMD is free software: you can redistribute it and/or modify it under the  terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.\n\nThe DGMD is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Less General Public License for more details.\n\nYou should have received a copy of the GNU Lesser General Public License along with DGMD. \nIf not, see <http://www.gnu.org/licenses/>.\n\nIf you use the DGMD or any part of it in any system or publication, please acknowledge its authors by adding a reference to this pubblication:\n\nS. Fasciani, R. Simionato, A. Tidemann, \"A universal tool to generate datasets from audio effects\" in Proceedings of the Sound and Music Computing Conference 2023.\n",
+									"text" : "This file is part of the DGMD (Dataset Generator for Musical Devices)\n\nThe DGMD can be obtained at http://stefanofasciani.com/dgmd.html\n\nDGMD Copyright (C) 2024 Stefano Fasciani, Aleksander Tidemann, Riccardo Simionato, University of Oslo\nInquiries: stefanofasciani@stefanofasciani.com\n \nThe DGMD is free software: you can redistribute it and/or modify it under the  terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.\n\nThe DGMD is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Less General Public License for more details.\n\nYou should have received a copy of the GNU Lesser General Public License along with DGMD. \nIf not, see <http://www.gnu.org/licenses/>.\n\nIf you use the DGMD or any part of it in any system or publication, please acknowledge its authors by adding a reference to this pubblication:\n\nS. Fasciani, R. Simionato, A. Tidemann  \"A Universal Tool for Generating Datasets from Audio Effects\"\nsubmitted to Sound and Music Computing Conference 2024.\n",
 									"textcolor" : [ 0.968627450980392, 0.968627450980392, 0.968627450980392, 1.0 ]
 								}
 
@@ -8040,7 +8039,6 @@
 					"hint" : "This shows the selected path where output files (.wav and .csv) are saved.",
 					"id" : "obj-580",
 					"ignoreclick" : 1,
-					"linecount" : 4,
 					"maxclass" : "textedit",
 					"numinlets" : 1,
 					"numoutlets" : 4,
@@ -8048,9 +8046,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 2708.541856403870042, 3749.887615025043488, 83.0, 52.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 2,
 					"presentation_rect" : [ 1463.847392315512707, 54.014347105708737, 176.329519181673959, 46.856185317039461 ],
-					"text" : "/Users/stefanof/Desktop/TSAM-master/Max/OUTPUTS/",
 					"textcolor" : [ 0.701960784313725, 0.701960784313725, 0.701960784313725, 1.0 ]
 				}
 
@@ -8108,7 +8104,6 @@
 					"patching_rect" : [ 2556.70743020152895, 3607.337140438045481, 105.0, 50.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1463.847392315512707, 27.461885362353939, 176.329519181673959, 23.0 ],
-					"text" : "bubu",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -8817,13 +8812,14 @@
 					"patching_rect" : [ 2178.668570511348662, 1346.436001715148905, 78.0, 29.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 128.393478964960735, 54.800631015983214, 104.0, 18.0 ],
-					"text" : "Current Repetition",
+					"text" : "Current Combination",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"cantchange" : 1,
 					"fontface" : 1,
 					"fontsize" : 10.0,
 					"hint" : "Automatically computed in Step mode. Must be set in Random and Sweep mode. No effect (and not visible) in Step and Manual modes. In Random and Swwp modes it determines how many times the source file will be sent to the device and the output recorded.",
@@ -8838,7 +8834,8 @@
 					"patching_rect" : [ 2314.202032345966927, 1102.974266600406736, 36.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 429.619074106951871, 54.800631015983214, 60.181520140505313, 20.0 ],
-					"textcolor" : [ 0.969, 0.969, 0.969, 1.0 ],
+					"textcolor" : [ 0.553, 0.553, 0.553, 1.0 ],
+					"triangle" : 0,
 					"varname" : "numb-combinations"
 				}
 
@@ -8855,7 +8852,7 @@
 					"patching_rect" : [ 2366.202032345966927, 1102.974266600406736, 119.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 305.13598968748704, 54.800631015983214, 124.0, 18.0 ],
-					"text" : "Repetitions",
+					"text" : "Number of Combinations",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -16665,7 +16662,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 36.243157463825355, 92.800078212341305, 320.0, 342.0 ],
-					"text" : "This file is part of the DGMD (Dataset Generator for Musical Devices)\n\nThe DGMD can be obtained at http://stefanofasciani.com/dgmd.html \n\nDGMD Copyright (C) 2024 Stefano Fasciani, Aleksander Tidemann, Riccardo Simionato, University of Oslo\nInquiries: stefanofasciani@stefanofasciani.com\n \nThe DGMD is free software: you can redistribute it and/or modify it under the  terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.\n\nThe DGMD is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Less General Public License for more details.\n\nYou should have received a copy of the GNU Lesser General Public License along with DGMD. \nIf not, see <http://www.gnu.org/licenses/>.\n\nIf you use the DGMD or any part of it in any system or publication, please acknowledge its authors by adding a reference to this pubblication:\n\nS. Fasciani, R. Simionato, A. Tidemann, \"A universal tool to generate datasets from audio effects\" in Proceedings of the Sound and Music Computing Conference 2023.\n",
+					"text" : "This file is part of the DGMD (Dataset Generator for Musical Devices)\n\nThe DGMD can be obtained at http://stefanofasciani.com/dgmd.html \n\nDGMD Copyright (C) 2024 Stefano Fasciani, Aleksander Tidemann, Riccardo Simionato, University of Oslo\nInquiries: stefanofasciani@stefanofasciani.com\n \nThe DGMD is free software: you can redistribute it and/or modify it under the  terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.\n\nThe DGMD is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Less General Public License for more details.\n\nYou should have received a copy of the GNU Lesser General Public License along with DGMD. \nIf not, see <http://www.gnu.org/licenses/>.\n\nIf you use the DGMD or any part of it in any system or publication, please acknowledge its authors by adding a reference to this pubblication:\n\nS. Fasciani, R. Simionato, A. Tidemann  \"A Universal Tool for Generating Datasets from Audio Effects\"\nsubmitted to Sound and Music Computing Conference 2024.\n",
 					"textcolor" : [ 0.968627450980392, 0.968627450980392, 0.968627450980392, 1.0 ]
 				}
 
@@ -35216,77 +35213,77 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "DGMD_check_param_data.js",
-				"bootpath" : "~/Desktop/TSAM-master/Max/DGMD_EFF_v0.17",
+				"bootpath" : "~/Documents/Github/DGMD/effects",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "DGMD_clean_csv.js",
-				"bootpath" : "~/Desktop/TSAM-master/Max/DGMD_EFF_v0.17",
+				"bootpath" : "~/Documents/Github/DGMD/effects",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "DGMD_get_data.js",
-				"bootpath" : "~/Desktop/TSAM-master/Max/DGMD_EFF_v0.17",
+				"bootpath" : "~/Documents/Github/DGMD/effects",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "DGMD_latency_measure.js",
-				"bootpath" : "~/Desktop/TSAM-master/Max/DGMD_EFF_v0.17",
+				"bootpath" : "~/Documents/Github/DGMD/effects",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "DGMD_latency_removal.js",
-				"bootpath" : "~/Desktop/TSAM-master/Max/DGMD_EFF_v0.17",
+				"bootpath" : "~/Documents/Github/DGMD/effects",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "DGMD_scale_app_width.js",
-				"bootpath" : "~/Desktop/TSAM-master/Max/DGMD_EFF_v0.17",
+				"bootpath" : "~/Documents/Github/DGMD/effects",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "DGMD_set_numb_combinations.js",
-				"bootpath" : "~/Desktop/TSAM-master/Max/DGMD_EFF_v0.17",
+				"bootpath" : "~/Documents/Github/DGMD/effects",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "DGMD_set_numb_params.js",
-				"bootpath" : "~/Desktop/TSAM-master/Max/DGMD_EFF_v0.17",
+				"bootpath" : "~/Documents/Github/DGMD/effects",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "DGMD_set_param_data_2d.js",
-				"bootpath" : "~/Desktop/TSAM-master/Max/DGMD_EFF_v0.17",
+				"bootpath" : "~/Documents/Github/DGMD/effects",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "DGMD_set_param_steps_2d.js",
-				"bootpath" : "~/Desktop/TSAM-master/Max/DGMD_EFF_v0.17",
+				"bootpath" : "~/Documents/Github/DGMD/effects",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "DGMD_write_combinations.js",
-				"bootpath" : "~/Desktop/TSAM-master/Max/DGMD_EFF_v0.17",
+				"bootpath" : "~/Documents/Github/DGMD/effects",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1

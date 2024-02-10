@@ -20,8 +20,8 @@
 * If you use the DGMD or any part of it in any system or publication, please acknowledge 
 * its authors by adding a reference to this publication:
 * 
-* S. Fasciani, R. Simionato, A. Tidemann  "A universal tool to generate datasets from audio effects"
-in Proceedings of the Sound and Music Computing Conference 2024.
+* S. Fasciani, R. Simionato, A. Tidemann  "A Universal Tool for Generating Datasets from Audio Effects"
+submitted to Sound and Music Computing Conference 2024..
 */
 
 // This is the "Fixed Initial Window Location" you see in
