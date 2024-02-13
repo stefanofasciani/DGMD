@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 950.0, 87.0, 1658.0, 1081.0 ],
+		"rect" : [ 34.0, 87.0, 1658.0, 575.0 ],
 		"openrect" : [ 0.0, 0.0, 1657.799999999999955, 574.16922999999997 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -3380,12 +3380,12 @@
 					"bgcolor" : [ 1.0, 0.717647058823529, 0.717647058823529, 1.0 ],
 					"fontsize" : 14.0,
 					"id" : "obj-2",
-					"linecount" : 8,
+					"linecount" : 10,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1785.143158036029945, 68.300078212341305, 574.319407392028893, 132.0 ],
-					"text" : "Latency/syncronization with internal and external device (sweep a square instead of traignle)? check duration stimulus vs recording\n\nLatency vs I/O vector size with external device.\n\n@chan warning\n\nvst` shapshot warning"
+					"patching_rect" : [ 1785.143158036029945, 68.300078212341305, 574.319407392028893, 163.0 ],
+					"text" : "Latency/syncronization with internal and external device (sweep a square instead of traignle)? check duration stimulus vs recording\n\nLatency vs I/O vector size with external device.\n\nif midi selected, quantize CSV to 127\n\n@chan warning\n\nvst` shapshot warning"
 				}
 
 			}
@@ -3398,7 +3398,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 901.959104888446745, 394.582277573501585, 129.0, 20.0 ],
 					"saved_object_attributes" : 					{
-						"filename" : "DGMD_scale_app_width.js",
+						"filename" : "DGMD_scale_app_width",
 						"parameter_enable" : 0
 					}
 ,
@@ -8865,7 +8865,7 @@
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1273",
 					"maxclass" : "number",
-					"minimum" : 128,
+					"minimum" : 1024,
 					"numdecimalplaces" : 3,
 					"numinlets" : 1,
 					"numoutlets" : 2,
