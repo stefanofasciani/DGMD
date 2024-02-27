@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 87.0, 1658.0, 575.0 ],
+		"rect" : [ 0.0, 52.0, 2968.0, 827.0 ],
 		"openrect" : [ 0.0, 0.0, 1657.799999999999955, 574.16922999999997 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -40,6 +40,422 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-834",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 2985.500307919136503, 4335.293127854996783, 70.0, 20.0 ],
+					"text" : "format float32"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-833",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 3526.0, 4312.030403097802264, 61.0, 20.0 ],
+					"text" : "format int24"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-786",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 2837.310590451579628, 876.640144202028296, 49.0, 20.0 ],
+					"text" : "active $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-699",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 5417.0, 2459.310602542842844, 65.0, 20.0 ],
+					"text" : "loadmess 24"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"fontsize" : 10.0,
+					"hint" : "Only for Sweep mode. This parameter defines the bit depth (i.e. number of bit used per sample) when recording the parameters sweeped at audio rate (eventually downsampled by the update rate). When using an external audio effect with MIDI conrolled parameters, this number should be set to 7 bits, because this is the resolution of MIDI Control Change messages. When using an internal plugin or an external effect with CV controlled parameters, this parameter can be set to the maximum, which is 24 bits. However, some external audio effects with CV control parameters have an internal digital interface, sampling the CV signals with ADC presenting 10 to 16 bits (hence this value should be adjusted accordingly).",
+					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
+					"id" : "obj-554",
+					"maxclass" : "number",
+					"maximum" : 24,
+					"minimum" : 2,
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 5417.111641325314849, 2499.935315185955005, 29.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 633.712991272308273, 78.101651399818053, 59.775438874959946, 20.0 ],
+					"varname" : "to-device-left[1]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontsize" : 10.0,
+					"hint" : "",
+					"id" : "obj-555",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 5454.111641325314849, 2499.935315185955005, 75.0, 29.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 508.479906852843442, 78.101651399818053, 114.666667014360428, 18.0 ],
+					"text" : "Sweep Bit Depth (bits)",
+					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-547",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 1,
+					"outlettype" : [ "multichannelsignal" ],
+					"patching_rect" : [ 5316.916704571190166, 2538.394408999999996, 67.0, 20.0 ],
+					"text" : "mc.degrade~"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-525",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 2610.375852888446389, 2519.5, 51.0, 20.0 ],
+					"text" : "clip 0 127"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-519",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 2356.29284488844678, 2519.5, 51.0, 20.0 ],
+					"text" : "clip 0 127"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-518",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 2083.709104888446745, 2519.5, 51.0, 20.0 ],
+					"text" : "clip 0 127"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-517",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1829.625974888446763, 2519.5, 51.0, 20.0 ],
+					"text" : "clip 0 127"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-516",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1572.042600888446941, 2519.5, 51.0, 20.0 ],
+					"text" : "clip 0 127"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-509",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1321.292478888446567, 2519.5, 51.0, 20.0 ],
+					"text" : "clip 0 127"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-490",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1053.959104888446745, 2519.5, 51.0, 20.0 ],
+					"text" : "clip 0 127"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-464",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 800.959104888446745, 2519.5, 51.0, 20.0 ],
+					"text" : "clip 0 127"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-463",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 545.235486881336328, 2519.5, 51.0, 20.0 ],
+					"text" : "clip 0 127"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-462",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 300.959104888446745, 2519.5, 51.0, 20.0 ],
+					"text" : "clip 0 127"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-523",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 4015.113247688335377, 3537.574957744560379, 50.0, 20.0 ],
+					"text" : "2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-511",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 4076.364117024975258, 3537.574957744560379, 29.5, 20.0 ],
+					"text" : "0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-505",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"outlettype" : [ "bang", "bang", "" ],
+					"patching_rect" : [ 4162.842260535284368, 3463.5, 51.0, 20.0 ],
+					"text" : "select 0 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.839216, 0.833749, 0.393224, 1.0 ],
+					"fontname" : "Arial",
+					"fontsize" : 10.0,
+					"id" : "obj-483",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 4162.842260535284368, 3390.140144202028296, 114.0, 20.0 ],
+					"text" : "r _DGMDparamChange"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-475",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 4162.842260535284368, 3426.621912360191345, 112.0, 20.0 ],
+					"text" : "if $i1 == 3 then 1 else 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-466",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 3125.37247383169597, 3640.062619566917419, 83.0, 20.0 ],
+					"text" : "delay~ 960000 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-399",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 3032.670423811504406, 3580.88002336025238, 46.0, 20.0 ],
+					"text" : "delay $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-393",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 3032.670423811504406, 3640.062619566917419, 83.0, 20.0 ],
+					"text" : "delay~ 960000 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.839216, 0.833749, 0.393224, 1.0 ],
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 10.0,
+					"id" : "obj-350",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 3032.670423811504406, 3550.45196527242706, 107.0, 20.0 ],
+					"text" : "r _DGMDdelayUpdate"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.504772, 0.748976, 0.839216, 1.0 ],
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 10.0,
+					"id" : "obj-390",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 5188.270184798286209, 3690.824924826622009, 74.0, 20.0 ],
+					"text" : "s _DGMDtovst"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-368",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 5125.270184798286209, 3620.367037892341614, 41.0, 20.0 ],
+					"text" : "join"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-161",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "int", "int" ],
+					"patching_rect" : [ 5125.270184798286209, 3581.800002992153168, 41.0, 20.0 ],
+					"text" : "flush"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-40",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "int", "int" ],
+					"patching_rect" : [ 5125.270184798286209, 3544.800002992153168, 41.0, 20.0 ],
+					"text" : "unpack"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.504772, 0.748976, 0.839216, 1.0 ],
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 10.0,
+					"id" : "obj-288",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 241.371802889116225, 2462.0, 89.0, 20.0 ],
+					"text" : "s _DGMDratesCV"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.839216, 0.833749, 0.393224, 1.0 ],
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 10.0,
+					"id" : "obj-265",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 4935.754538749499261, 1372.34948456287384, 87.0, 20.0 ],
+					"text" : "r _DGMDratesCV"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-4",
 					"maxclass" : "message",
@@ -152,20 +568,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 5054.866666436195374, 3625.133333504199982, 29.5, 20.0 ],
+					"patching_rect" : [ 5054.866666436195374, 3718.133333504199982, 29.5, 20.0 ],
 					"text" : "gate"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-554",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"patching_rect" : [ 5065.270184798286209, 3575.200000643730164, 48.0, 20.0 ],
-					"text" : "midiflush"
 				}
 
 			}
@@ -396,7 +800,7 @@
 					"numinlets" : 7,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "" ],
-					"patching_rect" : [ 5065.270184798286209, 3527.800002992153168, 82.0, 20.0 ],
+					"patching_rect" : [ 5125.270184798286209, 3646.800002992153168, 82.0, 20.0 ],
 					"text" : "midiformat"
 				}
 
@@ -819,13 +1223,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-126",
-					"linecount" : 10,
+					"linecount" : 7,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 3410.000001668930054, 4165.409032344818115, 50.0, 120.0 ],
-					"text" : "write /Users/stefanof/Desktop/TSAM-master/Max/OUTPUTS/bubuSweep7.wav"
+					"patching_rect" : [ 3410.000001668930054, 4165.409032344818115, 50.0, 87.0 ],
+					"text" : "write /Users/stefanof/Desktop/TEST/TESTSweep0.wav"
 				}
 
 			}
@@ -1064,8 +1468,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 2561.342603701787084, 1123.49572879076004, 142.0, 20.0 ],
-					"text" : "set \"Number of Combinations\""
+					"patching_rect" : [ 2561.342603701787084, 1123.49572879076004, 117.0, 20.0 ],
+					"text" : "set \"Total Combinations\""
 				}
 
 			}
@@ -2432,7 +2836,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 2236.611025211093875, 3535.818651258071895, 49.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1343.843151028662987, 75.406793862071623, 74.675849302749839, 22.154063940048189 ],
+					"presentation_rect" : [ 1343.384621779659483, 78.406793862071623, 74.675849302749839, 22.154063940048189 ],
 					"saved_attribute_attributes" : 					{
 						"activebgcolor" : 						{
 							"expression" : ""
@@ -2570,7 +2974,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 3800.165698291412809, 4145.357400834560394, 49.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 811.20697943295454, 79.906332581725707, 63.603826802780873, 21.875969052314758 ],
+					"presentation_rect" : [ 813.20697943295454, 79.906332581725707, 63.603826802780873, 21.875969052314758 ],
 					"saved_attribute_attributes" : 					{
 						"activebgcolor" : 						{
 							"expression" : ""
@@ -3377,20 +3781,6 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 1.0, 0.717647058823529, 0.717647058823529, 1.0 ],
-					"fontsize" : 14.0,
-					"id" : "obj-2",
-					"linecount" : 10,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1785.143158036029945, 68.300078212341305, 574.319407392028893, 163.0 ],
-					"text" : "Latency/syncronization with internal and external device (sweep a square instead of traignle)? check duration stimulus vs recording\n\nLatency vs I/O vector size with external device.\n\nif midi selected, quantize CSV to 127\n\n@chan warning\n\nvst` shapshot warning"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-1140",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -3774,7 +4164,7 @@
 					"patching_rect" : [ 2475.125852888447298, 2658.56595618704614, 75.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1497.309774960004916, 256.866538067987221, 83.0, 18.0 ],
-					"text" : "CV output",
+					"text" : "CV Output",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -3811,7 +4201,7 @@
 					"patching_rect" : [ 2416.348413048820476, 2877.338967859745026, 75.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1497.309774960004916, 231.376659294297951, 84.0, 18.0 ],
-					"text" : "CV output Ch",
+					"text" : "CV Output Ch",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -3912,13 +4302,14 @@
 					"fontsize" : 10.0,
 					"hint" : "",
 					"id" : "obj-755",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2475.125852888447298, 2387.933317374981016, 74.0, 18.0 ],
+					"patching_rect" : [ 2475.125852888447298, 2387.933317374981016, 74.0, 29.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1497.309774960004916, 394.766481062104958, 83.0, 18.0 ],
-					"text" : "Sweep rate Hz",
+					"text" : "Sweep Rate Hz",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -3928,7 +4319,7 @@
 					"fontface" : 1,
 					"fontsize" : 10.0,
 					"format" : 6,
-					"hint" : "Parameter increment ot each iteration of Step mode. In Random mode this value defines the precision of the randomly generated values. It has no effect in other modes.",
+					"hint" : "Parameter increment ot each iteration of Step mode. In Random mode this value defines the precision of the randomly generated values. It has no effect in other modes. When using MIDI controlled parameters, values below 0.0078125 (i.e. 1/128) should not be used. MIDI values are represented by 7 bit integer, i.e. 128 possible values. Also, when working with MIDI controlled parameters, it is recommended to select step values which are integer multiples of 0.0078125 (since these are converted to integers in the range 0 to 127 before being sent to the device).",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-756",
 					"maxclass" : "flonum",
@@ -4104,10 +4495,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2495.625852888446389, 2470.233284002716118, 75.0, 29.0 ],
+					"patching_rect" : [ 2495.625852888446389, 2470.233284002716118, 65.0, 29.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1498.309774960004916, 206.258085747888344, 83.0, 18.0 ],
-					"text" : "MIDI output CC",
+					"text" : "MIDI Output CC",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -4201,7 +4592,7 @@
 					"patching_rect" : [ 2214.79284488844678, 2658.56595618704614, 75.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1330.060471082409322, 256.866538067987221, 83.0, 18.0 ],
-					"text" : "CV output",
+					"text" : "CV Output",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -4238,7 +4629,7 @@
 					"patching_rect" : [ 2156.247726021842936, 2877.338967859745026, 75.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1330.060471082409322, 231.376659294297951, 84.0, 18.0 ],
-					"text" : "CV output Ch",
+					"text" : "CV Output Ch",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -4290,13 +4681,14 @@
 					"fontsize" : 10.0,
 					"hint" : "",
 					"id" : "obj-816",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2214.79284488844678, 2387.933317374981016, 74.0, 18.0 ],
+					"patching_rect" : [ 2214.79284488844678, 2387.933317374981016, 74.0, 29.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1330.060471082409322, 394.766481062104958, 83.0, 18.0 ],
-					"text" : "Sweep rate Hz",
+					"text" : "Sweep Rate Hz",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -4306,7 +4698,7 @@
 					"fontface" : 1,
 					"fontsize" : 10.0,
 					"format" : 6,
-					"hint" : "Parameter increment ot each iteration of Step mode. In Random mode this value defines the precision of the randomly generated values. It has no effect in other modes.",
+					"hint" : "Parameter increment ot each iteration of Step mode. In Random mode this value defines the precision of the randomly generated values. It has no effect in other modes. When using MIDI controlled parameters, values below 0.0078125 (i.e. 1/128) should not be used. MIDI values are represented by 7 bit integer, i.e. 128 possible values. Also, when working with MIDI controlled parameters, it is recommended to select step values which are integer multiples of 0.0078125 (since these are converted to integers in the range 0 to 127 before being sent to the device).",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-826",
 					"maxclass" : "flonum",
@@ -4482,10 +4874,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2237.29284488844678, 2470.233284002716118, 75.0, 29.0 ],
+					"patching_rect" : [ 2237.29284488844678, 2470.233284002716118, 65.0, 29.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1331.060471082409322, 206.258085747888344, 83.0, 18.0 ],
-					"text" : "MIDI output CC",
+					"text" : "MIDI Output CC",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -4579,7 +4971,7 @@
 					"patching_rect" : [ 1946.459104888446745, 2658.56595618704614, 75.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1165.06047805615276, 255.866538067987221, 83.0, 18.0 ],
-					"text" : "CV output",
+					"text" : "CV Output",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -4616,7 +5008,7 @@
 					"patching_rect" : [ 1890.019532261924724, 2878.338967859745026, 75.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1165.06047805615276, 231.376659294297951, 84.0, 18.0 ],
-					"text" : "CV output Ch",
+					"text" : "CV Output Ch",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -4668,13 +5060,14 @@
 					"fontsize" : 10.0,
 					"hint" : "",
 					"id" : "obj-1040",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1946.459104888446745, 2387.933317374981016, 74.0, 18.0 ],
+					"patching_rect" : [ 1946.459104888446745, 2387.933317374981016, 74.0, 29.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1165.06047805615276, 394.766481062104958, 83.0, 18.0 ],
-					"text" : "Sweep rate Hz",
+					"text" : "Sweep Rate Hz",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -4684,7 +5077,7 @@
 					"fontface" : 1,
 					"fontsize" : 10.0,
 					"format" : 6,
-					"hint" : "Parameter increment ot each iteration of Step mode. In Random mode this value defines the precision of the randomly generated values. It has no effect in other modes.",
+					"hint" : "Parameter increment ot each iteration of Step mode. In Random mode this value defines the precision of the randomly generated values. It has no effect in other modes. When using MIDI controlled parameters, values below 0.0078125 (i.e. 1/128) should not be used. MIDI values are represented by 7 bit integer, i.e. 128 possible values. Also, when working with MIDI controlled parameters, it is recommended to select step values which are integer multiples of 0.0078125 (since these are converted to integers in the range 0 to 127 before being sent to the device).",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1047",
 					"maxclass" : "flonum",
@@ -4860,10 +5253,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1968.959104888446745, 2470.233284002716118, 75.0, 29.0 ],
+					"patching_rect" : [ 1968.959104888446745, 2470.233284002716118, 66.899999976158142, 29.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1166.06047805615276, 206.258085747888344, 83.0, 18.0 ],
-					"text" : "MIDI output CC",
+					"text" : "MIDI Output CC",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -4957,7 +5350,7 @@
 					"patching_rect" : [ 1687.625974888446763, 2655.599604904651642, 75.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 997.81117417855728, 255.866538067987221, 83.0, 18.0 ],
-					"text" : "CV output",
+					"text" : "CV Output",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -4994,7 +5387,7 @@
 					"patching_rect" : [ 1629.373826258190093, 2878.338967859745026, 75.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 997.81117417855728, 231.376659294297951, 84.0, 18.0 ],
-					"text" : "CV output Ch",
+					"text" : "CV Output Ch",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -5046,13 +5439,14 @@
 					"fontsize" : 10.0,
 					"hint" : "",
 					"id" : "obj-1078",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1693.125974888446763, 2387.933317374981016, 74.0, 18.0 ],
+					"patching_rect" : [ 1693.125974888446763, 2387.933317374981016, 74.0, 29.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 997.81117417855728, 394.766481062104958, 83.0, 18.0 ],
-					"text" : "Sweep rate Hz",
+					"text" : "Sweep Rate Hz",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -5062,7 +5456,7 @@
 					"fontface" : 1,
 					"fontsize" : 10.0,
 					"format" : 6,
-					"hint" : "Parameter increment ot each iteration of Step mode. In Random mode this value defines the precision of the randomly generated values. It has no effect in other modes.",
+					"hint" : "Parameter increment ot each iteration of Step mode. In Random mode this value defines the precision of the randomly generated values. It has no effect in other modes. When using MIDI controlled parameters, values below 0.0078125 (i.e. 1/128) should not be used. MIDI values are represented by 7 bit integer, i.e. 128 possible values. Also, when working with MIDI controlled parameters, it is recommended to select step values which are integer multiples of 0.0078125 (since these are converted to integers in the range 0 to 127 before being sent to the device).",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1079",
 					"maxclass" : "flonum",
@@ -5238,10 +5632,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1710.625974888446763, 2470.233284002716118, 75.0, 29.0 ],
+					"patching_rect" : [ 1710.625974888446763, 2470.233284002716118, 65.0, 29.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 998.81117417855728, 206.258085747888344, 83.0, 18.0 ],
-					"text" : "MIDI output CC",
+					"text" : "MIDI Output CC",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -5335,7 +5729,7 @@
 					"patching_rect" : [ 1434.792600888446941, 2661.411594939029783, 75.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 832.811181152300719, 255.866538067987221, 83.0, 18.0 ],
-					"text" : "CV output",
+					"text" : "CV Output",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -5372,7 +5766,7 @@
 					"patching_rect" : [ 1376.415475367145518, 2878.338967859745026, 75.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 832.811181152300719, 231.376659294297951, 84.0, 18.0 ],
-					"text" : "CV output Ch",
+					"text" : "CV Output Ch",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -5424,13 +5818,14 @@
 					"fontsize" : 10.0,
 					"hint" : "",
 					"id" : "obj-1114",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1434.792600888446941, 2387.933317374981016, 74.0, 18.0 ],
+					"patching_rect" : [ 1434.792600888446941, 2387.933317374981016, 74.0, 29.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 832.811181152300719, 394.766481062104958, 83.0, 18.0 ],
-					"text" : "Sweep rate Hz",
+					"text" : "Sweep Rate Hz",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -5440,7 +5835,7 @@
 					"fontface" : 1,
 					"fontsize" : 10.0,
 					"format" : 6,
-					"hint" : "Parameter increment ot each iteration of Step mode. In Random mode this value defines the precision of the randomly generated values. It has no effect in other modes.",
+					"hint" : "Parameter increment ot each iteration of Step mode. In Random mode this value defines the precision of the randomly generated values. It has no effect in other modes. When using MIDI controlled parameters, values below 0.0078125 (i.e. 1/128) should not be used. MIDI values are represented by 7 bit integer, i.e. 128 possible values. Also, when working with MIDI controlled parameters, it is recommended to select step values which are integer multiples of 0.0078125 (since these are converted to integers in the range 0 to 127 before being sent to the device).",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1117",
 					"maxclass" : "flonum",
@@ -5616,10 +6011,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1457.292600888446941, 2470.233284002716118, 75.0, 29.0 ],
+					"patching_rect" : [ 1457.292600888446941, 2470.233284002716118, 65.0, 29.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 833.811181152300719, 206.258085747888344, 83.0, 18.0 ],
-					"text" : "MIDI output CC",
+					"text" : "MIDI Output CC",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -5713,7 +6108,7 @@
 					"patching_rect" : [ 1179.292478888446567, 2658.599604904651642, 75.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 668.941859791163893, 255.866538067987221, 83.0, 18.0 ],
-					"text" : "CV output",
+					"text" : "CV Output",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -5750,7 +6145,7 @@
 					"patching_rect" : [ 1120.812611072475192, 2878.338967859745026, 75.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 668.941859791163893, 231.376659294297951, 84.0, 18.0 ],
-					"text" : "CV output Ch",
+					"text" : "CV Output Ch",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -5802,13 +6197,14 @@
 					"fontsize" : 10.0,
 					"hint" : "",
 					"id" : "obj-683",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1184.792478888446567, 2387.933317374981016, 74.0, 18.0 ],
+					"patching_rect" : [ 1184.792478888446567, 2387.933317374981016, 74.0, 29.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 668.941859791163893, 394.766481062104958, 83.0, 18.0 ],
-					"text" : "Sweep rate Hz",
+					"text" : "Sweep Rate Hz",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -5818,7 +6214,7 @@
 					"fontface" : 1,
 					"fontsize" : 10.0,
 					"format" : 6,
-					"hint" : "Parameter increment ot each iteration of Step mode. In Random mode this value defines the precision of the randomly generated values. It has no effect in other modes.",
+					"hint" : "Parameter increment ot each iteration of Step mode. In Random mode this value defines the precision of the randomly generated values. It has no effect in other modes. When using MIDI controlled parameters, values below 0.0078125 (i.e. 1/128) should not be used. MIDI values are represented by 7 bit integer, i.e. 128 possible values. Also, when working with MIDI controlled parameters, it is recommended to select step values which are integer multiples of 0.0078125 (since these are converted to integers in the range 0 to 127 before being sent to the device).",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-690",
 					"maxclass" : "flonum",
@@ -5994,10 +6390,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1202.292478888446567, 2470.233284002716118, 75.0, 29.0 ],
+					"patching_rect" : [ 1202.292478888446567, 2470.233284002716118, 65.0, 29.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 669.941859791163893, 206.258085747888344, 83.0, 18.0 ],
-					"text" : "MIDI output CC",
+					"text" : "MIDI Output CC",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -6091,7 +6487,7 @@
 					"patching_rect" : [ 911.959104888446745, 2658.599604904651642, 75.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 501.692555913568413, 255.866538067987221, 83.0, 18.0 ],
-					"text" : "CV output",
+					"text" : "CV Output",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -6128,7 +6524,7 @@
 					"patching_rect" : [ 853.294651805000285, 2878.223776578903198, 75.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 501.692555913568413, 231.376659294297951, 84.0, 18.0 ],
-					"text" : "CV output Ch",
+					"text" : "CV Output Ch",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -6180,13 +6576,14 @@
 					"fontsize" : 10.0,
 					"hint" : "",
 					"id" : "obj-597",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 917.459104888446745, 2387.933317374981016, 74.0, 18.0 ],
+					"patching_rect" : [ 917.459104888446745, 2387.933317374981016, 74.0, 29.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 501.692555913568413, 394.766481062104958, 83.0, 18.0 ],
-					"text" : "Sweep rate Hz",
+					"text" : "Sweep Rate Hz",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -6196,7 +6593,7 @@
 					"fontface" : 1,
 					"fontsize" : 10.0,
 					"format" : 6,
-					"hint" : "Parameter increment ot each iteration of Step mode. In Random mode this value defines the precision of the randomly generated values. It has no effect in other modes.",
+					"hint" : "Parameter increment ot each iteration of Step mode. In Random mode this value defines the precision of the randomly generated values. It has no effect in other modes. When using MIDI controlled parameters, values below 0.0078125 (i.e. 1/128) should not be used. MIDI values are represented by 7 bit integer, i.e. 128 possible values. Also, when working with MIDI controlled parameters, it is recommended to select step values which are integer multiples of 0.0078125 (since these are converted to integers in the range 0 to 127 before being sent to the device).",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-605",
 					"maxclass" : "flonum",
@@ -6372,10 +6769,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 934.959104888446745, 2470.233284002716118, 75.0, 29.0 ],
+					"patching_rect" : [ 934.959104888446745, 2470.233284002716118, 65.0, 29.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 502.692555913568413, 206.258085747888344, 83.0, 18.0 ],
-					"text" : "MIDI output CC",
+					"text" : "MIDI Output CC",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -6469,7 +6866,7 @@
 					"patching_rect" : [ 659.332600762340462, 2661.371448576450348, 75.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 336.692562887311851, 255.866538067987221, 83.0, 18.0 ],
-					"text" : "CV output",
+					"text" : "CV Output",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -6506,7 +6903,7 @@
 					"patching_rect" : [ 601.583220361309031, 2878.338967859745026, 75.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 336.692562887311851, 231.376659294297951, 84.0, 18.0 ],
-					"text" : "CV output Ch",
+					"text" : "CV Output Ch",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -6558,13 +6955,14 @@
 					"fontsize" : 10.0,
 					"hint" : "",
 					"id" : "obj-642",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 664.459104888446745, 2387.933317374981016, 74.0, 18.0 ],
+					"patching_rect" : [ 664.459104888446745, 2387.933317374981016, 74.0, 29.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 336.692562887311851, 394.766481062104958, 83.0, 18.0 ],
-					"text" : "Sweep rate Hz",
+					"text" : "Sweep Rate Hz",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -6574,7 +6972,7 @@
 					"fontface" : 1,
 					"fontsize" : 10.0,
 					"format" : 6,
-					"hint" : "Parameter increment ot each iteration of Step mode. In Random mode this value defines the precision of the randomly generated values. It has no effect in other modes.",
+					"hint" : "Parameter increment ot each iteration of Step mode. In Random mode this value defines the precision of the randomly generated values. It has no effect in other modes. When using MIDI controlled parameters, values below 0.0078125 (i.e. 1/128) should not be used. MIDI values are represented by 7 bit integer, i.e. 128 possible values. Also, when working with MIDI controlled parameters, it is recommended to select step values which are integer multiples of 0.0078125 (since these are converted to integers in the range 0 to 127 before being sent to the device).",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-643",
 					"maxclass" : "flonum",
@@ -6750,10 +7148,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 681.959104888446745, 2470.233284002716118, 75.0, 29.0 ],
+					"patching_rect" : [ 681.959104888446745, 2470.233284002716118, 65.5, 29.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 337.692562887311851, 206.258085747888344, 83.0, 18.0 ],
-					"text" : "MIDI output CC",
+					"text" : "MIDI Output CC",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -6847,7 +7245,7 @@
 					"patching_rect" : [ 407.625730888446924, 2658.51408737810516, 75.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 169.443259009716343, 255.866538067987221, 83.0, 18.0 ],
-					"text" : "CV output",
+					"text" : "CV Output",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -6884,7 +7282,7 @@
 					"patching_rect" : [ 351.836857788570342, 2878.338967859745026, 75.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 169.443259009716343, 231.376659294297951, 84.0, 18.0 ],
-					"text" : "CV output Ch",
+					"text" : "CV Output Ch",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -6936,13 +7334,14 @@
 					"fontsize" : 10.0,
 					"hint" : "",
 					"id" : "obj-325",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 413.125730888446924, 2387.933317374981016, 74.0, 18.0 ],
+					"patching_rect" : [ 413.125730888446924, 2387.933317374981016, 74.0, 29.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 169.443259009716343, 394.766481062104958, 83.0, 18.0 ],
-					"text" : "Sweep rate Hz",
+					"text" : "Sweep Rate Hz",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -6952,7 +7351,7 @@
 					"fontface" : 1,
 					"fontsize" : 10.0,
 					"format" : 6,
-					"hint" : "Parameter increment ot each iteration of Step mode. In Random mode this value defines the precision of the randomly generated values. It has no effect in other modes.",
+					"hint" : "Parameter increment ot each iteration of Step mode. In Random mode this value defines the precision of the randomly generated values. It has no effect in other modes. When using MIDI controlled parameters, values below 0.0078125 (i.e. 1/128) should not be used. MIDI values are represented by 7 bit integer, i.e. 128 possible values. Also, when working with MIDI controlled parameters, it is recommended to select step values which are integer multiples of 0.0078125 (since these are converted to integers in the range 0 to 127 before being sent to the device).",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-361",
 					"maxclass" : "flonum",
@@ -7128,10 +7527,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 430.625730888446924, 2470.233284002716118, 75.0, 29.0 ],
+					"patching_rect" : [ 430.625730888446924, 2470.233284002716118, 65.0, 29.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 170.443259009716343, 206.258085747888344, 83.0, 18.0 ],
-					"text" : "MIDI output CC",
+					"text" : "MIDI Output CC",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -7344,7 +7743,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 456.959104888446745, 3541.579019248485565, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1333.522331508443358, 514.509032945166723, 70.310046028934948, 19.197945781709223 ],
+					"presentation_rect" : [ 1333.522331508443358, 514.509032945166723, 70.310046028934948, 19.710137613774805 ],
 					"text" : "Show Plugin",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"texton" : "Hide Plugin",
@@ -7383,7 +7782,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 3626.534207995458019, 3616.951965272426605, 127.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1153.630078355220121, 40.699137061324734, 62.325946082688688, 21.288135588169098 ],
+					"presentation_rect" : [ 1153.630078355220121, 40.699137061324734, 62.325946082688688, 19.288135528564453 ],
 					"text" : "Loopback",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ],
 					"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -7419,7 +7818,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 2148.977510033683757, 3535.818651258071895, 75.0, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1245.32956835163327, 77.406793862071623, 101.321093678474426, 18.0 ],
+					"presentation_rect" : [ 1245.32956835163327, 80.406793862071623, 101.321093678474426, 18.0 ],
 					"text" : "Params in Filename",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
@@ -7554,7 +7953,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 930.959104888446745, 3592.396464228630066, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1469.590790964909502, 534.775240151576327, 38.554740031877827, 20.043859899044037 ],
+					"presentation_rect" : [ 1469.590790964909502, 534.775240151576327, 38.554740031877827, 19.710137613774805 ],
 					"text" : "Store",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ],
 					"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -7594,7 +7993,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 793.241330888446555, 3545.396464228630066, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1551.532073656615239, 534.775240151576327, 40.946896699061426, 20.043859899044037 ],
+					"presentation_rect" : [ 1551.532073656615239, 534.775240151576327, 40.946896699061426, 19.710137613774805 ],
 					"text" : "Export",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ],
 					"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -7614,7 +8013,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1123.959104888446745, 3555.396464228630066, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1511.395530996787329, 534.775240151576327, 36.88654265982791, 20.043859899044037 ],
+					"presentation_rect" : [ 1511.395530996787329, 534.775240151576327, 36.88654265982791, 19.710137613774805 ],
 					"text" : "Clear",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ],
 					"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -7634,7 +8033,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1029.959104888446745, 3458.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1425.017969949431972, 534.775240151576327, 41.32282101547753, 20.043859899044037 ],
+					"presentation_rect" : [ 1425.017969949431972, 534.775240151576327, 41.32282101547753, 19.710137613774805 ],
 					"text" : "Recall",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ],
 					"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -7673,7 +8072,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 3793.165698291413719, 3600.562619566917419, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 967.455825448256064, 30.382984429088225, 74.61502391743511, 21.401348203420667 ],
+					"presentation_rect" : [ 967.455825448256064, 31.875336616721739, 74.61502391743511, 18.976190567016602 ],
 					"text" : "Load Audio",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ],
 					"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
@@ -7705,7 +8104,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 2713.130842058496455, 3559.45196527242706, 77.0, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1370.060983043917986, 54.014347105708737, 93.0, 18.0 ],
+					"presentation_rect" : [ 1370.060983043917986, 55.014347105708737, 93.0, 18.0 ],
 					"text" : "Output Files Path",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
@@ -8024,7 +8423,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 2708.827082064926799, 3951.0, 191.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1245.281005975022254, 27.461885362353939, 121.024098055245531, 21.576271176338196 ],
+					"presentation_rect" : [ 1245.32956835163327, 27.461885362353939, 121.024098055245531, 19.288135528564453 ],
 					"text" : "Write Params .csv File",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ],
 					"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -8039,6 +8438,7 @@
 					"hint" : "This shows the selected path where output files (.wav and .csv) are saved.",
 					"id" : "obj-580",
 					"ignoreclick" : 1,
+					"linecount" : 2,
 					"maxclass" : "textedit",
 					"numinlets" : 1,
 					"numoutlets" : 4,
@@ -8047,6 +8447,7 @@
 					"patching_rect" : [ 2708.541856403870042, 3749.887615025043488, 83.0, 52.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1463.847392315512707, 54.014347105708737, 176.329519181673959, 46.856185317039461 ],
+					"text" : "/Users/stefanof/Desktop/TEST/",
 					"textcolor" : [ 0.701960784313725, 0.701960784313725, 0.701960784313725, 1.0 ]
 				}
 
@@ -8064,7 +8465,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 2708.541856403870042, 3607.337140438045481, 182.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1245.32956835163327, 52.128552764144558, 121.511902468087328, 21.576271176338196 ],
+					"presentation_rect" : [ 1245.32956835163327, 54.014347105708737, 121.511902468087328, 19.288135528564453 ],
 					"text" : "Select Output File Path",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ],
 					"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -8083,7 +8484,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 2573.20743020152895, 3559.45196527242706, 77.0, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1370.060983043917986, 27.461885362353939, 93.0, 18.0 ],
+					"presentation_rect" : [ 1370.060983043917986, 28.461885362353939, 93.0, 18.0 ],
 					"text" : "Output Files Name",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
@@ -8104,6 +8505,7 @@
 					"patching_rect" : [ 2556.70743020152895, 3607.337140438045481, 105.0, 50.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1463.847392315512707, 27.461885362353939, 176.329519181673959, 23.0 ],
+					"text" : "TEST",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -8333,7 +8735,7 @@
 					"fontsize" : 10.0,
 					"hint" : "If \"Monitor Plugin\" is Disables, you can select a parameter from this menu and control it from the number box or slidet at the bottom. This can help to understand how the range 0 to 1 is mapped to a specific device value.\n\nIf \"Monitor Plugin\" is Enabled, you can change a parameter on the internal plugin GUI, and the name of the modified parameter will show here, and the associated value will be displayed on the number box and slider slidet at the bottom. This can help to find parameters which internal name is different than the one on the GUI.",
 					"id" : "obj-1219",
-					"items" : [ "main: Output", ",", "main: Active #FDN", ",", "FDN: Feedback", ",", "FDN: Dry", ",", "FDN: Wet" ],
+					"items" : [ "Tuning", ",", "Volume", ",", "Reverb Volume" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -8428,7 +8830,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 248.959104888446745, 3898.896464228630066, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1333.522331508443358, 490.80364543232389, 70.310046028934948, 19.044103593121235 ],
+					"presentation_rect" : [ 1333.522331508443358, 490.80364543232389, 70.310046028934948, 20.0 ],
 					"text" : "Refresh List",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ],
 					"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -8448,7 +8850,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 659.332600762340462, 3508.396464228630066, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1333.522331508443358, 468.598257919481057, 70.310046028934948, 18.0 ],
+					"presentation_rect" : [ 1333.522331508443358, 467.098257919481057, 70.310046028934948, 20.0 ],
 					"text" : "Manual Load",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ],
 					"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -8669,7 +9071,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 2321.351226201702048, 866.640144202028296, 160.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 230.981284553519572, 78.101651399818053, 60.431520140505313, 20.0 ],
+					"presentation_rect" : [ 230.981284553519572, 78.101651399818053, 60.431520140505313, 19.954802215099335 ],
 					"text" : "Reset",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ],
 					"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -8691,7 +9093,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1974.168570511348662, 634.121912360191345, 219.272725939750671, 25.391477465629578 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 128.393478964960735, 28.406793862071623, 163.01932572906415, 21.288135588169098 ],
+					"presentation_rect" : [ 128.393478964960735, 28.406793862071623, 163.019325729064178, 19.954802215099335 ],
 					"text" : "Generate Dataset",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"texton" : "Generating (press to stop)",
@@ -8727,7 +9129,7 @@
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1261",
 					"maxclass" : "number",
-					"maximum" : 50,
+					"maximum" : 1,
 					"minimum" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 2,
@@ -8735,7 +9137,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 2355.530966622538017, 1184.474266600406736, 40.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 429.619074106951871, 78.101651399818053, 60.181520140505313, 20.0 ]
+					"presentation_rect" : [ 440.619074106951871, 78.101651399818053, 60.181520140505313, 20.0 ]
 				}
 
 			}
@@ -8750,7 +9152,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 2394.351226201702048, 1185.474266600406736, 67.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 305.13598968748704, 78.101651399818053, 124.0, 18.0 ],
+					"presentation_rect" : [ 380.802658281370555, 78.101651399818053, 59.333331406116486, 18.0 ],
 					"text" : "Start Index",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
@@ -8767,10 +9169,10 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 2837.310590451579628, 911.199999511241913, 210.0, 19.0 ],
+					"patching_rect" : [ 2837.310590451579628, 910.866666167974472, 103.999996840953827, 19.333333343267441 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 305.13598968748704, 28.406793862071623, 184.664604559970144, 21.288135588169098 ],
-					"text" : "Update Step Mode Combinations",
+					"presentation_rect" : [ 397.469325444742594, 53.512495427814116, 41.331266954970602, 20.0 ],
+					"text" : "Update",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ],
 					"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -8792,7 +9194,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 2121.61093230771985, 1346.436001715148905, 40.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 230.981284553519572, 54.800631015983214, 60.431520140505313, 20.0 ],
+					"presentation_rect" : [ 230.981284553519572, 53.512495427814116, 60.431520140505313, 20.0 ],
 					"textcolor" : [ 0.552941176470588, 0.552941176470588, 0.552941176470588, 1.0 ],
 					"triangle" : 0,
 					"varname" : "current-combinations"
@@ -8811,7 +9213,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 2178.668570511348662, 1346.436001715148905, 78.0, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 128.393478964960735, 54.800631015983214, 104.0, 18.0 ],
+					"presentation_rect" : [ 128.393478964960735, 53.512495427814116, 104.0, 18.0 ],
 					"text" : "Current Combination",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
@@ -8833,7 +9235,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 2314.202032345966927, 1102.974266600406736, 36.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 429.619074106951871, 54.800631015983214, 60.181520140505313, 20.0 ],
+					"presentation_rect" : [ 440.619074106951871, 53.512495427814116, 60.181520140505313, 20.0 ],
 					"textcolor" : [ 0.553, 0.553, 0.553, 1.0 ],
 					"triangle" : 0,
 					"varname" : "numb-combinations"
@@ -8851,8 +9253,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 2366.202032345966927, 1102.974266600406736, 119.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 305.13598968748704, 54.800631015983214, 124.0, 18.0 ],
-					"text" : "Number of Combinations",
+					"presentation_rect" : [ 302.71932264332429, 53.512495427814116, 136.66666704416275, 18.0 ],
+					"text" : "Total Combinations",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -8865,7 +9267,7 @@
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1273",
 					"maxclass" : "number",
-					"minimum" : 1024,
+					"minimum" : 64,
 					"numdecimalplaces" : 3,
 					"numinlets" : 1,
 					"numoutlets" : 2,
@@ -8873,7 +9275,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 5079.459104888446745, 1923.153726211307458, 60.064517617225647, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 626.712991272308273, 79.906332581725707, 60.181520140505313, 20.0 ]
+					"presentation_rect" : [ 633.712991272308273, 53.512495427814116, 60.181520140505313, 20.0 ]
 				}
 
 			}
@@ -8889,7 +9291,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 5047.459104888446745, 1876.760726034641266, 101.0, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 501.479906852843442, 79.906332581725707, 128.0, 18.0 ],
+					"presentation_rect" : [ 508.479906852843442, 53.512495427814116, 128.0, 18.0 ],
 					"text" : "Sweep Update Rate (smp)",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
@@ -8899,10 +9301,11 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Only for Step and Random modes. Delay between sending a new set of parameter to the device and starting the next playback of audio source and simultaneous recording of output of the device. It has no effect on other modes.\n",
+					"hint" : "For Step and Random modes this value represents the delay (in millisecond) between sending a new set of parameter to the device and starting the next playback of audio source and simultaneous recording of output of the device. For these modes, the value is automatically set to a minimum recommended value to be used when working with internal plugins. In Sweep mode, this value determines a delay in the recorded audio effect output. In both cases, the maximum allowed value is 5000 ms. It has no effect on Manual mode.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1275",
 					"maxclass" : "number",
+					"maximum" : 5000,
 					"minimum" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 2,
@@ -8910,7 +9313,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 3932.590506137959892, 3507.574957744560379, 40.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 626.712991272308273, 54.906332581725707, 60.181520140505313, 20.0 ]
+					"presentation_rect" : [ 633.712991272308273, 28.512495427814116, 60.181520140505313, 20.0 ]
 				}
 
 			}
@@ -8924,10 +9327,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 3932.590506137959892, 3454.5, 93.0, 29.0 ],
+					"patching_rect" : [ 3932.590506137959892, 3454.5, 95.0, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 501.479906852843442, 54.800631015983214, 124.0, 18.0 ],
-					"text" : "Delay after update (ms)",
+					"presentation_rect" : [ 508.479906852843442, 28.406793862071623, 124.0, 18.0 ],
+					"text" : "Delay After Update (ms)",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -8944,7 +9347,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 3856.066715361230308, 4141.357400834560394, 74.0, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 698.876225067538599, 79.906332581725707, 136.809523582458496, 18.0 ],
+					"presentation_rect" : [ 700.876225067538599, 80.906332581725707, 136.809523582458496, 18.0 ],
 					"text" : "Latency Compensation",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
@@ -8955,7 +9358,7 @@
 					"cantchange" : 1,
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Automatically detected input/output latency of the device in samples. This includes also the latency of the soundcard input/output for external devices.",
+					"hint" : "Automatically detected input/output latency of the device in samples. This includes also the latency of the audio interface input/output for external devices. This parameter can be manually adjusted, for example to reduce the latency compensation to a lower value than the detected one, excluding the estimated latency of the audio effect. To estimate the audio effect latency, repeat the emasure with different Signal (internal effect) or I/O (external effect) Vector Size values. The contribution of the effect latency should be a constant offset in the detected latency value.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1278",
 					"maxclass" : "number",
@@ -8966,9 +9369,8 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 4464.658549185320226, 3869.625114798545837, 45.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 812.793132764092434, 54.906332581725707, 61.133030277933017, 20.0 ],
-					"textcolor" : [ 0.556862745098039, 0.556862745098039, 0.556862745098039, 1.0 ],
-					"triangle" : 0,
+					"presentation_rect" : [ 813.20697943295454, 53.512495427814116, 61.133030277933017, 20.0 ],
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"varname" : "detected-latency-samples"
 				}
 
@@ -8986,7 +9388,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 4286.716686125322667, 3656.260277032852628, 172.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 698.876225067538599, 28.406793862071623, 175.674917204072813, 20.0 ],
+					"presentation_rect" : [ 700.876225067538599, 28.406793862071623, 173.463784643348959, 20.0 ],
 					"text" : "Measure Device Latency",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ],
 					"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -9005,7 +9407,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 4526.272298993222648, 3856.743828535079956, 75.0, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 698.876225067538599, 54.906332581725707, 136.809523582458496, 18.0 ],
+					"presentation_rect" : [ 700.876225067538599, 53.512495427814116, 136.809523582458496, 18.0 ],
 					"text" : "Detected Latency (smp) ",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
@@ -9023,7 +9425,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1858.44462664072762, 924.525429966960928, 100.0, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 501.479906852843442, 28.406793862071623, 124.0, 18.0 ],
+					"presentation_rect" : [ 302.71932264332429, 28.406793862071623, 136.66666704416275, 18.0 ],
 					"text" : "Parameter Change Mode",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
@@ -9054,7 +9456,7 @@
 					"pattrmode" : 1,
 					"prefix_mode" : 2,
 					"presentation" : 1,
-					"presentation_rect" : [ 626.712991272308273, 28.406793862071623, 60.181520140505313, 20.0 ],
+					"presentation_rect" : [ 440.619074106951871, 28.406793862071623, 60.181520140505313, 20.0 ],
 					"prototypename" : "Lato9",
 					"style" : "AudioStatus_Menu"
 				}
@@ -9089,7 +9491,7 @@
 					"patching_rect" : [ 156.944249639465397, 2661.371448576450348, 75.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 4.443265983459781, 254.866538067987221, 83.0, 18.0 ],
-					"text" : "CV output",
+					"text" : "CV Output",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -9126,7 +9528,7 @@
 					"patching_rect" : [ 163.459104888446745, 2878.338967859745026, 75.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 4.443265983459781, 231.376659294297951, 84.0, 18.0 ],
-					"text" : "CV output Ch",
+					"text" : "CV Output Ch",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -9247,13 +9649,14 @@
 					"fontsize" : 10.0,
 					"hint" : "",
 					"id" : "obj-1306",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 163.459104888446745, 2387.933317374981016, 74.0, 18.0 ],
+					"patching_rect" : [ 163.459104888446745, 2387.933317374981016, 74.0, 29.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 4.443265983459781, 394.766481062104958, 83.0, 18.0 ],
-					"text" : "Sweep rate Hz",
+					"text" : "Sweep Rate Hz",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -9263,7 +9666,7 @@
 					"fontface" : 1,
 					"fontsize" : 10.0,
 					"format" : 6,
-					"hint" : "Parameter increment ot each iteration of Step mode. In Random mode this value defines the precision of the randomly generated values. It has no effect in other modes.",
+					"hint" : "Parameter increment ot each iteration of Step mode. In Random mode this value defines the precision of the randomly generated values. It has no effect in other modes. When using MIDI controlled parameters, values below 0.0078125 (i.e. 1/128) should not be used. MIDI values are represented by 7 bit integer, i.e. 128 possible values. Also, when working with MIDI controlled parameters, it is recommended to select step values which are integer multiples of 0.0078125 (since these are converted to integers in the range 0 to 127 before being sent to the device).",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1307",
 					"maxclass" : "flonum",
@@ -9407,7 +9810,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-1331",
-					"items" : "<empty>",
+					"items" : [ "Tuning", ",", "Volume", ",", "Reverb Volume" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -9501,8 +9904,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 3790.165698291412809, 3478.524933591884746, 71.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 894.695810758998505, 29.382984429088225, 60.0, 18.0 ],
-					"text" : "Drop file or ",
+					"presentation_rect" : [ 894.695810758998505, 33.382984429088225, 64.0, 18.0 ],
+					"text" : "Drop File or ",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -9924,36 +10327,6 @@
 			}
 , 			{
 				"box" : 				{
-					"color" : [ 0.504772, 0.748976, 0.839216, 1.0 ],
-					"fontface" : 0,
-					"fontname" : "Arial",
-					"fontsize" : 10.0,
-					"id" : "obj-388",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 3049.334009643120226, 3616.951965272426605, 139.0, 20.0 ],
-					"text" : "send~ _DGMDfromDeviceR~"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"color" : [ 0.504772, 0.748976, 0.839216, 1.0 ],
-					"fontface" : 0,
-					"fontname" : "Arial",
-					"fontsize" : 10.0,
-					"id" : "obj-385",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 3025.334009285492357, 3591.991014420986176, 137.0, 20.0 ],
-					"text" : "send~ _DGMDfromDeviceL~"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-384",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -10233,7 +10606,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 3932.590506137959892, 3562.540260076522827, 109.0, 20.0 ],
+					"patching_rect" : [ 3932.590506137959892, 3575.0, 109.0, 20.0 ],
 					"text" : "s _DGMDdelayUpdate"
 				}
 
@@ -10627,14 +11000,14 @@
 					"fontsize" : 10.0,
 					"id" : "obj-103",
 					"ignoreclick" : 1,
-					"linecount" : 4,
+					"linecount" : 3,
 					"maxclass" : "textedit",
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 3626.534207995458019, 3507.574957744560379, 100.0, 50.0 ],
-					"text" : "/Users/stefanof/Desktop/TSAM-master/Max/OUTPUTS/aaa4.wav",
+					"text" : "/Users/stefanof/Desktop/DGMD-EFF/Max/TEST/stereo.wav",
 					"textcolor" : [ 0.14902, 0.14902, 0.14902, 1.0 ]
 				}
 
@@ -10642,13 +11015,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-99",
-					"linecount" : 9,
+					"linecount" : 6,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 2910.459104888446745, 3572.951965272426605, 50.0, 109.0 ],
-					"text" : "\"Macintosh HD:/Users/stefanof/Desktop/TSAM-master/Max/OUTPUTS/\""
+					"patching_rect" : [ 2910.459104888446745, 3572.951965272426605, 50.0, 76.0 ],
+					"text" : "\"Macintosh HD:/Users/stefanof/Desktop/TEST/\""
 				}
 
 			}
@@ -11835,29 +12208,13 @@
 			}
 , 			{
 				"box" : 				{
-					"color" : [ 0.839216, 0.833749, 0.393224, 1.0 ],
-					"fontface" : 0,
-					"fontname" : "Arial",
-					"fontsize" : 10.0,
-					"id" : "obj-161",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 4935.754538749499261, 1372.34948456287384, 87.0, 20.0 ],
-					"text" : "r _DGMDcvRates"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-63",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 4935.754538749499261, 1416.641836663417962, 96.0, 20.0 ],
-					"text" : "mc.list~ @chans 10"
+					"patching_rect" : [ 4935.754538749499261, 1416.641836663417962, 43.0, 20.0 ],
+					"text" : "mc.list~"
 				}
 
 			}
@@ -12423,21 +12780,6 @@
 			}
 , 			{
 				"box" : 				{
-					"color" : [ 0.504772, 0.748976, 0.839216, 1.0 ],
-					"fontface" : 0,
-					"fontname" : "Arial",
-					"fontsize" : 10.0,
-					"id" : "obj-40",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 241.371802889116225, 2458.440500497817993, 89.0, 20.0 ],
-					"text" : "s _DGMDcvRates"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-39",
 					"maxclass" : "newobj",
 					"numinlets" : 10,
@@ -12953,7 +13295,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 2565.125852888446389, 2552.106603168487709, 40.0, 20.0 ],
+					"patching_rect" : [ 2565.125852888446389, 2552.106541168487638, 40.0, 20.0 ],
 					"text" : "pack i i"
 				}
 
@@ -12967,8 +13309,8 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 2565.125852888446389, 2500.233346002716189, 82.0, 20.0 ],
-					"text" : "scale 0. 1. 0 127"
+					"patching_rect" : [ 2564.625852888446389, 2489.733284002716118, 82.0, 20.0 ],
+					"text" : "scale 0. 1. 0 128"
 				}
 
 			}
@@ -13006,7 +13348,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 2306.29284488844678, 2552.106572168487673, 40.0, 20.0 ],
+					"patching_rect" : [ 2306.29284488844678, 2552.106541168487638, 40.0, 20.0 ],
 					"text" : "pack i i"
 				}
 
@@ -13020,8 +13362,8 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 2306.29284488844678, 2500.233315002716154, 82.0, 20.0 ],
-					"text" : "scale 0. 1. 0 127"
+					"patching_rect" : [ 2306.29284488844678, 2489.733284002716118, 82.0, 20.0 ],
+					"text" : "scale 0. 1. 0 128"
 				}
 
 			}
@@ -13059,7 +13401,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 2037.959104888446745, 2552.106633168487861, 40.0, 20.0 ],
+					"patching_rect" : [ 2037.959104888446745, 2552.106541168487638, 40.0, 20.0 ],
 					"text" : "pack i i"
 				}
 
@@ -13073,8 +13415,8 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 2037.959104888446745, 2500.233376002715886, 82.0, 20.0 ],
-					"text" : "scale 0. 1. 0 127"
+					"patching_rect" : [ 2037.859104864604888, 2489.733284002716118, 82.0, 20.0 ],
+					"text" : "scale 0. 1. 0 128"
 				}
 
 			}
@@ -13112,7 +13454,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1779.625974888446763, 2552.106603168487709, 40.0, 20.0 ],
+					"patching_rect" : [ 1779.625974888446763, 2552.106541168487638, 40.0, 20.0 ],
 					"text" : "pack i i"
 				}
 
@@ -13126,8 +13468,8 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1779.625974888446763, 2500.233346002716189, 82.0, 20.0 ],
-					"text" : "scale 0. 1. 0 127"
+					"patching_rect" : [ 1779.625974888446763, 2489.733284002716118, 82.0, 20.0 ],
+					"text" : "scale 0. 1. 0 128"
 				}
 
 			}
@@ -13165,7 +13507,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1526.292600888446941, 2552.106694168487593, 40.0, 20.0 ],
+					"patching_rect" : [ 1526.292600888446941, 2552.106541168487638, 40.0, 20.0 ],
 					"text" : "pack i i"
 				}
 
@@ -13179,8 +13521,8 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1526.292600888446941, 2500.233437002716073, 82.0, 20.0 ],
-					"text" : "scale 0. 1. 0 127"
+					"patching_rect" : [ 1526.292600888446941, 2489.733284002716118, 82.0, 20.0 ],
+					"text" : "scale 0. 1. 0 128"
 				}
 
 			}
@@ -13218,7 +13560,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1271.292478888446567, 2552.106603168487709, 40.0, 20.0 ],
+					"patching_rect" : [ 1271.292478888446567, 2552.106541168487638, 40.0, 20.0 ],
 					"text" : "pack i i"
 				}
 
@@ -13232,8 +13574,8 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1271.292478888446567, 2500.233346002716189, 82.0, 20.0 ],
-					"text" : "scale 0. 1. 0 127"
+					"patching_rect" : [ 1271.292478888446567, 2489.733284002716118, 82.0, 20.0 ],
+					"text" : "scale 0. 1. 0 128"
 				}
 
 			}
@@ -13271,7 +13613,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1003.959104888446745, 2552.106633168487861, 40.0, 20.0 ],
+					"patching_rect" : [ 1003.959104888446745, 2552.106541168487638, 40.0, 20.0 ],
 					"text" : "pack i i"
 				}
 
@@ -13285,8 +13627,8 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1003.959104888446745, 2500.233376002715886, 82.0, 20.0 ],
-					"text" : "scale 0. 1. 0 127"
+					"patching_rect" : [ 1003.959104888446745, 2489.733284002716118, 82.0, 20.0 ],
+					"text" : "scale 0. 1. 0 128"
 				}
 
 			}
@@ -13338,8 +13680,8 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 750.959104888446745, 2500.233284002716118, 82.0, 20.0 ],
-					"text" : "scale 0. 1. 0 127"
+					"patching_rect" : [ 750.959104888446745, 2489.733284002716118, 82.0, 20.0 ],
+					"text" : "scale 0. 1. 0 128"
 				}
 
 			}
@@ -13391,8 +13733,8 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 499.625730888446924, 2500.233284002716118, 82.0, 20.0 ],
-					"text" : "scale 0. 1. 0 127"
+					"patching_rect" : [ 499.625730888446924, 2489.733284002716118, 82.0, 20.0 ],
+					"text" : "scale 0. 1. 0 128"
 				}
 
 			}
@@ -13588,8 +13930,8 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 250.959104888446745, 2500.233284002716118, 82.0, 20.0 ],
-					"text" : "scale 0. 1. 0 127"
+					"patching_rect" : [ 250.792478888446567, 2489.733284002716118, 82.0, 20.0 ],
+					"text" : "scale 0. 1. 0 128"
 				}
 
 			}
@@ -13600,7 +13942,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 4046.113247688335377, 3503.422130525112152, 31.0, 20.0 ],
+					"patching_rect" : [ 4046.113247688335377, 3443.422130525112152, 31.0, 20.0 ],
 					"text" : "+ 0.5"
 				}
 
@@ -13616,7 +13958,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 4102.689368064922746, 3381.833791434764862, 104.0, 20.0 ],
+					"patching_rect" : [ 4102.689368064922746, 3321.833791434764862, 104.0, 20.0 ],
 					"text" : "r _DGMDsampleRate"
 				}
 
@@ -13628,7 +13970,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 4046.113247688335377, 3443.894837812862534, 45.0, 20.0 ],
+					"patching_rect" : [ 4046.113247688335377, 3383.894837812862534, 45.0, 20.0 ],
 					"text" : "/ 44100."
 				}
 
@@ -13640,7 +13982,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 4046.113247688335377, 3471.87682569026947, 40.0, 20.0 ],
+					"patching_rect" : [ 4046.113247688335377, 3411.87682569026947, 40.0, 20.0 ],
 					"text" : "* 1000."
 				}
 
@@ -13652,7 +13994,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 4046.113247688335377, 3562.540260076522827, 29.5, 20.0 ],
+					"patching_rect" : [ 4046.113247688335377, 3502.540260076522827, 29.5, 20.0 ],
 					"text" : "int"
 				}
 
@@ -13664,7 +14006,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 4046.113247688335377, 3534.361569285392761, 34.0, 20.0 ],
+					"patching_rect" : [ 4046.113247688335377, 3474.361569285392761, 34.0, 20.0 ],
 					"text" : "round"
 				}
 
@@ -13676,7 +14018,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "int" ],
-					"patching_rect" : [ 4076.364117024975258, 3335.539472417316574, 29.5, 20.0 ],
+					"patching_rect" : [ 4076.364117024975258, 3275.539472417316574, 29.5, 20.0 ],
 					"text" : "t b i"
 				}
 
@@ -13688,7 +14030,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 4046.113247688335377, 3384.039471046409744, 29.5, 20.0 ],
+					"patching_rect" : [ 4046.113247688335377, 3324.039471046409744, 29.5, 20.0 ],
 					"text" : "* 1"
 				}
 
@@ -13720,7 +14062,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 4046.113247688335377, 3287.459260880947113, 102.0, 20.0 ],
+					"patching_rect" : [ 4046.113247688335377, 3227.459260880947113, 102.0, 20.0 ],
 					"text" : "r _DGMDsigVectSize"
 				}
 
@@ -14519,7 +14861,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 3882.090506137958982, 3553.99970805644989, 32.0, 20.0 ],
+					"patching_rect" : [ 3882.090506137958982, 3568.99970805644989, 32.0, 20.0 ],
 					"text" : "delay"
 				}
 
@@ -14563,13 +14905,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-1106",
-					"linecount" : 9,
+					"linecount" : 7,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 3137.865620850162486, 4174.076447427272797, 54.0, 109.0 ],
-					"text" : "write /Users/stefanof/Desktop/TSAM-master/Max/OUTPUTS/SourceLoopback.wav"
+					"patching_rect" : [ 3137.865620850162486, 4174.076447427272797, 54.0, 87.0 ],
+					"text" : "write /Users/stefanof/Desktop/TEST/SourceLoopback.wav"
 				}
 
 			}
@@ -14628,13 +14970,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-1083",
-					"linecount" : 9,
+					"linecount" : 6,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 3221.40576630695341, 4194.409032344818115, 50.0, 109.0 ],
-					"text" : "write /Users/stefanof/Desktop/TSAM-master/Max/OUTPUTS/bubu7.wav"
+					"patching_rect" : [ 3221.40576630695341, 4194.409032344818115, 50.0, 76.0 ],
+					"text" : "write /Users/stefanof/Desktop/TEST/TEST0.wav"
 				}
 
 			}
@@ -15516,13 +15858,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-407",
-					"linecount" : 4,
+					"linecount" : 3,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 2708.602459724468645, 3991.311245977878571, 124.0, 53.0 ],
-					"text" : "write /Users/stefanof/Desktop/TSAM-master/Max/OUTPUTS/bubu.csv"
+					"patching_rect" : [ 2708.602459724468645, 3991.311245977878571, 124.0, 42.0 ],
+					"text" : "write /Users/stefanof/Desktop/TEST/TEST.csv"
 				}
 
 			}
@@ -19879,13 +20221,14 @@
 					"fontsize" : 10.0,
 					"id" : "obj-663",
 					"ignoreclick" : 1,
+					"linecount" : 2,
 					"maxclass" : "textedit",
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 702.459104888446745, 3716.348844885826111, 100.0, 50.0 ],
-					"text" : "plug Protoverb",
+					"text" : "plug DLSMusicDevice",
 					"textcolor" : [ 0.14902, 0.14902, 0.14902, 1.0 ]
 				}
 
@@ -20414,14 +20757,14 @@
 						"subtype" : "Undefined",
 						"embed" : 1,
 						"snapshot" : 						{
-							"pluginname" : "Protoverb.vstinfo",
-							"plugindisplayname" : "Protoverb 1.0.0",
+							"pluginname" : "DLSMusicDevice.auinfo",
+							"plugindisplayname" : "DLSMusicDevice",
 							"pluginsavedname" : "",
-							"pluginsaveduniqueid" : 0,
+							"pluginsaveduniqueid" : 1684631097,
 							"version" : 1,
 							"isbank" : 0,
 							"isbase64" : 1,
-							"blob" : "840.CMlaKA....fQPMDZ....ATGZPYE...P.....AjlaoQWZgwVZ5UF..........................L.CiDTS8.kbuQ2a1UlbhovHVUlby0SLv.CLvnvHE4FYoEla8vVZzQGakovHt0VO0nvHsMWOt8lakovHsMWOM8FYWgFaJLRay0CToQ2XnckBiz1b8HjbkEFcnovHsMWOXAmbkM2bJLha10CLJLxXs0SagklaJLzXOAWOw.CLt.CLJLhQD4TOwnvHi0VOPMzaxUlBSITXyUVOznvT2klam0CLt.CLJLEUxk1Y8DiBPM0atcVOvn.TF8Faj0CLJ.kQowVY8DiBGYTZrUVOxnvQSMVXrUVOvnvPnwTX40CLJLUcxI2S8DiBRUlc8PSLvHiBLUDQ8.iKv.iBPEzQE0CLJ.UXmU1bO4VOvnvPuIWYN0yLJLEaoMVY8PiBUkzWuAWOvnPSoQVZA0SMJzTZjkFT8XiBiLVa8XDQNofQB0SLy3RM2n.QxkWOw.CLt.CLJbUYz0iLx3BN1nvSxQVOvnfTtQVOvn.TgIWXsMWO2nfBJnvKu.xTkMFco8lafX1axARcmwVdfL1asAmbkM2bkQFHhklagIWdfPTXzElBu7BHD8jSmPEHT8TUCgDHTgTRSofBjPBIjjSN1nvOmQ1YiUlakIlNkEVXgEVXgElNgEVXhEVXgElNmo1YuclZnUlNmo1YhcVamolNns1YlM1amklNjMFZgEVXgElNJ7lau81avAWX5.mXvMFbjAWY5.mYvcFbnAWZ5DVX5LVX5DlX5DVY5D1X5DFY5DlY5D1Y5DFZ5DVZ5DlZ5D1Z5DlBroSXsoSXtoSXuoSXvoiXgoiXhoiXioiXjoiXkoiXloiXmoiXnoiXoERbyEjL1LSbxEzMzUmc2EDM2DmbAcSLwofbAcCd4oGbpA2ZvwFbsAmav8FbvEzPEYDQGgTRJsDSM4zSPEkTSQUUVcEVYokXpI1ZhwlXsIlah8lXvIzXhM1XJLFYiU1XlM1Yig1XoMlZis1XrMVawQTPw.yPs0VYtETbyEjL1LSboEVPwLCNwITPw.CZgg1XmYFZjEiPmMFZlglBkEyYvc1aAESN8HSN4fSMJ..."
+							"blob" : "916.hAGaoMGcv.S2AHv.DTfAGfPBJr.CM3vCPDADRLAEUXQFZrAViAWcsv1agQFUtEVakckckI2bo8laeAwD0MWYsjlazUlbtEFasHWY1Ulbh4EYoM2ZsLGcxUVXsklam4kbk4FYkIWKwUWXrkFc4QEc4AWYTQVXzEFWsEla0YVXiQWcxUlbeAwClkFak0hbkYVYxUlaiU1bWMWchQWdvUFUBElaqwUYrUVak4Fcs3VXsU1H...........VU4FcoQGakQFD..Q.P7mDgUWa08DDj...............C...............A.........f......HQXvAGaQeAFaMmXsXVZrUVKxUlYeAAUuLUdyQWYs8BSoIlbgIWduLzasA2atUlazM2KC8lbkETcjk1atL1asA2atUlaz8xPu4Fck4Fcy8hTkM2a0I2XkM2KmM2Wo41bzIWcsUlazMmKjw1bRPFayAxSQD.p.....D.p.H...vPSgMVZtQ2aygFHHQD...................P3MAZqBQD.A7++++uDmM2Wo41bzIWcsUlazMmKjw1b............................................................+++++GdSf1J..........7++++O..n.HiUG.................IHUYy8VcxMVYyA..B.PUunyT4MGck0lNLklXxElb4oyPu0Fbu4VYtQ2b5LzaxUVP0QVZu4xXu0Fbu4VYtQmNC8lazUlazMmNRU1buUmbiU1b5b1beklayQmb00VYtQ2btPFayA..N.fI.HA.mAvb.7E.oAfa.LG.zAfb.TG.sAPY.3F.zAvb.3B.jA.a.LG.O.fF.v..MAPX.LF.oAfa.PG.uAvb.fF.f..R.PD.R.vTSk2bzUVauvTZhIWXxk2KC8Vav8lak4Fcy8xPuIWYAUGYo8lKi8Vav8lak4FcuLzatQWYtQ2buHUYy8VcxMVYy8xYy8UZtMGcxUWak4Fcy4BYrMG..LA.A7B.++O..DMGcDkLR6wGfDRTvDULZMGckIWYuARaogmU04VcyUFY.f..i..K.DC.4.vS.3E.sAfb.bG.DBfk.3I.iB.r.jK.BC.w.XL.HCPy.PO.4C.+AfP.eE.YC.w.SLPECnw.bLfGCjB.......f.A.........fH..................v.v."
 						}
 ,
 						"snapshotlist" : 						{
@@ -20431,19 +20774,19 @@
 									"version" : 2,
 									"minorversion" : 0,
 									"name" : "Massive",
-									"origin" : "Protoverb.vstinfo",
-									"type" : "VST",
-									"subtype" : "MidiEffect",
+									"origin" : "DLSMusicDevice.auinfo",
+									"type" : "AudioUnit",
+									"subtype" : "Instrument",
 									"embed" : 1,
 									"snapshot" : 									{
-										"pluginname" : "Protoverb.vstinfo",
-										"plugindisplayname" : "Protoverb 1.0.0",
+										"pluginname" : "DLSMusicDevice.auinfo",
+										"plugindisplayname" : "DLSMusicDevice",
 										"pluginsavedname" : "",
-										"pluginsaveduniqueid" : 0,
+										"pluginsaveduniqueid" : 1684631097,
 										"version" : 1,
 										"isbank" : 0,
 										"isbase64" : 1,
-										"blob" : "840.CMlaKA....fQPMDZ....ATGZPYE...P.....AjlaoQWZgwVZ5UF..........................L.CiDTS8.kbuQ2a1UlbhovHVUlby0SLv.CLvnvHE4FYoEla8vVZzQGakovHt0VO0nvHsMWOt8lakovHsMWOM8FYWgFaJLRay0CToQ2XnckBiz1b8HjbkEFcnovHsMWOXAmbkM2bJLha10CLJLxXs0SagklaJLzXOAWOw.CLt.CLJLhQD4TOwnvHi0VOPMzaxUlBSITXyUVOznvT2klam0CLt.CLJLEUxk1Y8DiBPM0atcVOvn.TF8Faj0CLJ.kQowVY8DiBGYTZrUVOxnvQSMVXrUVOvnvPnwTX40CLJLUcxI2S8DiBRUlc8PSLvHiBLUDQ8.iKv.iBPEzQE0CLJ.UXmU1bO4VOvnvPuIWYN0yLJLEaoMVY8PiBUkzWuAWOvnPSoQVZA0SMJzTZjkFT8XiBiLVa8XDQNofQB0SLy3RM2n.QxkWOw.CLt.CLJbUYz0iLx3BN1nvSxQVOvnfTtQVOvn.TgIWXsMWO2nfBJnvKu.xTkMFco8lafX1axARcmwVdfL1asAmbkM2bkQFHhklagIWdfPTXzElBu7BHD8jSmPEHT8TUCgDHTgTRSofBjPBIjjSN1nvOmQ1YiUlakIlNkEVXgEVXgElNgEVXhEVXgElNmo1YuclZnUlNmo1YhcVamolNns1YlM1amklNjMFZgEVXgElNJ7lau81avAWX5.mXvMFbjAWY5.mYvcFbnAWZ5DVX5LVX5DlX5DVY5D1X5DFY5DlY5D1Y5DFZ5DVZ5DlZ5D1Z5DlBroSXsoSXtoSXuoSXvoiXgoiXhoiXioiXjoiXkoiXloiXmoiXnoiXoERbyEjL1LSbxEzMzUmc2EDM2DmbAcSLwofbAcCd4oGbpA2ZvwFbsAmav8FbvEzPEYDQGgTRJsDSM4zSPEkTSQUUVcEVYokXpI1ZhwlXsIlah8lXvIzXhM1XJLFYiU1XlM1Yig1XoMlZis1XrMVawQTPw.yPs0VYtETbyEjL1LSboEVPwLCNwITPw.CZgg1XmYFZjEiPmMFZlglBkEyYvc1aAESN8HSN4fSMJ..."
+										"blob" : "916.hAGaoMGcv.S2AHv.DTfAGfPBJr.CM3vCPDADRLAEUXQFZrAViAWcsv1agQFUtEVakckckI2bo8laeAwD0MWYsjlazUlbtEFasHWY1Ulbh4EYoM2ZsLGcxUVXsklam4kbk4FYkIWKwUWXrkFc4QEc4AWYTQVXzEFWsEla0YVXiQWcxUlbeAwClkFak0hbkYVYxUlaiU1bWMWchQWdvUFUBElaqwUYrUVak4Fcs3VXsU1H...........VU4FcoQGakQFD..Q.P7mDgUWa08DDj...............C...............A.........f......HQXvAGaQeAFaMmXsXVZrUVKxUlYeAAUuLUdyQWYs8BSoIlbgIWduLzasA2atUlazM2KC8lbkETcjk1atL1asA2atUlaz8xPu4Fck4Fcy8hTkM2a0I2XkM2KmM2Wo41bzIWcsUlazMmKjw1bRPFayAxSQD.p.....D.p.H...vPSgMVZtQ2aygFHHQD...................P3MAZqBQD.A7++++uDmM2Wo41bzIWcsUlazMmKjw1b............................................................+++++GdSf1J..........7++++O..n.HiUG.................IHUYy8VcxMVYyA..B.PUunyT4MGck0lNLklXxElb4oyPu0Fbu4VYtQ2b5LzaxUVP0QVZu4xXu0Fbu4VYtQmNC8lazUlazMmNRU1buUmbiU1b5b1beklayQmb00VYtQ2btPFayA..N.fI.HA.mAvb.7E.oAfa.LG.zAfb.TG.sAPY.3F.zAvb.3B.jA.a.LG.O.fF.v..MAPX.LF.oAfa.PG.uAvb.fF.f..R.PD.R.vTSk2bzUVauvTZhIWXxk2KC8Vav8lak4Fcy8xPuIWYAUGYo8lKi8Vav8lak4FcuLzatQWYtQ2buHUYy8VcxMVYy8xYy8UZtMGcxUWak4Fcy4BYrMG..LA.A7B.++O..DMGcDkLR6wGfDRTvDULZMGckIWYuARaogmU04VcyUFY.f..i..K.DC.4.vS.3E.sAfb.bG.DBfk.3I.iB.r.jK.BC.w.XL.HCPy.PO.4C.+AfP.eE.YC.w.SLPECnw.bLfGCjB.......f.A.........fH..................v.v."
 									}
 ,
 									"fileref" : 									{
@@ -20451,7 +20794,7 @@
 										"filename" : "Massive.maxsnap",
 										"filepath" : "~/Documents/Max 7/Snapshots",
 										"filepos" : -1,
-										"snapshotfileid" : "9386e2b451ad1139fa110020f9872ec9"
+										"snapshotfileid" : "6e28dcb675eb59b1b60316d916715e49"
 									}
 
 								}
@@ -20699,10 +21042,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 156.944249639465397, 2470.233284002716118, 75.0, 29.0 ],
+					"patching_rect" : [ 156.944249639465397, 2470.233284002716118, 67.5, 29.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 5.443265983459781, 206.258085747888344, 83.0, 18.0 ],
-					"text" : "MIDI output CC",
+					"text" : "MIDI Output CC",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -21308,7 +21651,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-503",
-					"items" : "<empty>",
+					"items" : [ "Tuning", ",", "Volume", ",", "Reverb Volume" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -21339,7 +21682,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-657",
-					"items" : "<empty>",
+					"items" : [ "Tuning", ",", "Volume", ",", "Reverb Volume" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -21370,7 +21713,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-623",
-					"items" : "<empty>",
+					"items" : [ "Tuning", ",", "Volume", ",", "Reverb Volume" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -21401,7 +21744,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-733",
-					"items" : "<empty>",
+					"items" : [ "Tuning", ",", "Volume", ",", "Reverb Volume" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -21432,7 +21775,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-1131",
-					"items" : "<empty>",
+					"items" : [ "Tuning", ",", "Volume", ",", "Reverb Volume" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -21463,7 +21806,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-1098",
-					"items" : "<empty>",
+					"items" : [ "Tuning", ",", "Volume", ",", "Reverb Volume" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -21494,7 +21837,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-1066",
-					"items" : "<empty>",
+					"items" : [ "Tuning", ",", "Volume", ",", "Reverb Volume" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -21525,7 +21868,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-993",
-					"items" : "<empty>",
+					"items" : [ "Tuning", ",", "Volume", ",", "Reverb Volume" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -21556,7 +21899,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-790",
-					"items" : "<empty>",
+					"items" : [ "Tuning", ",", "Volume", ",", "Reverb Volume" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -21652,7 +21995,7 @@
 					"patching_rect" : [ 2414.524182099537484, 1730.833373999999822, 74.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1498.309774960004916, 154.90508081548478, 84.0, 18.0 ],
-					"text" : "MIDI input CC",
+					"text" : "MIDI Input CC",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -21689,7 +22032,7 @@
 					"patching_rect" : [ 2156.703245888446872, 1730.833373999999822, 74.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1331.060471082409322, 154.90508081548478, 84.0, 18.0 ],
-					"text" : "MIDI input CC",
+					"text" : "MIDI Input CC",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -21726,7 +22069,7 @@
 					"patching_rect" : [ 1888.622554552009206, 1731.833373999999822, 74.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1166.06047805615276, 154.90508081548478, 84.0, 18.0 ],
-					"text" : "MIDI input CC",
+					"text" : "MIDI Input CC",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -21763,7 +22106,7 @@
 					"patching_rect" : [ 1629.125974888446763, 1731.833344000000125, 74.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 998.81117417855728, 154.90508081548478, 84.0, 18.0 ],
-					"text" : "MIDI input CC",
+					"text" : "MIDI Input CC",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -21800,7 +22143,7 @@
 					"patching_rect" : [ 1384.760252388446133, 1731.833435000000009, 74.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 833.811181152300719, 154.90508081548478, 84.0, 18.0 ],
-					"text" : "MIDI input CC",
+					"text" : "MIDI Input CC",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -21837,7 +22180,7 @@
 					"patching_rect" : [ 1122.959104888446745, 1731.833344000000125, 74.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 669.941859791163893, 154.90508081548478, 84.0, 18.0 ],
-					"text" : "MIDI input CC",
+					"text" : "MIDI Input CC",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -21874,7 +22217,7 @@
 					"patching_rect" : [ 853.459104888446745, 1731.833373999999822, 74.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 502.692555913568413, 154.90508081548478, 84.0, 18.0 ],
-					"text" : "MIDI input CC",
+					"text" : "MIDI Input CC",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -21911,7 +22254,7 @@
 					"patching_rect" : [ 600.459104888446745, 1731.833282000000054, 74.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 337.692562887311851, 154.90508081548478, 84.0, 18.0 ],
-					"text" : "MIDI input CC",
+					"text" : "MIDI Input CC",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -21948,7 +22291,7 @@
 					"patching_rect" : [ 345.918788670139293, 1731.833373999999822, 74.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 170.443259009716343, 154.90508081548478, 84.0, 18.0 ],
-					"text" : "MIDI input CC",
+					"text" : "MIDI Input CC",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -21985,7 +22328,7 @@
 					"patching_rect" : [ 92.959104888446745, 1731.833282000000054, 74.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 5.443265983459781, 154.90508081548478, 84.0, 18.0 ],
-					"text" : "MIDI input CC",
+					"text" : "MIDI Input CC",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -22074,7 +22417,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Soundcard for audio input. This is used only with external devices to record the output of the device.",
 					"id" : "obj-499",
-					"items" : [ "None", ",", "Cam Link 4K", ",", "BlackHole 16ch", ",", "MacBook Pro Microphone", ",", "Microsoft Teams Audio", ",", "WebexMediaAudioDevice", ",", "ZoomAudioDevice" ],
+					"items" : [ "None", ",", "Cam Link 4K", ",", "BlackHole 16ch", ",", "MacBook Pro Microphone", ",", "Microsoft Teams Audio", ",", "WebexMediaAudioDevice", ",", "Loopback Audio", ",", "ZoomAudioDevice" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -23054,7 +23397,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1340", 0 ],
-					"midpoints" : [ 4204.342260535284368, 3914.051522016525269, 4145.10318878012913, 3914.051522016525269, 4145.10318878012913, 3324.539472417316574, 4085.864117024975258, 3324.539472417316574 ],
+					"midpoints" : [ 4204.342260535284368, 3914.051522016525269, 4145.10318878012913, 3914.051522016525269, 4145.10318878012913, 3265.539472417316574, 4085.864117024975258, 3265.539472417316574 ],
 					"order" : 2,
 					"source" : [ "obj-1044", 0 ]
 				}
@@ -23081,7 +23424,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1340", 0 ],
-					"midpoints" : [ 4180.342260535284368, 3886.743828535079956, 4133.10318878012913, 3886.743828535079956, 4133.10318878012913, 3324.539472417316574, 4085.864117024975258, 3324.539472417316574 ],
+					"midpoints" : [ 4180.342260535284368, 3886.743828535079956, 4133.10318878012913, 3886.743828535079956, 4133.10318878012913, 3258.539472417316574, 4085.864117024975258, 3258.539472417316574 ],
 					"order" : 2,
 					"source" : [ "obj-1045", 0 ]
 				}
@@ -25616,7 +25959,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1338", 1 ],
-					"midpoints" : [ 4096.364117024975712, 3369.289471731863159, 4066.113247688335377, 3369.289471731863159 ],
+					"midpoints" : [ 4096.364117024975712, 3309.289471731863159, 4066.113247688335377, 3309.289471731863159 ],
 					"source" : [ "obj-1340", 1 ]
 				}
 
@@ -25624,7 +25967,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1338", 0 ],
-					"midpoints" : [ 4085.864117024975258, 3369.289471731863159, 4055.613247688335377, 3369.289471731863159 ],
+					"midpoints" : [ 4085.864117024975258, 3309.289471731863159, 4055.613247688335377, 3309.289471731863159 ],
 					"source" : [ "obj-1340", 0 ]
 				}
 
@@ -25645,8 +25988,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1275", 0 ],
-					"midpoints" : [ 4055.613247688335377, 3592.540260076522827, 3998.851876913147407, 3592.540260076522827, 3998.851876913147407, 3496.574957744560379, 3942.090506137959892, 3496.574957744560379 ],
+					"destination" : [ "obj-523", 1 ],
 					"source" : [ "obj-1345", 0 ]
 				}
 
@@ -25678,7 +26020,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1342", 1 ],
-					"midpoints" : [ 4112.189368064922746, 3423.467154429636139, 4081.613247688335377, 3423.467154429636139 ],
+					"midpoints" : [ 4112.189368064922746, 3363.467154429636139, 4081.613247688335377, 3363.467154429636139 ],
 					"source" : [ "obj-1348", 0 ]
 				}
 
@@ -25700,8 +26042,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1407", 0 ],
-					"midpoints" : [ 260.459104888446745, 2556.701658943281473, 260.459104888446745, 2556.701658943281473 ],
+					"destination" : [ "obj-462", 0 ],
+					"midpoints" : [ 260.292478888446567, 2514.116642001357832, 310.459104888446745, 2514.116642001357832 ],
 					"source" : [ "obj-1354", 0 ]
 				}
 
@@ -25792,6 +26134,16 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1366", 0 ],
 					"midpoints" : [ 3040.203561775691924, 1026.630427570137044, 3011.85707721036124, 1026.630427570137044, 3011.85707721036124, 937.542425870895386, 2836.310590451579628, 937.542425870895386 ],
+					"order" : 1,
+					"source" : [ "obj-1363", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-786", 0 ],
+					"midpoints" : [ 3040.203561775691924, 1026.630427570137044, 3000.507077812368152, 1026.630427570137044, 3000.507077812368152, 865.640144202028296, 2846.810590451579628, 865.640144202028296 ],
+					"order" : 0,
 					"source" : [ "obj-1363", 0 ]
 				}
 
@@ -26008,8 +26360,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1427", 0 ],
-					"midpoints" : [ 509.125730888446924, 2556.701658943281473, 509.125730888446924, 2556.701658943281473 ],
+					"destination" : [ "obj-463", 0 ],
+					"midpoints" : [ 509.125730888446924, 2514.116642001357832, 554.735486881336328, 2514.116642001357832 ],
 					"source" : [ "obj-1428", 0 ]
 				}
 
@@ -26044,8 +26396,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1432", 0 ],
-					"midpoints" : [ 760.459104888446745, 2556.701658943281473, 760.459104888446745, 2556.701658943281473 ],
+					"destination" : [ "obj-464", 0 ],
+					"midpoints" : [ 760.459104888446745, 2514.116642001357832, 810.459104888446745, 2514.116642001357832 ],
 					"source" : [ "obj-1433", 0 ]
 				}
 
@@ -26066,8 +26418,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1436", 0 ],
-					"midpoints" : [ 1013.459104888446745, 2556.70175094328124, 1013.459104888446745, 2556.70175094328124 ],
+					"destination" : [ "obj-490", 0 ],
+					"midpoints" : [ 1013.459104888446745, 2514.116642001357832, 1063.459104888446745, 2514.116642001357832 ],
 					"source" : [ "obj-1437", 0 ]
 				}
 
@@ -26149,8 +26501,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1442", 0 ],
-					"midpoints" : [ 1280.792478888446567, 2556.701720943281543, 1280.792478888446567, 2556.701720943281543 ],
+					"destination" : [ "obj-509", 0 ],
+					"midpoints" : [ 1280.792478888446567, 2514.116642001357832, 1330.792478888446567, 2514.116642001357832 ],
 					"source" : [ "obj-1443", 0 ]
 				}
 
@@ -26179,8 +26531,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1448", 0 ],
-					"midpoints" : [ 1535.792600888446941, 2556.701811943281427, 1535.792600888446941, 2556.701811943281427 ],
+					"destination" : [ "obj-516", 0 ],
+					"midpoints" : [ 1535.792600888446941, 2514.116642001357832, 1581.542600888446941, 2514.116642001357832 ],
 					"source" : [ "obj-1449", 0 ]
 				}
 
@@ -26208,8 +26560,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1452", 0 ],
-					"midpoints" : [ 1789.125974888446763, 2556.701720943281543, 1789.125974888446763, 2556.701720943281543 ],
+					"destination" : [ "obj-517", 0 ],
+					"midpoints" : [ 1789.125974888446763, 2514.116642001357832, 1839.125974888446763, 2514.116642001357832 ],
 					"source" : [ "obj-1453", 0 ]
 				}
 
@@ -26230,8 +26582,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1456", 0 ],
-					"midpoints" : [ 2047.459104888446745, 2556.70175094328124, 2047.459104888446745, 2556.70175094328124 ],
+					"destination" : [ "obj-518", 0 ],
+					"midpoints" : [ 2047.359104864604888, 2514.116642001357832, 2093.209104888446745, 2514.116642001357832 ],
 					"source" : [ "obj-1457", 0 ]
 				}
 
@@ -26252,8 +26604,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1460", 0 ],
-					"midpoints" : [ 2315.79284488844678, 2556.701689943281053, 2315.79284488844678, 2556.701689943281053 ],
+					"destination" : [ "obj-519", 0 ],
+					"midpoints" : [ 2315.79284488844678, 2514.116642001357832, 2365.79284488844678, 2514.116642001357832 ],
 					"source" : [ "obj-1461", 0 ]
 				}
 
@@ -26274,8 +26626,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1464", 0 ],
-					"midpoints" : [ 2574.625852888446389, 2556.701720943281543, 2574.625852888446389, 2556.701720943281543 ],
+					"destination" : [ "obj-525", 0 ],
+					"midpoints" : [ 2574.125852888446389, 2514.116642001357832, 2619.875852888446389, 2514.116642001357832 ],
 					"source" : [ "obj-1465", 0 ]
 				}
 
@@ -26862,7 +27214,14 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-63", 0 ],
+					"destination" : [ "obj-368", 1 ],
+					"source" : [ "obj-161", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-368", 0 ],
 					"source" : [ "obj-161", 0 ]
 				}
 
@@ -28591,6 +28950,25 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-247", 0 ],
+					"order" : 1,
+					"source" : [ "obj-262", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-833", 0 ],
+					"midpoints" : [ 3057.670422500202221, 4187.976135919657281, 3535.5, 4187.976135919657281 ],
+					"order" : 0,
+					"source" : [ "obj-262", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-834", 0 ],
+					"midpoints" : [ 3057.670422500202221, 4188.607498298254541, 2995.000307919136503, 4188.607498298254541 ],
+					"order" : 2,
 					"source" : [ "obj-262", 0 ]
 				}
 
@@ -28606,6 +28984,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1180", 0 ],
 					"source" : [ "obj-264", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-63", 0 ],
+					"source" : [ "obj-265", 0 ]
 				}
 
 			}
@@ -29515,6 +29900,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-399", 0 ],
+					"source" : [ "obj-350", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-353", 0 ],
 					"source" : [ "obj-352", 0 ]
 				}
@@ -29645,6 +30037,13 @@
 					"destination" : [ "obj-911", 0 ],
 					"midpoints" : [ 2070.959104888446745, 2313.416686999999911, 2007.959104888446745, 2313.416686999999911 ],
 					"source" : [ "obj-367", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-400", 0 ],
+					"source" : [ "obj-368", 0 ]
 				}
 
 			}
@@ -29861,8 +30260,26 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-40", 0 ],
+					"destination" : [ "obj-288", 0 ],
 					"source" : [ "obj-39", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-16", 0 ],
+					"midpoints" : [ 3042.170423811504406, 3741.03130978345871, 3171.87247383169597, 3741.03130978345871 ],
+					"order" : 1,
+					"source" : [ "obj-393", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-838", 1 ],
+					"midpoints" : [ 3042.170423811504406, 3700.336706042289734, 3276.834009285492357, 3700.336706042289734 ],
+					"order" : 0,
+					"source" : [ "obj-393", 0 ]
 				}
 
 			}
@@ -29870,6 +30287,23 @@
 				"patchline" : 				{
 					"destination" : [ "obj-384", 0 ],
 					"source" : [ "obj-395", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-393", 0 ],
+					"order" : 1,
+					"source" : [ "obj-399", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-466", 0 ],
+					"midpoints" : [ 3042.170423811504406, 3610.4713214635849, 3134.87247383169597, 3610.4713214635849 ],
+					"order" : 0,
+					"source" : [ "obj-399", 0 ]
 				}
 
 			}
@@ -29883,7 +30317,29 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-554", 0 ],
+					"destination" : [ "obj-161", 1 ],
+					"source" : [ "obj-40", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-161", 0 ],
+					"source" : [ "obj-40", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-390", 0 ],
+					"source" : [ "obj-400", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-600", 1 ],
+					"midpoints" : [ 5134.770184798286209, 3691.966668248176575, 5074.866666436195374, 3691.966668248176575 ],
 					"source" : [ "obj-400", 0 ]
 				}
 
@@ -29949,7 +30405,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-400", 0 ],
+					"destination" : [ "obj-40", 0 ],
+					"midpoints" : [ 5074.770184798286209, 3501.700002253055573, 5134.770184798286209, 3501.700002253055573 ],
 					"source" : [ "obj-412", 0 ]
 				}
 
@@ -30044,8 +30501,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-400", 0 ],
-					"midpoints" : [ 5134.970188839481125, 3511.100002408027649, 5074.770184798286209, 3511.100002408027649 ],
+					"destination" : [ "obj-40", 0 ],
 					"source" : [ "obj-424", 0 ]
 				}
 
@@ -30357,6 +30813,48 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1407", 0 ],
+					"midpoints" : [ 310.459104888446745, 2545.303270584243819, 260.459104888446745, 2545.303270584243819 ],
+					"source" : [ "obj-462", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1427", 0 ],
+					"midpoints" : [ 554.735486881336328, 2545.303270584243819, 509.125730888446924, 2545.303270584243819 ],
+					"source" : [ "obj-463", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1432", 0 ],
+					"midpoints" : [ 810.459104888446745, 2545.303270584243819, 760.459104888446745, 2545.303270584243819 ],
+					"source" : [ "obj-464", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-16", 1 ],
+					"midpoints" : [ 3134.87247383169597, 3716.03130978345871, 3193.539140498362485, 3716.03130978345871 ],
+					"order" : 1,
+					"source" : [ "obj-466", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-821", 1 ],
+					"midpoints" : [ 3134.87247383169597, 3700.336706042289734, 3323.37247383169597, 3700.336706042289734 ],
+					"order" : 0,
+					"source" : [ "obj-466", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-427", 0 ],
 					"source" : [ "obj-469", 0 ]
 				}
@@ -30396,6 +30894,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-484", 0 ],
 					"source" : [ "obj-474", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-505", 0 ],
+					"source" : [ "obj-475", 0 ]
 				}
 
 			}
@@ -30457,6 +30962,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-161", 0 ],
+					"midpoints" : [ 5187.27307992452188, 3571.200002253055573, 5134.770184798286209, 3571.200002253055573 ],
+					"order" : 1,
+					"source" : [ "obj-482", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-520", 0 ],
 					"midpoints" : [ 5187.27307992452188, 3467.000001668930054, 5339.570191664741287, 3467.000001668930054 ],
 					"order" : 0,
@@ -30466,10 +30980,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-554", 0 ],
-					"midpoints" : [ 5187.27307992452188, 3561.000001817941666, 5074.770184798286209, 3561.000001817941666 ],
-					"order" : 1,
-					"source" : [ "obj-482", 0 ]
+					"destination" : [ "obj-475", 0 ],
+					"source" : [ "obj-483", 0 ]
 				}
 
 			}
@@ -30506,6 +31018,14 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1522", 0 ],
 					"source" : [ "obj-49", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1436", 0 ],
+					"midpoints" : [ 1063.459104888446745, 2545.303270584243819, 1013.459104888446745, 2545.303270584243819 ],
+					"source" : [ "obj-490", 0 ]
 				}
 
 			}
@@ -30611,8 +31131,32 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-511", 0 ],
+					"midpoints" : [ 4188.342260535284368, 3510.03747887228019, 4085.864117024975258, 3510.03747887228019 ],
+					"source" : [ "obj-505", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-523", 0 ],
+					"midpoints" : [ 4172.342260535284368, 3527.03747887228019, 4024.613247688335377, 3527.03747887228019 ],
+					"source" : [ "obj-505", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-677", 0 ],
 					"source" : [ "obj-507", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1442", 0 ],
+					"midpoints" : [ 1330.792478888446567, 2545.303270584243819, 1280.792478888446567, 2545.303270584243819 ],
+					"source" : [ "obj-509", 0 ]
 				}
 
 			}
@@ -30632,8 +31176,15 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1175", 0 ],
-					"midpoints" : [ 5326.416704571190166, 3210.341951634048201, 3019.900000393390656, 3210.341951634048201 ],
+					"destination" : [ "obj-1275", 0 ],
+					"midpoints" : [ 4085.864117024975258, 3567.574957744560379, 4001.977311581467802, 3567.574957744560379, 4001.977311581467802, 3496.574957744560379, 3942.090506137959892, 3496.574957744560379 ],
+					"source" : [ "obj-511", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-547", 0 ],
 					"source" : [ "obj-512", 0 ]
 				}
 
@@ -30659,6 +31210,38 @@
 				"patchline" : 				{
 					"destination" : [ "obj-501", 0 ],
 					"source" : [ "obj-515", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1448", 0 ],
+					"midpoints" : [ 1581.542600888446941, 2545.303270584243819, 1535.792600888446941, 2545.303270584243819 ],
+					"source" : [ "obj-516", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1452", 0 ],
+					"midpoints" : [ 1839.125974888446763, 2545.303270584243819, 1789.125974888446763, 2545.303270584243819 ],
+					"source" : [ "obj-517", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1456", 0 ],
+					"midpoints" : [ 2093.209104888446745, 2545.303270584243819, 2047.459104888446745, 2545.303270584243819 ],
+					"source" : [ "obj-518", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1460", 0 ],
+					"midpoints" : [ 2365.79284488844678, 2545.303270584243819, 2315.79284488844678, 2545.303270584243819 ],
+					"source" : [ "obj-519", 0 ]
 				}
 
 			}
@@ -30708,6 +31291,22 @@
 				"patchline" : 				{
 					"destination" : [ "obj-520", 0 ],
 					"source" : [ "obj-522", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1275", 0 ],
+					"midpoints" : [ 4024.613247688335377, 3567.574957744560379, 3983.351876913147862, 3567.574957744560379, 3983.351876913147862, 3496.574957744560379, 3942.090506137959892, 3496.574957744560379 ],
+					"source" : [ "obj-523", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1464", 0 ],
+					"midpoints" : [ 2619.875852888446389, 2545.303270584243819, 2574.625852888446389, 2545.303270584243819 ],
+					"source" : [ "obj-525", 0 ]
 				}
 
 			}
@@ -30776,35 +31375,17 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-16", 1 ],
-					"midpoints" : [ 3207.37247383169597, 3722.28130978345871, 3193.539140498362485, 3722.28130978345871 ],
+					"destination" : [ "obj-393", 0 ],
+					"midpoints" : [ 3171.87247383169597, 3622.812619566917419, 3042.170423811504406, 3622.812619566917419 ],
 					"order" : 1,
-					"source" : [ "obj-535", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-16", 0 ],
-					"order" : 2,
 					"source" : [ "obj-535", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-385", 0 ],
-					"midpoints" : [ 3171.87247383169597, 3569.776816993951797, 3034.834009285492357, 3569.776816993951797 ],
-					"order" : 3,
-					"source" : [ "obj-535", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-388", 0 ],
-					"midpoints" : [ 3207.37247383169597, 3582.044866859912872, 3058.834009643120226, 3582.044866859912872 ],
-					"order" : 2,
+					"destination" : [ "obj-466", 0 ],
+					"midpoints" : [ 3207.37247383169597, 3629.28130978345871, 3134.87247383169597, 3629.28130978345871 ],
 					"source" : [ "obj-535", 1 ]
 				}
 
@@ -30820,26 +31401,8 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-577", 0 ],
-					"midpoints" : [ 3171.87247383169597, 3760.737039685249329, 4351.677927132173863, 3760.737039685249329 ],
+					"midpoints" : [ 3171.87247383169597, 3564.737039685249329, 4351.677927132173863, 3564.737039685249329 ],
 					"order" : 0,
-					"source" : [ "obj-535", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-821", 1 ],
-					"midpoints" : [ 3207.37247383169597, 3700.336706042289734, 3323.37247383169597, 3700.336706042289734 ],
-					"order" : 0,
-					"source" : [ "obj-535", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-838", 1 ],
-					"midpoints" : [ 3171.87247383169597, 3700.336706042289734, 3276.834009285492357, 3700.336706042289734 ],
-					"order" : 1,
 					"source" : [ "obj-535", 0 ]
 				}
 
@@ -30995,6 +31558,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1175", 0 ],
+					"midpoints" : [ 5326.416704571190166, 3210.341951634048201, 3019.900000393390656, 3210.341951634048201 ],
+					"source" : [ "obj-547", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-363", 0 ],
 					"midpoints" : [ 2246.111025211093875, 3754.373384177248226, 2478.538038607162889, 3754.373384177248226 ],
 					"order" : 0,
@@ -31081,7 +31652,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-600", 1 ],
+					"destination" : [ "obj-547", 2 ],
+					"midpoints" : [ 5426.611641325314849, 2528.664862092977273, 5374.416704571190166, 2528.664862092977273 ],
 					"source" : [ "obj-554", 0 ]
 				}
 
@@ -31375,7 +31947,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1372", 0 ],
-					"midpoints" : [ 5064.366666436195374, 3655.133333504199982, 4733.579660590584353, 3655.133333504199982, 4733.579660590584353, 3071.770779249157385, 4820.12600051580921, 3071.770779249157385 ],
+					"midpoints" : [ 5064.366666436195374, 3758.133333504199982, 4733.579660590584353, 3758.133333504199982, 4733.579660590584353, 3071.770779249157385, 4820.12600051580921, 3071.770779249157385 ],
 					"source" : [ "obj-600", 0 ]
 				}
 
@@ -32329,6 +32901,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-554", 0 ],
+					"source" : [ "obj-699", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1259", 0 ],
 					"midpoints" : [ 716.576648854024825, 3268.995686173439026, 602.608394824274001, 3268.995686173439026 ],
 					"source" : [ "obj-7", 0 ]
@@ -33203,6 +33782,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1267", 0 ],
+					"source" : [ "obj-786", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-37", 0 ],
 					"midpoints" : [ 200.459104888446745, 2001.333313000000089, 260.292478888446567, 2001.333313000000089 ],
 					"order" : 0,
@@ -33640,6 +34226,22 @@
 				"patchline" : 				{
 					"destination" : [ "obj-835", 0 ],
 					"source" : [ "obj-832", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"midpoints" : [ 3535.5, 4341.462858985033563, 3481.900506557575682, 4341.462858985033563 ],
+					"source" : [ "obj-833", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-599", 0 ],
+					"midpoints" : [ 2995.000307919136503, 4367.594221363630822, 3083.651488535411772, 4367.594221363630822 ],
+					"source" : [ "obj-834", 0 ]
 				}
 
 			}
