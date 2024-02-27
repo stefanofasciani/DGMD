@@ -6,6 +6,8 @@ There are two version of the DGMD:
 * for Audio Effects
 * for Sound Synthesizers (coming soon)
 
+The folder Utilities contains a project for the electromechanical control of manual parameters via MIDI CC.
+
 The DGMD requires [Cyclyng'74 Max](https://cycling74.com/products/max). To use the DGMD you do not need a Max license.
 
 To run the DGMD, open the *.maxpat* file in the subfolder.
