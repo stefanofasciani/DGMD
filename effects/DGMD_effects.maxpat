@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 0.0, 52.0, 2968.0, 827.0 ],
+		"rect" : [ 724.0, 87.0, 2075.0, 1010.0 ],
 		"openrect" : [ 0.0, 0.0, 1657.799999999999955, 574.16922999999997 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -40,6 +40,45 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-406",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 3032.670423811504406, 3537.574957744560379, 29.5, 20.0 ],
+					"text" : "* 0."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.839216, 0.833749, 0.393224, 1.0 ],
+					"fontname" : "Arial",
+					"fontsize" : 10.0,
+					"id" : "obj-388",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 2872.795684935204008, 3406.940362366949103, 114.0, 20.0 ],
+					"text" : "r _DGMDparamChange"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-391",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 2872.795684935204008, 3443.422130525112152, 118.0, 20.0 ],
+					"text" : "if $i1 == 3 then 1. else 0."
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-834",
 					"maxclass" : "message",
@@ -368,7 +407,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 3032.670423811504406, 3550.45196527242706, 107.0, 20.0 ],
+					"patching_rect" : [ 3032.670423811504406, 3443.422130525112152, 107.0, 20.0 ],
 					"text" : "r _DGMDdelayUpdate"
 				}
 
@@ -1223,13 +1262,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-126",
-					"linecount" : 7,
+					"linecount" : 8,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 3410.000001668930054, 4165.409032344818115, 50.0, 87.0 ],
-					"text" : "write /Users/stefanof/Desktop/TEST/TESTSweep0.wav"
+					"patching_rect" : [ 3410.000001668930054, 4165.409032344818115, 50.0, 98.0 ],
+					"text" : "write /Users/stefanof/Desktop/TEST/my_datasetSweep3.wav"
 				}
 
 			}
@@ -8505,7 +8544,7 @@
 					"patching_rect" : [ 2556.70743020152895, 3607.337140438045481, 105.0, 50.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1463.847392315512707, 27.461885362353939, 176.329519181673959, 23.0 ],
-					"text" : "TEST",
+					"text" : "my_dataset",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -8735,7 +8774,7 @@
 					"fontsize" : 10.0,
 					"hint" : "If \"Monitor Plugin\" is Disables, you can select a parameter from this menu and control it from the number box or slidet at the bottom. This can help to understand how the range 0 to 1 is mapped to a specific device value.\n\nIf \"Monitor Plugin\" is Enabled, you can change a parameter on the internal plugin GUI, and the name of the modified parameter will show here, and the associated value will be displayed on the number box and slider slidet at the bottom. This can help to find parameters which internal name is different than the one on the GUI.",
 					"id" : "obj-1219",
-					"items" : [ "Tuning", ",", "Volume", ",", "Reverb Volume" ],
+					"items" : [ "Filter-Type", ",", "Filter-Freq", ",", "Filter-Res", ",", "Filter-Drive", ",", "type-LFO-Sync", ",", "type-LFO-Freq", ",", "type-LFO-Rate", ",", "type-LFO-Phase", ",", "type-LFO-Shape", ",", "type-LFO-Depth", ",", "resonance-LFO-Sync", ",", "resonance-LFO-Freq", ",", "resonance-LFO-Rate", ",", "resonance-LFO-Phase", ",", "resonance-LFO-Shape", ",", "resonance-LFO-Depth", ",", "frequency-LFO-Sync", ",", "frequency-LFO-Freq", ",", "frequency-LFO-Rate", ",", "frequency-LFO-Phase", ",", "frequency-LFO-Shape", ",", "frequency-LFO-Depth", ",", "drive-LFO-Sync", ",", "drive-LFO-Freq", ",", "drive-LFO-Rate", ",", "drive-LFO-Phase", ",", "drive-LFO-Shape", ",", "drive-LFO-Depth", ",", "MadFilter-TypeMod", ",", "MadFilter-FrequencyMod", ",", "MadFilter-ResonanceMod", ",", "MadFilter-DriveMod", ",", "MadFilter-GoMad", ",", "Bypass" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -8766,7 +8805,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select a plugin from those found in default system folders.",
 					"id" : "obj-1220",
-					"items" : [ "AUAudioFilePlayer", ",", "AUBandpass", ",", "AUDelay", ",", "AUDistortion", ",", "AUDynamicsProcessor", ",", "AUFilter", ",", "AUGraphicEQ", ",", "AUHighShelfFilter", ",", "AUHipass", ",", "AULowpass", ",", "AULowShelfFilter", ",", "AUMatrixReverb", ",", "AUMIDISynth", ",", "AUMultibandCompressor", ",", "AUNBandEQ", ",", "AUNetReceive", ",", "AUNetSend", ",", "AUNewPitch", ",", "AUParametricEQ", ",", "AUPeakLimiter", ",", "AUPitch", ",", "AUReverb2", ",", "AURogerBeep", ",", "AURoundTripAAC", ",", "AUSampleDelay", ",", "AUSampler", ",", "AUScheduledSoundPlayer", ",", "AUSoundFieldPanner", ",", "AUSoundIsolation", ",", "AUSpeechSynthesis", ",", "AUSphericalHeadPanner", ",", "AUVectorPanner", ",", "DLSMusicDevice", ",", "HRTFPanner", ",", "Protoverb", ",", "SonoBus", ",", "TAL NoiseMaker Plugin", ",", "TyrellN6", ",", "SonoBus", ",", "SonoBusInstrument", ",", "JACK-insert", ",", "Protoverb", ",", "SonoBus", ",", "TAL-NoiseMaker", ",", "TyrellN6", ",", "Wormhole2" ],
+					"items" : [ "AUAudioFilePlayer", ",", "AUBandpass", ",", "AUDelay", ",", "AUDistortion", ",", "AUDynamicsProcessor", ",", "AUFilter", ",", "AUGraphicEQ", ",", "AUHighShelfFilter", ",", "AUHipass", ",", "AULowpass", ",", "AULowShelfFilter", ",", "AUMatrixReverb", ",", "AUMIDISynth", ",", "AUMultibandCompressor", ",", "AUNBandEQ", ",", "AUNetReceive", ",", "AUNetSend", ",", "AUNewPitch", ",", "AUParametricEQ", ",", "AUPeakLimiter", ",", "AUPitch", ",", "AUReverb2", ",", "AURogerBeep", ",", "AURoundTripAAC", ",", "AUSampleDelay", ",", "AUSampler", ",", "AUScheduledSoundPlayer", ",", "AUSoundFieldPanner", ",", "AUSoundIsolation", ",", "AUSpeechSynthesis", ",", "AUSphericalHeadPanner", ",", "AUVectorPanner", ",", "DLSMusicDevice", ",", "HRTFPanner", ",", "MadFilter", ",", "Protoverb", ",", "SonoBus", ",", "TAL NoiseMaker Plugin", ",", "TyrellN6", ",", "MadFilter", ",", "SonoBus", ",", "SonoBusInstrument", ",", "JACK-insert", ",", "Protoverb", ",", "SonoBus", ",", "TAL-NoiseMaker", ",", "TyrellN6", ",", "Wormhole2" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -9160,6 +9199,7 @@
 			}
 , 			{
 				"box" : 				{
+					"active" : 0,
 					"fontface" : 1,
 					"fontsize" : 10.0,
 					"hint" : "Only for Step mode. Given the current parameters settings, it estimates the total number of combinations for Step mode.",
@@ -9214,14 +9254,13 @@
 					"patching_rect" : [ 2178.668570511348662, 1346.436001715148905, 78.0, 29.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 128.393478964960735, 53.512495427814116, 104.0, 18.0 ],
-					"text" : "Current Combination",
+					"text" : "Current Repetition",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"cantchange" : 1,
 					"fontface" : 1,
 					"fontsize" : 10.0,
 					"hint" : "Automatically computed in Step mode. Must be set in Random and Sweep mode. No effect (and not visible) in Step and Manual modes. In Random and Swwp modes it determines how many times the source file will be sent to the device and the output recorded.",
@@ -9236,8 +9275,7 @@
 					"patching_rect" : [ 2314.202032345966927, 1102.974266600406736, 36.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 440.619074106951871, 53.512495427814116, 60.181520140505313, 20.0 ],
-					"textcolor" : [ 0.553, 0.553, 0.553, 1.0 ],
-					"triangle" : 0,
+					"textcolor" : [ 0.969, 0.969, 0.969, 1.0 ],
 					"varname" : "numb-combinations"
 				}
 
@@ -9254,7 +9292,7 @@
 					"patching_rect" : [ 2366.202032345966927, 1102.974266600406736, 119.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 302.71932264332429, 53.512495427814116, 136.66666704416275, 18.0 ],
-					"text" : "Total Combinations",
+					"text" : "Repetitions",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -9810,7 +9848,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-1331",
-					"items" : [ "Tuning", ",", "Volume", ",", "Reverb Volume" ],
+					"items" : [ "Filter-Type", ",", "Filter-Freq", ",", "Filter-Res", ",", "Filter-Drive", ",", "type-LFO-Sync", ",", "type-LFO-Freq", ",", "type-LFO-Rate", ",", "type-LFO-Phase", ",", "type-LFO-Shape", ",", "type-LFO-Depth", ",", "resonance-LFO-Sync", ",", "resonance-LFO-Freq", ",", "resonance-LFO-Rate", ",", "resonance-LFO-Phase", ",", "resonance-LFO-Shape", ",", "resonance-LFO-Depth", ",", "frequency-LFO-Sync", ",", "frequency-LFO-Freq", ",", "frequency-LFO-Rate", ",", "frequency-LFO-Phase", ",", "frequency-LFO-Shape", ",", "frequency-LFO-Depth", ",", "drive-LFO-Sync", ",", "drive-LFO-Freq", ",", "drive-LFO-Rate", ",", "drive-LFO-Phase", ",", "drive-LFO-Shape", ",", "drive-LFO-Depth", ",", "MadFilter-TypeMod", ",", "MadFilter-FrequencyMod", ",", "MadFilter-ResonanceMod", ",", "MadFilter-DriveMod", ",", "MadFilter-GoMad", ",", "Bypass" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -10890,7 +10928,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 4048.798611812667787, 1416.641836663417962, 318.648514436867117, 20.0 ],
-					"text" : "1. 1. 1. 1. 1. 1. 1. 1. 1. 1."
+					"text" : "0.6 0.7 1. 1. 1. 1. 1. 1. 1. 1."
 				}
 
 			}
@@ -10902,7 +10940,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 3797.575437798939674, 1376.122563441925195, 318.648514436867117, 20.0 ],
-					"text" : "0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1"
+					"text" : "0.00001 0.00001 0.00001 0.1 0.1 0.1 0.1 0.1 0.1 0.1"
 				}
 
 			}
@@ -11007,7 +11045,7 @@
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 3626.534207995458019, 3507.574957744560379, 100.0, 50.0 ],
-					"text" : "/Users/stefanof/Desktop/DGMD-EFF/Max/TEST/stereo.wav",
+					"text" : "/Users/stefanof/Desktop/TEST/inputs/stereo.wav",
 					"textcolor" : [ 0.14902, 0.14902, 0.14902, 1.0 ]
 				}
 
@@ -12213,8 +12251,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 4935.754538749499261, 1416.641836663417962, 43.0, 20.0 ],
-					"text" : "mc.list~"
+					"patching_rect" : [ 4935.754538749499261, 1416.641836663417962, 96.0, 20.0 ],
+					"text" : "mc.list~ @chans 10"
 				}
 
 			}
@@ -12332,7 +12370,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 3640.289967929167688, 1802.833313000000089, 50.0, 20.0 ],
-					"text" : "7"
+					"text" : "3"
 				}
 
 			}
@@ -12633,7 +12671,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 3640.690021132273614, 1558.504765331745148, 318.648514436867117, 20.0 ],
-					"text" : "0. 0. 0. 0. 0. 0. 0. 0. 0. 0."
+					"text" : "20000. 30000. 0. 0. 0. 0. 0. 0. 0. 0."
 				}
 
 			}
@@ -14970,13 +15008,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-1083",
-					"linecount" : 6,
+					"linecount" : 7,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 3221.40576630695341, 4194.409032344818115, 50.0, 76.0 ],
-					"text" : "write /Users/stefanof/Desktop/TEST/TEST0.wav"
+					"patching_rect" : [ 3221.40576630695341, 4194.409032344818115, 50.0, 87.0 ],
+					"text" : "write /Users/stefanof/Desktop/TEST/my_dataset3.wav"
 				}
 
 			}
@@ -15517,7 +15555,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 3659.750307919136503, 4226.632277727127075, 31.0, 20.0 ],
-					"text" : "144"
+					"text" : "64"
 				}
 
 			}
@@ -15864,7 +15902,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2708.602459724468645, 3991.311245977878571, 124.0, 42.0 ],
-					"text" : "write /Users/stefanof/Desktop/TEST/TEST.csv"
+					"text" : "write /Users/stefanof/Desktop/TEST/my_dataset.csv"
 				}
 
 			}
@@ -19367,7 +19405,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 444.125730888446924, 1911.333313000000089, 38.0, 20.0 ],
-					"text" : "4"
+					"text" : "2"
 				}
 
 			}
@@ -19784,7 +19822,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 195.459104888446745, 1911.333313000000089, 38.0, 20.0 ],
-					"text" : "2"
+					"text" : "1"
 				}
 
 			}
@@ -20201,14 +20239,14 @@
 					"fontsize" : 10.0,
 					"id" : "obj-660",
 					"ignoreclick" : 1,
-					"linecount" : 4,
+					"linecount" : 3,
 					"maxclass" : "textedit",
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1367.959104888446745, 3743.396464228630066, 100.0, 50.0 ],
-					"text" : "/Users/stefanof/Desktop/TSAM-master/Max/DGMD_EFF_v0.8/",
+					"text" : "/Users/stefanof/Documents/Github/DGMD/effects/",
 					"textcolor" : [ 0.14902, 0.14902, 0.14902, 1.0 ]
 				}
 
@@ -20221,14 +20259,13 @@
 					"fontsize" : 10.0,
 					"id" : "obj-663",
 					"ignoreclick" : 1,
-					"linecount" : 2,
 					"maxclass" : "textedit",
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 702.459104888446745, 3716.348844885826111, 100.0, 50.0 ],
-					"text" : "plug DLSMusicDevice",
+					"text" : "plug MadFilter",
 					"textcolor" : [ 0.14902, 0.14902, 0.14902, 1.0 ]
 				}
 
@@ -20316,13 +20353,13 @@
 					"fontname" : "Arial",
 					"fontsize" : 10.0,
 					"id" : "obj-673",
-					"linecount" : 14,
+					"linecount" : 12,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1583.959104888446745, 3979.896464228630066, 40.0, 165.0 ],
-					"text" : "read /Users/stefanof/Desktop/TSAM-master/Max/DGMD_EFF_v0.8/Default-preset-1.fxp"
+					"patching_rect" : [ 1583.959104888446745, 3979.896464228630066, 40.0, 143.0 ],
+					"text" : "read /Users/stefanof/Documents/Github/DGMD/effects/my_first_dataset.fxp"
 				}
 
 			}
@@ -20331,13 +20368,13 @@
 					"fontname" : "Arial",
 					"fontsize" : 10.0,
 					"id" : "obj-675",
-					"linecount" : 14,
+					"linecount" : 12,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1396.959104888446745, 3979.896464228630066, 40.0, 165.0 ],
-					"text" : "write /Users/stefanof/Desktop/TSAM-master/Max/DGMD_EFF_v0.8/Default-preset-1.fxp"
+					"patching_rect" : [ 1396.959104888446745, 3979.896464228630066, 40.0, 143.0 ],
+					"text" : "write /Users/stefanof/Documents/Github/DGMD/effects/my_first_dataset.fxp"
 				}
 
 			}
@@ -20469,7 +20506,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1029.959104888446745, 3628.396464228630066, 21.0, 20.0 ],
-					"text" : "49"
+					"text" : "1"
 				}
 
 			}
@@ -20757,14 +20794,14 @@
 						"subtype" : "Undefined",
 						"embed" : 1,
 						"snapshot" : 						{
-							"pluginname" : "DLSMusicDevice.auinfo",
-							"plugindisplayname" : "DLSMusicDevice",
+							"pluginname" : "MadFilter.vst3info",
+							"plugindisplayname" : "MadFilter",
 							"pluginsavedname" : "",
-							"pluginsaveduniqueid" : 1684631097,
+							"pluginsaveduniqueid" : -1126654436,
 							"version" : 1,
 							"isbank" : 0,
 							"isbase64" : 1,
-							"blob" : "916.hAGaoMGcv.S2AHv.DTfAGfPBJr.CM3vCPDADRLAEUXQFZrAViAWcsv1agQFUtEVakckckI2bo8laeAwD0MWYsjlazUlbtEFasHWY1Ulbh4EYoM2ZsLGcxUVXsklam4kbk4FYkIWKwUWXrkFc4QEc4AWYTQVXzEFWsEla0YVXiQWcxUlbeAwClkFak0hbkYVYxUlaiU1bWMWchQWdvUFUBElaqwUYrUVak4Fcs3VXsU1H...........VU4FcoQGakQFD..Q.P7mDgUWa08DDj...............C...............A.........f......HQXvAGaQeAFaMmXsXVZrUVKxUlYeAAUuLUdyQWYs8BSoIlbgIWduLzasA2atUlazM2KC8lbkETcjk1atL1asA2atUlaz8xPu4Fck4Fcy8hTkM2a0I2XkM2KmM2Wo41bzIWcsUlazMmKjw1bRPFayAxSQD.p.....D.p.H...vPSgMVZtQ2aygFHHQD...................P3MAZqBQD.A7++++uDmM2Wo41bzIWcsUlazMmKjw1b............................................................+++++GdSf1J..........7++++O..n.HiUG.................IHUYy8VcxMVYyA..B.PUunyT4MGck0lNLklXxElb4oyPu0Fbu4VYtQ2b5LzaxUVP0QVZu4xXu0Fbu4VYtQmNC8lazUlazMmNRU1buUmbiU1b5b1beklayQmb00VYtQ2btPFayA..N.fI.HA.mAvb.7E.oAfa.LG.zAfb.TG.sAPY.3F.zAvb.3B.jA.a.LG.O.fF.v..MAPX.LF.oAfa.PG.uAvb.fF.f..R.PD.R.vTSk2bzUVauvTZhIWXxk2KC8Vav8lak4Fcy8xPuIWYAUGYo8lKi8Vav8lak4FcuLzatQWYtQ2buHUYy8VcxMVYy8xYy8UZtMGcxUWak4Fcy4BYrMG..LA.A7B.++O..DMGcDkLR6wGfDRTvDULZMGckIWYuARaogmU04VcyUFY.f..i..K.DC.4.vS.3E.sAfb.bG.DBfk.3I.iB.r.jK.BC.w.XL.HCPy.PO.4C.+AfP.eE.YC.w.SLPECnw.bLfGCjB.......f.A.........fH..................v.v."
+							"blob" : "2312.VMjLg7OB...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9DiM2fiKPUjZTEDLTEEUUoFUSEjKtDDQBQUPIUETMEDTtHjZFkkKD4BQEAEah8VVWk0b1oVTOEkUYYWTGokKXcEVxU0UY4BQPIDQt3hKt3hKt3hKt3hKtTETRUDUS4BQl4xaQYjKAcCTAoVRWoULUY0RLkkdSwVRWk0cAY1XmcmUisVPP4RRP4hKt3hKH4hKtbyJt3BUAkTUP0TPP4hPpYTVtPjKDUDTrI1aYcUVyYmZQ8TPGo0YMcUVtf0UXIWUWkkKDAkPD4hKt3hKt3hKt3hKt3RUPIUQTMkKDYlKuEkQtDzMPEjZIckVwTkUKwTV5MEdEYzXqEjYic1cVM1ZAAkKIAkKt3hKt3hKt3RQtDjKTETRUAUSAAkKBolQY4BQtPTQPwlXuk0UYMmcpE0SMcjVmEzUY4BVWgkbUcUVtPDTBQjKt3hKt3hKt3RPP4hKUAkTEQ0TtPjYt7VTF4RP2.UPpkzUZESUVsDSYo2T4sVagkVPlM1Y2Y0XqEDTtjDTt3hKt3hKt3hK2rhKtPUPIUETMEDTtHjZFkkKDY1PEgkUZIWTWkEdvHTV3sFaisVPlM1Y2Y0XqEDTtjDTt3hKt3hKt3hKt3hKtPUPIUETMEDTtHjZFkkKDYFQEgkUZIWTWkEdvfVV3UkUhASUrEVZqcjKwTjQgASUF4RPp4RPt3hKtXFS4QUXAQjKPUjZTEDLD4RPHAkVpEDTtHEUlk0a2YzXqkzUKgWUwHVczXEVz0jUY4BVWgkbUcUVtPDTBQjKt3hKtH0YwcTNO4hKUAkTEQ0TtPjYt7VTF4RP5AUPrslQgoWUrI1bPcEY1UkQtDSQFEFLUYjKAolKA4hKt3hKt3hKt3hKt.UQpQUPvPjKAgDTZoVPP4BUTYVV3UkUhASUrEVZqc0RLkkdSoVUFIldmYjKwTjQgASUF4RPp4RPt3hKt3hKt3hKt3hKPUjZTEDLD4RPHAkVpEDTtLEUlkEdUYkXvTEagk1ZWsDSYo2TrkzUYcWPlM1Y2Y0XqEDTtjDTt3hKt3BRt3hK2rhKtPUPIUETMEDTtHjZFkkKD4RQEgEahsVQWM1ZzDCVz.iPSYDNDIlaEEiXqEjYic1cVM1ZAAkKIAkKt3hKt3hKt3hKt3hKTETRUAUSAAkKBolQY4BQ1QTQXwlXqUzUisFMwfEMvHzTFgiZhcVTWkkKXcEVxU0UY4BQPIDQt3hKt3hKt3BTAAkKtTETRUDUS4BQl4xaQYjKAAUTAwVRWk0cUcUVz0jUjMmcpE0SMcjVmEzUY4BVWgkbUcUVtPDTBQjKt3hKt3hKt3RPP4hKUAkTEQ0TtPjYt7VTF4RPLEUPrkzUYcWUWkEcMYEYyYmZQ8TSWQFcMYjKwTjQgASUF4RPp4RPt3hKt3hKt3hcqLjKPUjZTEDLD4RPHAkVpEDTtPEUPE1YQwVVucmQisVRWsjZIckVwTkUgUWTF4RLEYTXvTkQtDjZtDjKt3hKt3hKt3hKt3BTEoFUAACQtDDRPokZAAkKXQETgcVTrk0a2YzXqkzUKwVRWk0cUcUVz0jUjMGNFkkKXcEVxU0UY4BQPIDQt3hKt3hKt3hKt3hKtTETRUDUS4BQl4xaQYjKAQTTAMWQFkEaqYTX5UEahMmXwD1bEYTVtf0UXIWUWkkKDAkPD4hKt3hKt3hKt3hKt3RUPIUQTMkKDYlKuEkQtDjYQEzbEYTVrslQgoWUrI1bHcUV4gCagcFMwf0ZvDSXpEjYic1cVM1ZAAkKIAkKt3hKt3hKt3hKt3hKTETRUAUSAAkKBolQY4BQ1QTQ5YEVpkkUZIWTWkEdvHzXzDzUYMGNFkkKXcEVxU0UY4BQPIDQt3hKt3hKt3hKt3hKtTETRUDUS4BQl4xaQYjKAAUTAgWUwHVczXEVz0jUYMmcpE0SQYUV1E0QZ4BVWgkbUcUVtPDTBQjKt3hKt3hKt3hKt3hKUAkTEQ0TtPjYt7VTF4RPLEUP3UULhUGMVgEcMYUVyYmZQ8TVrI1ZEcjKwTjQgASUF4RPp4RPt3hKtXlKt3hcqLjKPUjZTEDLD4RPHAkVpEDTtPEUlI1ZMISXzUDagkVUVsDSYo2T1clUXkWUF4RLEYTXvTkQtDjZtDjKt3hKt3hKt3hKt3BTEoFUAACQtDDRPokZAAkKSQkYhsVSxDFcEwVXoUkUKwTV5MEdEYzXqEjYic1cVM1ZAAkKIAkKt3hKt3hKt3RQtDjKTETRUAUSAAkKBolQY4BQtTTQHcUV4gCagcFMwf0ZvHzTFgidh4VQFI1ZAY1XmcmUisVPP4RRP4hKt3hKt3hKtPjKA4BUAkTUP0TPP4hPpYTVtPjcDUDRWkUd3vVXmQSLXsFLBMkQ3nmXzPSLX4BVWgkbUcUVtPDTBQjKt3hKt3hKt3xJO4hKUAkTEQ0TtPjYt7VTF4RP2.UP5s1QhsFLBMkQ3PTVqEzQi4VPlM1Y2Y0XqEDTtjDTt3hKt3hKt3hKt3hKtPUPIUETMEDTtHjZFkkKDY1PEA0UjYWUVsDSYo2TrkzUYcWPlM1Y2Y0XqEDTtjDTt3hKt3BRt3hK2rhKtPUPIUETMEDTtHjZFkkKDY2PEA0UjYWUVsDSYo2T1clUXkWUF4RLEYTXvTkQtDjZtDjKt3hKt3hKt3hKt3BTEoFUAACQtDDRPokZAAkKNQkKiQSPWk0b1oVTOkzUXoWUF4RLEYTXvTkQtDjZtDjKt3hKt3hKtPkKD4BTEoFUAACQtDDRPokZAAkKOQkKiQSPWk0b1oVTO0zQZcVPWkkKXcEVxU0UY4BQPIDQt3hKt3hKt3hKAAkKtTETRUDUS4BQl4xaQYjKAMCTAo2ZGI1ZvHzTFgidhQCMwfkKXcEVxU0UY4BQPIDQt3hKt3hKt3hKq7jKt3hKt3hKt3hKt3hRUACTEEzZh8VVWgkdUYTTmE0UX4BQP4hPqcjXm0jLh4BQP4xPt.0Qt3hKt3hKt3hKtQUUCUEQTg2ZrM1YQcUVDUjQicVP77RRC8Vav8lak4Fc9vyKVMEUy.Ea0cVZtMEcgQWY9.."
 						}
 ,
 						"snapshotlist" : 						{
@@ -20774,19 +20811,19 @@
 									"version" : 2,
 									"minorversion" : 0,
 									"name" : "Massive",
-									"origin" : "DLSMusicDevice.auinfo",
-									"type" : "AudioUnit",
-									"subtype" : "Instrument",
+									"origin" : "MadFilter.vst3info",
+									"type" : "VST3",
+									"subtype" : "AudioEffect",
 									"embed" : 1,
 									"snapshot" : 									{
-										"pluginname" : "DLSMusicDevice.auinfo",
-										"plugindisplayname" : "DLSMusicDevice",
+										"pluginname" : "MadFilter.vst3info",
+										"plugindisplayname" : "MadFilter",
 										"pluginsavedname" : "",
-										"pluginsaveduniqueid" : 1684631097,
+										"pluginsaveduniqueid" : -1126654436,
 										"version" : 1,
 										"isbank" : 0,
 										"isbase64" : 1,
-										"blob" : "916.hAGaoMGcv.S2AHv.DTfAGfPBJr.CM3vCPDADRLAEUXQFZrAViAWcsv1agQFUtEVakckckI2bo8laeAwD0MWYsjlazUlbtEFasHWY1Ulbh4EYoM2ZsLGcxUVXsklam4kbk4FYkIWKwUWXrkFc4QEc4AWYTQVXzEFWsEla0YVXiQWcxUlbeAwClkFak0hbkYVYxUlaiU1bWMWchQWdvUFUBElaqwUYrUVak4Fcs3VXsU1H...........VU4FcoQGakQFD..Q.P7mDgUWa08DDj...............C...............A.........f......HQXvAGaQeAFaMmXsXVZrUVKxUlYeAAUuLUdyQWYs8BSoIlbgIWduLzasA2atUlazM2KC8lbkETcjk1atL1asA2atUlaz8xPu4Fck4Fcy8hTkM2a0I2XkM2KmM2Wo41bzIWcsUlazMmKjw1bRPFayAxSQD.p.....D.p.H...vPSgMVZtQ2aygFHHQD...................P3MAZqBQD.A7++++uDmM2Wo41bzIWcsUlazMmKjw1b............................................................+++++GdSf1J..........7++++O..n.HiUG.................IHUYy8VcxMVYyA..B.PUunyT4MGck0lNLklXxElb4oyPu0Fbu4VYtQ2b5LzaxUVP0QVZu4xXu0Fbu4VYtQmNC8lazUlazMmNRU1buUmbiU1b5b1beklayQmb00VYtQ2btPFayA..N.fI.HA.mAvb.7E.oAfa.LG.zAfb.TG.sAPY.3F.zAvb.3B.jA.a.LG.O.fF.v..MAPX.LF.oAfa.PG.uAvb.fF.f..R.PD.R.vTSk2bzUVauvTZhIWXxk2KC8Vav8lak4Fcy8xPuIWYAUGYo8lKi8Vav8lak4FcuLzatQWYtQ2buHUYy8VcxMVYy8xYy8UZtMGcxUWak4Fcy4BYrMG..LA.A7B.++O..DMGcDkLR6wGfDRTvDULZMGckIWYuARaogmU04VcyUFY.f..i..K.DC.4.vS.3E.sAfb.bG.DBfk.3I.iB.r.jK.BC.w.XL.HCPy.PO.4C.+AfP.eE.YC.w.SLPECnw.bLfGCjB.......f.A.........fH..................v.v."
+										"blob" : "2312.VMjLg7OB...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9DiM2fiKPUjZTEDLTEEUUoFUSEjKtDDQBQUPIUETMEDTtHjZFkkKD4BQEAEah8VVWk0b1oVTOEkUYYWTGokKXcEVxU0UY4BQPIDQt3hKt3hKt3hKt3hKtTETRUDUS4BQl4xaQYjKAcCTAoVRWoULUY0RLkkdSwVRWk0cAY1XmcmUisVPP4RRP4hKt3hKH4hKtbyJt3BUAkTUP0TPP4hPpYTVtPjKDUDTrI1aYcUVyYmZQ8TPGo0YMcUVtf0UXIWUWkkKDAkPD4hKt3hKt3hKt3hKt3RUPIUQTMkKDYlKuEkQtDzMPEjZIckVwTkUKwTV5MEdEYzXqEjYic1cVM1ZAAkKIAkKt3hKt3hKt3RQtDjKTETRUAUSAAkKBolQY4BQtPTQPwlXuk0UYMmcpE0SMcjVmEzUY4BVWgkbUcUVtPDTBQjKt3hKt3hKt3RPP4hKUAkTEQ0TtPjYt7VTF4RP2.UPpkzUZESUVsDSYo2T4sVagkVPlM1Y2Y0XqEDTtjDTt3hKt3hKt3hK2rhKtPUPIUETMEDTtHjZFkkKDY1PEgkUZIWTWkEdvHTV3sFaisVPlM1Y2Y0XqEDTtjDTt3hKt3hKt3hKt3hKtPUPIUETMEDTtHjZFkkKDYFQEgkUZIWTWkEdvfVV3UkUhASUrEVZqcjKwTjQgASUF4RPp4RPt3hKtXFS4QUXAQjKPUjZTEDLD4RPHAkVpEDTtHEUlk0a2YzXqkzUKgWUwHVczXEVz0jUY4BVWgkbUcUVtPDTBQjKt3hKtH0YwcTNO4hKUAkTEQ0TtPjYt7VTF4RP5AUPrslQgoWUrI1bPcEY1UkQtDSQFEFLUYjKAolKA4hKt3hKt3hKt3hKt.UQpQUPvPjKAgDTZoVPP4BUTYVV3UkUhASUrEVZqc0RLkkdSoVUFIldmYjKwTjQgASUF4RPp4RPt3hKt3hKt3hKt3hKPUjZTEDLD4RPHAkVpEDTtLEUlkEdUYkXvTEagk1ZWsDSYo2TrkzUYcWPlM1Y2Y0XqEDTtjDTt3hKt3BRt3hK2rhKtPUPIUETMEDTtHjZFkkKD4RQEgEahsVQWM1ZzDCVz.iPSYDNDIlaEEiXqEjYic1cVM1ZAAkKIAkKt3hKt3hKt3hKt3hKTETRUAUSAAkKBolQY4BQ1QTQXwlXqUzUisFMwfEMvHzTFgiZhcVTWkkKXcEVxU0UY4BQPIDQt3hKt3hKt3BTAAkKtTETRUDUS4BQl4xaQYjKAAUTAwVRWk0cUcUVz0jUjMmcpE0SMcjVmEzUY4BVWgkbUcUVtPDTBQjKt3hKt3hKt3RPP4hKUAkTEQ0TtPjYt7VTF4RPLEUPrkzUYcWUWkEcMYEYyYmZQ8TSWQFcMYjKwTjQgASUF4RPp4RPt3hKt3hKt3hcqLjKPUjZTEDLD4RPHAkVpEDTtPEUPE1YQwVVucmQisVRWsjZIckVwTkUgUWTF4RLEYTXvTkQtDjZtDjKt3hKt3hKt3hKt3BTEoFUAACQtDDRPokZAAkKXQETgcVTrk0a2YzXqkzUKwVRWk0cUcUVz0jUjMGNFkkKXcEVxU0UY4BQPIDQt3hKt3hKt3hKt3hKtTETRUDUS4BQl4xaQYjKAQTTAMWQFkEaqYTX5UEahMmXwD1bEYTVtf0UXIWUWkkKDAkPD4hKt3hKt3hKt3hKt3RUPIUQTMkKDYlKuEkQtDjYQEzbEYTVrslQgoWUrI1bHcUV4gCagcFMwf0ZvDSXpEjYic1cVM1ZAAkKIAkKt3hKt3hKt3hKt3hKTETRUAUSAAkKBolQY4BQ1QTQ5YEVpkkUZIWTWkEdvHzXzDzUYMGNFkkKXcEVxU0UY4BQPIDQt3hKt3hKt3hKt3hKtTETRUDUS4BQl4xaQYjKAAUTAgWUwHVczXEVz0jUYMmcpE0SQYUV1E0QZ4BVWgkbUcUVtPDTBQjKt3hKt3hKt3hKt3hKUAkTEQ0TtPjYt7VTF4RPLEUP3UULhUGMVgEcMYUVyYmZQ8TVrI1ZEcjKwTjQgASUF4RPp4RPt3hKtXlKt3hcqLjKPUjZTEDLD4RPHAkVpEDTtPEUlI1ZMISXzUDagkVUVsDSYo2T1clUXkWUF4RLEYTXvTkQtDjZtDjKt3hKt3hKt3hKt3BTEoFUAACQtDDRPokZAAkKSQkYhsVSxDFcEwVXoUkUKwTV5MEdEYzXqEjYic1cVM1ZAAkKIAkKt3hKt3hKt3RQtDjKTETRUAUSAAkKBolQY4BQtTTQHcUV4gCagcFMwf0ZvHzTFgidh4VQFI1ZAY1XmcmUisVPP4RRP4hKt3hKt3hKtPjKA4BUAkTUP0TPP4hPpYTVtPjcDUDRWkUd3vVXmQSLXsFLBMkQ3nmXzPSLX4BVWgkbUcUVtPDTBQjKt3hKt3hKt3xJO4hKUAkTEQ0TtPjYt7VTF4RP2.UP5s1QhsFLBMkQ3PTVqEzQi4VPlM1Y2Y0XqEDTtjDTt3hKt3hKt3hKt3hKtPUPIUETMEDTtHjZFkkKDY1PEA0UjYWUVsDSYo2TrkzUYcWPlM1Y2Y0XqEDTtjDTt3hKt3BRt3hK2rhKtPUPIUETMEDTtHjZFkkKDY2PEA0UjYWUVsDSYo2T1clUXkWUF4RLEYTXvTkQtDjZtDjKt3hKt3hKt3hKt3BTEoFUAACQtDDRPokZAAkKNQkKiQSPWk0b1oVTOkzUXoWUF4RLEYTXvTkQtDjZtDjKt3hKt3hKtPkKD4BTEoFUAACQtDDRPokZAAkKOQkKiQSPWk0b1oVTO0zQZcVPWkkKXcEVxU0UY4BQPIDQt3hKt3hKt3hKAAkKtTETRUDUS4BQl4xaQYjKAMCTAo2ZGI1ZvHzTFgidhQCMwfkKXcEVxU0UY4BQPIDQt3hKt3hKt3hKq7jKt3hKt3hKt3hKt3hRUACTEEzZh8VVWgkdUYTTmE0UX4BQP4hPqcjXm0jLh4BQP4xPt.0Qt3hKt3hKt3hKtQUUCUEQTg2ZrM1YQcUVDUjQicVP77RRC8Vav8lak4Fc9vyKVMEUy.Ea0cVZtMEcgQWY9.."
 									}
 ,
 									"fileref" : 									{
@@ -20794,7 +20831,7 @@
 										"filename" : "Massive.maxsnap",
 										"filepath" : "~/Documents/Max 7/Snapshots",
 										"filepos" : -1,
-										"snapshotfileid" : "6e28dcb675eb59b1b60316d916715e49"
+										"snapshotfileid" : "722a42b6d24c7c4a826fcfd5e09b7a42"
 									}
 
 								}
@@ -21651,7 +21688,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-503",
-					"items" : [ "Tuning", ",", "Volume", ",", "Reverb Volume" ],
+					"items" : [ "Filter-Type", ",", "Filter-Freq", ",", "Filter-Res", ",", "Filter-Drive", ",", "type-LFO-Sync", ",", "type-LFO-Freq", ",", "type-LFO-Rate", ",", "type-LFO-Phase", ",", "type-LFO-Shape", ",", "type-LFO-Depth", ",", "resonance-LFO-Sync", ",", "resonance-LFO-Freq", ",", "resonance-LFO-Rate", ",", "resonance-LFO-Phase", ",", "resonance-LFO-Shape", ",", "resonance-LFO-Depth", ",", "frequency-LFO-Sync", ",", "frequency-LFO-Freq", ",", "frequency-LFO-Rate", ",", "frequency-LFO-Phase", ",", "frequency-LFO-Shape", ",", "frequency-LFO-Depth", ",", "drive-LFO-Sync", ",", "drive-LFO-Freq", ",", "drive-LFO-Rate", ",", "drive-LFO-Phase", ",", "drive-LFO-Shape", ",", "drive-LFO-Depth", ",", "MadFilter-TypeMod", ",", "MadFilter-FrequencyMod", ",", "MadFilter-ResonanceMod", ",", "MadFilter-DriveMod", ",", "MadFilter-GoMad", ",", "Bypass" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -21682,7 +21719,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-657",
-					"items" : [ "Tuning", ",", "Volume", ",", "Reverb Volume" ],
+					"items" : [ "Filter-Type", ",", "Filter-Freq", ",", "Filter-Res", ",", "Filter-Drive", ",", "type-LFO-Sync", ",", "type-LFO-Freq", ",", "type-LFO-Rate", ",", "type-LFO-Phase", ",", "type-LFO-Shape", ",", "type-LFO-Depth", ",", "resonance-LFO-Sync", ",", "resonance-LFO-Freq", ",", "resonance-LFO-Rate", ",", "resonance-LFO-Phase", ",", "resonance-LFO-Shape", ",", "resonance-LFO-Depth", ",", "frequency-LFO-Sync", ",", "frequency-LFO-Freq", ",", "frequency-LFO-Rate", ",", "frequency-LFO-Phase", ",", "frequency-LFO-Shape", ",", "frequency-LFO-Depth", ",", "drive-LFO-Sync", ",", "drive-LFO-Freq", ",", "drive-LFO-Rate", ",", "drive-LFO-Phase", ",", "drive-LFO-Shape", ",", "drive-LFO-Depth", ",", "MadFilter-TypeMod", ",", "MadFilter-FrequencyMod", ",", "MadFilter-ResonanceMod", ",", "MadFilter-DriveMod", ",", "MadFilter-GoMad", ",", "Bypass" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -21713,7 +21750,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-623",
-					"items" : [ "Tuning", ",", "Volume", ",", "Reverb Volume" ],
+					"items" : [ "Filter-Type", ",", "Filter-Freq", ",", "Filter-Res", ",", "Filter-Drive", ",", "type-LFO-Sync", ",", "type-LFO-Freq", ",", "type-LFO-Rate", ",", "type-LFO-Phase", ",", "type-LFO-Shape", ",", "type-LFO-Depth", ",", "resonance-LFO-Sync", ",", "resonance-LFO-Freq", ",", "resonance-LFO-Rate", ",", "resonance-LFO-Phase", ",", "resonance-LFO-Shape", ",", "resonance-LFO-Depth", ",", "frequency-LFO-Sync", ",", "frequency-LFO-Freq", ",", "frequency-LFO-Rate", ",", "frequency-LFO-Phase", ",", "frequency-LFO-Shape", ",", "frequency-LFO-Depth", ",", "drive-LFO-Sync", ",", "drive-LFO-Freq", ",", "drive-LFO-Rate", ",", "drive-LFO-Phase", ",", "drive-LFO-Shape", ",", "drive-LFO-Depth", ",", "MadFilter-TypeMod", ",", "MadFilter-FrequencyMod", ",", "MadFilter-ResonanceMod", ",", "MadFilter-DriveMod", ",", "MadFilter-GoMad", ",", "Bypass" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -21744,7 +21781,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-733",
-					"items" : [ "Tuning", ",", "Volume", ",", "Reverb Volume" ],
+					"items" : [ "Filter-Type", ",", "Filter-Freq", ",", "Filter-Res", ",", "Filter-Drive", ",", "type-LFO-Sync", ",", "type-LFO-Freq", ",", "type-LFO-Rate", ",", "type-LFO-Phase", ",", "type-LFO-Shape", ",", "type-LFO-Depth", ",", "resonance-LFO-Sync", ",", "resonance-LFO-Freq", ",", "resonance-LFO-Rate", ",", "resonance-LFO-Phase", ",", "resonance-LFO-Shape", ",", "resonance-LFO-Depth", ",", "frequency-LFO-Sync", ",", "frequency-LFO-Freq", ",", "frequency-LFO-Rate", ",", "frequency-LFO-Phase", ",", "frequency-LFO-Shape", ",", "frequency-LFO-Depth", ",", "drive-LFO-Sync", ",", "drive-LFO-Freq", ",", "drive-LFO-Rate", ",", "drive-LFO-Phase", ",", "drive-LFO-Shape", ",", "drive-LFO-Depth", ",", "MadFilter-TypeMod", ",", "MadFilter-FrequencyMod", ",", "MadFilter-ResonanceMod", ",", "MadFilter-DriveMod", ",", "MadFilter-GoMad", ",", "Bypass" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -21775,7 +21812,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-1131",
-					"items" : [ "Tuning", ",", "Volume", ",", "Reverb Volume" ],
+					"items" : [ "Filter-Type", ",", "Filter-Freq", ",", "Filter-Res", ",", "Filter-Drive", ",", "type-LFO-Sync", ",", "type-LFO-Freq", ",", "type-LFO-Rate", ",", "type-LFO-Phase", ",", "type-LFO-Shape", ",", "type-LFO-Depth", ",", "resonance-LFO-Sync", ",", "resonance-LFO-Freq", ",", "resonance-LFO-Rate", ",", "resonance-LFO-Phase", ",", "resonance-LFO-Shape", ",", "resonance-LFO-Depth", ",", "frequency-LFO-Sync", ",", "frequency-LFO-Freq", ",", "frequency-LFO-Rate", ",", "frequency-LFO-Phase", ",", "frequency-LFO-Shape", ",", "frequency-LFO-Depth", ",", "drive-LFO-Sync", ",", "drive-LFO-Freq", ",", "drive-LFO-Rate", ",", "drive-LFO-Phase", ",", "drive-LFO-Shape", ",", "drive-LFO-Depth", ",", "MadFilter-TypeMod", ",", "MadFilter-FrequencyMod", ",", "MadFilter-ResonanceMod", ",", "MadFilter-DriveMod", ",", "MadFilter-GoMad", ",", "Bypass" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -21806,7 +21843,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-1098",
-					"items" : [ "Tuning", ",", "Volume", ",", "Reverb Volume" ],
+					"items" : [ "Filter-Type", ",", "Filter-Freq", ",", "Filter-Res", ",", "Filter-Drive", ",", "type-LFO-Sync", ",", "type-LFO-Freq", ",", "type-LFO-Rate", ",", "type-LFO-Phase", ",", "type-LFO-Shape", ",", "type-LFO-Depth", ",", "resonance-LFO-Sync", ",", "resonance-LFO-Freq", ",", "resonance-LFO-Rate", ",", "resonance-LFO-Phase", ",", "resonance-LFO-Shape", ",", "resonance-LFO-Depth", ",", "frequency-LFO-Sync", ",", "frequency-LFO-Freq", ",", "frequency-LFO-Rate", ",", "frequency-LFO-Phase", ",", "frequency-LFO-Shape", ",", "frequency-LFO-Depth", ",", "drive-LFO-Sync", ",", "drive-LFO-Freq", ",", "drive-LFO-Rate", ",", "drive-LFO-Phase", ",", "drive-LFO-Shape", ",", "drive-LFO-Depth", ",", "MadFilter-TypeMod", ",", "MadFilter-FrequencyMod", ",", "MadFilter-ResonanceMod", ",", "MadFilter-DriveMod", ",", "MadFilter-GoMad", ",", "Bypass" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -21837,7 +21874,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-1066",
-					"items" : [ "Tuning", ",", "Volume", ",", "Reverb Volume" ],
+					"items" : [ "Filter-Type", ",", "Filter-Freq", ",", "Filter-Res", ",", "Filter-Drive", ",", "type-LFO-Sync", ",", "type-LFO-Freq", ",", "type-LFO-Rate", ",", "type-LFO-Phase", ",", "type-LFO-Shape", ",", "type-LFO-Depth", ",", "resonance-LFO-Sync", ",", "resonance-LFO-Freq", ",", "resonance-LFO-Rate", ",", "resonance-LFO-Phase", ",", "resonance-LFO-Shape", ",", "resonance-LFO-Depth", ",", "frequency-LFO-Sync", ",", "frequency-LFO-Freq", ",", "frequency-LFO-Rate", ",", "frequency-LFO-Phase", ",", "frequency-LFO-Shape", ",", "frequency-LFO-Depth", ",", "drive-LFO-Sync", ",", "drive-LFO-Freq", ",", "drive-LFO-Rate", ",", "drive-LFO-Phase", ",", "drive-LFO-Shape", ",", "drive-LFO-Depth", ",", "MadFilter-TypeMod", ",", "MadFilter-FrequencyMod", ",", "MadFilter-ResonanceMod", ",", "MadFilter-DriveMod", ",", "MadFilter-GoMad", ",", "Bypass" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -21868,7 +21905,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-993",
-					"items" : [ "Tuning", ",", "Volume", ",", "Reverb Volume" ],
+					"items" : [ "Filter-Type", ",", "Filter-Freq", ",", "Filter-Res", ",", "Filter-Drive", ",", "type-LFO-Sync", ",", "type-LFO-Freq", ",", "type-LFO-Rate", ",", "type-LFO-Phase", ",", "type-LFO-Shape", ",", "type-LFO-Depth", ",", "resonance-LFO-Sync", ",", "resonance-LFO-Freq", ",", "resonance-LFO-Rate", ",", "resonance-LFO-Phase", ",", "resonance-LFO-Shape", ",", "resonance-LFO-Depth", ",", "frequency-LFO-Sync", ",", "frequency-LFO-Freq", ",", "frequency-LFO-Rate", ",", "frequency-LFO-Phase", ",", "frequency-LFO-Shape", ",", "frequency-LFO-Depth", ",", "drive-LFO-Sync", ",", "drive-LFO-Freq", ",", "drive-LFO-Rate", ",", "drive-LFO-Phase", ",", "drive-LFO-Shape", ",", "drive-LFO-Depth", ",", "MadFilter-TypeMod", ",", "MadFilter-FrequencyMod", ",", "MadFilter-ResonanceMod", ",", "MadFilter-DriveMod", ",", "MadFilter-GoMad", ",", "Bypass" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -21899,7 +21936,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-790",
-					"items" : [ "Tuning", ",", "Volume", ",", "Reverb Volume" ],
+					"items" : [ "Filter-Type", ",", "Filter-Freq", ",", "Filter-Res", ",", "Filter-Drive", ",", "type-LFO-Sync", ",", "type-LFO-Freq", ",", "type-LFO-Rate", ",", "type-LFO-Phase", ",", "type-LFO-Shape", ",", "type-LFO-Depth", ",", "resonance-LFO-Sync", ",", "resonance-LFO-Freq", ",", "resonance-LFO-Rate", ",", "resonance-LFO-Phase", ",", "resonance-LFO-Shape", ",", "resonance-LFO-Depth", ",", "frequency-LFO-Sync", ",", "frequency-LFO-Freq", ",", "frequency-LFO-Rate", ",", "frequency-LFO-Phase", ",", "frequency-LFO-Shape", ",", "frequency-LFO-Depth", ",", "drive-LFO-Sync", ",", "drive-LFO-Freq", ",", "drive-LFO-Rate", ",", "drive-LFO-Phase", ",", "drive-LFO-Shape", ",", "drive-LFO-Depth", ",", "MadFilter-TypeMod", ",", "MadFilter-FrequencyMod", ",", "MadFilter-ResonanceMod", ",", "MadFilter-DriveMod", ",", "MadFilter-GoMad", ",", "Bypass" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -22385,7 +22422,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Soundcard for audio output. This is used to preview audio to loudspeakers, with both internal plugins and external devices. When using external devices this is used to send the audio source to the input of the external device. This soundcard is also used to generate the CV signals controlling the external device paramaters.",
 					"id" : "obj-749",
-					"items" : [ "None", ",", "PHL 40B1U5600", ",", "BlackHole 16ch", ",", "MacBook Pro Speakers", ",", "Microsoft Teams Audio", ",", "WebexMediaAudioDevice", ",", "ZoomAudioDevice" ],
+					"items" : [ "None", ",", "PHL 40B1U5600", ",", "STUDIO XL", ",", "BlackHole 16ch", ",", "MacBook Pro Speakers", ",", "Microsoft Teams Audio", ",", "WebexMediaAudioDevice", ",", "ZoomAudioDevice" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -22417,7 +22454,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Soundcard for audio input. This is used only with external devices to record the output of the device.",
 					"id" : "obj-499",
-					"items" : [ "None", ",", "Cam Link 4K", ",", "BlackHole 16ch", ",", "MacBook Pro Microphone", ",", "Microsoft Teams Audio", ",", "WebexMediaAudioDevice", ",", "Loopback Audio", ",", "ZoomAudioDevice" ],
+					"items" : [ "None", ",", "STUDIO XL", ",", "Cam Link 4K", ",", "BlackHole 16ch", ",", "MacBook Pro Microphone", ",", "Microsoft Teams Audio", ",", "WebexMediaAudioDevice", ",", "Loopback Audio", ",", "ZoomAudioDevice" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -22689,7 +22726,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Audio sampling rate. Output audio .wav files will be recorded with this sampling rate.",
 					"id" : "obj-695",
-					"items" : [ 44100, ",", 48000, ",", 88200, ",", 96000 ],
+					"items" : [ 44100, ",", 48000, ",", 88200, ",", 96000, ",", 176400, ",", 192000 ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -29900,7 +29937,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-399", 0 ],
+					"destination" : [ "obj-406", 0 ],
 					"source" : [ "obj-350", 0 ]
 				}
 
@@ -30233,6 +30270,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-391", 0 ],
+					"source" : [ "obj-388", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1083", 1 ],
 					"midpoints" : [ 3087.670422500202221, 4130.964878439903259, 3261.90576630695341, 4130.964878439903259 ],
 					"order" : 1,
@@ -30262,6 +30306,14 @@
 				"patchline" : 				{
 					"destination" : [ "obj-288", 0 ],
 					"source" : [ "obj-39", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-406", 1 ],
+					"midpoints" : [ 2882.295684935204008, 3499.998544134836266, 3052.670423811504406, 3499.998544134836266 ],
+					"source" : [ "obj-391", 0 ]
 				}
 
 			}
@@ -30356,6 +30408,13 @@
 					"destination" : [ "obj-407", 1 ],
 					"midpoints" : [ 2718.041856403870042, 3919.887826472520828, 2823.102459724468645, 3919.887826472520828 ],
 					"source" : [ "obj-404", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-399", 0 ],
+					"source" : [ "obj-406", 0 ]
 				}
 
 			}
