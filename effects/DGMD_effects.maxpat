@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 724.0, 87.0, 2075.0, 1010.0 ],
+		"rect" : [ 0.0, 52.0, 1658.0, 575.0 ],
 		"openrect" : [ 0.0, 0.0, 1657.799999999999955, 574.16922999999997 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -40,6 +40,66 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-1136",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 4236.099999129772186, 3463.5, 29.5, 20.0 ],
+					"text" : "0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1070",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 2390.802031535343303, 801.000000476837158, 42.0, 20.0 ],
+					"text" : "<none>"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-978",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 3929.107221606478561, 4093.139013648033142, 29.5, 20.0 ],
+					"text" : "0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-878",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 3878.316715361230308, 4093.139013648033142, 29.5, 20.0 ],
+					"text" : "gate"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-773",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 5177.770184798286209, 3700.333333015441895, 29.5, 20.0 ],
+					"text" : "gate"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-406",
 					"maxclass" : "newobj",
@@ -422,7 +482,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 5188.270184798286209, 3690.824924826622009, 74.0, 20.0 ],
+					"patching_rect" : [ 5177.770184798286209, 3728.42492538690567, 74.0, 20.0 ],
 					"text" : "s _DGMDtovst"
 				}
 
@@ -851,7 +911,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 3078.170422500202221, 4048.520724534988403, 50.0, 20.0 ]
+					"patching_rect" : [ 3078.170422500202221, 4048.520724534988403, 29.5, 20.0 ],
+					"text" : "set"
 				}
 
 			}
@@ -1262,13 +1323,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-126",
-					"linecount" : 8,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 3410.000001668930054, 4165.409032344818115, 50.0, 98.0 ],
-					"text" : "write /Users/stefanof/Desktop/TEST/my_datasetSweep3.wav"
+					"patching_rect" : [ 3410.000001668930054, 4165.409032344818115, 50.0, 20.0 ]
 				}
 
 			}
@@ -8477,7 +8536,6 @@
 					"hint" : "This shows the selected path where output files (.wav and .csv) are saved.",
 					"id" : "obj-580",
 					"ignoreclick" : 1,
-					"linecount" : 2,
 					"maxclass" : "textedit",
 					"numinlets" : 1,
 					"numoutlets" : 4,
@@ -8486,7 +8544,6 @@
 					"patching_rect" : [ 2708.541856403870042, 3749.887615025043488, 83.0, 52.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1463.847392315512707, 54.014347105708737, 176.329519181673959, 46.856185317039461 ],
-					"text" : "/Users/stefanof/Desktop/TEST/",
 					"textcolor" : [ 0.701960784313725, 0.701960784313725, 0.701960784313725, 1.0 ]
 				}
 
@@ -8544,7 +8601,6 @@
 					"patching_rect" : [ 2556.70743020152895, 3607.337140438045481, 105.0, 50.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1463.847392315512707, 27.461885362353939, 176.329519181673959, 23.0 ],
-					"text" : "my_dataset",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -9199,7 +9255,6 @@
 			}
 , 			{
 				"box" : 				{
-					"active" : 0,
 					"fontface" : 1,
 					"fontsize" : 10.0,
 					"hint" : "Only for Step mode. Given the current parameters settings, it estimates the total number of combinations for Step mode.",
@@ -9254,13 +9309,14 @@
 					"patching_rect" : [ 2178.668570511348662, 1346.436001715148905, 78.0, 29.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 128.393478964960735, 53.512495427814116, 104.0, 18.0 ],
-					"text" : "Current Repetition",
+					"text" : "Current Combination",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"cantchange" : 1,
 					"fontface" : 1,
 					"fontsize" : 10.0,
 					"hint" : "Automatically computed in Step mode. Must be set in Random and Sweep mode. No effect (and not visible) in Step and Manual modes. In Random and Swwp modes it determines how many times the source file will be sent to the device and the output recorded.",
@@ -9275,7 +9331,8 @@
 					"patching_rect" : [ 2314.202032345966927, 1102.974266600406736, 36.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 440.619074106951871, 53.512495427814116, 60.181520140505313, 20.0 ],
-					"textcolor" : [ 0.969, 0.969, 0.969, 1.0 ],
+					"textcolor" : [ 0.553, 0.553, 0.553, 1.0 ],
+					"triangle" : 0,
 					"varname" : "numb-combinations"
 				}
 
@@ -9292,7 +9349,7 @@
 					"patching_rect" : [ 2366.202032345966927, 1102.974266600406736, 119.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 302.71932264332429, 53.512495427814116, 136.66666704416275, 18.0 ],
-					"text" : "Repetitions",
+					"text" : "Total Combinations",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -9393,7 +9450,6 @@
 			}
 , 			{
 				"box" : 				{
-					"cantchange" : 1,
 					"fontface" : 1,
 					"fontsize" : 10.0,
 					"hint" : "Automatically detected input/output latency of the device in samples. This includes also the latency of the audio interface input/output for external devices. This parameter can be manually adjusted, for example to reduce the latency compensation to a lower value than the detected one, excluding the estimated latency of the audio effect. To estimate the audio effect latency, repeat the emasure with different Signal (internal effect) or I/O (external effect) Vector Size values. The contribution of the effect latency should be a constant offset in the detected latency value.",
@@ -9848,7 +9904,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-1331",
-					"items" : [ "Filter-Type", ",", "Filter-Freq", ",", "Filter-Res", ",", "Filter-Drive", ",", "type-LFO-Sync", ",", "type-LFO-Freq", ",", "type-LFO-Rate", ",", "type-LFO-Phase", ",", "type-LFO-Shape", ",", "type-LFO-Depth", ",", "resonance-LFO-Sync", ",", "resonance-LFO-Freq", ",", "resonance-LFO-Rate", ",", "resonance-LFO-Phase", ",", "resonance-LFO-Shape", ",", "resonance-LFO-Depth", ",", "frequency-LFO-Sync", ",", "frequency-LFO-Freq", ",", "frequency-LFO-Rate", ",", "frequency-LFO-Phase", ",", "frequency-LFO-Shape", ",", "frequency-LFO-Depth", ",", "drive-LFO-Sync", ",", "drive-LFO-Freq", ",", "drive-LFO-Rate", ",", "drive-LFO-Phase", ",", "drive-LFO-Shape", ",", "drive-LFO-Depth", ",", "MadFilter-TypeMod", ",", "MadFilter-FrequencyMod", ",", "MadFilter-ResonanceMod", ",", "MadFilter-DriveMod", ",", "MadFilter-GoMad", ",", "Bypass" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -10928,7 +10984,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 4048.798611812667787, 1416.641836663417962, 318.648514436867117, 20.0 ],
-					"text" : "0.6 0.7 1. 1. 1. 1. 1. 1. 1. 1."
+					"text" : "1. 1. 1. 1. 1. 1. 1. 1. 1. 1."
 				}
 
 			}
@@ -10940,7 +10996,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 3797.575437798939674, 1376.122563441925195, 318.648514436867117, 20.0 ],
-					"text" : "0.00001 0.00001 0.00001 0.1 0.1 0.1 0.1 0.1 0.1 0.1"
+					"text" : "0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1"
 				}
 
 			}
@@ -12370,7 +12426,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 3640.289967929167688, 1802.833313000000089, 50.0, 20.0 ],
-					"text" : "3"
+					"text" : "7"
 				}
 
 			}
@@ -12671,7 +12727,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 3640.690021132273614, 1558.504765331745148, 318.648514436867117, 20.0 ],
-					"text" : "20000. 30000. 0. 0. 0. 0. 0. 0. 0. 0."
+					"text" : "0. 0. 0. 0. 0. 0. 0. 0. 0. 0."
 				}
 
 			}
@@ -14899,7 +14955,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 3882.090506137958982, 3568.99970805644989, 32.0, 20.0 ],
+					"patching_rect" : [ 3894.090506316772917, 3566.599708020687103, 32.0, 20.0 ],
 					"text" : "delay"
 				}
 
@@ -14923,7 +14979,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 3820.165698291412809, 4073.139013350009918, 32.0, 20.0 ],
+					"patching_rect" : [ 3820.165698291412809, 4093.139013648033142, 32.0, 20.0 ],
 					"text" : "delay"
 				}
 
@@ -14943,13 +14999,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-1106",
-					"linecount" : 7,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 3137.865620850162486, 4174.076447427272797, 54.0, 87.0 ],
-					"text" : "write /Users/stefanof/Desktop/TEST/SourceLoopback.wav"
+					"patching_rect" : [ 3137.865620850162486, 4174.076447427272797, 54.0, 20.0 ]
 				}
 
 			}
@@ -15008,13 +15062,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-1083",
-					"linecount" : 7,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 3221.40576630695341, 4194.409032344818115, 50.0, 87.0 ],
-					"text" : "write /Users/stefanof/Desktop/TEST/my_dataset3.wav"
+					"patching_rect" : [ 3221.40576630695341, 4194.409032344818115, 50.0, 20.0 ]
 				}
 
 			}
@@ -15385,7 +15437,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 3820.934931995026091, 4023.260277032852173, 116.0, 20.0 ],
+					"patching_rect" : [ 3820.934931995026091, 4010.166573703289032, 116.0, 20.0 ],
 					"text" : "send~ _DGMDdacSpR~"
 				}
 
@@ -15797,7 +15849,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 3881.876220525852659, 3363.330326080322266, 109.0, 20.0 ],
+					"patching_rect" : [ 3894.090506316772917, 3361.730326056480408, 109.0, 20.0 ],
 					"text" : "r _DGMDstimulusStart"
 				}
 
@@ -15902,7 +15954,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2708.602459724468645, 3991.311245977878571, 124.0, 42.0 ],
-					"text" : "write /Users/stefanof/Desktop/TEST/my_dataset.csv"
+					"text" : "write /Users/stefanof/Desktop/TEST/my_datasetPP.csv"
 				}
 
 			}
@@ -20801,7 +20853,7 @@
 							"version" : 1,
 							"isbank" : 0,
 							"isbase64" : 1,
-							"blob" : "2312.VMjLg7OB...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9DiM2fiKPUjZTEDLTEEUUoFUSEjKtDDQBQUPIUETMEDTtHjZFkkKD4BQEAEah8VVWk0b1oVTOEkUYYWTGokKXcEVxU0UY4BQPIDQt3hKt3hKt3hKt3hKtTETRUDUS4BQl4xaQYjKAcCTAoVRWoULUY0RLkkdSwVRWk0cAY1XmcmUisVPP4RRP4hKt3hKH4hKtbyJt3BUAkTUP0TPP4hPpYTVtPjKDUDTrI1aYcUVyYmZQ8TPGo0YMcUVtf0UXIWUWkkKDAkPD4hKt3hKt3hKt3hKt3RUPIUQTMkKDYlKuEkQtDzMPEjZIckVwTkUKwTV5MEdEYzXqEjYic1cVM1ZAAkKIAkKt3hKt3hKt3RQtDjKTETRUAUSAAkKBolQY4BQtPTQPwlXuk0UYMmcpE0SMcjVmEzUY4BVWgkbUcUVtPDTBQjKt3hKt3hKt3RPP4hKUAkTEQ0TtPjYt7VTF4RP2.UPpkzUZESUVsDSYo2T4sVagkVPlM1Y2Y0XqEDTtjDTt3hKt3hKt3hK2rhKtPUPIUETMEDTtHjZFkkKDY1PEgkUZIWTWkEdvHTV3sFaisVPlM1Y2Y0XqEDTtjDTt3hKt3hKt3hKt3hKtPUPIUETMEDTtHjZFkkKDYFQEgkUZIWTWkEdvfVV3UkUhASUrEVZqcjKwTjQgASUF4RPp4RPt3hKtXFS4QUXAQjKPUjZTEDLD4RPHAkVpEDTtHEUlk0a2YzXqkzUKgWUwHVczXEVz0jUY4BVWgkbUcUVtPDTBQjKt3hKtH0YwcTNO4hKUAkTEQ0TtPjYt7VTF4RP5AUPrslQgoWUrI1bPcEY1UkQtDSQFEFLUYjKAolKA4hKt3hKt3hKt3hKt.UQpQUPvPjKAgDTZoVPP4BUTYVV3UkUhASUrEVZqc0RLkkdSoVUFIldmYjKwTjQgASUF4RPp4RPt3hKt3hKt3hKt3hKPUjZTEDLD4RPHAkVpEDTtLEUlkEdUYkXvTEagk1ZWsDSYo2TrkzUYcWPlM1Y2Y0XqEDTtjDTt3hKt3BRt3hK2rhKtPUPIUETMEDTtHjZFkkKD4RQEgEahsVQWM1ZzDCVz.iPSYDNDIlaEEiXqEjYic1cVM1ZAAkKIAkKt3hKt3hKt3hKt3hKTETRUAUSAAkKBolQY4BQ1QTQXwlXqUzUisFMwfEMvHzTFgiZhcVTWkkKXcEVxU0UY4BQPIDQt3hKt3hKt3BTAAkKtTETRUDUS4BQl4xaQYjKAAUTAwVRWk0cUcUVz0jUjMmcpE0SMcjVmEzUY4BVWgkbUcUVtPDTBQjKt3hKt3hKt3RPP4hKUAkTEQ0TtPjYt7VTF4RPLEUPrkzUYcWUWkEcMYEYyYmZQ8TSWQFcMYjKwTjQgASUF4RPp4RPt3hKt3hKt3hcqLjKPUjZTEDLD4RPHAkVpEDTtPEUPE1YQwVVucmQisVRWsjZIckVwTkUgUWTF4RLEYTXvTkQtDjZtDjKt3hKt3hKt3hKt3BTEoFUAACQtDDRPokZAAkKXQETgcVTrk0a2YzXqkzUKwVRWk0cUcUVz0jUjMGNFkkKXcEVxU0UY4BQPIDQt3hKt3hKt3hKt3hKtTETRUDUS4BQl4xaQYjKAQTTAMWQFkEaqYTX5UEahMmXwD1bEYTVtf0UXIWUWkkKDAkPD4hKt3hKt3hKt3hKt3RUPIUQTMkKDYlKuEkQtDjYQEzbEYTVrslQgoWUrI1bHcUV4gCagcFMwf0ZvDSXpEjYic1cVM1ZAAkKIAkKt3hKt3hKt3hKt3hKTETRUAUSAAkKBolQY4BQ1QTQ5YEVpkkUZIWTWkEdvHzXzDzUYMGNFkkKXcEVxU0UY4BQPIDQt3hKt3hKt3hKt3hKtTETRUDUS4BQl4xaQYjKAAUTAgWUwHVczXEVz0jUYMmcpE0SQYUV1E0QZ4BVWgkbUcUVtPDTBQjKt3hKt3hKt3hKt3hKUAkTEQ0TtPjYt7VTF4RPLEUP3UULhUGMVgEcMYUVyYmZQ8TVrI1ZEcjKwTjQgASUF4RPp4RPt3hKtXlKt3hcqLjKPUjZTEDLD4RPHAkVpEDTtPEUlI1ZMISXzUDagkVUVsDSYo2T1clUXkWUF4RLEYTXvTkQtDjZtDjKt3hKt3hKt3hKt3BTEoFUAACQtDDRPokZAAkKSQkYhsVSxDFcEwVXoUkUKwTV5MEdEYzXqEjYic1cVM1ZAAkKIAkKt3hKt3hKt3RQtDjKTETRUAUSAAkKBolQY4BQtTTQHcUV4gCagcFMwf0ZvHzTFgidh4VQFI1ZAY1XmcmUisVPP4RRP4hKt3hKt3hKtPjKA4BUAkTUP0TPP4hPpYTVtPjcDUDRWkUd3vVXmQSLXsFLBMkQ3nmXzPSLX4BVWgkbUcUVtPDTBQjKt3hKt3hKt3xJO4hKUAkTEQ0TtPjYt7VTF4RP2.UP5s1QhsFLBMkQ3PTVqEzQi4VPlM1Y2Y0XqEDTtjDTt3hKt3hKt3hKt3hKtPUPIUETMEDTtHjZFkkKDY1PEA0UjYWUVsDSYo2TrkzUYcWPlM1Y2Y0XqEDTtjDTt3hKt3BRt3hK2rhKtPUPIUETMEDTtHjZFkkKDY2PEA0UjYWUVsDSYo2T1clUXkWUF4RLEYTXvTkQtDjZtDjKt3hKt3hKt3hKt3BTEoFUAACQtDDRPokZAAkKNQkKiQSPWk0b1oVTOkzUXoWUF4RLEYTXvTkQtDjZtDjKt3hKt3hKtPkKD4BTEoFUAACQtDDRPokZAAkKOQkKiQSPWk0b1oVTO0zQZcVPWkkKXcEVxU0UY4BQPIDQt3hKt3hKt3hKAAkKtTETRUDUS4BQl4xaQYjKAMCTAo2ZGI1ZvHzTFgidhQCMwfkKXcEVxU0UY4BQPIDQt3hKt3hKt3hKq7jKt3hKt3hKt3hKt3hRUACTEEzZh8VVWgkdUYTTmE0UX4BQP4hPqcjXm0jLh4BQP4xPt.0Qt3hKt3hKt3hKtQUUCUEQTg2ZrM1YQcUVDUjQicVP77RRC8Vav8lak4Fc9vyKVMEUy.Ea0cVZtMEcgQWY9.."
+							"blob" : "2312.VMjLg7OB...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9DiM2fiKPUjZTEDLTEEUUoFUSEjKtDDQBQUPIUETMEDTtHjZFkkKD4BQEAEah8VVWk0b1oVTOEkUYYWTGokKXcEVxU0UY4BQPIDQt3hKt3hKt3hKt3hKtTETRUDUS4BQl4xaQYjKAcCTAoVRWoULUY0RLkkdSwVRWk0cAY1XmcmUisVPP4RRP4hKt3hKH4hKtbyJt3BUAkTUP0TPP4hPpYTVtPjKDUDTrI1aYcUVyYmZQ8TPGo0YMcUVtf0UXIWUWkkKDAkPD4hKt3hKt3hKt3hKt3RUPIUQTMkKDYlKuEkQtDzMPEjZIckVwTkUKwTV5MEdEYzXqEjYic1cVM1ZAAkKIAkKt3hKt3hKt3RQtDjKTETRUAUSAAkKBolQY4BQtPTQPwlXuk0UYMmcpE0SMcjVmEzUY4BVWgkbUcUVtPDTBQjKt3hKt3hKt3RPP4hKUAkTEQ0TtPjYt7VTF4RP2.UPpkzUZESUVsDSYo2T4sVagkVPlM1Y2Y0XqEDTtjDTt3hKt3hKt3hK2rhKtPUPIUETMEDTtHjZFkkKDY1PEgkUZIWTWkEdvHTV3sFaisVPlM1Y2Y0XqEDTtjDTt3hKt3hKt3hKt3hKtPUPIUETMEDTtHjZFkkKDYFQEgkUZIWTWkEdvfVV3UkUhASUrEVZqcjKwTjQgASUF4RPp4RPt3hKt3RdL0VTAQjKPUjZTEDLD4RPHAkVpEDTtHEUlk0a2YzXqkzUKgWUwHVczXEVz0jUY4BVWgkbUcUVtPDTBQjKt3hKt3hKt3BNO4hKUAkTEQ0TtPjYt7VTF4RP5AUPrslQgoWUrI1bPcEY1UkQtDSQFEFLUYjKAolKA4hKt3hKt3hKt3hKt.UQpQUPvPjKAgDTZoVPP4BUTYVV3UkUhASUrEVZqc0RLkkdSoVUFIldmYjKwTjQgASUF4RPp4RPt3hKt3hKt3hKt3hKPUjZTEDLD4RPHAkVpEDTtLEUlkEdUYkXvTEagk1ZWsDSYo2TrkzUYcWPlM1Y2Y0XqEDTtjDTt3hKt3BRt3hK2rhKtPUPIUETMEDTtHjZFkkKD4RQEgEahsVQWM1ZzDCVz.iPSYDNDIlaEEiXqEjYic1cVM1ZAAkKIAkKt3hKt3hKt3hKt3hKTETRUAUSAAkKBolQY4BQ1QTQXwlXqUzUisFMwfEMvHzTFgiZhcVTWkkKXcEVxU0UY4BQPIDQt3hKt3hKt3BTAAkKtTETRUDUS4BQl4xaQYjKAAUTAwVRWk0cUcUVz0jUjMmcpE0SMcjVmEzUY4BVWgkbUcUVtPDTBQjKt3hKt3hKt3RPP4hKUAkTEQ0TtPjYt7VTF4RPLEUPrkzUYcWUWkEcMYEYyYmZQ8TSWQFcMYjKwTjQgASUF4RPp4RPt3hKt3hKt3hcqLjKPUjZTEDLD4RPHAkVpEDTtPEUPE1YQwVVucmQisVRWsjZIckVwTkUgUWTF4RLEYTXvTkQtDjZtDjKt3hKt3hKt3hKt3BTEoFUAACQtDDRPokZAAkKXQETgcVTrk0a2YzXqkzUKwVRWk0cUcUVz0jUjMGNFkkKXcEVxU0UY4BQPIDQt3hKt3hKt3hKt3hKtTETRUDUS4BQl4xaQYjKAQTTAMWQFkEaqYTX5UEahMmXwD1bEYTVtf0UXIWUWkkKDAkPD4hKt3hKt3hKt3hKt3RUPIUQTMkKDYlKuEkQtDjYQEzbEYTVrslQgoWUrI1bHcUV4gCagcFMwf0ZvDSXpEjYic1cVM1ZAAkKIAkKt3hKt3hKt3hKt3hKTETRUAUSAAkKBolQY4BQ1QTQ5YEVpkkUZIWTWkEdvHzXzDzUYMGNFkkKXcEVxU0UY4BQPIDQt3hKt3hKt3hKt3hKtTETRUDUS4BQl4xaQYjKAAUTAgWUwHVczXEVz0jUYMmcpE0SQYUV1E0QZ4BVWgkbUcUVtPDTBQjKt3hKt3hKt3hKt3hKUAkTEQ0TtPjYt7VTF4RPLEUP3UULhUGMVgEcMYUVyYmZQ8TVrI1ZEcjKwTjQgASUF4RPp4RPt3hKtXlKt3hcqLjKPUjZTEDLD4RPHAkVpEDTtPEUlI1ZMISXzUDagkVUVsDSYo2T1clUXkWUF4RLEYTXvTkQtDjZtDjKt3hKt3hKt3hKt3BTEoFUAACQtDDRPokZAAkKSQkYhsVSxDFcEwVXoUkUKwTV5MEdEYzXqEjYic1cVM1ZAAkKIAkKt3hKt3hKt3RQtDjKTETRUAUSAAkKBolQY4BQtTTQHcUV4gCagcFMwf0ZvHzTFgidh4VQFI1ZAY1XmcmUisVPP4RRP4hKt3hKt3hKtPjKA4BUAkTUP0TPP4hPpYTVtPjcDUDRWkUd3vVXmQSLXsFLBMkQ3nmXzPSLX4BVWgkbUcUVtPDTBQjKt3hKt3hKt3xJO4hKUAkTEQ0TtPjYt7VTF4RP2.UP5s1QhsFLBMkQ3PTVqEzQi4VPlM1Y2Y0XqEDTtjDTt3hKt3hKt3hKt3hKtPUPIUETMEDTtHjZFkkKDY1PEA0UjYWUVsDSYo2TrkzUYcWPlM1Y2Y0XqEDTtjDTt3hKt3BRt3hK2rhKtPUPIUETMEDTtHjZFkkKDY2PEA0UjYWUVsDSYo2T1clUXkWUF4RLEYTXvTkQtDjZtDjKt3hKt3hKt3hKt3BTEoFUAACQtDDRPokZAAkKNQkKiQSPWk0b1oVTOkzUXoWUF4RLEYTXvTkQtDjZtDjKt3hKt3hKtPkKD4BTEoFUAACQtDDRPokZAAkKOQkKiQSPWk0b1oVTO0zQZcVPWkkKXcEVxU0UY4BQPIDQt3hKt3hKt3hKAAkKtTETRUDUS4BQl4xaQYjKAMCTAo2ZGI1ZvHzTFgidhQCMwfkKXcEVxU0UY4BQPIDQt3hKt3hKt3hKq7jKt3hKt3hKt3hKt3hRUACTEEzZh8VVWgkdUYTTmE0UX4BQP4hPqcjXm0jLh4BQP4xPt.0Qt3hKt3hKt3hKtQUUCUEQTg2ZrM1YQcUVDUjQicVP77RRC8Vav8lak4Fc9vyKVMEUy.Ea0cVZtMEcgQWY9.."
 						}
 ,
 						"snapshotlist" : 						{
@@ -20823,7 +20875,7 @@
 										"version" : 1,
 										"isbank" : 0,
 										"isbase64" : 1,
-										"blob" : "2312.VMjLg7OB...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9DiM2fiKPUjZTEDLTEEUUoFUSEjKtDDQBQUPIUETMEDTtHjZFkkKD4BQEAEah8VVWk0b1oVTOEkUYYWTGokKXcEVxU0UY4BQPIDQt3hKt3hKt3hKt3hKtTETRUDUS4BQl4xaQYjKAcCTAoVRWoULUY0RLkkdSwVRWk0cAY1XmcmUisVPP4RRP4hKt3hKH4hKtbyJt3BUAkTUP0TPP4hPpYTVtPjKDUDTrI1aYcUVyYmZQ8TPGo0YMcUVtf0UXIWUWkkKDAkPD4hKt3hKt3hKt3hKt3RUPIUQTMkKDYlKuEkQtDzMPEjZIckVwTkUKwTV5MEdEYzXqEjYic1cVM1ZAAkKIAkKt3hKt3hKt3RQtDjKTETRUAUSAAkKBolQY4BQtPTQPwlXuk0UYMmcpE0SMcjVmEzUY4BVWgkbUcUVtPDTBQjKt3hKt3hKt3RPP4hKUAkTEQ0TtPjYt7VTF4RP2.UPpkzUZESUVsDSYo2T4sVagkVPlM1Y2Y0XqEDTtjDTt3hKt3hKt3hK2rhKtPUPIUETMEDTtHjZFkkKDY1PEgkUZIWTWkEdvHTV3sFaisVPlM1Y2Y0XqEDTtjDTt3hKt3hKt3hKt3hKtPUPIUETMEDTtHjZFkkKDYFQEgkUZIWTWkEdvfVV3UkUhASUrEVZqcjKwTjQgASUF4RPp4RPt3hKtXFS4QUXAQjKPUjZTEDLD4RPHAkVpEDTtHEUlk0a2YzXqkzUKgWUwHVczXEVz0jUY4BVWgkbUcUVtPDTBQjKt3hKtH0YwcTNO4hKUAkTEQ0TtPjYt7VTF4RP5AUPrslQgoWUrI1bPcEY1UkQtDSQFEFLUYjKAolKA4hKt3hKt3hKt3hKt.UQpQUPvPjKAgDTZoVPP4BUTYVV3UkUhASUrEVZqc0RLkkdSoVUFIldmYjKwTjQgASUF4RPp4RPt3hKt3hKt3hKt3hKPUjZTEDLD4RPHAkVpEDTtLEUlkEdUYkXvTEagk1ZWsDSYo2TrkzUYcWPlM1Y2Y0XqEDTtjDTt3hKt3BRt3hK2rhKtPUPIUETMEDTtHjZFkkKD4RQEgEahsVQWM1ZzDCVz.iPSYDNDIlaEEiXqEjYic1cVM1ZAAkKIAkKt3hKt3hKt3hKt3hKTETRUAUSAAkKBolQY4BQ1QTQXwlXqUzUisFMwfEMvHzTFgiZhcVTWkkKXcEVxU0UY4BQPIDQt3hKt3hKt3BTAAkKtTETRUDUS4BQl4xaQYjKAAUTAwVRWk0cUcUVz0jUjMmcpE0SMcjVmEzUY4BVWgkbUcUVtPDTBQjKt3hKt3hKt3RPP4hKUAkTEQ0TtPjYt7VTF4RPLEUPrkzUYcWUWkEcMYEYyYmZQ8TSWQFcMYjKwTjQgASUF4RPp4RPt3hKt3hKt3hcqLjKPUjZTEDLD4RPHAkVpEDTtPEUPE1YQwVVucmQisVRWsjZIckVwTkUgUWTF4RLEYTXvTkQtDjZtDjKt3hKt3hKt3hKt3BTEoFUAACQtDDRPokZAAkKXQETgcVTrk0a2YzXqkzUKwVRWk0cUcUVz0jUjMGNFkkKXcEVxU0UY4BQPIDQt3hKt3hKt3hKt3hKtTETRUDUS4BQl4xaQYjKAQTTAMWQFkEaqYTX5UEahMmXwD1bEYTVtf0UXIWUWkkKDAkPD4hKt3hKt3hKt3hKt3RUPIUQTMkKDYlKuEkQtDjYQEzbEYTVrslQgoWUrI1bHcUV4gCagcFMwf0ZvDSXpEjYic1cVM1ZAAkKIAkKt3hKt3hKt3hKt3hKTETRUAUSAAkKBolQY4BQ1QTQ5YEVpkkUZIWTWkEdvHzXzDzUYMGNFkkKXcEVxU0UY4BQPIDQt3hKt3hKt3hKt3hKtTETRUDUS4BQl4xaQYjKAAUTAgWUwHVczXEVz0jUYMmcpE0SQYUV1E0QZ4BVWgkbUcUVtPDTBQjKt3hKt3hKt3hKt3hKUAkTEQ0TtPjYt7VTF4RPLEUP3UULhUGMVgEcMYUVyYmZQ8TVrI1ZEcjKwTjQgASUF4RPp4RPt3hKtXlKt3hcqLjKPUjZTEDLD4RPHAkVpEDTtPEUlI1ZMISXzUDagkVUVsDSYo2T1clUXkWUF4RLEYTXvTkQtDjZtDjKt3hKt3hKt3hKt3BTEoFUAACQtDDRPokZAAkKSQkYhsVSxDFcEwVXoUkUKwTV5MEdEYzXqEjYic1cVM1ZAAkKIAkKt3hKt3hKt3RQtDjKTETRUAUSAAkKBolQY4BQtTTQHcUV4gCagcFMwf0ZvHzTFgidh4VQFI1ZAY1XmcmUisVPP4RRP4hKt3hKt3hKtPjKA4BUAkTUP0TPP4hPpYTVtPjcDUDRWkUd3vVXmQSLXsFLBMkQ3nmXzPSLX4BVWgkbUcUVtPDTBQjKt3hKt3hKt3xJO4hKUAkTEQ0TtPjYt7VTF4RP2.UP5s1QhsFLBMkQ3PTVqEzQi4VPlM1Y2Y0XqEDTtjDTt3hKt3hKt3hKt3hKtPUPIUETMEDTtHjZFkkKDY1PEA0UjYWUVsDSYo2TrkzUYcWPlM1Y2Y0XqEDTtjDTt3hKt3BRt3hK2rhKtPUPIUETMEDTtHjZFkkKDY2PEA0UjYWUVsDSYo2T1clUXkWUF4RLEYTXvTkQtDjZtDjKt3hKt3hKt3hKt3BTEoFUAACQtDDRPokZAAkKNQkKiQSPWk0b1oVTOkzUXoWUF4RLEYTXvTkQtDjZtDjKt3hKt3hKtPkKD4BTEoFUAACQtDDRPokZAAkKOQkKiQSPWk0b1oVTO0zQZcVPWkkKXcEVxU0UY4BQPIDQt3hKt3hKt3hKAAkKtTETRUDUS4BQl4xaQYjKAMCTAo2ZGI1ZvHzTFgidhQCMwfkKXcEVxU0UY4BQPIDQt3hKt3hKt3hKq7jKt3hKt3hKt3hKt3hRUACTEEzZh8VVWgkdUYTTmE0UX4BQP4hPqcjXm0jLh4BQP4xPt.0Qt3hKt3hKt3hKtQUUCUEQTg2ZrM1YQcUVDUjQicVP77RRC8Vav8lak4Fc9vyKVMEUy.Ea0cVZtMEcgQWY9.."
+										"blob" : "2312.VMjLg7OB...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9DiM2fiKPUjZTEDLTEEUUoFUSEjKtDDQBQUPIUETMEDTtHjZFkkKD4BQEAEah8VVWk0b1oVTOEkUYYWTGokKXcEVxU0UY4BQPIDQt3hKt3hKt3hKt3hKtTETRUDUS4BQl4xaQYjKAcCTAoVRWoULUY0RLkkdSwVRWk0cAY1XmcmUisVPP4RRP4hKt3hKH4hKtbyJt3BUAkTUP0TPP4hPpYTVtPjKDUDTrI1aYcUVyYmZQ8TPGo0YMcUVtf0UXIWUWkkKDAkPD4hKt3hKt3hKt3hKt3RUPIUQTMkKDYlKuEkQtDzMPEjZIckVwTkUKwTV5MEdEYzXqEjYic1cVM1ZAAkKIAkKt3hKt3hKt3RQtDjKTETRUAUSAAkKBolQY4BQtPTQPwlXuk0UYMmcpE0SMcjVmEzUY4BVWgkbUcUVtPDTBQjKt3hKt3hKt3RPP4hKUAkTEQ0TtPjYt7VTF4RP2.UPpkzUZESUVsDSYo2T4sVagkVPlM1Y2Y0XqEDTtjDTt3hKt3hKt3hK2rhKtPUPIUETMEDTtHjZFkkKDY1PEgkUZIWTWkEdvHTV3sFaisVPlM1Y2Y0XqEDTtjDTt3hKt3hKt3hKt3hKtPUPIUETMEDTtHjZFkkKDYFQEgkUZIWTWkEdvfVV3UkUhASUrEVZqcjKwTjQgASUF4RPp4RPt3hKt3RdL0VTAQjKPUjZTEDLD4RPHAkVpEDTtHEUlk0a2YzXqkzUKgWUwHVczXEVz0jUY4BVWgkbUcUVtPDTBQjKt3hKt3hKt3BNO4hKUAkTEQ0TtPjYt7VTF4RP5AUPrslQgoWUrI1bPcEY1UkQtDSQFEFLUYjKAolKA4hKt3hKt3hKt3hKt.UQpQUPvPjKAgDTZoVPP4BUTYVV3UkUhASUrEVZqc0RLkkdSoVUFIldmYjKwTjQgASUF4RPp4RPt3hKt3hKt3hKt3hKPUjZTEDLD4RPHAkVpEDTtLEUlkEdUYkXvTEagk1ZWsDSYo2TrkzUYcWPlM1Y2Y0XqEDTtjDTt3hKt3BRt3hK2rhKtPUPIUETMEDTtHjZFkkKD4RQEgEahsVQWM1ZzDCVz.iPSYDNDIlaEEiXqEjYic1cVM1ZAAkKIAkKt3hKt3hKt3hKt3hKTETRUAUSAAkKBolQY4BQ1QTQXwlXqUzUisFMwfEMvHzTFgiZhcVTWkkKXcEVxU0UY4BQPIDQt3hKt3hKt3BTAAkKtTETRUDUS4BQl4xaQYjKAAUTAwVRWk0cUcUVz0jUjMmcpE0SMcjVmEzUY4BVWgkbUcUVtPDTBQjKt3hKt3hKt3RPP4hKUAkTEQ0TtPjYt7VTF4RPLEUPrkzUYcWUWkEcMYEYyYmZQ8TSWQFcMYjKwTjQgASUF4RPp4RPt3hKt3hKt3hcqLjKPUjZTEDLD4RPHAkVpEDTtPEUPE1YQwVVucmQisVRWsjZIckVwTkUgUWTF4RLEYTXvTkQtDjZtDjKt3hKt3hKt3hKt3BTEoFUAACQtDDRPokZAAkKXQETgcVTrk0a2YzXqkzUKwVRWk0cUcUVz0jUjMGNFkkKXcEVxU0UY4BQPIDQt3hKt3hKt3hKt3hKtTETRUDUS4BQl4xaQYjKAQTTAMWQFkEaqYTX5UEahMmXwD1bEYTVtf0UXIWUWkkKDAkPD4hKt3hKt3hKt3hKt3RUPIUQTMkKDYlKuEkQtDjYQEzbEYTVrslQgoWUrI1bHcUV4gCagcFMwf0ZvDSXpEjYic1cVM1ZAAkKIAkKt3hKt3hKt3hKt3hKTETRUAUSAAkKBolQY4BQ1QTQ5YEVpkkUZIWTWkEdvHzXzDzUYMGNFkkKXcEVxU0UY4BQPIDQt3hKt3hKt3hKt3hKtTETRUDUS4BQl4xaQYjKAAUTAgWUwHVczXEVz0jUYMmcpE0SQYUV1E0QZ4BVWgkbUcUVtPDTBQjKt3hKt3hKt3hKt3hKUAkTEQ0TtPjYt7VTF4RPLEUP3UULhUGMVgEcMYUVyYmZQ8TVrI1ZEcjKwTjQgASUF4RPp4RPt3hKtXlKt3hcqLjKPUjZTEDLD4RPHAkVpEDTtPEUlI1ZMISXzUDagkVUVsDSYo2T1clUXkWUF4RLEYTXvTkQtDjZtDjKt3hKt3hKt3hKt3BTEoFUAACQtDDRPokZAAkKSQkYhsVSxDFcEwVXoUkUKwTV5MEdEYzXqEjYic1cVM1ZAAkKIAkKt3hKt3hKt3RQtDjKTETRUAUSAAkKBolQY4BQtTTQHcUV4gCagcFMwf0ZvHzTFgidh4VQFI1ZAY1XmcmUisVPP4RRP4hKt3hKt3hKtPjKA4BUAkTUP0TPP4hPpYTVtPjcDUDRWkUd3vVXmQSLXsFLBMkQ3nmXzPSLX4BVWgkbUcUVtPDTBQjKt3hKt3hKt3xJO4hKUAkTEQ0TtPjYt7VTF4RP2.UP5s1QhsFLBMkQ3PTVqEzQi4VPlM1Y2Y0XqEDTtjDTt3hKt3hKt3hKt3hKtPUPIUETMEDTtHjZFkkKDY1PEA0UjYWUVsDSYo2TrkzUYcWPlM1Y2Y0XqEDTtjDTt3hKt3BRt3hK2rhKtPUPIUETMEDTtHjZFkkKDY2PEA0UjYWUVsDSYo2T1clUXkWUF4RLEYTXvTkQtDjZtDjKt3hKt3hKt3hKt3BTEoFUAACQtDDRPokZAAkKNQkKiQSPWk0b1oVTOkzUXoWUF4RLEYTXvTkQtDjZtDjKt3hKt3hKtPkKD4BTEoFUAACQtDDRPokZAAkKOQkKiQSPWk0b1oVTO0zQZcVPWkkKXcEVxU0UY4BQPIDQt3hKt3hKt3hKAAkKtTETRUDUS4BQl4xaQYjKAMCTAo2ZGI1ZvHzTFgidhQCMwfkKXcEVxU0UY4BQPIDQt3hKt3hKt3hKq7jKt3hKt3hKt3hKt3hRUACTEEzZh8VVWgkdUYTTmE0UX4BQP4hPqcjXm0jLh4BQP4xPt.0Qt3hKt3hKt3hKtQUUCUEQTg2ZrM1YQcUVDUjQicVP77RRC8Vav8lak4Fc9vyKVMEUy.Ea0cVZtMEcgQWY9.."
 									}
 ,
 									"fileref" : 									{
@@ -20831,7 +20883,7 @@
 										"filename" : "Massive.maxsnap",
 										"filepath" : "~/Documents/Max 7/Snapshots",
 										"filepos" : -1,
-										"snapshotfileid" : "722a42b6d24c7c4a826fcfd5e09b7a42"
+										"snapshotfileid" : "cc77404e84945af84d26cc5a857643ee"
 									}
 
 								}
@@ -21688,7 +21740,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-503",
-					"items" : [ "Filter-Type", ",", "Filter-Freq", ",", "Filter-Res", ",", "Filter-Drive", ",", "type-LFO-Sync", ",", "type-LFO-Freq", ",", "type-LFO-Rate", ",", "type-LFO-Phase", ",", "type-LFO-Shape", ",", "type-LFO-Depth", ",", "resonance-LFO-Sync", ",", "resonance-LFO-Freq", ",", "resonance-LFO-Rate", ",", "resonance-LFO-Phase", ",", "resonance-LFO-Shape", ",", "resonance-LFO-Depth", ",", "frequency-LFO-Sync", ",", "frequency-LFO-Freq", ",", "frequency-LFO-Rate", ",", "frequency-LFO-Phase", ",", "frequency-LFO-Shape", ",", "frequency-LFO-Depth", ",", "drive-LFO-Sync", ",", "drive-LFO-Freq", ",", "drive-LFO-Rate", ",", "drive-LFO-Phase", ",", "drive-LFO-Shape", ",", "drive-LFO-Depth", ",", "MadFilter-TypeMod", ",", "MadFilter-FrequencyMod", ",", "MadFilter-ResonanceMod", ",", "MadFilter-DriveMod", ",", "MadFilter-GoMad", ",", "Bypass" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -21719,7 +21771,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-657",
-					"items" : [ "Filter-Type", ",", "Filter-Freq", ",", "Filter-Res", ",", "Filter-Drive", ",", "type-LFO-Sync", ",", "type-LFO-Freq", ",", "type-LFO-Rate", ",", "type-LFO-Phase", ",", "type-LFO-Shape", ",", "type-LFO-Depth", ",", "resonance-LFO-Sync", ",", "resonance-LFO-Freq", ",", "resonance-LFO-Rate", ",", "resonance-LFO-Phase", ",", "resonance-LFO-Shape", ",", "resonance-LFO-Depth", ",", "frequency-LFO-Sync", ",", "frequency-LFO-Freq", ",", "frequency-LFO-Rate", ",", "frequency-LFO-Phase", ",", "frequency-LFO-Shape", ",", "frequency-LFO-Depth", ",", "drive-LFO-Sync", ",", "drive-LFO-Freq", ",", "drive-LFO-Rate", ",", "drive-LFO-Phase", ",", "drive-LFO-Shape", ",", "drive-LFO-Depth", ",", "MadFilter-TypeMod", ",", "MadFilter-FrequencyMod", ",", "MadFilter-ResonanceMod", ",", "MadFilter-DriveMod", ",", "MadFilter-GoMad", ",", "Bypass" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -21750,7 +21802,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-623",
-					"items" : [ "Filter-Type", ",", "Filter-Freq", ",", "Filter-Res", ",", "Filter-Drive", ",", "type-LFO-Sync", ",", "type-LFO-Freq", ",", "type-LFO-Rate", ",", "type-LFO-Phase", ",", "type-LFO-Shape", ",", "type-LFO-Depth", ",", "resonance-LFO-Sync", ",", "resonance-LFO-Freq", ",", "resonance-LFO-Rate", ",", "resonance-LFO-Phase", ",", "resonance-LFO-Shape", ",", "resonance-LFO-Depth", ",", "frequency-LFO-Sync", ",", "frequency-LFO-Freq", ",", "frequency-LFO-Rate", ",", "frequency-LFO-Phase", ",", "frequency-LFO-Shape", ",", "frequency-LFO-Depth", ",", "drive-LFO-Sync", ",", "drive-LFO-Freq", ",", "drive-LFO-Rate", ",", "drive-LFO-Phase", ",", "drive-LFO-Shape", ",", "drive-LFO-Depth", ",", "MadFilter-TypeMod", ",", "MadFilter-FrequencyMod", ",", "MadFilter-ResonanceMod", ",", "MadFilter-DriveMod", ",", "MadFilter-GoMad", ",", "Bypass" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -21781,7 +21833,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-733",
-					"items" : [ "Filter-Type", ",", "Filter-Freq", ",", "Filter-Res", ",", "Filter-Drive", ",", "type-LFO-Sync", ",", "type-LFO-Freq", ",", "type-LFO-Rate", ",", "type-LFO-Phase", ",", "type-LFO-Shape", ",", "type-LFO-Depth", ",", "resonance-LFO-Sync", ",", "resonance-LFO-Freq", ",", "resonance-LFO-Rate", ",", "resonance-LFO-Phase", ",", "resonance-LFO-Shape", ",", "resonance-LFO-Depth", ",", "frequency-LFO-Sync", ",", "frequency-LFO-Freq", ",", "frequency-LFO-Rate", ",", "frequency-LFO-Phase", ",", "frequency-LFO-Shape", ",", "frequency-LFO-Depth", ",", "drive-LFO-Sync", ",", "drive-LFO-Freq", ",", "drive-LFO-Rate", ",", "drive-LFO-Phase", ",", "drive-LFO-Shape", ",", "drive-LFO-Depth", ",", "MadFilter-TypeMod", ",", "MadFilter-FrequencyMod", ",", "MadFilter-ResonanceMod", ",", "MadFilter-DriveMod", ",", "MadFilter-GoMad", ",", "Bypass" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -21812,7 +21864,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-1131",
-					"items" : [ "Filter-Type", ",", "Filter-Freq", ",", "Filter-Res", ",", "Filter-Drive", ",", "type-LFO-Sync", ",", "type-LFO-Freq", ",", "type-LFO-Rate", ",", "type-LFO-Phase", ",", "type-LFO-Shape", ",", "type-LFO-Depth", ",", "resonance-LFO-Sync", ",", "resonance-LFO-Freq", ",", "resonance-LFO-Rate", ",", "resonance-LFO-Phase", ",", "resonance-LFO-Shape", ",", "resonance-LFO-Depth", ",", "frequency-LFO-Sync", ",", "frequency-LFO-Freq", ",", "frequency-LFO-Rate", ",", "frequency-LFO-Phase", ",", "frequency-LFO-Shape", ",", "frequency-LFO-Depth", ",", "drive-LFO-Sync", ",", "drive-LFO-Freq", ",", "drive-LFO-Rate", ",", "drive-LFO-Phase", ",", "drive-LFO-Shape", ",", "drive-LFO-Depth", ",", "MadFilter-TypeMod", ",", "MadFilter-FrequencyMod", ",", "MadFilter-ResonanceMod", ",", "MadFilter-DriveMod", ",", "MadFilter-GoMad", ",", "Bypass" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -21843,7 +21895,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-1098",
-					"items" : [ "Filter-Type", ",", "Filter-Freq", ",", "Filter-Res", ",", "Filter-Drive", ",", "type-LFO-Sync", ",", "type-LFO-Freq", ",", "type-LFO-Rate", ",", "type-LFO-Phase", ",", "type-LFO-Shape", ",", "type-LFO-Depth", ",", "resonance-LFO-Sync", ",", "resonance-LFO-Freq", ",", "resonance-LFO-Rate", ",", "resonance-LFO-Phase", ",", "resonance-LFO-Shape", ",", "resonance-LFO-Depth", ",", "frequency-LFO-Sync", ",", "frequency-LFO-Freq", ",", "frequency-LFO-Rate", ",", "frequency-LFO-Phase", ",", "frequency-LFO-Shape", ",", "frequency-LFO-Depth", ",", "drive-LFO-Sync", ",", "drive-LFO-Freq", ",", "drive-LFO-Rate", ",", "drive-LFO-Phase", ",", "drive-LFO-Shape", ",", "drive-LFO-Depth", ",", "MadFilter-TypeMod", ",", "MadFilter-FrequencyMod", ",", "MadFilter-ResonanceMod", ",", "MadFilter-DriveMod", ",", "MadFilter-GoMad", ",", "Bypass" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -21874,7 +21926,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-1066",
-					"items" : [ "Filter-Type", ",", "Filter-Freq", ",", "Filter-Res", ",", "Filter-Drive", ",", "type-LFO-Sync", ",", "type-LFO-Freq", ",", "type-LFO-Rate", ",", "type-LFO-Phase", ",", "type-LFO-Shape", ",", "type-LFO-Depth", ",", "resonance-LFO-Sync", ",", "resonance-LFO-Freq", ",", "resonance-LFO-Rate", ",", "resonance-LFO-Phase", ",", "resonance-LFO-Shape", ",", "resonance-LFO-Depth", ",", "frequency-LFO-Sync", ",", "frequency-LFO-Freq", ",", "frequency-LFO-Rate", ",", "frequency-LFO-Phase", ",", "frequency-LFO-Shape", ",", "frequency-LFO-Depth", ",", "drive-LFO-Sync", ",", "drive-LFO-Freq", ",", "drive-LFO-Rate", ",", "drive-LFO-Phase", ",", "drive-LFO-Shape", ",", "drive-LFO-Depth", ",", "MadFilter-TypeMod", ",", "MadFilter-FrequencyMod", ",", "MadFilter-ResonanceMod", ",", "MadFilter-DriveMod", ",", "MadFilter-GoMad", ",", "Bypass" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -21905,7 +21957,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-993",
-					"items" : [ "Filter-Type", ",", "Filter-Freq", ",", "Filter-Res", ",", "Filter-Drive", ",", "type-LFO-Sync", ",", "type-LFO-Freq", ",", "type-LFO-Rate", ",", "type-LFO-Phase", ",", "type-LFO-Shape", ",", "type-LFO-Depth", ",", "resonance-LFO-Sync", ",", "resonance-LFO-Freq", ",", "resonance-LFO-Rate", ",", "resonance-LFO-Phase", ",", "resonance-LFO-Shape", ",", "resonance-LFO-Depth", ",", "frequency-LFO-Sync", ",", "frequency-LFO-Freq", ",", "frequency-LFO-Rate", ",", "frequency-LFO-Phase", ",", "frequency-LFO-Shape", ",", "frequency-LFO-Depth", ",", "drive-LFO-Sync", ",", "drive-LFO-Freq", ",", "drive-LFO-Rate", ",", "drive-LFO-Phase", ",", "drive-LFO-Shape", ",", "drive-LFO-Depth", ",", "MadFilter-TypeMod", ",", "MadFilter-FrequencyMod", ",", "MadFilter-ResonanceMod", ",", "MadFilter-DriveMod", ",", "MadFilter-GoMad", ",", "Bypass" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -21936,7 +21988,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-790",
-					"items" : [ "Filter-Type", ",", "Filter-Freq", ",", "Filter-Res", ",", "Filter-Drive", ",", "type-LFO-Sync", ",", "type-LFO-Freq", ",", "type-LFO-Rate", ",", "type-LFO-Phase", ",", "type-LFO-Shape", ",", "type-LFO-Depth", ",", "resonance-LFO-Sync", ",", "resonance-LFO-Freq", ",", "resonance-LFO-Rate", ",", "resonance-LFO-Phase", ",", "resonance-LFO-Shape", ",", "resonance-LFO-Depth", ",", "frequency-LFO-Sync", ",", "frequency-LFO-Freq", ",", "frequency-LFO-Rate", ",", "frequency-LFO-Phase", ",", "frequency-LFO-Shape", ",", "frequency-LFO-Depth", ",", "drive-LFO-Sync", ",", "drive-LFO-Freq", ",", "drive-LFO-Rate", ",", "drive-LFO-Phase", ",", "drive-LFO-Shape", ",", "drive-LFO-Depth", ",", "MadFilter-TypeMod", ",", "MadFilter-FrequencyMod", ",", "MadFilter-ResonanceMod", ",", "MadFilter-DriveMod", ",", "MadFilter-GoMad", ",", "Bypass" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -22422,7 +22474,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Soundcard for audio output. This is used to preview audio to loudspeakers, with both internal plugins and external devices. When using external devices this is used to send the audio source to the input of the external device. This soundcard is also used to generate the CV signals controlling the external device paramaters.",
 					"id" : "obj-749",
-					"items" : [ "None", ",", "PHL 40B1U5600", ",", "STUDIO XL", ",", "BlackHole 16ch", ",", "MacBook Pro Speakers", ",", "Microsoft Teams Audio", ",", "WebexMediaAudioDevice", ",", "ZoomAudioDevice" ],
+					"items" : [ "None", ",", "Headsets", ",", "BlackHole 16ch", ",", "MacBook Pro Speakers", ",", "Microsoft Teams Audio", ",", "WebexMediaAudioDevice", ",", "ZoomAudioDevice" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -22454,7 +22506,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Soundcard for audio input. This is used only with external devices to record the output of the device.",
 					"id" : "obj-499",
-					"items" : [ "None", ",", "STUDIO XL", ",", "Cam Link 4K", ",", "BlackHole 16ch", ",", "MacBook Pro Microphone", ",", "Microsoft Teams Audio", ",", "WebexMediaAudioDevice", ",", "Loopback Audio", ",", "ZoomAudioDevice" ],
+					"items" : [ "None", ",", "IOUSBHostInterface", ",", "Unknown USB Audio Device", ",", "BlackHole 16ch", ",", "MacBook Pro Microphone", ",", "Microsoft Teams Audio", ",", "WebexMediaAudioDevice", ",", "Loopback Audio", ",", "ZoomAudioDevice" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -22726,7 +22778,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Audio sampling rate. Output audio .wav files will be recorded with this sampling rate.",
 					"id" : "obj-695",
-					"items" : [ 44100, ",", 48000, ",", 88200, ",", 96000, ",", 176400, ",", 192000 ],
+					"items" : [ 44100, ",", 48000, ",", 88200, ",", 96000 ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -23665,6 +23717,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1212", 0 ],
+					"midpoints" : [ 2400.302031535343303, 984.366221725940704, 2365.030966622538017, 984.366221725940704 ],
+					"source" : [ "obj-1070", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1481", 6 ],
 					"midpoints" : [ 1720.125974888446763, 2915.702803576093629, 323.459104888446745, 2915.702803576093629 ],
 					"source" : [ "obj-1072", 0 ]
@@ -24265,6 +24325,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-505", 0 ],
+					"midpoints" : [ 4245.599999129772186, 3493.5, 4292.971131084225817, 3493.5, 4292.971131084225817, 3452.5, 4172.342260535284368, 3452.5 ],
+					"source" : [ "obj-1136", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-125", 0 ],
 					"source" : [ "obj-1139", 0 ]
 				}
@@ -24302,7 +24370,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-436", 0 ],
-					"midpoints" : [ 3891.590506137958982, 3601.308132410049438, 3926.442626179806211, 3601.308132410049438 ],
+					"midpoints" : [ 3903.590506316772917, 3601.308132410049438, 3926.442626179806211, 3601.308132410049438 ],
 					"order" : 0,
 					"source" : [ "obj-1145", 0 ]
 				}
@@ -24311,7 +24379,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-751", 0 ],
-					"midpoints" : [ 3891.590506137958982, 3714.270635724067688, 3261.834009285492357, 3714.270635724067688 ],
+					"midpoints" : [ 3903.590506316772917, 3714.270635724067688, 3261.834009285492357, 3714.270635724067688 ],
 					"order" : 1,
 					"source" : [ "obj-1145", 0 ]
 				}
@@ -25264,7 +25332,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1145", 1 ],
-					"midpoints" : [ 3942.090506137959892, 3540.287332900505135, 3904.590506137958982, 3540.287332900505135 ],
+					"midpoints" : [ 3942.090506137959892, 3540.287332900505135, 3916.590506316772917, 3540.287332900505135 ],
 					"order" : 1,
 					"source" : [ "obj-1275", 0 ]
 				}
@@ -26025,7 +26093,17 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1136", 0 ],
+					"midpoints" : [ 4055.613247688335377, 3532.540260076522827, 4317.806625900528161, 3532.540260076522827, 4317.806625900528161, 3452.5, 4245.599999129772186, 3452.5 ],
+					"order" : 0,
+					"source" : [ "obj-1345", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-523", 1 ],
+					"order" : 1,
 					"source" : [ "obj-1345", 0 ]
 				}
 
@@ -26088,7 +26166,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1272", 0 ],
-					"midpoints" : [ 2570.842603701787084, 1153.49572879076004, 2466.080568617207064, 1153.49572879076004, 2466.080568617207064, 1091.974266600406736, 2375.702032345966927, 1091.974266600406736 ],
+					"midpoints" : [ 2570.842603701787084, 1152.695728778839111, 2466.080568617207064, 1152.695728778839111, 2466.080568617207064, 1091.974266600406736, 2375.702032345966927, 1091.974266600406736 ],
 					"source" : [ "obj-1356", 0 ]
 				}
 
@@ -29930,7 +30008,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1132", 1 ],
-					"midpoints" : [ 3987.01700949533506, 4129.974524319171906, 3807.836737929421361, 4129.974524319171906, 3807.836737929421361, 4062.139013350009918, 3842.665698291412809, 4062.139013350009918 ],
+					"midpoints" : [ 3987.01700949533506, 4129.974524319171906, 3807.836737929421361, 4129.974524319171906, 3807.836737929421361, 4077.339013576507568, 3842.665698291412809, 4077.339013576507568 ],
 					"source" : [ "obj-35", 0 ]
 				}
 
@@ -30277,8 +30355,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1083", 1 ],
-					"midpoints" : [ 3087.670422500202221, 4130.964878439903259, 3261.90576630695341, 4130.964878439903259 ],
+					"destination" : [ "obj-1083", 0 ],
+					"midpoints" : [ 3087.670422500202221, 4130.964878439903259, 3230.90576630695341, 4130.964878439903259 ],
 					"order" : 1,
 					"source" : [ "obj-389", 0 ]
 				}
@@ -30286,8 +30364,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1106", 1 ],
-					"midpoints" : [ 3087.670422500202221, 4120.7985859811306, 3182.365620850162486, 4120.7985859811306 ],
+					"destination" : [ "obj-1106", 0 ],
+					"midpoints" : [ 3087.670422500202221, 4120.7985859811306, 3147.365620850162486, 4120.7985859811306 ],
 					"order" : 2,
 					"source" : [ "obj-389", 0 ]
 				}
@@ -30295,8 +30373,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-126", 1 ],
-					"midpoints" : [ 3087.670422500202221, 4116.464878439903259, 3450.500001668930054, 4116.464878439903259 ],
+					"destination" : [ "obj-126", 0 ],
+					"midpoints" : [ 3087.670422500202221, 4116.464878439903259, 3419.500001668930054, 4116.464878439903259 ],
 					"order" : 0,
 					"source" : [ "obj-389", 0 ]
 				}
@@ -30383,16 +30461,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-390", 0 ],
-					"source" : [ "obj-400", 1 ]
+					"destination" : [ "obj-600", 1 ],
+					"midpoints" : [ 5134.770184798286209, 3691.966668248176575, 5074.866666436195374, 3691.966668248176575 ],
+					"source" : [ "obj-400", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-600", 1 ],
-					"midpoints" : [ 5134.770184798286209, 3691.966668248176575, 5074.866666436195374, 3691.966668248176575 ],
-					"source" : [ "obj-400", 0 ]
+					"destination" : [ "obj-773", 1 ],
+					"source" : [ "obj-400", 1 ]
 				}
 
 			}
@@ -30574,13 +30652,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1132", 0 ],
-					"source" : [ "obj-426", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-1333", 1 ],
 					"midpoints" : [ 3814.665698291412809, 3799.068533271551132, 3860.665698291412809, 3799.068533271551132 ],
 					"source" : [ "obj-426", 1 ]
@@ -30591,6 +30662,14 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1333", 0 ],
 					"source" : [ "obj-426", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-878", 1 ],
+					"midpoints" : [ 3829.665698291412809, 4034.294884204864502, 3898.316715361230308, 4034.294884204864502 ],
+					"source" : [ "obj-426", 2 ]
 				}
 
 			}
@@ -30684,6 +30763,15 @@
 				"patchline" : 				{
 					"destination" : [ "obj-426", 0 ],
 					"midpoints" : [ 3926.442626179806211, 3712.780419617891312, 3799.665698291412809, 3712.780419617891312 ],
+					"order" : 2,
+					"source" : [ "obj-436", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-878", 0 ],
+					"midpoints" : [ 3926.442626179806211, 4056.227255821228027, 3887.816715361230308, 4056.227255821228027 ],
 					"order" : 1,
 					"source" : [ "obj-436", 0 ]
 				}
@@ -30958,7 +31046,17 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1136", 1 ],
+					"midpoints" : [ 4172.342260535284368, 3454.560956180095673, 4256.099999129772186, 3454.560956180095673 ],
+					"order" : 0,
+					"source" : [ "obj-475", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-505", 0 ],
+					"order" : 1,
 					"source" : [ "obj-475", 0 ]
 				}
 
@@ -31259,7 +31357,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-357", 0 ],
-					"midpoints" : [ 3891.376220525852659, 3396.335974880199501, 3926.216681118532506, 3396.335974880199501 ],
+					"midpoints" : [ 3903.590506316772917, 3396.335974880199501, 3926.216681118532506, 3396.335974880199501 ],
 					"order" : 0,
 					"source" : [ "obj-514", 0 ]
 				}
@@ -33728,7 +33826,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-600", 0 ],
 					"midpoints" : [ 4941.770182592914352, 3610.166667073965073, 5064.366666436195374, 3610.166667073965073 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-77", 0 ]
 				}
 
@@ -33738,6 +33836,15 @@
 					"destination" : [ "obj-601", 0 ],
 					"midpoints" : [ 4941.770182592914352, 3610.166667073965073, 5280.000007092952728, 3610.166667073965073 ],
 					"order" : 0,
+					"source" : [ "obj-77", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-773", 0 ],
+					"midpoints" : [ 4941.770182592914352, 3678.966667294502258, 5187.270184798286209, 3678.966667294502258 ],
+					"order" : 1,
 					"source" : [ "obj-77", 0 ]
 				}
 
@@ -33777,6 +33884,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-390", 0 ],
+					"source" : [ "obj-773", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-783", 0 ],
 					"source" : [ "obj-774", 0 ]
 				}
@@ -33806,7 +33920,17 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1070", 0 ],
+					"midpoints" : [ 2342.003551595218596, 778.900000214576721, 2400.302031535343303, 778.900000214576721 ],
+					"order" : 0,
+					"source" : [ "obj-778", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-777", 0 ],
+					"order" : 1,
 					"source" : [ "obj-778", 0 ]
 				}
 
@@ -34670,6 +34794,24 @@
 				"patchline" : 				{
 					"destination" : [ "obj-623", 0 ],
 					"source" : [ "obj-877", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1132", 0 ],
+					"midpoints" : [ 3887.816715361230308, 4123.139013648033142, 3864.082849145706405, 4123.139013648033142, 3864.082849145706405, 4082.139013648033142, 3829.665698291412809, 4082.139013648033142 ],
+					"order" : 1,
+					"source" : [ "obj-878", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-978", 0 ],
+					"midpoints" : [ 3887.816715361230308, 4123.139013648033142, 3920.011968585182331, 4123.139013648033142, 3920.011968585182331, 4082.139013648033142, 3938.607221606478561, 4082.139013648033142 ],
+					"order" : 0,
+					"source" : [ "obj-878", 0 ]
 				}
 
 			}
@@ -35615,6 +35757,14 @@
 				"patchline" : 				{
 					"destination" : [ "obj-121", 0 ],
 					"source" : [ "obj-977", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-878", 0 ],
+					"midpoints" : [ 3938.607221606478561, 4123.139013648033142, 3916.811968537498615, 4123.139013648033142, 3916.811968537498615, 4082.139013648033142, 3887.816715361230308, 4082.139013648033142 ],
+					"source" : [ "obj-978", 0 ]
 				}
 
 			}
