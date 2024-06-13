@@ -21,7 +21,7 @@
 * its authors by adding a reference to this publication:
 * 
 * S. Fasciani, R. Simionato, A. Tidemann  "A Universal Tool for Generating Datasets from Audio Effects"
-submitted to Sound and Music Computing Conference 2024..
+in Proceedings of Sound and Music Computing Conference 2024, Porto, Portugal.
 */
 
 // This is the "Fixed Initial Window Location" you see in

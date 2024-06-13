@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 6,
+			"minor" : 6,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 0.0, 52.0, 1658.0, 575.0 ],
+		"rect" : [ 34.0, 87.0, 2496.0, 889.0 ],
 		"openrect" : [ 0.0, 0.0, 1657.799999999999955, 574.16922999999997 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -41,13 +41,58 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"color" : [ 0.839216, 0.833749, 0.393224, 1.0 ],
+					"fontname" : "Arial",
+					"fontsize" : 10.0,
+					"id" : "obj-401",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 4674.0, 1456.641836663417962, 110.0, 20.0 ],
+					"text" : "r _DGMDresetPhasors"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.504772, 0.748976, 0.839216, 1.0 ],
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 10.0,
+					"id" : "obj-396",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 2150.668570511348662, 1013.0, 111.0, 20.0 ],
+					"text" : "s _DGMDresetPhasors"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.839216, 0.833749, 0.393224, 1.0 ],
+					"fontname" : "Arial",
+					"fontsize" : 10.0,
+					"id" : "obj-394",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 2183.168570511348662, 757.0, 114.0, 20.0 ],
+					"text" : "r _DGMDparamChange"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-1136",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 4236.099999129772186, 3463.5, 29.5, 20.0 ],
-					"text" : "0"
+					"text" : "1"
 				}
 
 			}
@@ -1061,6 +1106,7 @@
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_longname" : "live.text[30]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
 						}
@@ -1323,11 +1369,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-126",
+					"linecount" : 6,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 3410.000001668930054, 4165.409032344818115, 50.0, 20.0 ]
+					"patching_rect" : [ 3410.000001668930054, 4165.409032344818115, 50.0, 76.0 ],
+					"text" : "write /Users/stefanof/Desktop/TST/Sweep4.wav"
 				}
 
 			}
@@ -2630,6 +2678,7 @@
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_longname" : "live.text[28]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
 						}
@@ -2698,6 +2747,7 @@
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_longname" : "live.text[27]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
 						}
@@ -2766,6 +2816,7 @@
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_longname" : "live.text[26]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
 						}
@@ -2834,6 +2885,7 @@
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_longname" : "live.text[25]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
 						}
@@ -2903,6 +2955,7 @@
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_longname" : "live.text[24]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
 						}
@@ -2972,6 +3025,7 @@
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_longname" : "live.text[23]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
 						}
@@ -3041,6 +3095,7 @@
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_longname" : "live.text[22]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
 						}
@@ -3110,6 +3165,7 @@
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_longname" : "live.text[21]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
 						}
@@ -3180,6 +3236,7 @@
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_longname" : "live.text[15]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
 						}
@@ -3249,6 +3306,7 @@
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_longname" : "live.text[16]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
 						}
@@ -3318,6 +3376,7 @@
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_longname" : "live.text[17]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
 						}
@@ -3387,6 +3446,7 @@
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_longname" : "live.text[18]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
 						}
@@ -3456,6 +3516,7 @@
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_longname" : "live.text[20]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
 						}
@@ -3525,6 +3586,7 @@
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_longname" : "live.text[14]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
 						}
@@ -3594,6 +3656,7 @@
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_longname" : "live.text[12]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
 						}
@@ -3663,6 +3726,7 @@
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_longname" : "live.text[13]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
 						}
@@ -3732,6 +3796,7 @@
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_longname" : "live.text[11]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
 						}
@@ -3805,6 +3870,7 @@
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_longname" : "live.text[10]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
 						}
@@ -3886,7 +3952,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 901.959104888446745, 394.582277573501585, 129.0, 20.0 ],
 					"saved_object_attributes" : 					{
-						"filename" : "DGMD_scale_app_width",
+						"filename" : "DGMD_scale_app_width.js",
 						"parameter_enable" : 0
 					}
 ,
@@ -4061,8 +4127,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -4119,15 +4185,15 @@
 								"box" : 								{
 									"bgcolor" : [ 0.996078431372549, 0.882352941176471, 0.611764705882353, 0.0 ],
 									"id" : "obj-762",
-									"linecount" : 33,
+									"linecount" : 34,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 36.243157463825355, 92.800078212341305, 332.0, 462.0 ],
+									"patching_rect" : [ 36.243157463825355, 92.800078212341305, 334.0, 476.0 ],
 									"presentation" : 1,
 									"presentation_linecount" : 23,
 									"presentation_rect" : [ 36.243157463825355, 92.800078212341305, 588.0, 328.0 ],
-									"text" : "This file is part of the DGMD (Dataset Generator for Musical Devices)\n\nThe DGMD can be obtained at http://stefanofasciani.com/dgmd.html\n\nDGMD Copyright (C) 2024 Stefano Fasciani, Aleksander Tidemann, Riccardo Simionato, University of Oslo\nInquiries: stefanofasciani@stefanofasciani.com\n \nThe DGMD is free software: you can redistribute it and/or modify it under the  terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.\n\nThe DGMD is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Less General Public License for more details.\n\nYou should have received a copy of the GNU Lesser General Public License along with DGMD. \nIf not, see <http://www.gnu.org/licenses/>.\n\nIf you use the DGMD or any part of it in any system or publication, please acknowledge its authors by adding a reference to this pubblication:\n\nS. Fasciani, R. Simionato, A. Tidemann  \"A Universal Tool for Generating Datasets from Audio Effects\"\nsubmitted to Sound and Music Computing Conference 2024.\n",
+									"text" : "This file is part of the DGMD (Dataset Generator for Musical Devices)\n\nThe DGMD can be obtained at http://stefanofasciani.com/dgmd.html\n\nDGMD Copyright (C) 2024 Stefano Fasciani, Aleksander Tidemann, Riccardo Simionato, University of Oslo\nInquiries: stefanofasciani@stefanofasciani.com\n \nThe DGMD is free software: you can redistribute it and/or modify it under the  terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.\n\nThe DGMD is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Less General Public License for more details.\n\nYou should have received a copy of the GNU Lesser General Public License along with DGMD. \nIf not, see <http://www.gnu.org/licenses/>.\n\nIf you use the DGMD or any part of it in any system or publication, please acknowledge its authors by adding a reference to this pubblication:\n\nS. Fasciani, R. Simionato, A. Tidemann  \"A Universal Tool for Generating Datasets from Audio Effects\"\nin Proceedings of Sound and Music Computing Conference 2024, Porto, Portugal.\n",
 									"textcolor" : [ 0.968627450980392, 0.968627450980392, 0.968627450980392, 1.0 ]
 								}
 
@@ -4360,6 +4426,7 @@
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_longname" : "live.text[5]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
 						}
@@ -8400,6 +8467,7 @@
 							"parameter_longname" : "From Device",
 							"parameter_mmax" : 6.0,
 							"parameter_mmin" : -70.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "From Device",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4
@@ -8536,6 +8604,7 @@
 					"hint" : "This shows the selected path where output files (.wav and .csv) are saved.",
 					"id" : "obj-580",
 					"ignoreclick" : 1,
+					"linecount" : 2,
 					"maxclass" : "textedit",
 					"numinlets" : 1,
 					"numoutlets" : 4,
@@ -8544,6 +8613,7 @@
 					"patching_rect" : [ 2708.541856403870042, 3749.887615025043488, 83.0, 52.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1463.847392315512707, 54.014347105708737, 176.329519181673959, 46.856185317039461 ],
+					"text" : "/Users/stefanof/Desktop/TST/",
 					"textcolor" : [ 0.701960784313725, 0.701960784313725, 0.701960784313725, 1.0 ]
 				}
 
@@ -8783,6 +8853,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_longname" : "live.numbox",
 							"parameter_mmax" : 100.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.numbox",
 							"parameter_type" : 0,
 							"parameter_units" : "%i %",
@@ -8830,7 +8901,7 @@
 					"fontsize" : 10.0,
 					"hint" : "If \"Monitor Plugin\" is Disables, you can select a parameter from this menu and control it from the number box or slidet at the bottom. This can help to understand how the range 0 to 1 is mapped to a specific device value.\n\nIf \"Monitor Plugin\" is Enabled, you can change a parameter on the internal plugin GUI, and the name of the modified parameter will show here, and the associated value will be displayed on the number box and slider slidet at the bottom. This can help to find parameters which internal name is different than the one on the GUI.",
 					"id" : "obj-1219",
-					"items" : [ "Filter-Type", ",", "Filter-Freq", ",", "Filter-Res", ",", "Filter-Drive", ",", "type-LFO-Sync", ",", "type-LFO-Freq", ",", "type-LFO-Rate", ",", "type-LFO-Phase", ",", "type-LFO-Shape", ",", "type-LFO-Depth", ",", "resonance-LFO-Sync", ",", "resonance-LFO-Freq", ",", "resonance-LFO-Rate", ",", "resonance-LFO-Phase", ",", "resonance-LFO-Shape", ",", "resonance-LFO-Depth", ",", "frequency-LFO-Sync", ",", "frequency-LFO-Freq", ",", "frequency-LFO-Rate", ",", "frequency-LFO-Phase", ",", "frequency-LFO-Shape", ",", "frequency-LFO-Depth", ",", "drive-LFO-Sync", ",", "drive-LFO-Freq", ",", "drive-LFO-Rate", ",", "drive-LFO-Phase", ",", "drive-LFO-Shape", ",", "drive-LFO-Depth", ",", "MadFilter-TypeMod", ",", "MadFilter-FrequencyMod", ",", "MadFilter-ResonanceMod", ",", "MadFilter-DriveMod", ",", "MadFilter-GoMad", ",", "Bypass" ],
+					"items" : [ "main: Output", ",", "main: Active #FDN", ",", "FDN: Feedback", ",", "FDN: Dry", ",", "FDN: Wet" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -9070,7 +9141,7 @@
 					"fontsize" : 10.0,
 					"hint" : "",
 					"id" : "obj-1241",
-					"items" : [ "AU DLS Synth 1", ",", "IAC Driver Bus 1", ",", "from Max 1", ",", "from Max 2" ],
+					"items" : [ "AU DLS Synth 1", ",", "IAC Driver Bus 1", ",", "XONE:K2", ",", "from Max 1", ",", "from Max 2" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -9119,7 +9190,7 @@
 					"fontsize" : 10.0,
 					"hint" : "",
 					"id" : "obj-1243",
-					"items" : [ "IAC Driver Bus 1", ",", "to Max 1", ",", "to Max 2" ],
+					"items" : [ "IAC Driver Bus 1", ",", "XONE:K2", ",", "to Max 1", ",", "to Max 2" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -9224,7 +9295,7 @@
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1261",
 					"maxclass" : "number",
-					"maximum" : 1,
+					"maximum" : 100,
 					"minimum" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 2,
@@ -9255,6 +9326,7 @@
 			}
 , 			{
 				"box" : 				{
+					"active" : 0,
 					"fontface" : 1,
 					"fontsize" : 10.0,
 					"hint" : "Only for Step mode. Given the current parameters settings, it estimates the total number of combinations for Step mode.",
@@ -9309,14 +9381,13 @@
 					"patching_rect" : [ 2178.668570511348662, 1346.436001715148905, 78.0, 29.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 128.393478964960735, 53.512495427814116, 104.0, 18.0 ],
-					"text" : "Current Combination",
+					"text" : "Current Repetition",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"cantchange" : 1,
 					"fontface" : 1,
 					"fontsize" : 10.0,
 					"hint" : "Automatically computed in Step mode. Must be set in Random and Sweep mode. No effect (and not visible) in Step and Manual modes. In Random and Swwp modes it determines how many times the source file will be sent to the device and the output recorded.",
@@ -9331,8 +9402,7 @@
 					"patching_rect" : [ 2314.202032345966927, 1102.974266600406736, 36.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 440.619074106951871, 53.512495427814116, 60.181520140505313, 20.0 ],
-					"textcolor" : [ 0.553, 0.553, 0.553, 1.0 ],
-					"triangle" : 0,
+					"textcolor" : [ 0.969, 0.969, 0.969, 1.0 ],
 					"varname" : "numb-combinations"
 				}
 
@@ -9349,7 +9419,7 @@
 					"patching_rect" : [ 2366.202032345966927, 1102.974266600406736, 119.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 302.71932264332429, 53.512495427814116, 136.66666704416275, 18.0 ],
-					"text" : "Total Combinations",
+					"text" : "Repetitions",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -9683,6 +9753,7 @@
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_longname" : "live.text[19]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
 						}
@@ -9904,7 +9975,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-1331",
-					"items" : "<empty>",
+					"items" : [ "main: Output", ",", "main: Active #FDN", ",", "FDN: Feedback", ",", "FDN: Dry", ",", "FDN: Wet" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -9972,6 +10043,7 @@
 							"parameter_longname" : "To Device",
 							"parameter_mmax" : 6.0,
 							"parameter_mmin" : -70.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "To Device",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4
@@ -10498,7 +10570,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 3485.650506557575682, 3869.189602077007294, 50.0, 20.0 ],
-					"text" : "1000"
+					"text" : "781"
 				}
 
 			}
@@ -11101,7 +11173,7 @@
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 3626.534207995458019, 3507.574957744560379, 100.0, 50.0 ],
-					"text" : "/Users/stefanof/Desktop/TEST/inputs/stereo.wav",
+					"text" : "/Users/stefanof/Desktop/TST/stimulus.wav",
 					"textcolor" : [ 0.14902, 0.14902, 0.14902, 1.0 ]
 				}
 
@@ -11115,7 +11187,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2910.459104888446745, 3572.951965272426605, 50.0, 76.0 ],
-					"text" : "\"Macintosh HD:/Users/stefanof/Desktop/TEST/\""
+					"text" : "\"Macintosh HD:/Users/stefanof/Desktop/TST/\""
 				}
 
 			}
@@ -12426,7 +12498,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 3640.289967929167688, 1802.833313000000089, 50.0, 20.0 ],
-					"text" : "7"
+					"text" : "4"
 				}
 
 			}
@@ -14999,11 +15071,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-1106",
+					"linecount" : 7,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 3137.865620850162486, 4174.076447427272797, 54.0, 20.0 ]
+					"patching_rect" : [ 3137.865620850162486, 4174.076447427272797, 54.0, 87.0 ],
+					"text" : "write /Users/stefanof/Desktop/TST/SourceLoopback.wav"
 				}
 
 			}
@@ -15062,11 +15136,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-1083",
+					"linecount" : 5,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 3221.40576630695341, 4194.409032344818115, 50.0, 20.0 ]
+					"patching_rect" : [ 3221.40576630695341, 4194.409032344818115, 50.0, 64.0 ],
+					"text" : "write /Users/stefanof/Desktop/TST/4.wav"
 				}
 
 			}
@@ -15595,7 +15671,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 3627.256896497361595, 4037.520724534988403, 50.0, 31.0 ],
-					"text" : "crop 0 1000"
+					"text" : "crop 0 781"
 				}
 
 			}
@@ -15954,7 +16030,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2708.602459724468645, 3991.311245977878571, 124.0, 42.0 ],
-					"text" : "write /Users/stefanof/Desktop/TEST/my_datasetPP.csv"
+					"text" : "write /Users/stefanof/Desktop/TST/.csv"
 				}
 
 			}
@@ -17089,12 +17165,12 @@
 				"box" : 				{
 					"bgcolor" : [ 0.996078431372549, 0.882352941176471, 0.611764705882353, 0.0 ],
 					"id" : "obj-762",
-					"linecount" : 29,
+					"linecount" : 30,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 36.243157463825355, 92.800078212341305, 320.0, 342.0 ],
-					"text" : "This file is part of the DGMD (Dataset Generator for Musical Devices)\n\nThe DGMD can be obtained at http://stefanofasciani.com/dgmd.html \n\nDGMD Copyright (C) 2024 Stefano Fasciani, Aleksander Tidemann, Riccardo Simionato, University of Oslo\nInquiries: stefanofasciani@stefanofasciani.com\n \nThe DGMD is free software: you can redistribute it and/or modify it under the  terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.\n\nThe DGMD is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Less General Public License for more details.\n\nYou should have received a copy of the GNU Lesser General Public License along with DGMD. \nIf not, see <http://www.gnu.org/licenses/>.\n\nIf you use the DGMD or any part of it in any system or publication, please acknowledge its authors by adding a reference to this pubblication:\n\nS. Fasciani, R. Simionato, A. Tidemann  \"A Universal Tool for Generating Datasets from Audio Effects\"\nsubmitted to Sound and Music Computing Conference 2024.\n",
+					"patching_rect" : [ 36.243157463825355, 92.800078212341305, 320.0, 353.0 ],
+					"text" : "This file is part of the DGMD (Dataset Generator for Musical Devices)\n\nThe DGMD can be obtained at http://stefanofasciani.com/dgmd.html \n\nDGMD Copyright (C) 2024 Stefano Fasciani, Aleksander Tidemann, Riccardo Simionato, University of Oslo\nInquiries: stefanofasciani@stefanofasciani.com\n \nThe DGMD is free software: you can redistribute it and/or modify it under the  terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.\n\nThe DGMD is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Less General Public License for more details.\n\nYou should have received a copy of the GNU Lesser General Public License along with DGMD. \nIf not, see <http://www.gnu.org/licenses/>.\n\nIf you use the DGMD or any part of it in any system or publication, please acknowledge its authors by adding a reference to this pubblication:\n\nS. Fasciani, R. Simionato, A. Tidemann  \"A Universal Tool for Generating Datasets from Audio Effects\"\nin Proceedings of Sound and Music Computing Conference 2024, Porto, Portugal.\n",
 					"textcolor" : [ 0.968627450980392, 0.968627450980392, 0.968627450980392, 1.0 ]
 				}
 
@@ -19874,7 +19950,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 195.459104888446745, 1911.333313000000089, 38.0, 20.0 ],
-					"text" : "1"
+					"text" : "4"
 				}
 
 			}
@@ -20317,7 +20393,7 @@
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 702.459104888446745, 3716.348844885826111, 100.0, 50.0 ],
-					"text" : "plug MadFilter",
+					"text" : "plug Protoverb",
 					"textcolor" : [ 0.14902, 0.14902, 0.14902, 1.0 ]
 				}
 
@@ -20846,14 +20922,14 @@
 						"subtype" : "Undefined",
 						"embed" : 1,
 						"snapshot" : 						{
-							"pluginname" : "MadFilter.vst3info",
-							"plugindisplayname" : "MadFilter",
+							"pluginname" : "Protoverb.vstinfo",
+							"plugindisplayname" : "Protoverb 1.0.0",
 							"pluginsavedname" : "",
-							"pluginsaveduniqueid" : -1126654436,
+							"pluginsaveduniqueid" : 0,
 							"version" : 1,
 							"isbank" : 0,
 							"isbase64" : 1,
-							"blob" : "2312.VMjLg7OB...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9DiM2fiKPUjZTEDLTEEUUoFUSEjKtDDQBQUPIUETMEDTtHjZFkkKD4BQEAEah8VVWk0b1oVTOEkUYYWTGokKXcEVxU0UY4BQPIDQt3hKt3hKt3hKt3hKtTETRUDUS4BQl4xaQYjKAcCTAoVRWoULUY0RLkkdSwVRWk0cAY1XmcmUisVPP4RRP4hKt3hKH4hKtbyJt3BUAkTUP0TPP4hPpYTVtPjKDUDTrI1aYcUVyYmZQ8TPGo0YMcUVtf0UXIWUWkkKDAkPD4hKt3hKt3hKt3hKt3RUPIUQTMkKDYlKuEkQtDzMPEjZIckVwTkUKwTV5MEdEYzXqEjYic1cVM1ZAAkKIAkKt3hKt3hKt3RQtDjKTETRUAUSAAkKBolQY4BQtPTQPwlXuk0UYMmcpE0SMcjVmEzUY4BVWgkbUcUVtPDTBQjKt3hKt3hKt3RPP4hKUAkTEQ0TtPjYt7VTF4RP2.UPpkzUZESUVsDSYo2T4sVagkVPlM1Y2Y0XqEDTtjDTt3hKt3hKt3hK2rhKtPUPIUETMEDTtHjZFkkKDY1PEgkUZIWTWkEdvHTV3sFaisVPlM1Y2Y0XqEDTtjDTt3hKt3hKt3hKt3hKtPUPIUETMEDTtHjZFkkKDYFQEgkUZIWTWkEdvfVV3UkUhASUrEVZqcjKwTjQgASUF4RPp4RPt3hKt3RdL0VTAQjKPUjZTEDLD4RPHAkVpEDTtHEUlk0a2YzXqkzUKgWUwHVczXEVz0jUY4BVWgkbUcUVtPDTBQjKt3hKt3hKt3BNO4hKUAkTEQ0TtPjYt7VTF4RP5AUPrslQgoWUrI1bPcEY1UkQtDSQFEFLUYjKAolKA4hKt3hKt3hKt3hKt.UQpQUPvPjKAgDTZoVPP4BUTYVV3UkUhASUrEVZqc0RLkkdSoVUFIldmYjKwTjQgASUF4RPp4RPt3hKt3hKt3hKt3hKPUjZTEDLD4RPHAkVpEDTtLEUlkEdUYkXvTEagk1ZWsDSYo2TrkzUYcWPlM1Y2Y0XqEDTtjDTt3hKt3BRt3hK2rhKtPUPIUETMEDTtHjZFkkKD4RQEgEahsVQWM1ZzDCVz.iPSYDNDIlaEEiXqEjYic1cVM1ZAAkKIAkKt3hKt3hKt3hKt3hKTETRUAUSAAkKBolQY4BQ1QTQXwlXqUzUisFMwfEMvHzTFgiZhcVTWkkKXcEVxU0UY4BQPIDQt3hKt3hKt3BTAAkKtTETRUDUS4BQl4xaQYjKAAUTAwVRWk0cUcUVz0jUjMmcpE0SMcjVmEzUY4BVWgkbUcUVtPDTBQjKt3hKt3hKt3RPP4hKUAkTEQ0TtPjYt7VTF4RPLEUPrkzUYcWUWkEcMYEYyYmZQ8TSWQFcMYjKwTjQgASUF4RPp4RPt3hKt3hKt3hcqLjKPUjZTEDLD4RPHAkVpEDTtPEUPE1YQwVVucmQisVRWsjZIckVwTkUgUWTF4RLEYTXvTkQtDjZtDjKt3hKt3hKt3hKt3BTEoFUAACQtDDRPokZAAkKXQETgcVTrk0a2YzXqkzUKwVRWk0cUcUVz0jUjMGNFkkKXcEVxU0UY4BQPIDQt3hKt3hKt3hKt3hKtTETRUDUS4BQl4xaQYjKAQTTAMWQFkEaqYTX5UEahMmXwD1bEYTVtf0UXIWUWkkKDAkPD4hKt3hKt3hKt3hKt3RUPIUQTMkKDYlKuEkQtDjYQEzbEYTVrslQgoWUrI1bHcUV4gCagcFMwf0ZvDSXpEjYic1cVM1ZAAkKIAkKt3hKt3hKt3hKt3hKTETRUAUSAAkKBolQY4BQ1QTQ5YEVpkkUZIWTWkEdvHzXzDzUYMGNFkkKXcEVxU0UY4BQPIDQt3hKt3hKt3hKt3hKtTETRUDUS4BQl4xaQYjKAAUTAgWUwHVczXEVz0jUYMmcpE0SQYUV1E0QZ4BVWgkbUcUVtPDTBQjKt3hKt3hKt3hKt3hKUAkTEQ0TtPjYt7VTF4RPLEUP3UULhUGMVgEcMYUVyYmZQ8TVrI1ZEcjKwTjQgASUF4RPp4RPt3hKtXlKt3hcqLjKPUjZTEDLD4RPHAkVpEDTtPEUlI1ZMISXzUDagkVUVsDSYo2T1clUXkWUF4RLEYTXvTkQtDjZtDjKt3hKt3hKt3hKt3BTEoFUAACQtDDRPokZAAkKSQkYhsVSxDFcEwVXoUkUKwTV5MEdEYzXqEjYic1cVM1ZAAkKIAkKt3hKt3hKt3RQtDjKTETRUAUSAAkKBolQY4BQtTTQHcUV4gCagcFMwf0ZvHzTFgidh4VQFI1ZAY1XmcmUisVPP4RRP4hKt3hKt3hKtPjKA4BUAkTUP0TPP4hPpYTVtPjcDUDRWkUd3vVXmQSLXsFLBMkQ3nmXzPSLX4BVWgkbUcUVtPDTBQjKt3hKt3hKt3xJO4hKUAkTEQ0TtPjYt7VTF4RP2.UP5s1QhsFLBMkQ3PTVqEzQi4VPlM1Y2Y0XqEDTtjDTt3hKt3hKt3hKt3hKtPUPIUETMEDTtHjZFkkKDY1PEA0UjYWUVsDSYo2TrkzUYcWPlM1Y2Y0XqEDTtjDTt3hKt3BRt3hK2rhKtPUPIUETMEDTtHjZFkkKDY2PEA0UjYWUVsDSYo2T1clUXkWUF4RLEYTXvTkQtDjZtDjKt3hKt3hKt3hKt3BTEoFUAACQtDDRPokZAAkKNQkKiQSPWk0b1oVTOkzUXoWUF4RLEYTXvTkQtDjZtDjKt3hKt3hKtPkKD4BTEoFUAACQtDDRPokZAAkKOQkKiQSPWk0b1oVTO0zQZcVPWkkKXcEVxU0UY4BQPIDQt3hKt3hKt3hKAAkKtTETRUDUS4BQl4xaQYjKAMCTAo2ZGI1ZvHzTFgidhQCMwfkKXcEVxU0UY4BQPIDQt3hKt3hKt3hKq7jKt3hKt3hKt3hKt3hRUACTEEzZh8VVWgkdUYTTmE0UX4BQP4hPqcjXm0jLh4BQP4xPt.0Qt3hKt3hKt3hKtQUUCUEQTg2ZrM1YQcUVDUjQicVP77RRC8Vav8lak4Fc9vyKVMEUy.Ea0cVZtMEcgQWY9.."
+							"blob" : "839.CMlaKA....fQPMDZ....ATGZPYE...P.....AjlaoQWZgwVZ5UF..........................LvBiDTS8.kbuQ2a1UlbhovHVUlby0SLv.CLvnvHE4FYoEla8vVZzQGakovHt0VO0nvHsMWOt8lakovHsMWOM8FYWgFaJLRay0CToQ2XnckBiz1b8HjbkEFcnovHsMWOXAmbkM2bJLha10CLJLxXs0SagklaJLzXOAWOw.CLt.CLJLhQD4TOwnvHi0VOPMzaxUlBSITXyUVOznvT2klam0CLt.CLJLEUxk1Y8DiBPM0atcVOvn.TF8Faj0CLJ.kQowVY8DiBGYTZrUVOxnvQSMVXrUVOvnvPnwTX40CLJLUcxI2S8DiBRUlc8PSLvHiBLUDQ8.iKv.iBPEzQE0CLJ.UXmU1bO4VOvnvPuIWYN0yLJLEaoMVY8PiBUkzWuAWOvnPSoQVZA0SMJzTZjkFT8XiBiLVa8XDQNofQB0yM13BL0n.QxkWOw.CLt.CLJbUYz0CM03hLznvSxQVOvnfTtQVOvn.TgIWXsMWO2nfBJnvKu.xTkMFco8lafX1axARcmwVdfL1asAmbkM2bkQFHhklagIWdfPTXzElBu7BHD8jSmPEHT8TUCgDHTgTRSofBjPBIjjSN1nvOmQ1YiUlakIlNkEVXgEVXgElNgEVXhEVXgElNmo1YuclZnUlNmo1YhcVamolNns1YlM1amklNjMFZgEVXgElNJ7lau81avAWX5.mXvMFbjAWY5.mYvcFbnAWZ5DVX5LVX5DVY5LlY5DlX5D1X5DFY5DlY5D1Y5DFZ5DVZ5DlZ5DlBqoSXroSXsoSXtoSXuoSXvoiXgoiXhoiXioiXjoiXkoiXloiXmoiXnERbyEjL1LSbxEzMzUmc2EDM2DmbAcSLwofbAcCd4oGbpA2ZvwFbsAmav8FbvETQFczPHkjRKwTSN8DTQI0TTUkUWgUVZIVZholXqIFah0lXtI1ahAmPiI1XJL1XjMVYDM1Yig1XoMlZis1XrMVawMTPw.CQpklPAE2bAIiMyDWZgETLyfSbBETLvfVXnM1YlgFYwHzYiglYnUlBwbFbm8VPwjSOxjCNyLiB..."
 						}
 ,
 						"snapshotlist" : 						{
@@ -20863,19 +20939,19 @@
 									"version" : 2,
 									"minorversion" : 0,
 									"name" : "Massive",
-									"origin" : "MadFilter.vst3info",
-									"type" : "VST3",
-									"subtype" : "AudioEffect",
+									"origin" : "Protoverb.vstinfo",
+									"type" : "VST",
+									"subtype" : "MidiEffect",
 									"embed" : 1,
 									"snapshot" : 									{
-										"pluginname" : "MadFilter.vst3info",
-										"plugindisplayname" : "MadFilter",
+										"pluginname" : "Protoverb.vstinfo",
+										"plugindisplayname" : "Protoverb 1.0.0",
 										"pluginsavedname" : "",
-										"pluginsaveduniqueid" : -1126654436,
+										"pluginsaveduniqueid" : 0,
 										"version" : 1,
 										"isbank" : 0,
 										"isbase64" : 1,
-										"blob" : "2312.VMjLg7OB...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9DiM2fiKPUjZTEDLTEEUUoFUSEjKtDDQBQUPIUETMEDTtHjZFkkKD4BQEAEah8VVWk0b1oVTOEkUYYWTGokKXcEVxU0UY4BQPIDQt3hKt3hKt3hKt3hKtTETRUDUS4BQl4xaQYjKAcCTAoVRWoULUY0RLkkdSwVRWk0cAY1XmcmUisVPP4RRP4hKt3hKH4hKtbyJt3BUAkTUP0TPP4hPpYTVtPjKDUDTrI1aYcUVyYmZQ8TPGo0YMcUVtf0UXIWUWkkKDAkPD4hKt3hKt3hKt3hKt3RUPIUQTMkKDYlKuEkQtDzMPEjZIckVwTkUKwTV5MEdEYzXqEjYic1cVM1ZAAkKIAkKt3hKt3hKt3RQtDjKTETRUAUSAAkKBolQY4BQtPTQPwlXuk0UYMmcpE0SMcjVmEzUY4BVWgkbUcUVtPDTBQjKt3hKt3hKt3RPP4hKUAkTEQ0TtPjYt7VTF4RP2.UPpkzUZESUVsDSYo2T4sVagkVPlM1Y2Y0XqEDTtjDTt3hKt3hKt3hK2rhKtPUPIUETMEDTtHjZFkkKDY1PEgkUZIWTWkEdvHTV3sFaisVPlM1Y2Y0XqEDTtjDTt3hKt3hKt3hKt3hKtPUPIUETMEDTtHjZFkkKDYFQEgkUZIWTWkEdvfVV3UkUhASUrEVZqcjKwTjQgASUF4RPp4RPt3hKt3RdL0VTAQjKPUjZTEDLD4RPHAkVpEDTtHEUlk0a2YzXqkzUKgWUwHVczXEVz0jUY4BVWgkbUcUVtPDTBQjKt3hKt3hKt3BNO4hKUAkTEQ0TtPjYt7VTF4RP5AUPrslQgoWUrI1bPcEY1UkQtDSQFEFLUYjKAolKA4hKt3hKt3hKt3hKt.UQpQUPvPjKAgDTZoVPP4BUTYVV3UkUhASUrEVZqc0RLkkdSoVUFIldmYjKwTjQgASUF4RPp4RPt3hKt3hKt3hKt3hKPUjZTEDLD4RPHAkVpEDTtLEUlkEdUYkXvTEagk1ZWsDSYo2TrkzUYcWPlM1Y2Y0XqEDTtjDTt3hKt3BRt3hK2rhKtPUPIUETMEDTtHjZFkkKD4RQEgEahsVQWM1ZzDCVz.iPSYDNDIlaEEiXqEjYic1cVM1ZAAkKIAkKt3hKt3hKt3hKt3hKTETRUAUSAAkKBolQY4BQ1QTQXwlXqUzUisFMwfEMvHzTFgiZhcVTWkkKXcEVxU0UY4BQPIDQt3hKt3hKt3BTAAkKtTETRUDUS4BQl4xaQYjKAAUTAwVRWk0cUcUVz0jUjMmcpE0SMcjVmEzUY4BVWgkbUcUVtPDTBQjKt3hKt3hKt3RPP4hKUAkTEQ0TtPjYt7VTF4RPLEUPrkzUYcWUWkEcMYEYyYmZQ8TSWQFcMYjKwTjQgASUF4RPp4RPt3hKt3hKt3hcqLjKPUjZTEDLD4RPHAkVpEDTtPEUPE1YQwVVucmQisVRWsjZIckVwTkUgUWTF4RLEYTXvTkQtDjZtDjKt3hKt3hKt3hKt3BTEoFUAACQtDDRPokZAAkKXQETgcVTrk0a2YzXqkzUKwVRWk0cUcUVz0jUjMGNFkkKXcEVxU0UY4BQPIDQt3hKt3hKt3hKt3hKtTETRUDUS4BQl4xaQYjKAQTTAMWQFkEaqYTX5UEahMmXwD1bEYTVtf0UXIWUWkkKDAkPD4hKt3hKt3hKt3hKt3RUPIUQTMkKDYlKuEkQtDjYQEzbEYTVrslQgoWUrI1bHcUV4gCagcFMwf0ZvDSXpEjYic1cVM1ZAAkKIAkKt3hKt3hKt3hKt3hKTETRUAUSAAkKBolQY4BQ1QTQ5YEVpkkUZIWTWkEdvHzXzDzUYMGNFkkKXcEVxU0UY4BQPIDQt3hKt3hKt3hKt3hKtTETRUDUS4BQl4xaQYjKAAUTAgWUwHVczXEVz0jUYMmcpE0SQYUV1E0QZ4BVWgkbUcUVtPDTBQjKt3hKt3hKt3hKt3hKUAkTEQ0TtPjYt7VTF4RPLEUP3UULhUGMVgEcMYUVyYmZQ8TVrI1ZEcjKwTjQgASUF4RPp4RPt3hKtXlKt3hcqLjKPUjZTEDLD4RPHAkVpEDTtPEUlI1ZMISXzUDagkVUVsDSYo2T1clUXkWUF4RLEYTXvTkQtDjZtDjKt3hKt3hKt3hKt3BTEoFUAACQtDDRPokZAAkKSQkYhsVSxDFcEwVXoUkUKwTV5MEdEYzXqEjYic1cVM1ZAAkKIAkKt3hKt3hKt3RQtDjKTETRUAUSAAkKBolQY4BQtTTQHcUV4gCagcFMwf0ZvHzTFgidh4VQFI1ZAY1XmcmUisVPP4RRP4hKt3hKt3hKtPjKA4BUAkTUP0TPP4hPpYTVtPjcDUDRWkUd3vVXmQSLXsFLBMkQ3nmXzPSLX4BVWgkbUcUVtPDTBQjKt3hKt3hKt3xJO4hKUAkTEQ0TtPjYt7VTF4RP2.UP5s1QhsFLBMkQ3PTVqEzQi4VPlM1Y2Y0XqEDTtjDTt3hKt3hKt3hKt3hKtPUPIUETMEDTtHjZFkkKDY1PEA0UjYWUVsDSYo2TrkzUYcWPlM1Y2Y0XqEDTtjDTt3hKt3BRt3hK2rhKtPUPIUETMEDTtHjZFkkKDY2PEA0UjYWUVsDSYo2T1clUXkWUF4RLEYTXvTkQtDjZtDjKt3hKt3hKt3hKt3BTEoFUAACQtDDRPokZAAkKNQkKiQSPWk0b1oVTOkzUXoWUF4RLEYTXvTkQtDjZtDjKt3hKt3hKtPkKD4BTEoFUAACQtDDRPokZAAkKOQkKiQSPWk0b1oVTO0zQZcVPWkkKXcEVxU0UY4BQPIDQt3hKt3hKt3hKAAkKtTETRUDUS4BQl4xaQYjKAMCTAo2ZGI1ZvHzTFgidhQCMwfkKXcEVxU0UY4BQPIDQt3hKt3hKt3hKq7jKt3hKt3hKt3hKt3hRUACTEEzZh8VVWgkdUYTTmE0UX4BQP4hPqcjXm0jLh4BQP4xPt.0Qt3hKt3hKt3hKtQUUCUEQTg2ZrM1YQcUVDUjQicVP77RRC8Vav8lak4Fc9vyKVMEUy.Ea0cVZtMEcgQWY9.."
+										"blob" : "839.CMlaKA....fQPMDZ....ATGZPYE...P.....AjlaoQWZgwVZ5UF..........................LvBiDTS8.kbuQ2a1UlbhovHVUlby0SLv.CLvnvHE4FYoEla8vVZzQGakovHt0VO0nvHsMWOt8lakovHsMWOM8FYWgFaJLRay0CToQ2XnckBiz1b8HjbkEFcnovHsMWOXAmbkM2bJLha10CLJLxXs0SagklaJLzXOAWOw.CLt.CLJLhQD4TOwnvHi0VOPMzaxUlBSITXyUVOznvT2klam0CLt.CLJLEUxk1Y8DiBPM0atcVOvn.TF8Faj0CLJ.kQowVY8DiBGYTZrUVOxnvQSMVXrUVOvnvPnwTX40CLJLUcxI2S8DiBRUlc8PSLvHiBLUDQ8.iKv.iBPEzQE0CLJ.UXmU1bO4VOvnvPuIWYN0yLJLEaoMVY8PiBUkzWuAWOvnPSoQVZA0SMJzTZjkFT8XiBiLVa8XDQNofQB0yM13BL0n.QxkWOw.CLt.CLJbUYz0CM03hLznvSxQVOvnfTtQVOvn.TgIWXsMWO2nfBJnvKu.xTkMFco8lafX1axARcmwVdfL1asAmbkM2bkQFHhklagIWdfPTXzElBu7BHD8jSmPEHT8TUCgDHTgTRSofBjPBIjjSN1nvOmQ1YiUlakIlNkEVXgEVXgElNgEVXhEVXgElNmo1YuclZnUlNmo1YhcVamolNns1YlM1amklNjMFZgEVXgElNJ7lau81avAWX5.mXvMFbjAWY5.mYvcFbnAWZ5DVX5LVX5DVY5LlY5DlX5D1X5DFY5DlY5D1Y5DFZ5DVZ5DlZ5DlBqoSXroSXsoSXtoSXuoSXvoiXgoiXhoiXioiXjoiXkoiXloiXmoiXnERbyEjL1LSbxEzMzUmc2EDM2DmbAcSLwofbAcCd4oGbpA2ZvwFbsAmav8FbvETQFczPHkjRKwTSN8DTQI0TTUkUWgUVZIVZholXqIFah0lXtI1ahAmPiI1XJL1XjMVYDM1Yig1XoMlZis1XrMVawMTPw.CQpklPAE2bAIiMyDWZgETLyfSbBETLvfVXnM1YlgFYwHzYiglYnUlBwbFbm8VPwjSOxjCNyLiB..."
 									}
 ,
 									"fileref" : 									{
@@ -20883,7 +20959,7 @@
 										"filename" : "Massive.maxsnap",
 										"filepath" : "~/Documents/Max 7/Snapshots",
 										"filepos" : -1,
-										"snapshotfileid" : "cc77404e84945af84d26cc5a857643ee"
+										"snapshotfileid" : "9386e2b451ad1139fa110020f9872ec9"
 									}
 
 								}
@@ -21229,6 +21305,7 @@
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_longname" : "live.text[9]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
 						}
@@ -21298,6 +21375,7 @@
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_longname" : "live.text[3]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
 						}
@@ -21367,6 +21445,7 @@
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_longname" : "live.text[2]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
 						}
@@ -21436,6 +21515,7 @@
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_longname" : "live.text[6]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
 						}
@@ -21505,6 +21585,7 @@
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_longname" : "live.text[1]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
 						}
@@ -21574,6 +21655,7 @@
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_longname" : "live.text[7]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
 						}
@@ -21643,6 +21725,7 @@
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_longname" : "live.text[8]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
 						}
@@ -21712,6 +21795,7 @@
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_longname" : "live.text[4]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
 						}
@@ -21740,7 +21824,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-503",
-					"items" : "<empty>",
+					"items" : [ "main: Output", ",", "main: Active #FDN", ",", "FDN: Feedback", ",", "FDN: Dry", ",", "FDN: Wet" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -21771,7 +21855,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-657",
-					"items" : "<empty>",
+					"items" : [ "main: Output", ",", "main: Active #FDN", ",", "FDN: Feedback", ",", "FDN: Dry", ",", "FDN: Wet" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -21802,7 +21886,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-623",
-					"items" : "<empty>",
+					"items" : [ "main: Output", ",", "main: Active #FDN", ",", "FDN: Feedback", ",", "FDN: Dry", ",", "FDN: Wet" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -21833,7 +21917,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-733",
-					"items" : "<empty>",
+					"items" : [ "main: Output", ",", "main: Active #FDN", ",", "FDN: Feedback", ",", "FDN: Dry", ",", "FDN: Wet" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -21864,7 +21948,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-1131",
-					"items" : "<empty>",
+					"items" : [ "main: Output", ",", "main: Active #FDN", ",", "FDN: Feedback", ",", "FDN: Dry", ",", "FDN: Wet" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -21895,7 +21979,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-1098",
-					"items" : "<empty>",
+					"items" : [ "main: Output", ",", "main: Active #FDN", ",", "FDN: Feedback", ",", "FDN: Dry", ",", "FDN: Wet" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -21926,7 +22010,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-1066",
-					"items" : "<empty>",
+					"items" : [ "main: Output", ",", "main: Active #FDN", ",", "FDN: Feedback", ",", "FDN: Dry", ",", "FDN: Wet" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -21957,7 +22041,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-993",
-					"items" : "<empty>",
+					"items" : [ "main: Output", ",", "main: Active #FDN", ",", "FDN: Feedback", ",", "FDN: Dry", ",", "FDN: Wet" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -21988,7 +22072,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-790",
-					"items" : "<empty>",
+					"items" : [ "main: Output", ",", "main: Active #FDN", ",", "FDN: Feedback", ",", "FDN: Dry", ",", "FDN: Wet" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -22474,7 +22558,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Soundcard for audio output. This is used to preview audio to loudspeakers, with both internal plugins and external devices. When using external devices this is used to send the audio source to the input of the external device. This soundcard is also used to generate the CV signals controlling the external device paramaters.",
 					"id" : "obj-749",
-					"items" : [ "None", ",", "Headsets", ",", "BlackHole 16ch", ",", "MacBook Pro Speakers", ",", "Microsoft Teams Audio", ",", "WebexMediaAudioDevice", ",", "ZoomAudioDevice" ],
+					"items" : [ "None", ",", "PHL 40B1U5600", ",", "XONE:K2", ",", "STUDIO XL", ",", "BlackHole 16ch", ",", "MacBook Pro Speakers", ",", "Microsoft Teams Audio", ",", "WebexMediaAudioDevice", ",", "ZoomAudioDevice" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -22506,7 +22590,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Soundcard for audio input. This is used only with external devices to record the output of the device.",
 					"id" : "obj-499",
-					"items" : [ "None", ",", "IOUSBHostInterface", ",", "Unknown USB Audio Device", ",", "BlackHole 16ch", ",", "MacBook Pro Microphone", ",", "Microsoft Teams Audio", ",", "WebexMediaAudioDevice", ",", "Loopback Audio", ",", "ZoomAudioDevice" ],
+					"items" : [ "None", ",", "STUDIO XL", ",", "Cam Link 4K", ",", "BlackHole 16ch", ",", "MacBook Pro Microphone", ",", "Microsoft Teams Audio", ",", "WebexMediaAudioDevice", ",", "Loopback Audio", ",", "ZoomAudioDevice" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -22628,6 +22712,7 @@
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_longname" : "live.text[29]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
 						}
@@ -22698,7 +22783,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Audio driver. When using an internal plugin, selecting NonReamTime can significantly speedup the dataset generation. In this case sound can not be previewed while generating the dataset.",
 					"id" : "obj-698",
-					"items" : [ "None", ",", "Core Audio", ",", "NonRealTime", ",", "ad_portaudio", "Core Audio", ",", "ad_rewire" ],
+					"items" : [ "None", ",", "Core Audio", ",", "NonRealTime", ",", "ad_portaudio", "Core Audio" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -22778,7 +22863,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Audio sampling rate. Output audio .wav files will be recorded with this sampling rate.",
 					"id" : "obj-695",
-					"items" : [ 44100, ",", 48000, ",", 88200, ",", 96000 ],
+					"items" : [ 44100, ",", 48000, ",", 88200, ",", 96000, ",", 176400, ",", 192000 ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -24837,7 +24922,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1245", 0 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-1225", 3 ]
 				}
 
@@ -24845,7 +24930,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1261", 0 ],
-					"midpoints" : [ 2139.168570511348662, 1203.818030036842401, 2365.030966622538017, 1203.818030036842401 ],
+					"midpoints" : [ 2139.168570511348662, 1174.818030036842401, 2365.030966622538017, 1174.818030036842401 ],
 					"source" : [ "obj-1225", 1 ]
 				}
 
@@ -24855,6 +24940,14 @@
 					"destination" : [ "obj-1271", 0 ],
 					"midpoints" : [ 2149.668570511348662, 1041.058698417203914, 2323.702032345966927, 1041.058698417203914 ],
 					"source" : [ "obj-1225", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-396", 0 ],
+					"order" : 1,
+					"source" : [ "obj-1225", 3 ]
 				}
 
 			}
@@ -30471,6 +30564,14 @@
 				"patchline" : 				{
 					"destination" : [ "obj-773", 1 ],
 					"source" : [ "obj-400", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1393", 0 ],
+					"midpoints" : [ 4683.5, 1482.948559542827752, 4808.023622505672392, 1482.948559542827752 ],
+					"source" : [ "obj-401", 0 ]
 				}
 
 			}
