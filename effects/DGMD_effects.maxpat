@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 87.0, 2496.0, 889.0 ],
+		"rect" : [ 0.0, 52.0, 1440.0, 493.0 ],
 		"openrect" : [ 0.0, 0.0, 1657.799999999999955, 574.16922999999997 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -40,6 +40,78 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-528",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 4222.251970595421881, 2443.0, 29.5, 20.0 ],
+					"text" : "4"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-548",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 4209.0, 2419.0, 29.5, 20.0 ],
+					"text" : "3"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-602",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 4209.0, 2385.0, 50.0, 20.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-411",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 3926.159062834511133, 2443.0, 30.0, 20.0 ],
+					"text" : "2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-438",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 3909.659062834511133, 2419.0, 30.0, 20.0 ],
+					"text" : "1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-461",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 3909.659062834511133, 2385.0, 50.0, 20.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"color" : [ 0.839216, 0.833749, 0.393224, 1.0 ],
 					"fontname" : "Arial",
@@ -92,7 +164,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 4236.099999129772186, 3463.5, 29.5, 20.0 ],
-					"text" : "1"
+					"text" : "0"
 				}
 
 			}
@@ -657,8 +729,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 4596.754538749499261, 2704.094728240253517, 52.0, 20.0 ],
-					"text" : "mc.pack~"
+					"patching_rect" : [ 4596.754538749499261, 2704.094728240253517, 68.0, 20.0 ],
+					"text" : "mc.combine~"
 				}
 
 			}
@@ -1177,17 +1249,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-318",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 3327.0, 1915.0, 50.0, 20.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-273",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -1369,13 +1430,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-126",
-					"linecount" : 6,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 3410.000001668930054, 4165.409032344818115, 50.0, 76.0 ],
-					"text" : "write /Users/stefanof/Desktop/TST/Sweep4.wav"
+					"patching_rect" : [ 3410.000001668930054, 4165.409032344818115, 50.0, 20.0 ]
 				}
 
 			}
@@ -3952,7 +4011,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 901.959104888446745, 394.582277573501585, 129.0, 20.0 ],
 					"saved_object_attributes" : 					{
-						"filename" : "DGMD_scale_app_width.js",
+						"filename" : "DGMD_scale_app_width",
 						"parameter_enable" : 0
 					}
 ,
@@ -8604,7 +8663,6 @@
 					"hint" : "This shows the selected path where output files (.wav and .csv) are saved.",
 					"id" : "obj-580",
 					"ignoreclick" : 1,
-					"linecount" : 2,
 					"maxclass" : "textedit",
 					"numinlets" : 1,
 					"numoutlets" : 4,
@@ -8613,7 +8671,6 @@
 					"patching_rect" : [ 2708.541856403870042, 3749.887615025043488, 83.0, 52.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1463.847392315512707, 54.014347105708737, 176.329519181673959, 46.856185317039461 ],
-					"text" : "/Users/stefanof/Desktop/TST/",
 					"textcolor" : [ 0.701960784313725, 0.701960784313725, 0.701960784313725, 1.0 ]
 				}
 
@@ -8932,7 +8989,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select a plugin from those found in default system folders.",
 					"id" : "obj-1220",
-					"items" : [ "AUAudioFilePlayer", ",", "AUBandpass", ",", "AUDelay", ",", "AUDistortion", ",", "AUDynamicsProcessor", ",", "AUFilter", ",", "AUGraphicEQ", ",", "AUHighShelfFilter", ",", "AUHipass", ",", "AULowpass", ",", "AULowShelfFilter", ",", "AUMatrixReverb", ",", "AUMIDISynth", ",", "AUMultibandCompressor", ",", "AUNBandEQ", ",", "AUNetReceive", ",", "AUNetSend", ",", "AUNewPitch", ",", "AUParametricEQ", ",", "AUPeakLimiter", ",", "AUPitch", ",", "AUReverb2", ",", "AURogerBeep", ",", "AURoundTripAAC", ",", "AUSampleDelay", ",", "AUSampler", ",", "AUScheduledSoundPlayer", ",", "AUSoundFieldPanner", ",", "AUSoundIsolation", ",", "AUSpeechSynthesis", ",", "AUSphericalHeadPanner", ",", "AUVectorPanner", ",", "DLSMusicDevice", ",", "HRTFPanner", ",", "MadFilter", ",", "Protoverb", ",", "SonoBus", ",", "TAL NoiseMaker Plugin", ",", "TyrellN6", ",", "MadFilter", ",", "SonoBus", ",", "SonoBusInstrument", ",", "JACK-insert", ",", "Protoverb", ",", "SonoBus", ",", "TAL-NoiseMaker", ",", "TyrellN6", ",", "Wormhole2" ],
+					"items" : [ "AUAudioFilePlayer", ",", "AUBandpass", ",", "AUDelay", ",", "AUDistortion", ",", "AUDynamicsProcessor", ",", "AUFilter", ",", "AUGraphicEQ", ",", "AUHighShelfFilter", ",", "AUHipass", ",", "AULowpass", ",", "AULowShelfFilter", ",", "AUMatrixReverb", ",", "AUMIDISynth", ",", "AUMultibandCompressor", ",", "AUNBandEQ", ",", "AUNetReceive", ",", "AUNetSend", ",", "AUNewPitch", ",", "AUParametricEQ", ",", "AUPeakLimiter", ",", "AUPitch", ",", "AUReverb2", ",", "AURogerBeep", ",", "AURoundTripAAC", ",", "AUSampleDelay", ",", "AUSampler", ",", "AUScheduledSoundPlayer", ",", "AUSoundFieldPanner", ",", "AUSoundIsolation", ",", "AUSpeechSynthesis", ",", "AUSphericalHeadPanner", ",", "AUVectorPanner", ",", "DLSMusicDevice", ",", "Frohmager", ",", "HRTFPanner", ",", "Krush", ",", "MadFilter", ",", "OSL Chorus", ",", "Protoverb", ",", "RoughRider3", ",", "SonoBus", ",", "TAL NoiseMaker Plugin", ",", "TyrellN6", ",", "Frohmager", ",", "Krush", ",", "MadFilter", ",", "RoughRider3", ",", "SonoBus", ",", "SonoBusInstrument", ",", "Frohmager", ",", "HY-Filter4 free", ",", "JACK-insert", ",", "Krush", ",", "OSL Chorus", ",", "OSL-Chorus", ",", "Protoverb", ",", "SonoBus", ",", "TAL-NoiseMaker", ",", "TyrellN6", ",", "Wormhole2" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -9141,7 +9198,7 @@
 					"fontsize" : 10.0,
 					"hint" : "",
 					"id" : "obj-1241",
-					"items" : [ "AU DLS Synth 1", ",", "IAC Driver Bus 1", ",", "XONE:K2", ",", "from Max 1", ",", "from Max 2" ],
+					"items" : [ "AU DLS Synth 1", ",", "IAC Driver Bus 1", ",", "from Max 1", ",", "from Max 2" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -9190,7 +9247,7 @@
 					"fontsize" : 10.0,
 					"hint" : "",
 					"id" : "obj-1243",
-					"items" : [ "IAC Driver Bus 1", ",", "XONE:K2", ",", "to Max 1", ",", "to Max 2" ],
+					"items" : [ "IAC Driver Bus 1", ",", "to Max 1", ",", "to Max 2" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -9295,7 +9352,7 @@
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1261",
 					"maxclass" : "number",
-					"maximum" : 100,
+					"maximum" : 1,
 					"minimum" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 2,
@@ -9326,7 +9383,6 @@
 			}
 , 			{
 				"box" : 				{
-					"active" : 0,
 					"fontface" : 1,
 					"fontsize" : 10.0,
 					"hint" : "Only for Step mode. Given the current parameters settings, it estimates the total number of combinations for Step mode.",
@@ -9381,13 +9437,14 @@
 					"patching_rect" : [ 2178.668570511348662, 1346.436001715148905, 78.0, 29.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 128.393478964960735, 53.512495427814116, 104.0, 18.0 ],
-					"text" : "Current Repetition",
+					"text" : "Current Combination",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"cantchange" : 1,
 					"fontface" : 1,
 					"fontsize" : 10.0,
 					"hint" : "Automatically computed in Step mode. Must be set in Random and Sweep mode. No effect (and not visible) in Step and Manual modes. In Random and Swwp modes it determines how many times the source file will be sent to the device and the output recorded.",
@@ -9402,7 +9459,8 @@
 					"patching_rect" : [ 2314.202032345966927, 1102.974266600406736, 36.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 440.619074106951871, 53.512495427814116, 60.181520140505313, 20.0 ],
-					"textcolor" : [ 0.969, 0.969, 0.969, 1.0 ],
+					"textcolor" : [ 0.553, 0.553, 0.553, 1.0 ],
+					"triangle" : 0,
 					"varname" : "numb-combinations"
 				}
 
@@ -9419,7 +9477,7 @@
 					"patching_rect" : [ 2366.202032345966927, 1102.974266600406736, 119.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 302.71932264332429, 53.512495427814116, 136.66666704416275, 18.0 ],
-					"text" : "Repetitions",
+					"text" : "Total Combinations",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -9975,7 +10033,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-1331",
-					"items" : [ "main: Output", ",", "main: Active #FDN", ",", "FDN: Feedback", ",", "FDN: Dry", ",", "FDN: Wet" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -10570,7 +10628,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 3485.650506557575682, 3869.189602077007294, 50.0, 20.0 ],
-					"text" : "781"
+					"text" : "2024"
 				}
 
 			}
@@ -11166,14 +11224,14 @@
 					"fontsize" : 10.0,
 					"id" : "obj-103",
 					"ignoreclick" : 1,
-					"linecount" : 3,
+					"linecount" : 4,
 					"maxclass" : "textedit",
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 3626.534207995458019, 3507.574957744560379, 100.0, 50.0 ],
-					"text" : "/Users/stefanof/Desktop/TST/stimulus.wav",
+					"text" : "/Users/stefanof/Desktop/DGMD_demo/Stimuli/short/whitenoise.wav",
 					"textcolor" : [ 0.14902, 0.14902, 0.14902, 1.0 ]
 				}
 
@@ -15071,13 +15129,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-1106",
-					"linecount" : 7,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 3137.865620850162486, 4174.076447427272797, 54.0, 87.0 ],
-					"text" : "write /Users/stefanof/Desktop/TST/SourceLoopback.wav"
+					"patching_rect" : [ 3137.865620850162486, 4174.076447427272797, 54.0, 20.0 ]
 				}
 
 			}
@@ -15136,13 +15192,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-1083",
-					"linecount" : 5,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 3221.40576630695341, 4194.409032344818115, 50.0, 64.0 ],
-					"text" : "write /Users/stefanof/Desktop/TST/4.wav"
+					"patching_rect" : [ 3221.40576630695341, 4194.409032344818115, 50.0, 20.0 ]
 				}
 
 			}
@@ -20929,7 +20983,7 @@
 							"version" : 1,
 							"isbank" : 0,
 							"isbase64" : 1,
-							"blob" : "839.CMlaKA....fQPMDZ....ATGZPYE...P.....AjlaoQWZgwVZ5UF..........................LvBiDTS8.kbuQ2a1UlbhovHVUlby0SLv.CLvnvHE4FYoEla8vVZzQGakovHt0VO0nvHsMWOt8lakovHsMWOM8FYWgFaJLRay0CToQ2XnckBiz1b8HjbkEFcnovHsMWOXAmbkM2bJLha10CLJLxXs0SagklaJLzXOAWOw.CLt.CLJLhQD4TOwnvHi0VOPMzaxUlBSITXyUVOznvT2klam0CLt.CLJLEUxk1Y8DiBPM0atcVOvn.TF8Faj0CLJ.kQowVY8DiBGYTZrUVOxnvQSMVXrUVOvnvPnwTX40CLJLUcxI2S8DiBRUlc8PSLvHiBLUDQ8.iKv.iBPEzQE0CLJ.UXmU1bO4VOvnvPuIWYN0yLJLEaoMVY8PiBUkzWuAWOvnPSoQVZA0SMJzTZjkFT8XiBiLVa8XDQNofQB0yM13BL0n.QxkWOw.CLt.CLJbUYz0CM03hLznvSxQVOvnfTtQVOvn.TgIWXsMWO2nfBJnvKu.xTkMFco8lafX1axARcmwVdfL1asAmbkM2bkQFHhklagIWdfPTXzElBu7BHD8jSmPEHT8TUCgDHTgTRSofBjPBIjjSN1nvOmQ1YiUlakIlNkEVXgEVXgElNgEVXhEVXgElNmo1YuclZnUlNmo1YhcVamolNns1YlM1amklNjMFZgEVXgElNJ7lau81avAWX5.mXvMFbjAWY5.mYvcFbnAWZ5DVX5LVX5DVY5LlY5DlX5D1X5DFY5DlY5D1Y5DFZ5DVZ5DlZ5DlBqoSXroSXsoSXtoSXuoSXvoiXgoiXhoiXioiXjoiXkoiXloiXmoiXnERbyEjL1LSbxEzMzUmc2EDM2DmbAcSLwofbAcCd4oGbpA2ZvwFbsAmav8FbvETQFczPHkjRKwTSN8DTQI0TTUkUWgUVZIVZholXqIFah0lXtI1ahAmPiI1XJL1XjMVYDM1Yig1XoMlZis1XrMVawMTPw.CQpklPAE2bAIiMyDWZgETLyfSbBETLvfVXnM1YlgFYwHzYiglYnUlBwbFbm8VPwjSOxjCNyLiB..."
+							"blob" : "841.CMlaKA....fQPMDZ....ATGZPYE...P.....AjlaoQWZgwVZ5UF..........................LPCiDTS8.kbuQ2a1UlbhovHVUlby0SLv.CLvnvHE4FYoEla8vVZzQGakovHt0VO0nvHsMWOt8lakovHsMWOM8FYWgFaJLRay0CToQ2XnckBiz1b8HjbkEFcnovHsMWOXAmbkM2bJLha10CLJLxXs0SagklaJLzXOAWOw.CLt.CLJLhQD4TOwnvHi0VOPMzaxUlBSITXyUVOznvT2klam0CLt.CLJLEUxk1Y8DiBPM0atcVOvn.TF8Faj0CLJ.kQowVY8DiBGYTZrUVOxnvQSMVXrUVOvnvPnwTX40CLJLUcxI2S8DiBRUlc8PSLvHiBLUDQ8.iKv.iBPEzQE0CLJ.UXmU1bO4VOvnvPuIWYN0yLJLEaoMVY8PiBUkzWuAWOvnPSoQVZA0SMJzTZjkFT8XiBiLVa8XDQNofQB0yM13BL0n.QxkWOw.CLt.CLJbUYz0CM03hLznvSxQVOvnfTtQVOvn.TgIWXsMWO2nfBJnvKu.xTkMFco8lafX1axARcmwVdfL1asAmbkM2bkQFHhklagIWdfPTXzElBu7BHD8jSmPEHT8TUCgDHTgTRSofBjPBIjjSN1nvOmQ1YiUlakIlNkEVXgEVXgElNgEVXhEVXgElNmo1YuclZnUlNmo1YhcVamolNns1YlM1amklNjMFZgEVXgElNJ7lau81avAWX5.mXvMFbjAWY5.mYvcFbnAWZ5DVX5LVX5DVY5DlX5D1X5DFY5DlY5D1Y5DFZ5DVZ5DlZ5D1Z5DlBroSXsoSXtoSXuoSXvoiXgoiXhoiXioiXjoiXkoiXloiXmoiXnoiXoERbyEjL1LSbxEzMzUmc2EDM2DmbAcSLwofbAcCd4oGbpA2ZvwFbsAmav8FbvEDQEYzPGgTRJsDSM4zSPEkTSQUUVcEVYokXpI1ZhwlXsIlah8lXvIzXhM1XJLFYiU1XlM1Yig1XoMlZis1XrMVawMTPw.SahUlYqEVPwMWPxXyLwkVXAEyL3DmPAECLnEFZiclYnQVLBc1XnYlBnUVLmA2YuETL4zyLvDCLxn...."
 						}
 ,
 						"snapshotlist" : 						{
@@ -20951,7 +21005,7 @@
 										"version" : 1,
 										"isbank" : 0,
 										"isbase64" : 1,
-										"blob" : "839.CMlaKA....fQPMDZ....ATGZPYE...P.....AjlaoQWZgwVZ5UF..........................LvBiDTS8.kbuQ2a1UlbhovHVUlby0SLv.CLvnvHE4FYoEla8vVZzQGakovHt0VO0nvHsMWOt8lakovHsMWOM8FYWgFaJLRay0CToQ2XnckBiz1b8HjbkEFcnovHsMWOXAmbkM2bJLha10CLJLxXs0SagklaJLzXOAWOw.CLt.CLJLhQD4TOwnvHi0VOPMzaxUlBSITXyUVOznvT2klam0CLt.CLJLEUxk1Y8DiBPM0atcVOvn.TF8Faj0CLJ.kQowVY8DiBGYTZrUVOxnvQSMVXrUVOvnvPnwTX40CLJLUcxI2S8DiBRUlc8PSLvHiBLUDQ8.iKv.iBPEzQE0CLJ.UXmU1bO4VOvnvPuIWYN0yLJLEaoMVY8PiBUkzWuAWOvnPSoQVZA0SMJzTZjkFT8XiBiLVa8XDQNofQB0yM13BL0n.QxkWOw.CLt.CLJbUYz0CM03hLznvSxQVOvnfTtQVOvn.TgIWXsMWO2nfBJnvKu.xTkMFco8lafX1axARcmwVdfL1asAmbkM2bkQFHhklagIWdfPTXzElBu7BHD8jSmPEHT8TUCgDHTgTRSofBjPBIjjSN1nvOmQ1YiUlakIlNkEVXgEVXgElNgEVXhEVXgElNmo1YuclZnUlNmo1YhcVamolNns1YlM1amklNjMFZgEVXgElNJ7lau81avAWX5.mXvMFbjAWY5.mYvcFbnAWZ5DVX5LVX5DVY5LlY5DlX5D1X5DFY5DlY5D1Y5DFZ5DVZ5DlZ5DlBqoSXroSXsoSXtoSXuoSXvoiXgoiXhoiXioiXjoiXkoiXloiXmoiXnERbyEjL1LSbxEzMzUmc2EDM2DmbAcSLwofbAcCd4oGbpA2ZvwFbsAmav8FbvETQFczPHkjRKwTSN8DTQI0TTUkUWgUVZIVZholXqIFah0lXtI1ahAmPiI1XJL1XjMVYDM1Yig1XoMlZis1XrMVawMTPw.CQpklPAE2bAIiMyDWZgETLyfSbBETLvfVXnM1YlgFYwHzYiglYnUlBwbFbm8VPwjSOxjCNyLiB..."
+										"blob" : "841.CMlaKA....fQPMDZ....ATGZPYE...P.....AjlaoQWZgwVZ5UF..........................LPCiDTS8.kbuQ2a1UlbhovHVUlby0SLv.CLvnvHE4FYoEla8vVZzQGakovHt0VO0nvHsMWOt8lakovHsMWOM8FYWgFaJLRay0CToQ2XnckBiz1b8HjbkEFcnovHsMWOXAmbkM2bJLha10CLJLxXs0SagklaJLzXOAWOw.CLt.CLJLhQD4TOwnvHi0VOPMzaxUlBSITXyUVOznvT2klam0CLt.CLJLEUxk1Y8DiBPM0atcVOvn.TF8Faj0CLJ.kQowVY8DiBGYTZrUVOxnvQSMVXrUVOvnvPnwTX40CLJLUcxI2S8DiBRUlc8PSLvHiBLUDQ8.iKv.iBPEzQE0CLJ.UXmU1bO4VOvnvPuIWYN0yLJLEaoMVY8PiBUkzWuAWOvnPSoQVZA0SMJzTZjkFT8XiBiLVa8XDQNofQB0yM13BL0n.QxkWOw.CLt.CLJbUYz0CM03hLznvSxQVOvnfTtQVOvn.TgIWXsMWO2nfBJnvKu.xTkMFco8lafX1axARcmwVdfL1asAmbkM2bkQFHhklagIWdfPTXzElBu7BHD8jSmPEHT8TUCgDHTgTRSofBjPBIjjSN1nvOmQ1YiUlakIlNkEVXgEVXgElNgEVXhEVXgElNmo1YuclZnUlNmo1YhcVamolNns1YlM1amklNjMFZgEVXgElNJ7lau81avAWX5.mXvMFbjAWY5.mYvcFbnAWZ5DVX5LVX5DVY5DlX5D1X5DFY5DlY5D1Y5DFZ5DVZ5DlZ5D1Z5DlBroSXsoSXtoSXuoSXvoiXgoiXhoiXioiXjoiXkoiXloiXmoiXnoiXoERbyEjL1LSbxEzMzUmc2EDM2DmbAcSLwofbAcCd4oGbpA2ZvwFbsAmav8FbvEDQEYzPGgTRJsDSM4zSPEkTSQUUVcEVYokXpI1ZhwlXsIlah8lXvIzXhM1XJLFYiU1XlM1Yig1XoMlZis1XrMVawMTPw.SahUlYqEVPwMWPxXyLwkVXAEyL3DmPAECLnEFZiclYnQVLBc1XnYlBnUVLmA2YuETL4zyLvDCLxn...."
 									}
 ,
 									"fileref" : 									{
@@ -21824,7 +21878,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-503",
-					"items" : [ "main: Output", ",", "main: Active #FDN", ",", "FDN: Feedback", ",", "FDN: Dry", ",", "FDN: Wet" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -21855,7 +21909,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-657",
-					"items" : [ "main: Output", ",", "main: Active #FDN", ",", "FDN: Feedback", ",", "FDN: Dry", ",", "FDN: Wet" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -21886,7 +21940,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-623",
-					"items" : [ "main: Output", ",", "main: Active #FDN", ",", "FDN: Feedback", ",", "FDN: Dry", ",", "FDN: Wet" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -21917,7 +21971,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-733",
-					"items" : [ "main: Output", ",", "main: Active #FDN", ",", "FDN: Feedback", ",", "FDN: Dry", ",", "FDN: Wet" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -21948,7 +22002,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-1131",
-					"items" : [ "main: Output", ",", "main: Active #FDN", ",", "FDN: Feedback", ",", "FDN: Dry", ",", "FDN: Wet" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -21979,7 +22033,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-1098",
-					"items" : [ "main: Output", ",", "main: Active #FDN", ",", "FDN: Feedback", ",", "FDN: Dry", ",", "FDN: Wet" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -22010,7 +22064,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-1066",
-					"items" : [ "main: Output", ",", "main: Active #FDN", ",", "FDN: Feedback", ",", "FDN: Dry", ",", "FDN: Wet" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -22041,7 +22095,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-993",
-					"items" : [ "main: Output", ",", "main: Active #FDN", ",", "FDN: Feedback", ",", "FDN: Dry", ",", "FDN: Wet" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -22072,7 +22126,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-790",
-					"items" : [ "main: Output", ",", "main: Active #FDN", ",", "FDN: Feedback", ",", "FDN: Dry", ",", "FDN: Wet" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -22558,7 +22612,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Soundcard for audio output. This is used to preview audio to loudspeakers, with both internal plugins and external devices. When using external devices this is used to send the audio source to the input of the external device. This soundcard is also used to generate the CV signals controlling the external device paramaters.",
 					"id" : "obj-749",
-					"items" : [ "None", ",", "PHL 40B1U5600", ",", "XONE:K2", ",", "STUDIO XL", ",", "BlackHole 16ch", ",", "MacBook Pro Speakers", ",", "Microsoft Teams Audio", ",", "WebexMediaAudioDevice", ",", "ZoomAudioDevice" ],
+					"items" : [ "None", ",", "BlackHole 16ch", ",", "MacBook Pro Speakers", ",", "Microsoft Teams Audio", ",", "WebexMediaAudioDevice", ",", "ZoomAudioDevice" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -22590,7 +22644,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Soundcard for audio input. This is used only with external devices to record the output of the device.",
 					"id" : "obj-499",
-					"items" : [ "None", ",", "STUDIO XL", ",", "Cam Link 4K", ",", "BlackHole 16ch", ",", "MacBook Pro Microphone", ",", "Microsoft Teams Audio", ",", "WebexMediaAudioDevice", ",", "Loopback Audio", ",", "ZoomAudioDevice" ],
+					"items" : [ "None", ",", "BlackHole 16ch", ",", "MacBook Pro Microphone", ",", "Microsoft Teams Audio", ",", "WebexMediaAudioDevice", ",", "Loopback Audio", ",", "ZoomAudioDevice" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -22863,7 +22917,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Audio sampling rate. Output audio .wav files will be recorded with this sampling rate.",
 					"id" : "obj-695",
-					"items" : [ 44100, ",", 48000, ",", 88200, ",", 96000, ",", 176400, ",", 192000 ],
+					"items" : [ 44100, ",", 48000, ",", 88200, ",", 96000 ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -30643,6 +30697,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-33", 0 ],
+					"source" : [ "obj-411", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-40", 0 ],
 					"midpoints" : [ 5074.770184798286209, 3501.700002253055573, 5134.770184798286209, 3501.700002253055573 ],
 					"source" : [ "obj-412", 0 ]
@@ -30888,6 +30949,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-14", 0 ],
+					"source" : [ "obj-438", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1183", 0 ],
 					"source" : [ "obj-439", 0 ]
 				}
@@ -31056,6 +31124,23 @@
 				"patchline" : 				{
 					"destination" : [ "obj-670", 0 ],
 					"source" : [ "obj-460", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-411", 0 ],
+					"midpoints" : [ 3919.159062834511133, 2412.5, 3935.659062834511133, 2412.5 ],
+					"order" : 0,
+					"source" : [ "obj-461", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-438", 0 ],
+					"order" : 1,
+					"source" : [ "obj-461", 0 ]
 				}
 
 			}
@@ -31585,6 +31670,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-36", 0 ],
+					"source" : [ "obj-528", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1082", 0 ],
 					"order" : 1,
 					"source" : [ "obj-53", 0 ]
@@ -31819,6 +31911,13 @@
 					"destination" : [ "obj-1175", 0 ],
 					"midpoints" : [ 5326.416704571190166, 3210.341951634048201, 3019.900000393390656, 3210.341951634048201 ],
 					"source" : [ "obj-547", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-34", 0 ],
+					"source" : [ "obj-548", 0 ]
 				}
 
 			}
@@ -32213,8 +32312,25 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-347", 1 ],
-					"midpoints" : [ 5280.000007092952728, 3657.895953714847565, 5463.627287941596478, 3657.895953714847565, 5463.627287941596478, 2685.094728001834937, 4639.254538749499261, 2685.094728001834937 ],
+					"midpoints" : [ 5280.000007092952728, 3657.895953714847565, 5463.627287941596478, 3657.895953714847565, 5463.627287941596478, 2685.094728001834937, 4655.254538749499261, 2685.094728001834937 ],
 					"source" : [ "obj-601", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-528", 0 ],
+					"midpoints" : [ 4218.5, 2412.5, 4231.751970595421881, 2412.5 ],
+					"order" : 0,
+					"source" : [ "obj-602", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-548", 0 ],
+					"order" : 1,
+					"source" : [ "obj-602", 0 ]
 				}
 
 			}
