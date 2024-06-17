@@ -10,7 +10,7 @@ The folder Utilities contains a project for the electromechanical control of man
 
 The DGMD requires [Cyclyng'74 Max](https://cycling74.com/products/max). To use the DGMD you do not need a Max license.
 
-To run the DGMD, open the *.maxpat* file in the subfolder or download the standalone applications for Windows or Max OSX from the [releases](https://github.com/stefanofasciani/DGMD/releases/) section. 
+To run the DGMD, open the *.maxpat* file in the respective subfolder or download the standalone applications for Windows or Max OSX from the [releases](https://github.com/stefanofasciani/DGMD/releases/) section. 
 
 DGMD Copyright (C) 2024 Stefano Fasciani, Aleksander Tidemann, Riccardo Simionato, University of Oslo
 
