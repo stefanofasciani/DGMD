@@ -22,6 +22,9 @@
 * 
 * S. Fasciani, R. Simionato, A. Tidemann  "A Universal Tool for Generating Datasets from Audio Effects"
 in Proceedings of Sound and Music Computing Conference 2024, Porto, Portugal.
+*
+* S. Fasciani "A Universal Tool for Generating Datasets from Sound Synthesizers"
+in Proceedings of Sound and Music Computing Conference 2025, Graz, Austria.
 */
 
 // This is the "Fixed Initial Window Location" you see in

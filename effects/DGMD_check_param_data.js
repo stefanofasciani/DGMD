@@ -18,10 +18,13 @@
 * If not, see <http://www.gnu.org/licenses/>.
 * 
 * If you use the DGMD or any part of it in any system or publication, please acknowledge 
-* its authors by adding a reference to this publication:
+* its authors by adding a reference to these publications:
 * 
 * S. Fasciani, R. Simionato, A. Tidemann  "A Universal Tool for Generating Datasets from Audio Effects"
 in Proceedings of Sound and Music Computing Conference 2024, Porto, Portugal.
+*
+* S. Fasciani "A Universal Tool for Generating Datasets from Sound Synthesizers"
+in Proceedings of Sound and Music Computing Conference 2025, Graz, Austria.
 */
 
 autowatch = 1;
@@ -40,7 +43,7 @@ function checkParamData() {
       );
 
     // check ON/OFF toggle
-    if (global_param_data_2d[i][0] !== 1 && global_param_data_2d[i][0] !== 0)
+    if (global_param_data_2d[i][0] != 1 && global_param_data_2d[i][0] != 0)
       return error("Error: all ON/OFF param toggles must be either 1 or 0");
 
     // check Max value

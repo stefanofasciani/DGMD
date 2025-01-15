@@ -22,6 +22,9 @@
 * 
 * S. Fasciani, R. Simionato, A. Tidemann  "A Universal Tool for Generating Datasets from Audio Effects"
 in Proceedings of Sound and Music Computing Conference 2024, Porto, Portugal.
+*
+* S. Fasciani "A Universal Tool for Generating Datasets from Sound Synthesizers"
+in Proceedings of Sound and Music Computing Conference 2025, Graz, Austria.
 */
 
 autowatch = 1;
@@ -43,7 +46,7 @@ function setParamSteps2d() {
 
   for (var i = 0; i < global_param_data_2d.length; i++) {
     // if the parameter is OFF, we just add an array with 0
-    if (global_param_data_2d[i][0] === 0) {
+    if (global_param_data_2d[i][0] == 0) {
       global_param_steps_2d.push([]);
       continue;
     }

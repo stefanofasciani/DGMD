@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 6,
-			"revision" : 2,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 0.0, 52.0, 1440.0, 493.0 ],
+		"rect" : [ 34.0, 87.0, 1658.0, 575.0 ],
 		"openrect" : [ 0.0, 0.0, 1657.799999999999955, 574.16922999999997 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -41,6 +41,18 @@
 		"assistshowspatchername" : 0,
 		"title" : "DGMD - Dataset Generator for Musical Devices - Audio Effects",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-902",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 2251.0, 3500.0, 60.0, 20.0 ],
+					"text" : "loadmess 0"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-1177",
 					"maxclass" : "newobj",
@@ -976,7 +988,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 4030.039358854293823, 3552.357032060623169, 50.0, 20.0 ],
-					"text" : "2"
+					"text" : "24"
 				}
 
 			}
@@ -4681,7 +4693,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 6,
-							"revision" : 2,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -9984,7 +9996,7 @@
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1273",
 					"maxclass" : "number",
-					"minimum" : 64,
+					"minimum" : 1024,
 					"numdecimalplaces" : 3,
 					"numinlets" : 1,
 					"numoutlets" : 2,
@@ -17332,7 +17344,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1412.513124704360962, 1594.075638055801392, 61.0, 20.0 ],
-					"text" : "pak 10 f f f f"
+					"text" : "pak 10 i f f f"
 				}
 
 			}
@@ -17346,7 +17358,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1305.520929336547852, 1594.075638055801392, 61.0, 20.0 ],
-					"text" : "pak 9 f f f f"
+					"text" : "pak 9 i f f f"
 				}
 
 			}
@@ -17360,7 +17372,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1198.528733968734741, 1594.075638055801392, 61.0, 20.0 ],
-					"text" : "pak 8 f f f f"
+					"text" : "pak 8 i f f f"
 				}
 
 			}
@@ -17374,7 +17386,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1105.586018800735474, 1594.075638055801392, 61.0, 20.0 ],
-					"text" : "pak 7 f f f f"
+					"text" : "pak 7 i f f f"
 				}
 
 			}
@@ -17388,7 +17400,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1002.916740417480469, 1594.075638055801392, 61.0, 20.0 ],
-					"text" : "pak 6 f f f f"
+					"text" : "pak 6 i f f f"
 				}
 
 			}
@@ -17402,7 +17414,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 895.924545049667358, 1594.075638055801392, 61.0, 20.0 ],
-					"text" : "pak 5 f f f f"
+					"text" : "pak 5 i f f f"
 				}
 
 			}
@@ -17416,7 +17428,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 788.932349681854248, 1594.075638055801392, 61.0, 20.0 ],
-					"text" : "pak 4 f f f f"
+					"text" : "pak 4 i f f f"
 				}
 
 			}
@@ -17447,7 +17459,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 695.98963451385498, 1594.075638055801392, 61.0, 20.0 ],
-					"text" : "pak 3 f f f f"
+					"text" : "pak 3 i f f f"
 				}
 
 			}
@@ -17461,7 +17473,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 588.99743914604187, 1594.075638055801392, 61.0, 20.0 ],
-					"text" : "pak 2 f f f f"
+					"text" : "pak 2 i f f f"
 				}
 
 			}
@@ -17475,7 +17487,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 482.00524377822876, 1594.075638055801392, 61.0, 20.0 ],
-					"text" : "pak 1 f f f f"
+					"text" : "pak 1 i f f f"
 				}
 
 			}
@@ -17709,12 +17721,12 @@
 				"box" : 				{
 					"bgcolor" : [ 0.996078431372549, 0.882352941176471, 0.611764705882353, 0.0 ],
 					"id" : "obj-762",
-					"linecount" : 30,
+					"linecount" : 35,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 21.614584922790527, 70.247400999069214, 320.0, 353.0 ],
-					"text" : "This file is part of the DGMD (Dataset Generator for Musical Devices)\n\nThe DGMD can be obtained at http://stefanofasciani.com/dgmd.html \n\nDGMD Copyright (C) 2024 Stefano Fasciani, Aleksander Tidemann, Riccardo Simionato, University of Oslo\nInquiries: stefanofasciani@stefanofasciani.com\n \nThe DGMD is free software: you can redistribute it and/or modify it under the  terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.\n\nThe DGMD is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Less General Public License for more details.\n\nYou should have received a copy of the GNU Lesser General Public License along with DGMD. \nIf not, see <http://www.gnu.org/licenses/>.\n\nIf you use the DGMD or any part of it in any system or publication, please acknowledge its authors by adding a reference to this pubblication:\n\nS. Fasciani, R. Simionato, A. Tidemann  \"A Universal Tool for Generating Datasets from Audio Effects\"\nin Proceedings of Sound and Music Computing Conference 2024, Porto, Portugal.\n",
+					"patching_rect" : [ 21.614584922790527, 70.247400999069214, 320.0, 409.0 ],
+					"text" : "This file is part of the DGMD (Dataset Generator for Musical Devices)\n\nThe DGMD can be obtained at http://stefanofasciani.com/dgmd.html \n\nDGMD Copyright (C) 2024 Stefano Fasciani, Aleksander Tidemann, Riccardo Simionato, University of Oslo\nInquiries: stefanofasciani@stefanofasciani.com\n \nThe DGMD is free software: you can redistribute it and/or modify it under the  terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.\n\nThe DGMD is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Less General Public License for more details.\n\nYou should have received a copy of the GNU Lesser General Public License along with DGMD. \nIf not, see <http://www.gnu.org/licenses/>.\n\nIf you use the DGMD or any part of it in any system or publication, please acknowledge its authors by adding a reference to these pubblications:\n\nS. Fasciani, R. Simionato, A. Tidemann  \"A Universal Tool for Generating Datasets from Audio Effects\"\nin Proceedings of Sound and Music Computing Conference 2024, Porto, Portugal.\n\nS. Fasciani \"A Universal Tool for Generating Datasets from Sound Synthesizers\"\nin Proceedings of Sound and Music Computing Conference 2025, Graz, Austria.\n",
 					"textcolor" : [ 0.968627450980392, 0.968627450980392, 0.968627450980392, 1.0 ]
 				}
 
@@ -36017,6 +36029,13 @@
 					"destination" : [ "obj-535", 1 ],
 					"midpoints" : [ 3303.562742233276367, 3518.043829321861267, 3328.84398365020752, 3518.043829321861267 ],
 					"source" : [ "obj-901", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-55", 0 ],
+					"source" : [ "obj-902", 0 ]
 				}
 
 			}
