@@ -1156,8 +1156,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 256.132831335067749, 2477.031432151794434, 89.0, 20.0 ],
-					"text" : "s _DGMDratesCV"
+					"patching_rect" : [ 256.132831335067749, 2477.031432151794434, 105.0, 20.0 ],
+					"text" : "s _DGMDratesSweep"
 				}
 
 			}
@@ -1172,8 +1172,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 4950.820676565170288, 1387.656352043151855, 87.0, 20.0 ],
-					"text" : "r _DGMDratesCV"
+					"patching_rect" : [ 4950.820676565170288, 1387.656352043151855, 104.0, 20.0 ],
+					"text" : "r _DGMDratesSweep"
 				}
 
 			}
@@ -1983,8 +1983,8 @@
 					"numinlets" : 4,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 2343.021005630493164, 3888.463827610015869, 170.0, 20.0 ],
-					"text" : "sprintf write %s%s%sSweep%d.wav"
+					"patching_rect" : [ 2343.021005630493164, 3888.463827610015869, 173.0, 20.0 ],
+					"text" : "sprintf write %s%s%sSweep-%d.wav"
 				}
 
 			}
@@ -9704,7 +9704,7 @@
 					"fontsize" : 10.0,
 					"hint" : "",
 					"id" : "obj-1241",
-					"items" : [ "AU DLS Synth 1", ",", "IAC Driver Bus 1", ",", "from Max 1", ",", "from Max 2" ],
+					"items" : [ "AU DLS Synth 1", ",", "IAC Driver Bus 1", ",", "Arturia KeyStep 32", ",", "from Max 1", ",", "from Max 2" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -9753,7 +9753,7 @@
 					"fontsize" : 10.0,
 					"hint" : "",
 					"id" : "obj-1243",
-					"items" : [ "IAC Driver Bus 1", ",", "to Max 1", ",", "to Max 2" ],
+					"items" : [ "IAC Driver Bus 1", ",", "Arturia KeyStep 32", ",", "to Max 1", ",", "to Max 2" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -9858,7 +9858,7 @@
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1261",
 					"maxclass" : "number",
-					"maximum" : 15,
+					"maximum" : 1,
 					"minimum" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 2,
@@ -27271,7 +27271,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-51", 1 ],
-					"midpoints" : [ 2581.635605812072754, 3840.640195310115814, 2402.854338963826649, 3840.640195310115814 ],
+					"midpoints" : [ 2581.635605812072754, 3840.640195310115814, 2403.854338963826649, 3840.640195310115814 ],
 					"order" : 2,
 					"source" : [ "obj-144", 0 ]
 				}
@@ -28669,7 +28669,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-51", 3 ],
-					"midpoints" : [ 2662.383006811141968, 3873.623242944478989, 2503.521005630493164, 3873.623242944478989 ],
+					"midpoints" : [ 2662.383006811141968, 3873.623242944478989, 2506.521005630493164, 3873.623242944478989 ],
 					"order" : 1,
 					"source" : [ "obj-188", 1 ]
 				}
@@ -30802,7 +30802,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-51", 2 ],
-					"midpoints" : [ 2493.015807628631592, 3852.911967426538467, 2453.187672297159679, 3852.911967426538467 ],
+					"midpoints" : [ 2493.015807628631592, 3852.911967426538467, 2455.187672297159679, 3852.911967426538467 ],
 					"order" : 1,
 					"source" : [ "obj-363", 0 ]
 				}
