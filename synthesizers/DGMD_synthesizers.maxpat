@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 87.0, 2558.0, 1317.0 ],
+		"rect" : [ 191.0, 122.0, 1658.0, 801.0 ],
 		"openrect" : [ 0.0, 0.0, 1657.799999999999955, 800.66922999999997 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -1864,7 +1864,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 3031.730870425701141, 2424.038542449474335, 74.0, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1496.250045239925385, 617.000018388032913, 84.166667938232422, 18.0 ],
+					"presentation_rect" : [ 1496.250045239925385, 617.000018388032913, 85.0, 18.0 ],
 					"text" : "Sweep Rate (Hz)",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
@@ -3781,7 +3781,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 6548.0, 2682.0, 29.5, 31.0 ],
-					"text" : "108 8"
+					"text" : "60 100"
 				}
 
 			}
@@ -4906,6 +4906,7 @@
 					"id" : "obj-1375",
 					"inputmode" : 1,
 					"maxclass" : "kslider",
+					"mode" : 2,
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"offset" : 0,
@@ -7968,20 +7969,6 @@
 					"presentation_rect" : [ 4.5, 594.0, 89.0, 18.0 ],
 					"text" : "Step (semitones)",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 1.0, 0.392156862745098, 0.0, 1.0 ],
-					"fontsize" : 16.0,
-					"id" : "obj-1138",
-					"linecount" : 21,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1350.000040233135223, 399.333345234394073, 762.0, 400.0 ],
-					"text" : "SISTEMA GUI\n\nFirst Commit\n\nTESTING (anche midi)\n\nRE-update all help settings\n\ntest delay due to buffering add - vedi accuratezza ONSET con valori parametri diversi stesso run (che non hanno impatto su onset), e run differenti con setting parametri identici (sample accurate repeatable)?\n\ntesta modalita ibride (midi e CV) - almeno in teoria.\n\ntesta non real time\n\nfai video demo\n\nfai releave WIN e OSX for both\n\nscrivi paper\n\n"
 				}
 
 			}
@@ -16538,7 +16525,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select a plugin from those found in default system folders.",
 					"id" : "obj-1220",
-					"items" : [ "AUAudioFilePlayer", ",", "AUBandpass", ",", "AUDelay", ",", "AUDistortion", ",", "AUDynamicsProcessor", ",", "AUFilter", ",", "AUGraphicEQ", ",", "AUHighShelfFilter", ",", "AUHipass", ",", "AULowpass", ",", "AULowShelfFilter", ",", "AUMatrixReverb", ",", "AUMIDISynth", ",", "AUMultibandCompressor", ",", "AUNBandEQ", ",", "AUNetReceive", ",", "AUNetSend", ",", "AUNewPitch", ",", "AUParametricEQ", ",", "AUPeakLimiter", ",", "AUPitch", ",", "AUReverb2", ",", "AURogerBeep", ",", "AURoundTripAAC", ",", "AUSampleDelay", ",", "AUSampler", ",", "AUScheduledSoundPlayer", ",", "AUSoundFieldPanner", ",", "AUSoundIsolation", ",", "AUSpeechSynthesis", ",", "AUSphericalHeadPanner", ",", "AUVectorPanner", ",", "DLSMusicDevice", ",", "Frohmager", ",", "HRTFPanner", ",", "Krush", ",", "MadFilter", ",", "OSL Chorus", ",", "Protoverb", ",", "RoughRider3", ",", "SonoBus", ",", "TAL NoiseMaker Plugin", ",", "TyrellN6", ",", "Frohmager", ",", "Krush", ",", "MadFilter", ",", "RoughRider3", ",", "SonoBus", ",", "SonoBusInstrument", ",", "Frohmager", ",", "HY-Filter4 free", ",", "JACK-insert", ",", "Krush", ",", "OSL Chorus", ",", "OSL-Chorus", ",", "Protoverb", ",", "SonoBus", ",", "TAL-NoiseMaker", ",", "TyrellN6", ",", "Wormhole2" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -18481,13 +18468,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-99",
-					"linecount" : 7,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 3571.0, 3588.0, 46.0, 87.0 ],
-					"text" : "\"Macintosh HD:/Users/stefanof/Desktop/TEST/\""
+					"patching_rect" : [ 3571.0, 3588.0, 46.0, 20.0 ]
 				}
 
 			}
@@ -22577,13 +22562,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-407",
-					"linecount" : 3,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 3368.0, 4006.0, 124.0, 42.0 ],
-					"text" : "write /Users/stefanof/Desktop/TEST/prova.csv"
+					"patching_rect" : [ 3368.0, 4006.0, 124.0, 20.0 ]
 				}
 
 			}
@@ -26871,7 +26854,6 @@
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1362.0, 3740.0, 100.0, 50.0 ],
-					"text" : "plug TyrellN6",
 					"textcolor" : [ 0.14902, 0.14902, 0.14902, 1.0 ]
 				}
 
@@ -28940,7 +28922,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Soundcard for audio output. This is used to preview audio to loudspeakers, with both internal plugins and external devices. When using external devices this is used to send the audio source to the input of the external device. This soundcard is also used to generate the CV signals controlling the external device paramaters.",
 					"id" : "obj-749",
-					"items" : [ "None", ",", "PHL 40B1U5600", ",", "BlackHole 16ch", ",", "MacBook Pro Speakers", ",", "Microsoft Teams Audio", ",", "WebexMediaAudioDevice", ",", "ZoomAudioDevice" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -28972,7 +28954,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Soundcard for audio input. This is used only with external devices to record the output of the device.",
 					"id" : "obj-499",
-					"items" : [ "None", ",", "Cam Link 4K", ",", "BlackHole 16ch", ",", "MacBook Pro Microphone", ",", "Microsoft Teams Audio", ",", "WebexMediaAudioDevice", ",", "ZoomAudioDevice" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -29021,7 +29003,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Buffer size or number of audio samples exchanged with the soundcard driver at a time. It has an impact on the overall latency of external devices.",
 					"id" : "obj-565",
-					"items" : [ 32, ",", 64, ",", 128, ",", 256, ",", 512, ",", 1024, ",", 2048 ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -29144,7 +29126,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Audio driver. When using an internal plugin, selecting NonReamTime can significantly speedup the dataset generation. In this case sound can not be previewed while generating the dataset.",
 					"id" : "obj-698",
-					"items" : [ "None", ",", "Core Audio", ",", "NonRealTime", ",", "ad_portaudio", "Core Audio" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -29193,7 +29175,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Buffer size or number of audio samples processed by the software internally at a time. It has an impact on the latency of internal plugins. It mus be equal or smaller than \"I/O Vector Size\".",
 					"id" : "obj-696",
-					"items" : [ 1, ",", 2, ",", 4, ",", 8, ",", 16, ",", 32, ",", 64, ",", 128, ",", 256, ",", 512, ",", 1024, ",", 2048, ",", 4096 ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -29224,7 +29206,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Audio sampling rate. Output audio .wav files will be recorded with this sampling rate.",
 					"id" : "obj-695",
-					"items" : [ 44100, ",", 48000, ",", 88200, ",", 96000 ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
