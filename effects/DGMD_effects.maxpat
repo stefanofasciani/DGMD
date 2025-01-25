@@ -9782,7 +9782,7 @@
 					"fontsize" : 10.0,
 					"hint" : "",
 					"id" : "obj-1241",
-					"items" : [ "AU DLS Synth 1", ",", "IAC Driver Bus 1", ",", "Arturia KeyStep 32", ",", "USB MIDI Interface", ",", "from Max 1", ",", "from Max 2" ],
+					"items" : [ "AU DLS Synth 1", ",", "IAC Driver Bus 1", ",", "from Max 1", ",", "from Max 2" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -9831,7 +9831,7 @@
 					"fontsize" : 10.0,
 					"hint" : "",
 					"id" : "obj-1243",
-					"items" : [ "IAC Driver Bus 1", ",", "Arturia KeyStep 32", ",", "USB MIDI Interface", ",", "to Max 1", ",", "to Max 2" ],
+					"items" : [ "IAC Driver Bus 1", ",", "to Max 1", ",", "to Max 2" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -28499,6 +28499,16 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1222", 0 ],
 					"midpoints" : [ 1818.640758037567139, 814.130209445953369, 1936.762227826126036, 814.130209445953369, 1936.762227826126036, 592.452121615409851, 1999.122542142868042, 592.452121615409851 ],
+					"order" : 0,
+					"source" : [ "obj-175", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-452", 0 ],
+					"midpoints" : [ 1818.640758037567139, 934.083396911621094, 1646.804807901382446, 934.083396911621094 ],
+					"order" : 1,
 					"source" : [ "obj-175", 0 ]
 				}
 
