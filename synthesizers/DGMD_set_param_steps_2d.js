@@ -3,7 +3,7 @@
 * 
 * The DGMD can be obtained at http://stefanofasciani.com/dgmd.html
 *
-* DGMD Copyright (C) 2024 Stefano Fasciani, Aleksander Tidemann, Riccardo Simionato, University of Oslo
+* DGMD Copyright (C) 2025 Stefano Fasciani, Aleksander Tidemann, Riccardo Simionato, University of Oslo
 * Inquiries: stefanofasciani@stefanofasciani.com
 * 
 * The DGMD is free software: you can redistribute it and/or modify it under the 
