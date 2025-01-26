@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 87.0, 1960.0, 795.0 ],
+		"rect" : [ 34.0, 87.0, 1842.0, 999.0 ],
 		"openrect" : [ 0.0, 0.0, 1657.799999999999955, 800.66922999999997 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -41,6 +41,542 @@
 		"assistshowspatchername" : 0,
 		"title" : "DGMD - Dataset Generator for Musical Devices - Sound Synthesizers",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-122",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 9025.600134491920471, 3503.200052201747894, 60.0, 20.0 ],
+					"text" : "loadmess 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-111",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 8940.800133228302002, 3503.200052201747894, 60.0, 20.0 ],
+					"text" : "loadmess 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1961",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 4473.809593141078949, 4114.0, 141.0, 20.0 ],
+					"text" : "textcolor 0.969 0.969 0.969 1."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1995",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 4714.285787343978882, 4114.0, 107.0, 20.0 ],
+					"text" : "textcolor 1. 0.392 0. 1."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"fontsize" : 12.0,
+					"hint" : "",
+					"id" : "obj-1958",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 4257.0, 3284.0, 163.927491415027816, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1006.5, 445.5, 69.015040011285691, 20.0 ],
+					"text" : "Tuner",
+					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontsize" : 10.0,
+					"hint" : "",
+					"id" : "obj-1957",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 4368.242334121707245, 3495.600001096725464, 43.442951560020447, 40.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1007.0, 497.0, 81.0, 18.0 ],
+					"text" : "Cents Deviation",
+					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"border" : 2.0,
+					"id" : "obj-1955",
+					"maxclass" : "live.line",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1092.777827739715576, 105.000002861022949, 74.0, 23.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 984.666696012020111, 442.000013172626495, 14.400000214576721, 84.00000125169754 ],
+					"saved_attribute_attributes" : 					{
+						"linecolor" : 						{
+							"expression" : ""
+						}
+
+					}
+
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1953",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 5781.451654255390167, 3267.741958856582642, 60.0, 20.0 ],
+					"text" : "loadmess 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.839216, 0.833749, 0.393224, 1.0 ],
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 10.0,
+					"id" : "obj-1951",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 4373.387128055095673, 3458.000000536441803, 105.0, 20.0 ],
+					"text" : "r _DGMDpitchDisplay"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.839216, 0.833749, 0.393224, 1.0 ],
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 10.0,
+					"id" : "obj-1950",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1305.645170629024506, 892.741941869258881, 105.0, 20.0 ],
+					"text" : "r _DGMDpitchDisplay"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.504772, 0.748976, 0.839216, 1.0 ],
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 10.0,
+					"id" : "obj-1948",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 5781.451654255390167, 3479.032282948493958, 106.0, 20.0 ],
+					"text" : "s _DGMDpitchDisplay"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1945",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 5817.741977095603943, 3387.096798419952393, 29.5, 20.0 ],
+					"text" : "5"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1938",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 5854.838751554489136, 3387.096798419952393, 29.5, 20.0 ],
+					"text" : "0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1928",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 5781.451654255390167, 3387.096798419952393, 29.5, 20.0 ],
+					"text" : "4"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1907",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 5781.451654255390167, 3430.645185828208923, 51.0, 20.0 ],
+					"text" : "format $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1899",
+					"maxclass" : "newobj",
+					"numinlets" : 4,
+					"numoutlets" : 4,
+					"outlettype" : [ "bang", "bang", "bang", "" ],
+					"patching_rect" : [ 5781.451654255390167, 3345.161314249038696, 60.0, 20.0 ],
+					"text" : "select 0 1 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.23921568627451, 0.23921568627451, 0.23921568627451, 1.0 ],
+					"bgfillcolor_angle" : 270.0,
+					"bgfillcolor_autogradient" : 0.0,
+					"bgfillcolor_color" : [ 0.23921568627451, 0.23921568627451, 0.23921568627451, 1.0 ],
+					"bgfillcolor_color1" : [ 0.752941, 0.729412, 0.666667, 1.0 ],
+					"bgfillcolor_color2" : [ 0.866667, 0.831373, 0.741176, 1.0 ],
+					"bgfillcolor_proportion" : 0.5,
+					"bgfillcolor_type" : "color",
+					"fontface" : 1,
+					"fontname" : "Lato Bold",
+					"fontsize" : 10.0,
+					"hint" : "Select the format for displaying the Pitch value related to the MIDI note number. When MIDI (C3) is selected, 60 is mapped to C3. When MIDI (C4) is selected, 60 is mapped to C4. When integer is selected, no conversion is applied. Independent of this setting, the integer MIDI note number is recorded in the generated output .csv file.",
+					"id" : "obj-1850",
+					"items" : [ "MIDI", "(C3)", ",", "MICI", "(C4)", ",", "Integer" ],
+					"maxclass" : "umenu",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "int", "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 5781.451654255390167, 3306.451636552810669, 72.443191683276382, 20.0 ],
+					"pattrmode" : 1,
+					"prefix_mode" : 2,
+					"presentation" : 1,
+					"presentation_rect" : [ 498.400007426738739, 764.000011384487152, 74.666668891906738, 20.0 ],
+					"prototypename" : "Lato9",
+					"style" : "AudioStatus_Menu",
+					"varname" : "driver-select[5]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.839216, 0.833749, 0.393224, 1.0 ],
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 10.0,
+					"id" : "obj-1949",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 6703.922237753868103, 4171.774223387241364, 105.0, 20.0 ],
+					"text" : "r _DGMDpitchDisplay"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1828",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 4239.5, 3458.000000536441803, 28.0, 20.0 ],
+					"text" : "ftom"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1820",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 4282.0, 3313.0, 50.0, 20.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"fontsize" : 10.0,
+					"format" : 6,
+					"hint" : "Deviation, in cents, from the detected pitch. ",
+					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
+					"id" : "obj-1812",
+					"ignoreclick" : 1,
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 4324.000000476837158, 3495.600001096725464, 37.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1096.800016343593825, 496.000007390975952, 41.281569078891437, 20.0 ],
+					"textcolor" : [ 0.552941176470588, 0.552941176470588, 0.552941176470588, 1.0 ],
+					"triangle" : 0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1760",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "int", "float" ],
+					"patching_rect" : [ 4292.0, 3458.000000536441803, 51.0, 20.0 ],
+					"text" : "unpack i f"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1708",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 4292.0, 3422.0, 59.0, 20.0 ],
+					"text" : "route onset"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"fontsize" : 10.0,
+					"format" : 4,
+					"hint" : "Detected pitch.",
+					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
+					"id" : "obj-1399",
+					"ignoreclick" : 1,
+					"maxclass" : "number",
+					"maximum" : 127,
+					"minimum" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 4239.5, 3495.600001096725464, 37.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1096.800016343593597, 472.000007033348083, 41.281569078891437, 20.0 ],
+					"textcolor" : [ 0.552941176470588, 0.552941176470588, 0.552941176470588, 1.0 ],
+					"triangle" : 0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontsize" : 10.0,
+					"hint" : "",
+					"id" : "obj-1402",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 4187.200062394142151, 3495.5, 43.442951560020447, 29.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1006.5, 473.0, 78.46379429101944, 18.0 ],
+					"text" : "Detected Pitch",
+					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 10.0,
+					"id" : "obj-1394",
+					"maxclass" : "number~",
+					"mode" : 2,
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "float" ],
+					"patching_rect" : [ 4202.5, 3422.0, 56.0, 20.0 ],
+					"sig" : 0.0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"activebgcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
+					"activebgoncolor" : [ 0.968627450980392, 0.968627450980392, 0.968627450980392, 1.0 ],
+					"activetextcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"bgcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
+					"bgoncolor" : [ 0.898039, 0.898039, 0.898039, 1.0 ],
+					"bordercolor" : [ 0.352941176470588, 0.352941176470588, 0.352941176470588, 1.0 ],
+					"fontsize" : 10.0,
+					"hint" : "Enable/Disable a tuner detecting pitch and deviation (jn cents) on the Left (or Mono) post gain output signal of the device.",
+					"id" : "obj-1390",
+					"maxclass" : "live.text",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 4192.0, 3283.5, 49.0, 21.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1093.600016295909882, 444.800006628036499, 47.033775029422827, 21.666667312383652 ],
+					"saved_attribute_attributes" : 					{
+						"activebgcolor" : 						{
+							"expression" : ""
+						}
+,
+						"activebgoncolor" : 						{
+							"expression" : ""
+						}
+,
+						"activetextcolor" : 						{
+							"expression" : ""
+						}
+,
+						"activetextoncolor" : 						{
+							"expression" : ""
+						}
+,
+						"bgcolor" : 						{
+							"expression" : ""
+						}
+,
+						"bgoncolor" : 						{
+							"expression" : "themecolor.theme_editing_bgcolor"
+						}
+,
+						"bordercolor" : 						{
+							"expression" : ""
+						}
+,
+						"textoffcolor" : 						{
+							"expression" : ""
+						}
+,
+						"valueof" : 						{
+							"parameter_enum" : [ "val1", "val2" ],
+							"parameter_longname" : "live.text[21]",
+							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
+							"parameter_shortname" : "live.text",
+							"parameter_type" : 2
+						}
+
+					}
+,
+					"text" : "Disabled",
+					"textoffcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"texton" : "Enabled",
+					"varname" : "live.text[35]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1389",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 4192.0, 3351.200049936771393, 34.0, 20.0 ],
+					"text" : "gate~"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1380",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 5,
+					"outlettype" : [ "signal", "signal", "signal", "signal", "list" ],
+					"patching_rect" : [ 4192.0, 3388.0, 61.0, 20.0 ],
+					"saved_object_attributes" : 					{
+						"notebase" : 0,
+						"notelist" : [ 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100 ],
+						"pitchdetection" : 1,
+						"retune" : 1,
+						"use_16bit" : [ 0 ]
+					}
+,
+					"text" : "retune~"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-564",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 4886.956428527832031, 2222.0, 68.0, 20.0 ],
+					"text" : "loadmess 0.5"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-321",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "int" ],
+					"patching_rect" : [ 4706.654002904891968, 3775.0, 29.5, 20.0 ],
+					"text" : "t b i"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-135",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 4706.654002904891968, 3745.0, 29.5, 20.0 ],
+					"text" : "+"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-2018",
 					"maxclass" : "newobj",
@@ -369,7 +905,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 4946.57692551612854, 3903.810024082660675, 50.0, 20.0 ],
-					"text" : "300"
+					"text" : "500"
 				}
 
 			}
@@ -768,7 +1304,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 6957.0, 2035.0, 106.0, 20.0 ],
-					"text" : "55 64 300 83"
+					"text" : "60 100 500 0"
 				}
 
 			}
@@ -923,6 +1459,7 @@
 , 			{
 				"box" : 				{
 					"fontname" : "Arial Bold",
+					"hint" : "Press this button to flush all playing notes. Do not press during dataset generation.",
 					"id" : "obj-550",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -930,7 +1467,7 @@
 					"patching_rect" : [ 6794.0, 2769.5, 162.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 1085.66895538400081, 592.250018388032913, 56.277470413238461, 40.0 ],
+					"presentation_rect" : [ 1085.752289621337923, 592.500018388032913, 56.277470413238461, 40.0 ],
 					"text" : "Flush Active Notes",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"textjustification" : 1
@@ -948,8 +1485,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 7057.333543658256531, 2889.423173367977142, 163.927491415027816, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 337.0, 548.5, 133.600001990795135, 20.0 ],
-					"text" : "Test Keyboard",
+					"presentation_rect" : [ 337.0, 548.5, 73.637744965061529, 20.0 ],
+					"text" : "Keyboard",
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ]
 				}
 
@@ -1086,7 +1623,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 7108.000105917453766, 2768.0, 85.231300430303236, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 895.5, 559.0, 97.0, 18.0 ],
+					"presentation_rect" : [ 898.715037376760392, 559.20000833272934, 97.0, 18.0 ],
 					"text" : "Keyboard Behavior",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
@@ -1143,8 +1680,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 7108.000105917453766, 3460.0, 163.927491415027816, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 335.928288572108613, 445.600006639957428, 133.600001990795135, 20.0 ],
-					"text" : "Chords",
+					"presentation_rect" : [ 335.928288572108613, 445.600006639957428, 74.709456392952916, 20.0 ],
+					"text" : "Chord",
 					"textcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ]
 				}
 
@@ -1271,7 +1808,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "bang", "" ],
-					"patching_rect" : [ 4557.000135809183121, 3947.115516364574432, 51.0, 20.0 ],
+					"patching_rect" : [ 4622.26938408613205, 3939.200058698654175, 51.0, 20.0 ],
 					"text" : "select 0 1"
 				}
 
@@ -1283,8 +1820,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 4623.0, 4114.0, 29.5, 20.0 ],
-					"text" : "set"
+					"patching_rect" : [ 4623.0, 4114.0, 77.0, 20.0 ],
+					"text" : "set \"Tming OK\""
 				}
 
 			}
@@ -1295,24 +1832,26 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 4675.0, 4114.0, 321.0, 20.0 ],
+					"patching_rect" : [ 4829.365154206752777, 4114.0, 321.0, 20.0 ],
 					"text" : "set \"Increase Recording Duration or Reduce Max/Fixed Note Duration\""
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.23921568627451, 0.23921568627451, 0.23921568627451, 1.0 ],
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "",
+					"hint" : "This message box displays the result of a check on the timing settings. In particular it check if the Duration of the audio recording plus the Recording STart Delay After Note On and plus the Delay After Recording End, is greater than the Fixex/Maximum/Current note duration. If not, it suggests to infrease the Recording Duration or to reduce the nore Duration. If not, there is the risk that a new recording starts when the release phase of the previosly triggered note is still playing (this wont happen for monophonic synths).",
 					"id" : "obj-1988",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 4623.0, 4149.0, 131.0, 18.0 ],
+					"patching_rect" : [ 4623.01594465970993, 4168.254032850265503, 132.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 748.000022292137146, 67.333335340023041, 170.204395427781947, 18.0 ],
-					"textcolor" : [ 1.0, 0.392156862745098, 0.0, 1.0 ],
+					"presentation_rect" : [ 748.000022292137146, 67.333335340023041, 171.0, 18.0 ],
+					"text" : "Tming OK",
+					"textcolor" : [ 0.969, 0.969, 0.969, 1.0 ],
 					"textjustification" : 1
 				}
 
@@ -1355,6 +1894,7 @@
 					"bgoncolor" : [ 0.898039, 0.898039, 0.898039, 1.0 ],
 					"bordercolor" : [ 0.352941176470588, 0.352941176470588, 0.352941176470588, 1.0 ],
 					"fontsize" : 10.0,
+					"hint" : "If Enabled, when triggering a note via V/Oct & Gate CVs, the Gate, which is held for the entire note duration, is set to a level scaled by the Velocity (0 to 127 linearly scaled to 0 V to Max V). If DIsable, the Gate is set tot he maximum voltage level supported by the selected soundcard.",
 					"id" : "obj-1981",
 					"maxclass" : "live.text",
 					"numinlets" : 1,
@@ -1363,7 +1903,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 5074.444686412811279, 2099.391304969787598, 49.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 720.0, 714.0, 47.033775029422827, 21.5 ],
+					"presentation_rect" : [ 721.333354830741882, 714.000021278858185, 47.033775029422827, 21.5 ],
 					"saved_attribute_attributes" : 					{
 						"activebgcolor" : 						{
 							"expression" : ""
@@ -1483,18 +2023,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-1961",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 3120.0, 1494.0, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-1946",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -1592,7 +2120,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Channel number on output sourncard (requires DC coupled outputs) for controlling the parameter of an external device with CV interface.",
+					"hint" : "Channel number on output sourncard (requires DC coupled outputs) for controlling the parameter of an external device with CV interface.\n\nChannel number on output soundcard (requires DC coupled outputs) for triggering the note of an external device with Gate Control Voltage (CV) interface. The velocity parameter can be utilized to scale the level of the Gate pulse (this can be enabled under MIDI and CV Settings). The Gate pulse duration is determined by the Duration setting.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1921",
 					"maxclass" : "number",
@@ -1630,7 +2158,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Channel number on output sourncard (requires DC coupled outputs) for controlling the parameter of an external device with CV interface.",
+					"hint" : "Channel number on output soundcard (requires DC coupled outputs) for controlling the the Pitch of an external device with Volt per Octave (V/Oct) Control Voltage (CV) interface.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1915",
 					"maxclass" : "number",
@@ -1691,7 +2219,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 5192.391205310821533, 2310.947153091430664, 75.0, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 359.25, 762.75, 80.333335727453232, 18.0 ],
+					"presentation_rect" : [ 359.677421927452087, 741.935489177703857, 80.333335727453232, 18.0 ],
 					"text" : "Note Triggering",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
@@ -1744,8 +2272,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 4886.956428527832031, 2259.0, 75.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 590.5, 763.5, 72.333335489034653, 18.0 ],
-					"text" : "Tune C1 - C4",
+					"presentation_rect" : [ 590.000017583370209, 764.000022768974304, 72.333335489034653, 18.0 ],
+					"text" : "Tune C2 - C4",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -1755,7 +2283,7 @@
 					"fontface" : 1,
 					"fontsize" : 10.0,
 					"format" : 6,
-					"hint" : "Only for Sweep mode. This parameter defines the bit depth (i.e. number of bit used per sample) when recording the parameters sweeped at audio rate (eventually downsampled by the update rate). When using an external audio effect with MIDI conrolled parameters, this number should be set to 7 bits, because this is the resolution of MIDI Control Change messages. When using an internal plugin or an external effect with CV controlled parameters, this parameter can be set to the maximum, which is 24 bits. However, some external audio effects with CV control parameters have an internal digital interface, sampling the CV signals with ADC presenting 10 to 16 bits (hence this value should be adjusted accordingly).",
+					"hint" : "Adjust these values to tune the pitch of the external device with a pitch controlled via the Voltage per Octave (V/Oct) CV. In particular, trigger and held a C2 using an external keyboard or via the Test Keyboard. Adjust the left value until the generated pitch is a C2. Repeat the process adjusting the right value for a C4.\n",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1893",
 					"maxclass" : "flonum",
@@ -1765,9 +2293,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 4849.999907493591309, 2258.0, 33.043477535247803, 20.0 ],
+					"patching_rect" : [ 4850.400072276592255, 2258.40003365278244, 33.043477535247803, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 721.5, 762.0, 46.333334714174271, 20.0 ],
+					"presentation_rect" : [ 721.204058184683845, 763.000022768974304, 46.333334714174271, 20.0 ],
 					"varname" : "to-device-left[4]"
 				}
 
@@ -1777,7 +2305,7 @@
 					"fontface" : 1,
 					"fontsize" : 10.0,
 					"format" : 6,
-					"hint" : "Only for Sweep mode. This parameter defines the bit depth (i.e. number of bit used per sample) when recording the parameters sweeped at audio rate (eventually downsampled by the update rate). When using an external audio effect with MIDI conrolled parameters, this number should be set to 7 bits, because this is the resolution of MIDI Control Change messages. When using an internal plugin or an external effect with CV controlled parameters, this parameter can be set to the maximum, which is 24 bits. However, some external audio effects with CV control parameters have an internal digital interface, sampling the CV signals with ADC presenting 10 to 16 bits (hence this value should be adjusted accordingly).",
+					"hint" : "Adjust these values to tune the pitch of the external device with a pitch controlled via the Voltage per Octave (V/Oct) CV. In particular, trigger and held a C2 using an external keyboard or via the Test Keyboard. Adjust the left value until the generated pitch is a C2. Repeat the process adjusting the right value for a C4.\n",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1892",
 					"maxclass" : "flonum",
@@ -1787,9 +2315,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 4812.556522464752561, 2258.0, 33.043477535247803, 20.0 ],
+					"patching_rect" : [ 4812.800071716308594, 2258.40003365278244, 33.043477535247803, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 673.0, 762.0, 45.333334684371948, 20.0 ],
+					"presentation_rect" : [ 672.000020027160645, 763.0, 45.333334684371948, 20.0 ],
 					"varname" : "to-device-left[3]"
 				}
 
@@ -1858,7 +2386,7 @@
 					"fontface" : 1,
 					"fontsize" : 10.0,
 					"format" : 6,
-					"hint" : "Only for Sweep mode. This parameter defines the bit depth (i.e. number of bit used per sample) when recording the parameters sweeped at audio rate (eventually downsampled by the update rate). When using an external audio effect with MIDI conrolled parameters, this number should be set to 7 bits, because this is the resolution of MIDI Control Change messages. When using an internal plugin or an external effect with CV controlled parameters, this parameter can be set to the maximum, which is 24 bits. However, some external audio effects with CV control parameters have an internal digital interface, sampling the CV signals with ADC presenting 10 to 16 bits (hence this value should be adjusted accordingly).",
+					"hint" : "Specify the maximum output voltage of the DC coupled soundcard utilized for the CVs signals. This setting has an impact only on the tuning of the pitch, which is controlled through a Volt per Octave (V/Oct) CV.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1854",
 					"maxclass" : "flonum",
@@ -1868,7 +2396,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 4811.956522464752197, 2109.391304969787598, 33.043477535247803, 20.0 ],
+					"patching_rect" : [ 4812.000071704387665, 2109.600031435489655, 33.043477535247803, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 721.5, 739.0, 45.741451083542074, 20.0 ],
 					"varname" : "to-device-left[2]"
@@ -2656,7 +3184,7 @@
 					"fontface" : 1,
 					"fontsize" : 10.0,
 					"format" : 6,
-					"hint" : "Frequency of the triangular wave sweeping the parameter between the minimum and maximum value. in Sweep mode. It hhas no effect in oder modes.",
+					"hint" : "Frequency of the triangular wave sweeping the parameter between the minimum and maximum value in Sweep mode. It has no effect in oder modes.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1049",
 					"maxclass" : "flonum",
@@ -2695,7 +3223,7 @@
 					"fontface" : 1,
 					"fontsize" : 10.0,
 					"format" : 6,
-					"hint" : "Frequency of the triangular wave sweeping the parameter between the minimum and maximum value. in Sweep mode. It hhas no effect in oder modes.",
+					"hint" : "Frequency of the triangular wave sweeping the parameter between the minimum and maximum value in Sweep mode. It has no effect in oder modes.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1102",
 					"maxclass" : "flonum",
@@ -2734,7 +3262,7 @@
 					"fontface" : 1,
 					"fontsize" : 10.0,
 					"format" : 6,
-					"hint" : "Frequency of the triangular wave sweeping the parameter between the minimum and maximum value. in Sweep mode. It hhas no effect in oder modes.",
+					"hint" : "Frequency of the triangular wave sweeping the parameter between the minimum and maximum value in Sweep mode. It has no effect in oder modes. At the beginning of each repetition, if the Duration is set to Variable, a Duration value is sampled from the triangular wave and utilized to trigger the note. The sampled Duration value is stored in the output .csv file.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1194",
 					"maxclass" : "flonum",
@@ -2773,7 +3301,7 @@
 					"fontface" : 1,
 					"fontsize" : 10.0,
 					"format" : 6,
-					"hint" : "Frequency of the triangular wave sweeping the parameter between the minimum and maximum value. in Sweep mode. It hhas no effect in oder modes.",
+					"hint" : "Frequency of the triangular wave sweeping the parameter between the minimum and maximum value in Sweep mode. It has no effect in oder modes. At the beginning of each repetition, if the Velocity is set to Variable, a Velocity value is sampled from the triangular wave and utilized to trigger the note. The sampled Velocity value is stored in the output .csv file.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1215",
 					"maxclass" : "flonum",
@@ -2812,7 +3340,7 @@
 					"fontface" : 1,
 					"fontsize" : 10.0,
 					"format" : 6,
-					"hint" : "Frequency of the triangular wave sweeping the parameter between the minimum and maximum value. in Sweep mode. It hhas no effect in oder modes.",
+					"hint" : "Frequency of the triangular wave sweeping the parameter between the minimum and maximum value in Sweep mode. It has no effect in oder modes. At the beginning of each repetition, if the Pitch is set to Variable, a Pitch value is sampled from the triangular wave and utilized to trigger the note. The sampled pitch value is stored in the output .csv file.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1221",
 					"maxclass" : "flonum",
@@ -2843,18 +3371,6 @@
 					"presentation_rect" : [ 4.333333432674408, 617.0, 85.0, 18.0 ],
 					"text" : "Sweep Rate (Hz)",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-484",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 3974.0, 3908.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -2950,7 +3466,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 6294.0, 2342.0, 106.0, 20.0 ],
-					"text" : "55 64 300 83"
+					"text" : "60 100 500 0"
 				}
 
 			}
@@ -3029,7 +3545,7 @@
 				"box" : 				{
 					"bgcolor" : [ 0.352941176470588, 0.352941176470588, 0.352941176470588, 1.0 ],
 					"elementcolor" : [ 0.23921568627451, 0.23921568627451, 0.23921568627451, 1.0 ],
-					"hint" : "Parameter current value. Can be changed manually, and the associate device parameter update immediately. Do not change when the dataset is being generated.",
+					"hint" : "Aftertouch current value. Can be changed manually, and the associate device parameter update immediately. Can be changed when tuning individual parameters set to Enabled in Manual mode. Do not change when the dataset is being generated in other modes.",
 					"id" : "obj-1631",
 					"knobcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"maxclass" : "slider",
@@ -3061,7 +3577,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Parameter current value. Can be changed manually, and the associate device parameter update immediately. Do not change when the dataset is being generated.",
+					"hint" : "Aftertouch current value. Can be changed manually, and the associate device parameter update immediately. Can be changed when tuning individual parameters set to Enabled in Manual mode. Do not change when the dataset is being generated in other modes.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1642",
 					"maxclass" : "number",
@@ -3197,7 +3713,6 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-1486",
-					"int" : 1,
 					"maxclass" : "gswitch",
 					"numinlets" : 3,
 					"numoutlets" : 1,
@@ -3248,7 +3763,7 @@
 				"box" : 				{
 					"bgcolor" : [ 0.352941176470588, 0.352941176470588, 0.352941176470588, 1.0 ],
 					"elementcolor" : [ 0.23921568627451, 0.23921568627451, 0.23921568627451, 1.0 ],
-					"hint" : "Parameter current value. Can be changed manually, and the associate device parameter update immediately. Do not change when the dataset is being generated.",
+					"hint" : "Velocity current value. Can be changed manually in Manual mode, and this is the utilized value if the Velocity is set to Variable, otherwise the Fixed value is used. Do not change when the dataset is being generated.",
 					"id" : "obj-1476",
 					"knobcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"maxclass" : "slider",
@@ -3280,7 +3795,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Parameter current value. Can be changed manually, and the associate device parameter update immediately. Do not change when the dataset is being generated.",
+					"hint" : "Velocity current value. Can be changed manually in Manual mode, and this is the utilized value if the Velocity is set to Variableotherwise the Fixed value is used. Do not change when the dataset is being generated.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1480",
 					"maxclass" : "number",
@@ -3363,7 +3878,7 @@
 				"box" : 				{
 					"bgcolor" : [ 0.352941176470588, 0.352941176470588, 0.352941176470588, 1.0 ],
 					"elementcolor" : [ 0.23921568627451, 0.23921568627451, 0.23921568627451, 1.0 ],
-					"hint" : "Parameter current value. Can be changed manually, and the associate device parameter update immediately. Do not change when the dataset is being generated.",
+					"hint" : "Pitch current value. Can be changed manually in Manual mode, and this is the utilized value if the Pitch is set to Variableotherwise the Fixed value is used. Do not change when the dataset is being generated.",
 					"id" : "obj-1251",
 					"knobcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"maxclass" : "slider",
@@ -3372,7 +3887,7 @@
 					"orientation" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 7038.46177339553833, 4225.000141024589539, 83.0, 18.0 ],
+					"patching_rect" : [ 7039.200104892253876, 4224.800062954425812, 83.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 86.932585357816251, 522.40781643986702, 59.534667450944681, 19.851063787937164 ]
 				}
@@ -3410,7 +3925,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 6313.127330839633942, 3374.281552612781525, 60.0, 20.0 ],
+					"patching_rect" : [ 6302.400093913078308, 3374.281552612781525, 60.0, 20.0 ],
 					"text" : "loadmess 0"
 				}
 
@@ -3801,7 +4316,7 @@
 					"bgoncolor" : [ 0.898039, 0.898039, 0.898039, 1.0 ],
 					"bordercolor" : [ 0.352941176470588, 0.352941176470588, 0.352941176470588, 1.0 ],
 					"fontsize" : 10.0,
-					"hint" : "Enable or disable individual parameters in the dataset generation. Only values of enabled parameters are changed when generating the dataset.",
+					"hint" : "When set to Individual, for each note in the chord it is utilized a fixed and individual velocity values defined in the number boxed below the semitone offset.",
 					"id" : "obj-1811",
 					"maxclass" : "live.text",
 					"numinlets" : 1,
@@ -3866,7 +4381,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Parameter current value. Can be changed manually, and the associate device parameter update immediately. Do not change when the dataset is being generated.",
+					"hint" : "Duration current value. Can be changed manually in Manual mode, and this is the utilized value if the Duration is set to Variable, otherwise the Fixed value is used. Do not change when the dataset is being generated.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1809",
 					"maxclass" : "number",
@@ -3927,7 +4442,6 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-1794",
-					"int" : 1,
 					"maxclass" : "gswitch",
 					"numinlets" : 3,
 					"numoutlets" : 1,
@@ -4030,13 +4544,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-1709",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 3060.577025234699249, 405.769244313240051, 29.5, 31.0 ],
-					"text" : "1000"
+					"patching_rect" : [ 3060.577025234699249, 405.769244313240051, 29.5, 20.0 ],
+					"text" : "408"
 				}
 
 			}
@@ -4543,7 +5056,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 6548.0, 2682.0, 29.5, 31.0 ],
-					"text" : "55 64"
+					"text" : "60 100"
 				}
 
 			}
@@ -4604,35 +5117,12 @@
 			}
 , 			{
 				"box" : 				{
-					"fontface" : 1,
-					"fontsize" : 10.0,
-					"hint" : "Reset counters and temporary internal files where parameter values are stored. Mostly relevant for Manual mode, as in other modes a reset is automatically executed then the button \"Generate Dataset\" is pressed.",
-					"id" : "obj-1932",
-					"ignoreclick" : 1,
-					"maxclass" : "textbutton",
-					"mode" : 1,
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 4622.0, 3947.0, 160.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 744.666688859462738, 67.333335340023041, 179.000002682209015, 28.666667520999908 ],
-					"text" : "Timing Ok",
-					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ],
-					"texton" : " ",
-					"textoncolor" : [ 1.0, 0.392156862745098, 0.0, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-1931",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 4780.249261260032654, 3695.0, 71.0, 20.0 ],
+					"patching_rect" : [ 4858.0, 3612.0, 71.0, 20.0 ],
 					"text" : "loadmess 100"
 				}
 
@@ -4656,7 +5146,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "int" ],
-					"patching_rect" : [ 4780.249261260032654, 3852.381446063518524, 29.5, 20.0 ],
+					"patching_rect" : [ 4706.654002904891968, 3853.0, 29.5, 20.0 ],
 					"text" : "t b i"
 				}
 
@@ -4668,7 +5158,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "int" ],
-					"patching_rect" : [ 4780.249261260032654, 3771.429054737091064, 29.5, 20.0 ],
+					"patching_rect" : [ 4706.654002904891968, 3707.0, 29.5, 20.0 ],
 					"text" : "t b i"
 				}
 
@@ -4680,7 +5170,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 4780.249261260032654, 3819.0, 29.5, 20.0 ],
+					"patching_rect" : [ 4706.654002904891968, 3820.0, 29.5, 20.0 ],
 					"text" : "+"
 				}
 
@@ -4772,7 +5262,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2047.115452945232391, 1249.0, 50.0, 20.0 ],
-					"text" : "300"
+					"text" : "500"
 				}
 
 			}
@@ -4784,7 +5274,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2110.576993525028229, 1249.0, 50.0, 20.0 ],
-					"text" : "500"
+					"text" : "1000"
 				}
 
 			}
@@ -4803,7 +5293,6 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-1887",
-					"int" : 1,
 					"maxclass" : "gswitch",
 					"numinlets" : 3,
 					"numoutlets" : 1,
@@ -4822,10 +5311,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 4828.82069605588913, 3740.952860355377197, 200.000006675720215, 18.0 ],
+					"patching_rect" : [ 4907.0, 3658.0, 200.000006675720215, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 979.000029176473618, 78.666669011116028, 174.666671872138977, 18.0 ],
-					"text" : "Delay After Note Recording End (ms)",
+					"text" : "Delay After Recording End (ms)",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -4834,7 +5323,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Duration, in millisecond, of the MIDI triggering note or Gate pulse.",
+					"hint" : "Delay (in millisecond) between the end of the note, which lasts by the given duration), and the beginning of the sequence of operations associated with the next combination or repetition. This should allow the release phase, if any, to complete before riggering another note.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1882",
 					"maxclass" : "number",
@@ -4844,7 +5333,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 4780.249261260032654, 3739.048098206520081, 37.484848737716675, 20.0 ],
+					"patching_rect" : [ 4858.0, 3657.0, 37.484848737716675, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1158.333367854356766, 77.666668981313705, 61.111114025115967, 20.0 ]
 				}
@@ -4871,7 +5360,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Duration, in millisecond, of the MIDI triggering note or Gate pulse.",
+					"hint" : "Delay, in millisecond, between the Note triggering and the beginning of recording of the device's output.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1880",
 					"maxclass" : "number",
@@ -4908,7 +5397,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Duration, in millisecond, of the MIDI triggering note or Gate pulse.",
+					"hint" : "Duration, in millisecond, of of the recording of the device's output for each combination or repetition.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1878",
 					"maxclass" : "number",
@@ -5002,7 +5491,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Parameter increment ot each iteration of Step mode. In Random mode this value defines the precision of the randomly generated values. It has no effect in other modes. When using MIDI controlled parameters, values below 0.0078125 (i.e. 1/128) should not be used. MIDI values are represented by 7 bit integer, i.e. 128 possible values. Also, when working with MIDI controlled parameters, it is recommended to select step values which are integer multiples of 0.0078125 (since these are converted to integers in the range 0 to 127 before being sent to the device).",
+					"hint" : "Parameter increment ot each iteration of Step mode. In Random mode this value defines the precision of the randomly generated values. It has no effect in other modes.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1867",
 					"maxclass" : "number",
@@ -5039,7 +5528,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Minimum parameter value, for Step, Random and Sweep modes. It has no effect on Manual mode.",
+					"hint" : "Fixed Duration value utilized to trigger the notes for the dataset generation, if the Duration is set to Fixed.\n\nWhen the Duration is set to Variable, this is the minimum value, for Step, Random and Sweep modes. It has no effect on Manual mode.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1869",
 					"maxclass" : "number",
@@ -5067,7 +5556,7 @@
 					"patching_rect" : [ 1493.0, 1223.116324663162231, 34.523808896541595, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1164.000034689903259, 571.000017017126083, 85.0, 18.0 ],
-					"text" : "Min",
+					"text" : "Fixed",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -5135,7 +5624,7 @@
 					"bgoncolor" : [ 0.898039, 0.898039, 0.898039, 1.0 ],
 					"bordercolor" : [ 0.352941176470588, 0.352941176470588, 0.352941176470588, 1.0 ],
 					"fontsize" : 10.0,
-					"hint" : "Enable or disable individual parameters in the dataset generation. Only values of enabled parameters are changed when generating the dataset.",
+					"hint" : "Set the Duration (in milliseconds) of the notes triggered for each combination or repetition to a Fixed or Variable value. If Variable, the Duration is treated as any other device Enabled parameter and changed when generating the dataset.",
 					"id" : "obj-1874",
 					"maxclass" : "live.text",
 					"numinlets" : 1,
@@ -5237,7 +5726,7 @@
 					"fontface" : 1,
 					"fontname" : "Lato Bold",
 					"fontsize" : 10.0,
-					"hint" : "Record dataset in Mono (Left device output channel only) or Stereo (Left and Right). Mono can work also with a Stereo audio input source. Stereo requires a Stereo audio input source.",
+					"hint" : "Set the behavior of the on-screen keyboard to Momentary or Hold. In Momentary, the note is helf until the mouse button is help press. In Hold mode, the note is helf until clicking the same key, or on a different key.",
 					"id" : "obj-1856",
 					"items" : [ "Momentary", ",", "Hold" ],
 					"maxclass" : "umenu",
@@ -5249,7 +5738,7 @@
 					"pattrmode" : 1,
 					"prefix_mode" : 2,
 					"presentation" : 1,
-					"presentation_rect" : [ 994.5, 558.0, 80.800001204013824, 20.0 ],
+					"presentation_rect" : [ 994.715038807271867, 558.400008320808411, 80.800001204013824, 20.0 ],
 					"prototypename" : "Lato9",
 					"style" : "AudioStatus_Menu",
 					"varname" : "device-channel-select[2]"
@@ -5367,7 +5856,6 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-1777",
-					"int" : 1,
 					"maxclass" : "gswitch",
 					"numinlets" : 3,
 					"numoutlets" : 1,
@@ -5474,7 +5962,6 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-1738",
-					"int" : 1,
 					"maxclass" : "gswitch",
 					"numinlets" : 3,
 					"numoutlets" : 1,
@@ -5488,12 +5975,12 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Parameter current value. Can be changed manually, and the associate device parameter update immediately. Do not change when the dataset is being generated.",
+					"hint" : "Parameter current value. Can be changed manually, and the associate device parameter update immediately. Do not change when the dataset is being generated.\n\n, otherwise the Fixed value is used.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1736",
 					"maxclass" : "number",
-					"maximum" : 127,
-					"minimum" : 0,
+					"maximum" : 8191,
+					"minimum" : -8192,
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
@@ -5509,7 +5996,7 @@
 				"box" : 				{
 					"bgcolor" : [ 0.352941176470588, 0.352941176470588, 0.352941176470588, 1.0 ],
 					"elementcolor" : [ 0.23921568627451, 0.23921568627451, 0.23921568627451, 1.0 ],
-					"hint" : "Parameter current value. Can be changed manually, and the associate device parameter update immediately. Do not change when the dataset is being generated.",
+					"hint" : "Pitch Bend current value. Can be changed manually in Manual mode, and this is the utilized value if the Pitch Bend is set to Variable, otherwise the Fixed value is used. Do not change when the dataset is being generated.",
 					"id" : "obj-1735",
 					"knobcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"knobshape" : 5,
@@ -5542,7 +6029,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Reset counters and temporary internal files where parameter values are stored. Mostly relevant for Manual mode, as in other modes a reset is automatically executed then the button \"Generate Dataset\" is pressed.",
+					"hint" : "Press this button to flush all playing notes. Do not press during dataset generation.",
 					"id" : "obj-1511",
 					"maxclass" : "textbutton",
 					"numinlets" : 1,
@@ -5551,7 +6038,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 6795.0, 2768.5, 160.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1083.557690590620041, 590.000018388032913, 60.5, 44.5 ],
+					"presentation_rect" : [ 1083.557690590620041, 590.000018388032913, 60.666668474674225, 45.0 ],
 					"text" : "",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ],
 					"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -5667,6 +6154,7 @@
 , 			{
 				"box" : 				{
 					"blackkeycolor" : [ 0.0, 0.0, 0.0, 0.0 ],
+					"hint" : "On screen keyboard to test the device. This should not be utilized while generating the dataset. The keyboard is monophonic and chords can be set only utilizing the offsets in the Chord section. Also external MIDI keyboards are forced to be monophonic. Notes played with an external MIDI keyboard or during the dataset generation are also visualized here.",
 					"hkeycolor" : [ 0.349019607843137, 0.349019607843137, 0.349019607843137, 0.0 ],
 					"id" : "obj-1375",
 					"inputmode" : 1,
@@ -5677,7 +6165,7 @@
 					"offset" : 0,
 					"outlettype" : [ "int", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 6795.0, 2922.115482568740845, 740.0, 45.0 ],
+					"patching_rect" : [ 6795.161338925361633, 2921.774214446544647, 740.0, 45.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 336.5, 590.0, 740.0, 45.0 ],
 					"range" : 127,
@@ -5704,7 +6192,6 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-1119",
-					"int" : 1,
 					"maxclass" : "gswitch",
 					"numinlets" : 3,
 					"numoutlets" : 1,
@@ -5847,8 +6334,8 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"format" : 5,
-					"hint" : "Parameter current value. Can be changed manually, and the associate device parameter update immediately. Do not change when the dataset is being generated.",
+					"format" : 4,
+					"hint" : "Pitch current value. Can be changed manually in Manual mode, and this is the utilized value if the Pitch is set to Variable, otherwise the Fixed value is used. Do not change when the dataset is being generated.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-34",
 					"maxclass" : "number",
@@ -5858,7 +6345,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 6933.606359004974365, 4224.590043067932129, 37.0, 20.0 ],
+					"patching_rect" : [ 6933.600103318691254, 4224.800062954425812, 37.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 49.838208124208393, 522.333348333835602, 41.281569078891437, 20.0 ],
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -6215,7 +6702,7 @@
 					"fontface" : 1,
 					"fontname" : "Lato Bold",
 					"fontsize" : 10.0,
-					"hint" : "Record dataset in Mono (Left device output channel only) or Stereo (Left and Right). Mono can work also with a Stereo audio input source. Stereo requires a Stereo audio input source.",
+					"hint" : "Pitch Pend resolution. When changed, the current value is reset to the middle position. For 7 bits the range is 0 to 127. For 14 bits, the range is -8192 to 8191.",
 					"id" : "obj-1729",
 					"items" : [ 14, ",", 7 ],
 					"maxclass" : "umenu",
@@ -6290,11 +6777,11 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Parameter increment ot each iteration of Step mode. In Random mode this value defines the precision of the randomly generated values. It has no effect in other modes. When using MIDI controlled parameters, values below 0.0078125 (i.e. 1/128) should not be used. MIDI values are represented by 7 bit integer, i.e. 128 possible values. Also, when working with MIDI controlled parameters, it is recommended to select step values which are integer multiples of 0.0078125 (since these are converted to integers in the range 0 to 127 before being sent to the device).",
+					"hint" : "Parameter increment ot each iteration of Step mode. In Random mode this value defines the precision of the randomly generated values. It has no effect in other modes.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1712",
 					"maxclass" : "number",
-					"maximum" : 127,
+					"maximum" : 16384,
 					"minimum" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 2,
@@ -6327,12 +6814,12 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Minimum parameter value, for Step, Random and Sweep modes. It has no effect on Manual mode.",
+					"hint" : "Fixed Pitch Bend value send to the device when the note is triggered for the dataset generation, if the Pitch Bend is set to Fixed.\n\nWhen the Pitch Bend is set to Variable, this is the minimum value, for Step, Random and Sweep modes. It has no effect on Manual mode.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1714",
 					"maxclass" : "number",
-					"maximum" : 127,
-					"minimum" : 0,
+					"maximum" : 8191,
+					"minimum" : -8192,
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
@@ -6368,8 +6855,8 @@
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1716",
 					"maxclass" : "number",
-					"maximum" : 127,
-					"minimum" : 0,
+					"maximum" : 8191,
+					"minimum" : -8192,
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
@@ -6401,7 +6888,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Parameter increment ot each iteration of Step mode. In Random mode this value defines the precision of the randomly generated values. It has no effect in other modes. When using MIDI controlled parameters, values below 0.0078125 (i.e. 1/128) should not be used. MIDI values are represented by 7 bit integer, i.e. 128 possible values. Also, when working with MIDI controlled parameters, it is recommended to select step values which are integer multiples of 0.0078125 (since these are converted to integers in the range 0 to 127 before being sent to the device).",
+					"hint" : "Parameter increment ot each iteration of Step mode. In Random mode this value defines the precision of the randomly generated values. It has no effect in other modes.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1718",
 					"maxclass" : "number",
@@ -6534,7 +7021,7 @@
 					"bgoncolor" : [ 0.898039, 0.898039, 0.898039, 1.0 ],
 					"bordercolor" : [ 0.352941176470588, 0.352941176470588, 0.352941176470588, 1.0 ],
 					"fontsize" : 10.0,
-					"hint" : "Enable or disable individual parameters in the dataset generation. Only values of enabled parameters are changed when generating the dataset.",
+					"hint" : "Enable or disable the Aftertouch in the dataset generation. Only values of Enabled parameters are changed when generating the dataset.",
 					"id" : "obj-1725",
 					"maxclass" : "live.text",
 					"numinlets" : 1,
@@ -6621,7 +7108,7 @@
 					"bgoncolor" : [ 0.898039, 0.898039, 0.898039, 1.0 ],
 					"bordercolor" : [ 0.352941176470588, 0.352941176470588, 0.352941176470588, 1.0 ],
 					"fontsize" : 10.0,
-					"hint" : "Enable or disable individual parameters in the dataset generation. Only values of enabled parameters are changed when generating the dataset.",
+					"hint" : "Set the Pitch Bend to a Fixed or Variable value. If Variable, the Pitch Bend is treated as any other device Enabled parameter and changed when generating the dataset.",
 					"id" : "obj-1727",
 					"maxclass" : "live.text",
 					"numinlets" : 1,
@@ -6715,134 +7202,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-1621",
-					"linecount" : 2,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 9097.0, 3677.0, 97.0, 31.0 ],
-					"text" : "textcolor 0.969 0.969 0.969 $1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-1622",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 9097.0, 3647.0, 65.0, 20.0 ],
-					"text" : "triangle $1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-1623",
-					"linecount" : 2,
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 9097.0, 3607.0, 72.0, 31.0 ],
-					"text" : "if $i1 == 0 then 0 else 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 1,
-					"fontsize" : 10.0,
-					"hint" : "Trigger delay, in millisecond, with respect to audio input source playback start.",
-					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
-					"id" : "obj-1624",
-					"maxclass" : "number",
-					"maximum" : 127,
-					"minimum" : 1,
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 9097.0, 3721.0, 37.484848737716675, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 1088.841115755055171, 495.333348095417023, 53.483764603827012, 20.0 ],
-					"textcolor" : [ 0.969, 0.969, 0.969, 0.0 ],
-					"triangle" : 0
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 1,
-					"fontsize" : 10.0,
-					"hint" : "Trigger delay, in millisecond, with respect to audio input source playback start.",
-					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
-					"id" : "obj-1629",
-					"maxclass" : "number",
-					"maximum" : 127,
-					"minimum" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 9028.0, 3670.0, 37.484848737716675, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 1088.841115755055171, 472.33334743976593, 53.483764603827012, 20.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-1632",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 9028.0, 3774.0, 32.0, 20.0 ],
-					"text" : "gate"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-1633",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 9080.0, 3774.0, 36.0, 20.0 ],
-					"text" : "pack"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-1634",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 9028.0, 3826.0, 32.0, 20.0 ],
-					"text" : "55 0"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-1635",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"patching_rect" : [ 9028.0, 3721.0, 29.5, 20.0 ],
-					"text" : "+ 0"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-1636",
 					"linecount" : 2,
 					"maxclass" : "message",
@@ -6883,7 +7242,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Trigger delay, in millisecond, with respect to audio input source playback start.",
+					"hint" : "Individual fixed velocity of each note added tot he chord. The velocity can be set only if the offset is greater than zero. This value is not used and will follow the root's velocity when Follow Root is selected.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1639",
 					"maxclass" : "number",
@@ -6895,7 +7254,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 8898.0, 3721.0, 37.484848737716675, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1033.537377959141168, 495.333348095417023, 53.483764603827012, 20.0 ],
+					"presentation_rect" : [ 935.5, 495.0, 39.5, 20.0 ],
 					"textcolor" : [ 0.969, 0.969, 0.969, 0.0 ],
 					"triangle" : 0
 				}
@@ -6905,7 +7264,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Trigger delay, in millisecond, with respect to audio input source playback start.",
+					"hint" : "This value represetn an offset, in semitones, from the root note. The root note is the one fefined in the Pitch section, which can ve Fixed, or Variable. When the offser value is set to a number greater than zero, an additional note is played together with the root, forming a chord. Up to 11 additional notes can be added to the root, forming chords containing up to 12 notes. There should not be two non-zero offsets with identical values.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1640",
 					"maxclass" : "number",
@@ -6917,7 +7276,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 8829.0, 3670.0, 37.484848737716675, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1033.537377959141168, 472.33334743976593, 53.483764603827012, 20.0 ]
+					"presentation_rect" : [ 935.5, 472.0, 39.5, 20.0 ]
 				}
 
 			}
@@ -6953,7 +7312,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 8829.0, 3826.0, 32.0, 20.0 ],
-					"text" : "55 0"
+					"text" : "60 0"
 				}
 
 			}
@@ -7011,7 +7370,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Trigger delay, in millisecond, with respect to audio input source playback start.",
+					"hint" : "Individual fixed velocity of each note added tot he chord. The velocity can be set only if the offset is greater than zero. This value is not used and will follow the root's velocity when Follow Root is selected.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1653",
 					"maxclass" : "number",
@@ -7023,7 +7382,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 8706.0, 3721.0, 37.484848737716675, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 978.233640163227051, 495.333348095417023, 53.483764603827012, 20.0 ],
+					"presentation_rect" : [ 890.0, 495.200007379055023, 39.5, 20.0 ],
 					"textcolor" : [ 0.969, 0.969, 0.969, 0.0 ],
 					"triangle" : 0
 				}
@@ -7033,7 +7392,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Trigger delay, in millisecond, with respect to audio input source playback start.",
+					"hint" : "This value represetn an offset, in semitones, from the root note. The root note is the one fefined in the Pitch section, which can ve Fixed, or Variable. When the offser value is set to a number greater than zero, an additional note is played together with the root, forming a chord. Up to 11 additional notes can be added to the root, forming chords containing up to 12 notes. There should not be two non-zero offsets with identical values.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1654",
 					"maxclass" : "number",
@@ -7045,7 +7404,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 8637.0, 3670.0, 37.484848737716675, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 978.233640163227051, 472.33334743976593, 53.483764603827012, 20.0 ]
+					"presentation_rect" : [ 890.0, 472.000007033348083, 39.5, 20.0 ]
 				}
 
 			}
@@ -7081,7 +7440,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 8637.0, 3826.0, 32.0, 20.0 ],
-					"text" : "55 0"
+					"text" : "60 0"
 				}
 
 			}
@@ -7139,7 +7498,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Trigger delay, in millisecond, with respect to audio input source playback start.",
+					"hint" : "Individual fixed velocity of each note added tot he chord. The velocity can be set only if the offset is greater than zero. This value is not used and will follow the root's velocity when Follow Root is selected.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1665",
 					"maxclass" : "number",
@@ -7151,7 +7510,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 8507.0, 3721.0, 37.484848737716675, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 922.929902367312934, 495.333348095417023, 53.483764603827012, 20.0 ],
+					"presentation_rect" : [ 844.5, 495.200007379055023, 39.5, 20.0 ],
 					"textcolor" : [ 0.969, 0.969, 0.969, 0.0 ],
 					"triangle" : 0
 				}
@@ -7161,7 +7520,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Trigger delay, in millisecond, with respect to audio input source playback start.",
+					"hint" : "This value represetn an offset, in semitones, from the root note. The root note is the one fefined in the Pitch section, which can ve Fixed, or Variable. When the offser value is set to a number greater than zero, an additional note is played together with the root, forming a chord. Up to 11 additional notes can be added to the root, forming chords containing up to 12 notes. There should not be two non-zero offsets with identical values.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1666",
 					"maxclass" : "number",
@@ -7173,7 +7532,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 8438.0, 3670.0, 37.484848737716675, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 922.929902367312934, 472.33334743976593, 53.483764603827012, 20.0 ]
+					"presentation_rect" : [ 844.5, 472.000007033348083, 39.5, 20.0 ]
 				}
 
 			}
@@ -7209,7 +7568,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 8438.0, 3826.0, 32.0, 20.0 ],
-					"text" : "55 0"
+					"text" : "60 0"
 				}
 
 			}
@@ -7267,7 +7626,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Trigger delay, in millisecond, with respect to audio input source playback start.",
+					"hint" : "Individual fixed velocity of each note added tot he chord. The velocity can be set only if the offset is greater than zero. This value is not used and will follow the root's velocity when Follow Root is selected.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1678",
 					"maxclass" : "number",
@@ -7279,7 +7638,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 8312.0, 3721.0, 37.484848737716675, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 867.626164571398817, 495.333348095417023, 53.483764603827012, 20.0 ],
+					"presentation_rect" : [ 799.0, 495.200007379055023, 39.5, 20.0 ],
 					"textcolor" : [ 0.969, 0.969, 0.969, 0.0 ],
 					"triangle" : 0
 				}
@@ -7289,7 +7648,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Trigger delay, in millisecond, with respect to audio input source playback start.",
+					"hint" : "This value represetn an offset, in semitones, from the root note. The root note is the one fefined in the Pitch section, which can ve Fixed, or Variable. When the offser value is set to a number greater than zero, an additional note is played together with the root, forming a chord. Up to 11 additional notes can be added to the root, forming chords containing up to 12 notes. There should not be two non-zero offsets with identical values.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1679",
 					"maxclass" : "number",
@@ -7301,7 +7660,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 8243.0, 3670.0, 37.484848737716675, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 867.626164571398817, 472.33334743976593, 53.483764603827012, 20.0 ]
+					"presentation_rect" : [ 799.0, 472.000007033348083, 39.5, 20.0 ]
 				}
 
 			}
@@ -7337,7 +7696,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 8243.0, 3826.0, 32.0, 20.0 ],
-					"text" : "55 0"
+					"text" : "60 0"
 				}
 
 			}
@@ -7395,7 +7754,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Trigger delay, in millisecond, with respect to audio input source playback start.",
+					"hint" : "Individual fixed velocity of each note added tot he chord. The velocity can be set only if the offset is greater than zero. This value is not used and will follow the root's velocity when Follow Root is selected.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1689",
 					"maxclass" : "number",
@@ -7407,7 +7766,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 8109.0, 3721.0, 37.484848737716675, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 812.322426775484701, 495.333348095417023, 53.483764603827012, 20.0 ],
+					"presentation_rect" : [ 753.5, 495.200007379055023, 39.5, 20.0 ],
 					"textcolor" : [ 0.969, 0.969, 0.969, 0.0 ],
 					"triangle" : 0
 				}
@@ -7417,7 +7776,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Trigger delay, in millisecond, with respect to audio input source playback start.",
+					"hint" : "This value represetn an offset, in semitones, from the root note. The root note is the one fefined in the Pitch section, which can ve Fixed, or Variable. When the offser value is set to a number greater than zero, an additional note is played together with the root, forming a chord. Up to 11 additional notes can be added to the root, forming chords containing up to 12 notes. There should not be two non-zero offsets with identical values.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1690",
 					"maxclass" : "number",
@@ -7429,7 +7788,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 8040.0, 3670.0, 37.484848737716675, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 812.322426775484701, 472.33334743976593, 53.483764603827012, 20.0 ]
+					"presentation_rect" : [ 753.5, 472.000007033348083, 39.5, 20.0 ]
 				}
 
 			}
@@ -7465,7 +7824,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 8040.0, 3826.0, 32.0, 20.0 ],
-					"text" : "55 0"
+					"text" : "60 0"
 				}
 
 			}
@@ -7523,7 +7882,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Trigger delay, in millisecond, with respect to audio input source playback start.",
+					"hint" : "Individual fixed velocity of each note added tot he chord. The velocity can be set only if the offset is greater than zero. This value is not used and will follow the root's velocity when Follow Root is selected.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1609",
 					"maxclass" : "number",
@@ -7535,7 +7894,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 7914.0, 3721.0, 37.484848737716675, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 757.018688979570584, 495.333348095417023, 53.483764603827012, 20.0 ],
+					"presentation_rect" : [ 708.0, 495.200007379055023, 39.5, 20.0 ],
 					"textcolor" : [ 0.969, 0.969, 0.969, 0.0 ],
 					"triangle" : 0
 				}
@@ -7545,7 +7904,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Trigger delay, in millisecond, with respect to audio input source playback start.",
+					"hint" : "This value represetn an offset, in semitones, from the root note. The root note is the one fefined in the Pitch section, which can ve Fixed, or Variable. When the offser value is set to a number greater than zero, an additional note is played together with the root, forming a chord. Up to 11 additional notes can be added to the root, forming chords containing up to 12 notes. There should not be two non-zero offsets with identical values.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1610",
 					"maxclass" : "number",
@@ -7557,7 +7916,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 7845.0, 3670.0, 37.484848737716675, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 757.018688979570584, 472.33334743976593, 53.483764603827012, 20.0 ]
+					"presentation_rect" : [ 708.0, 472.000007033348083, 39.5, 20.0 ]
 				}
 
 			}
@@ -7593,7 +7952,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 7845.0, 3826.0, 32.0, 20.0 ],
-					"text" : "55 0"
+					"text" : "60 0"
 				}
 
 			}
@@ -7651,7 +8010,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Trigger delay, in millisecond, with respect to audio input source playback start.",
+					"hint" : "Individual fixed velocity of each note added tot he chord. The velocity can be set only if the offset is greater than zero. This value is not used and will follow the root's velocity when Follow Root is selected.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1598",
 					"maxclass" : "number",
@@ -7663,7 +8022,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 7715.0, 3721.0, 37.484848737716675, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 701.714951183656467, 495.333348095417023, 53.483764603827012, 20.0 ],
+					"presentation_rect" : [ 662.5, 495.200007379055023, 39.5, 20.0 ],
 					"textcolor" : [ 0.969, 0.969, 0.969, 0.0 ],
 					"triangle" : 0
 				}
@@ -7673,7 +8032,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Trigger delay, in millisecond, with respect to audio input source playback start.",
+					"hint" : "This value represetn an offset, in semitones, from the root note. The root note is the one fefined in the Pitch section, which can ve Fixed, or Variable. When the offser value is set to a number greater than zero, an additional note is played together with the root, forming a chord. Up to 11 additional notes can be added to the root, forming chords containing up to 12 notes. There should not be two non-zero offsets with identical values.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1599",
 					"maxclass" : "number",
@@ -7685,7 +8044,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 7646.0, 3670.0, 37.484848737716675, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 701.714951183656467, 472.33334743976593, 53.483764603827012, 20.0 ]
+					"presentation_rect" : [ 662.5, 472.000007033348083, 39.5, 20.0 ]
 				}
 
 			}
@@ -7721,7 +8080,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 7646.0, 3826.0, 32.0, 20.0 ],
-					"text" : "55 0"
+					"text" : "60 0"
 				}
 
 			}
@@ -7779,7 +8138,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Trigger delay, in millisecond, with respect to audio input source playback start.",
+					"hint" : "Individual fixed velocity of each note added tot he chord. The velocity can be set only if the offset is greater than zero. This value is not used and will follow the root's velocity when Follow Root is selected.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1585",
 					"maxclass" : "number",
@@ -7791,7 +8150,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 7523.0, 3721.0, 37.484848737716675, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 646.41121338774235, 495.333348095417023, 53.483764603827012, 20.0 ],
+					"presentation_rect" : [ 617.0, 495.200007379055023, 39.5, 20.0 ],
 					"textcolor" : [ 0.969, 0.969, 0.969, 0.0 ],
 					"triangle" : 0
 				}
@@ -7801,7 +8160,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Trigger delay, in millisecond, with respect to audio input source playback start.",
+					"hint" : "This value represetn an offset, in semitones, from the root note. The root note is the one fefined in the Pitch section, which can ve Fixed, or Variable. When the offser value is set to a number greater than zero, an additional note is played together with the root, forming a chord. Up to 11 additional notes can be added to the root, forming chords containing up to 12 notes. There should not be two non-zero offsets with identical values.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1586",
 					"maxclass" : "number",
@@ -7813,7 +8172,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 7454.0, 3670.0, 37.484848737716675, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 646.41121338774235, 472.33334743976593, 53.483764603827012, 20.0 ]
+					"presentation_rect" : [ 617.0, 472.000007033348083, 39.5, 20.0 ]
 				}
 
 			}
@@ -7849,7 +8208,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 7454.0, 3826.0, 32.0, 20.0 ],
-					"text" : "55 0"
+					"text" : "60 0"
 				}
 
 			}
@@ -7907,7 +8266,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Trigger delay, in millisecond, with respect to audio input source playback start.",
+					"hint" : "Individual fixed velocity of each note added tot he chord. The velocity can be set only if the offset is greater than zero. This value is not used and will follow the root's velocity when Follow Root is selected.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1573",
 					"maxclass" : "number",
@@ -7919,7 +8278,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 7324.0, 3721.0, 37.484848737716675, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 591.107475591828234, 495.333348095417023, 53.483764603827012, 20.0 ],
+					"presentation_rect" : [ 571.5, 495.333348095417023, 39.5, 20.0 ],
 					"textcolor" : [ 0.969, 0.969, 0.969, 0.0 ],
 					"triangle" : 0
 				}
@@ -7929,7 +8288,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Trigger delay, in millisecond, with respect to audio input source playback start.",
+					"hint" : "This value represetn an offset, in semitones, from the root note. The root note is the one fefined in the Pitch section, which can ve Fixed, or Variable. When the offser value is set to a number greater than zero, an additional note is played together with the root, forming a chord. Up to 11 additional notes can be added to the root, forming chords containing up to 12 notes. There should not be two non-zero offsets with identical values.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1574",
 					"maxclass" : "number",
@@ -7941,7 +8300,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 7255.0, 3670.0, 37.484848737716675, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 591.107475591828234, 472.33334743976593, 53.483764603827012, 20.0 ]
+					"presentation_rect" : [ 571.5, 472.133347749710083, 39.5, 20.0 ]
 				}
 
 			}
@@ -7977,7 +8336,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 7255.0, 3826.0, 32.0, 20.0 ],
-					"text" : "55 0"
+					"text" : "60 0"
 				}
 
 			}
@@ -8035,7 +8394,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Trigger delay, in millisecond, with respect to audio input source playback start.",
+					"hint" : "Individual fixed velocity of each note added tot he chord. The velocity can be set only if the offset is greater than zero. This value is not used and will follow the root's velocity when Follow Root is selected.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1549",
 					"maxclass" : "number",
@@ -8047,7 +8406,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 7129.0, 3721.0, 37.484848737716675, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 535.803737795914117, 495.333348095417023, 53.483764603827012, 20.0 ],
+					"presentation_rect" : [ 526.0, 495.333348095417023, 39.5, 20.0 ],
 					"textcolor" : [ 0.969, 0.969, 0.969, 0.0 ],
 					"triangle" : 0
 				}
@@ -8057,7 +8416,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Trigger delay, in millisecond, with respect to audio input source playback start.",
+					"hint" : "This value represetn an offset, in semitones, from the root note. The root note is the one fefined in the Pitch section, which can ve Fixed, or Variable. When the offser value is set to a number greater than zero, an additional note is played together with the root, forming a chord. Up to 11 additional notes can be added to the root, forming chords containing up to 12 notes. There should not be two non-zero offsets with identical values.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1550",
 					"maxclass" : "number",
@@ -8069,7 +8428,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 7060.0, 3670.0, 37.484848737716675, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 535.803737795914117, 472.33334743976593, 53.483764603827012, 20.0 ]
+					"presentation_rect" : [ 526.0, 472.133347749710083, 39.5, 20.0 ]
 				}
 
 			}
@@ -8105,7 +8464,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 7060.0, 3826.0, 32.0, 20.0 ],
-					"text" : "55 0"
+					"text" : "0 0"
 				}
 
 			}
@@ -8163,7 +8522,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Trigger delay, in millisecond, with respect to audio input source playback start.",
+					"hint" : "Individual fixed velocity of each note added tot he chord. The velocity can be set only if the offset is greater than zero. This value is not used and will follow the root's velocity when Follow Root is selected.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1505",
 					"maxclass" : "number",
@@ -8175,9 +8534,8 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 6926.0, 3721.0, 37.484848737716675, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 480.5, 495.5, 53.483764603827012, 20.0 ],
-					"textcolor" : [ 0.969, 0.969, 0.969, 0.0 ],
-					"triangle" : 0
+					"presentation_rect" : [ 480.5, 495.333348095417023, 39.5, 20.0 ],
+					"textcolor" : [ 0.969, 0.969, 0.969, 1.0 ]
 				}
 
 			}
@@ -8220,7 +8578,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Trigger delay, in millisecond, with respect to audio input source playback start.",
+					"hint" : "This value represetn an offset, in semitones, from the root note. The root note is the one fefined in the Pitch section, which can ve Fixed, or Variable. When the offser value is set to a number greater than zero, an additional note is played together with the root, forming a chord. Up to 11 additional notes can be added to the root, forming chords containing up to 12 notes. There should not be two non-zero offsets with identical values.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1501",
 					"maxclass" : "number",
@@ -8232,7 +8590,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 6857.0, 3670.0, 37.484848737716675, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 480.5, 472.5, 53.483764603827012, 20.0 ]
+					"presentation_rect" : [ 480.5, 472.5, 39.5, 20.0 ]
 				}
 
 			}
@@ -8256,7 +8614,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 6773.0, 3375.0, 29.5, 20.0 ],
-					"text" : "55"
+					"text" : "60"
 				}
 
 			}
@@ -8287,12 +8645,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-1397",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 6857.0, 3826.0, 32.0, 20.0 ],
-					"text" : "55 0"
+					"patching_rect" : [ 6857.0, 3826.0, 32.0, 31.0 ],
+					"text" : "127 0"
 				}
 
 			}
@@ -8352,7 +8711,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 6736.0, 3496.0, 29.5, 20.0 ],
-					"text" : "55 0"
+					"text" : "60 0"
 				}
 
 			}
@@ -8472,7 +8831,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Parameter increment ot each iteration of Step mode. In Random mode this value defines the precision of the randomly generated values. It has no effect in other modes. When using MIDI controlled parameters, values below 0.0078125 (i.e. 1/128) should not be used. MIDI values are represented by 7 bit integer, i.e. 128 possible values. Also, when working with MIDI controlled parameters, it is recommended to select step values which are integer multiples of 0.0078125 (since these are converted to integers in the range 0 to 127 before being sent to the device).",
+					"hint" : "Parameter increment ot each iteration of Step mode. In Random mode this value defines the precision of the randomly generated values. It has no effect in other modes.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1142",
 					"maxclass" : "number",
@@ -8509,7 +8868,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Minimum parameter value, for Step, Random and Sweep modes. It has no effect on Manual mode.",
+					"hint" : "Fixed Velocity value utilized to trigger the notes for the dataset generation, if the Velocity is set to Fixed.\n\nWhen the Velocity is set to Variable, this is the minimum value, for Step, Random and Sweep modes. It has no effect on Manual mode.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1157",
 					"maxclass" : "number",
@@ -8583,7 +8942,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Parameter increment ot each iteration of Step mode. In Random mode this value defines the precision of the randomly generated values. It has no effect in other modes. When using MIDI controlled parameters, values below 0.0078125 (i.e. 1/128) should not be used. MIDI values are represented by 7 bit integer, i.e. 128 possible values. Also, when working with MIDI controlled parameters, it is recommended to select step values which are integer multiples of 0.0078125 (since these are converted to integers in the range 0 to 127 before being sent to the device).",
+					"hint" : "Parameter increment ot each iteration of Step mode. In Random mode this value defines the precision of the randomly generated values. It has no effect in other modes.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1186",
 					"maxclass" : "number",
@@ -8603,8 +8962,8 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"format" : 5,
-					"hint" : "Minimum parameter value, for Step, Random and Sweep modes. It has no effect on Manual mode.",
+					"format" : 4,
+					"hint" : "Fixed Pitch value utilized to trigger the notes for the dataset generation, if the Pitch is set to Fixed.\n\nWhen the Pitch is set to Variable, this is the minimum value, for Step, Random and Sweep modes. It has no effect on Manual mode.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1188",
 					"maxclass" : "number",
@@ -8624,7 +8983,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"format" : 5,
+					"format" : 4,
 					"hint" : "Maximum parameter value, for Step, Random and Sweep modes. It has no effect on Manual mode.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1189",
@@ -8719,7 +9078,7 @@
 					"bgoncolor" : [ 0.898039, 0.898039, 0.898039, 1.0 ],
 					"bordercolor" : [ 0.352941176470588, 0.352941176470588, 0.352941176470588, 1.0 ],
 					"fontsize" : 10.0,
-					"hint" : "Enable or disable individual parameters in the dataset generation. Only values of enabled parameters are changed when generating the dataset.",
+					"hint" : "Set the Pitch of the notes triggered for each combination or repetition to a Fixed or Variable value. If Variable, the Pitch is treated as any other device Enabled parameter and changed when generating the dataset.",
 					"id" : "obj-959",
 					"maxclass" : "live.text",
 					"numinlets" : 1,
@@ -8806,7 +9165,7 @@
 					"bgoncolor" : [ 0.898039, 0.898039, 0.898039, 1.0 ],
 					"bordercolor" : [ 0.352941176470588, 0.352941176470588, 0.352941176470588, 1.0 ],
 					"fontsize" : 10.0,
-					"hint" : "Enable or disable individual parameters in the dataset generation. Only values of enabled parameters are changed when generating the dataset.",
+					"hint" : "Set the Velocity of the notes triggered for each combination or repetition to a Fixed or Variable value. If Variable, the Velocity is treated as any other device Enabled parameter and changed when generating the dataset.",
 					"id" : "obj-1105",
 					"maxclass" : "live.text",
 					"numinlets" : 1,
@@ -9544,7 +9903,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Only for Sweep mode. This parameter defines the bit depth (i.e. number of bit used per sample) when recording the parameters sweeped at audio rate (eventually downsampled by the update rate). When using an external audio effect with MIDI conrolled parameters, this number should be set to 7 bits, because this is the resolution of MIDI Control Change messages. When using an internal plugin or an external effect with CV controlled parameters, this parameter can be set to the maximum, which is 24 bits. However, some external audio effects with CV control parameters have an internal digital interface, sampling the CV signals with ADC presenting 10 to 16 bits (hence this value should be adjusted accordingly).",
+					"hint" : "Only for Sweep mode. This parameter defines the bit depth (i.e. number of bit used per sample) when recording the parameters sweeped at audio rate (eventually downsampled by the update rate). When using an external audio effect with MIDI conrolled parameters, this number should be set to 7 bits, because this is the resolution of MIDI Control Change messages (but it should be set to 14 bits if sweeping also the Pitch Bend of a device that supports 14 bits resolution). When using an internal plugin or an external effect with CV controlled parameters, this parameter can be set to the maximum, which is 24 bits. However, some external audio sound synthesizers with CV control parameters have an internal digital interface, sampling the CV signals with ADC presenting 10 to 16 bits (hence this value should be adjusted accordingly).",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-554",
 					"maxclass" : "number",
@@ -9855,7 +10214,7 @@
 					"fontface" : 1,
 					"fontname" : "Lato Bold",
 					"fontsize" : 10.0,
-					"hint" : "Select the type of trigger signal to send upon audio input source playback start.",
+					"hint" : "When generating a dataset with an external device, select whether the note (with specific Pitch and Velovity) is triggered utilizing MIDI Note On/Off messages, or with V/Octave and Gate Control Voltages (CVs). In bot case, other specific output settings (such as port, channel, interface) must be made to ensure correct interfacing with the external device.",
 					"id" : "obj-474",
 					"items" : [ "MIDI", "Note", "On/Off", ",", "V/Oct", "&", "Gate", "CVs" ],
 					"maxclass" : "umenu",
@@ -9867,7 +10226,7 @@
 					"pattrmode" : 1,
 					"prefix_mode" : 2,
 					"presentation" : 1,
-					"presentation_rect" : [ 456.181075004830973, 762.5, 116.25, 20.0 ],
+					"presentation_rect" : [ 443.717152155982262, 740.935489177703857, 129.349524162663215, 20.0 ],
 					"prototypename" : "Lato9",
 					"style" : "AudioStatus_Menu",
 					"varname" : "driver-select[4]"
@@ -10098,13 +10457,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-126",
-					"linecount" : 7,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 4070.0, 4180.0, 50.0, 87.0 ],
-					"text" : "write /Users/stefanof/Desktop/TEST/testSweep-2.wav"
+					"patching_rect" : [ 4070.0, 4180.0, 50.0, 20.0 ]
 				}
 
 			}
@@ -10846,7 +11203,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Select the preset number you want to store, clear or recall.",
+					"hint" : "Select the preset number to be stored, cleared or recalled.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-11",
 					"maxclass" : "number",
@@ -11250,7 +11607,7 @@
 					"bgoncolor" : [ 0.898039, 0.898039, 0.898039, 1.0 ],
 					"bordercolor" : [ 0.352941176470588, 0.352941176470588, 0.352941176470588, 1.0 ],
 					"fontsize" : 10.0,
-					"hint" : "Enable to route the audio output of the device to the \"To Speakers\" audio output channels.",
+					"hint" : "Route the audio output of the device to the \"To Speakers\" soundcard's audio output channels.",
 					"id" : "obj-60",
 					"maxclass" : "live.text",
 					"numinlets" : 1,
@@ -11259,7 +11616,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 3912.0, 3597.0, 49.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1013.0, 722.0, 47.033775029422827, 21.666667312383652 ],
+					"presentation_rect" : [ 1014.000030219554901, 722.000021517276764, 47.033775029422827, 21.666667312383652 ],
 					"saved_attribute_attributes" : 					{
 						"activebgcolor" : 						{
 							"expression" : ""
@@ -11320,6 +11677,7 @@
 					"bgoncolor" : [ 0.898039, 0.898039, 0.898039, 1.0 ],
 					"bordercolor" : [ 0.352941176470588, 0.352941176470588, 0.352941176470588, 1.0 ],
 					"fontsize" : 10.0,
+					"hint" : "Enable/Disable the MIDI input.",
 					"id" : "obj-59",
 					"maxclass" : "live.text",
 					"numinlets" : 1,
@@ -11328,7 +11686,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 5142.222467422485352, 2981.111253261566162, 49.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 494.5, 714.0, 47.033775029422827, 21.5 ],
+					"presentation_rect" : [ 495.315164925560339, 693.0, 47.033775029422827, 21.5 ],
 					"saved_attribute_attributes" : 					{
 						"activebgcolor" : 						{
 							"expression" : ""
@@ -11389,6 +11747,7 @@
 					"bgoncolor" : [ 0.898039, 0.898039, 0.898039, 1.0 ],
 					"bordercolor" : [ 0.352941176470588, 0.352941176470588, 0.352941176470588, 1.0 ],
 					"fontsize" : 10.0,
+					"hint" : "Enable/Disable the MIDI output.",
 					"id" : "obj-58",
 					"maxclass" : "live.text",
 					"numinlets" : 1,
@@ -11397,7 +11756,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 5383.495071828365326, 2941.747532486915588, 49.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 494.5, 738.0, 47.033775029422827, 21.506388068199158 ],
+					"presentation_rect" : [ 495.315164925560339, 717.193548560142517, 47.033775029422827, 21.506388068199158 ],
 					"saved_attribute_attributes" : 					{
 						"activebgcolor" : 						{
 							"expression" : ""
@@ -11458,6 +11817,7 @@
 					"bgoncolor" : [ 0.898039, 0.898039, 0.898039, 1.0 ],
 					"bordercolor" : [ 0.352941176470588, 0.352941176470588, 0.352941176470588, 1.0 ],
 					"fontsize" : 10.0,
+					"hint" : "Enable/Disable the Control Voltage (CV) outputs on selected soundcard channels.",
 					"id" : "obj-57",
 					"maxclass" : "live.text",
 					"numinlets" : 1,
@@ -11466,7 +11826,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 5121.0, 2664.0, 49.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 720.0, 691.5, 47.033775029422827, 21.506388068199158 ],
+					"presentation_rect" : [ 721.333354830741882, 691.333353936672211, 47.033775029422827, 21.506388068199158 ],
 					"saved_attribute_attributes" : 					{
 						"activebgcolor" : 						{
 							"expression" : ""
@@ -11527,7 +11887,7 @@
 					"bgoncolor" : [ 0.898039, 0.898039, 0.898039, 1.0 ],
 					"bordercolor" : [ 0.352941176470588, 0.352941176470588, 0.352941176470588, 1.0 ],
 					"fontsize" : 10.0,
-					"hint" : "Enable/Disable active monitoring of parameter modified through the internal plugin GUI.",
+					"hint" : "Enable/Disable active monitoring of parameter modified on the internal plugin graphical interface.",
 					"id" : "obj-56",
 					"maxclass" : "live.text",
 					"numinlets" : 1,
@@ -12764,7 +13124,7 @@
 					"fontface" : 1,
 					"fontsize" : 10.0,
 					"format" : 6,
-					"hint" : "Parameter current value. Can be changed manually, and the associate device parameter update immediately. Do not change when the dataset is being generated.",
+					"hint" : "Parameter current value. Can be changed manually, and the associate device parameter update immediately. Can be changed when tuning individual parameters set to Enabled in Manual mode. Do not change when the dataset is being generated in other modes.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-737",
 					"maxclass" : "flonum",
@@ -12844,7 +13204,7 @@
 					"bgoncolor" : [ 0.898039, 0.898039, 0.898039, 1.0 ],
 					"bordercolor" : [ 0.352941176470588, 0.352941176470588, 0.352941176470588, 1.0 ],
 					"fontsize" : 10.0,
-					"hint" : "Enable or disable individual parameters in the dataset generation. Only values of enabled parameters are changed when generating the dataset.",
+					"hint" : "Enable or Disable individual parameters in the dataset generation. Only values of Enabled parameters are changed when generating the dataset.",
 					"id" : "obj-750",
 					"maxclass" : "live.text",
 					"numinlets" : 1,
@@ -12910,7 +13270,7 @@
 					"fontface" : 1,
 					"fontsize" : 10.0,
 					"format" : 6,
-					"hint" : "Frequency of the triangular wave sweeping the parameter between the minimum and maximum value. in Sweep mode. It hhas no effect in oder modes.",
+					"hint" : "Frequency of the triangular wave sweeping the parameter between the minimum and maximum value in Sweep mode. It has no effect in oder modes.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-754",
 					"maxclass" : "flonum",
@@ -13172,7 +13532,7 @@
 					"bgcolor" : [ 0.352941176470588, 0.352941176470588, 0.352941176470588, 1.0 ],
 					"elementcolor" : [ 0.23921568627451, 0.23921568627451, 0.23921568627451, 1.0 ],
 					"floatoutput" : 1,
-					"hint" : "Parameter current value. Can be changed manually, and the associate device parameter update immediately. Do not change when the dataset is being generated.",
+					"hint" : "Parameter current value. Can be changed manually, and the associate device parameter update immediately. Can be changed when tuning individual parameters set to Enabled in Manual mode. Do not change when the dataset is being generated in other modes.",
 					"id" : "obj-794",
 					"knobcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"maxclass" : "slider",
@@ -13193,7 +13553,7 @@
 					"fontface" : 1,
 					"fontsize" : 10.0,
 					"format" : 6,
-					"hint" : "Parameter current value. Can be changed manually, and the associate device parameter update immediately. Do not change when the dataset is being generated.",
+					"hint" : "Parameter current value. Can be changed manually, and the associate device parameter update immediately. Can be changed when tuning individual parameters set to Enabled in Manual mode. Do not change when the dataset is being generated in other modes.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-795",
 					"maxclass" : "flonum",
@@ -13289,7 +13649,7 @@
 					"fontface" : 1,
 					"fontsize" : 10.0,
 					"format" : 6,
-					"hint" : "Frequency of the triangular wave sweeping the parameter between the minimum and maximum value. in Sweep mode. It hhas no effect in oder modes.",
+					"hint" : "Frequency of the triangular wave sweeping the parameter between the minimum and maximum value in Sweep mode. It has no effect in oder modes.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-807",
 					"maxclass" : "flonum",
@@ -13551,7 +13911,7 @@
 					"bgcolor" : [ 0.352941176470588, 0.352941176470588, 0.352941176470588, 1.0 ],
 					"elementcolor" : [ 0.23921568627451, 0.23921568627451, 0.23921568627451, 1.0 ],
 					"floatoutput" : 1,
-					"hint" : "Parameter current value. Can be changed manually, and the associate device parameter update immediately. Do not change when the dataset is being generated.",
+					"hint" : "Parameter current value. Can be changed manually, and the associate device parameter update immediately. Can be changed when tuning individual parameters set to Enabled in Manual mode. Do not change when the dataset is being generated in other modes.",
 					"id" : "obj-1012",
 					"knobcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"maxclass" : "slider",
@@ -13572,7 +13932,7 @@
 					"fontface" : 1,
 					"fontsize" : 10.0,
 					"format" : 6,
-					"hint" : "Parameter current value. Can be changed manually, and the associate device parameter update immediately. Do not change when the dataset is being generated.",
+					"hint" : "Parameter current value. Can be changed manually, and the associate device parameter update immediately. Can be changed when tuning individual parameters set to Enabled in Manual mode. Do not change when the dataset is being generated in other modes.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1015",
 					"maxclass" : "flonum",
@@ -13668,7 +14028,7 @@
 					"fontface" : 1,
 					"fontsize" : 10.0,
 					"format" : 6,
-					"hint" : "Frequency of the triangular wave sweeping the parameter between the minimum and maximum value. in Sweep mode. It hhas no effect in oder modes.",
+					"hint" : "Frequency of the triangular wave sweeping the parameter between the minimum and maximum value in Sweep mode. It has no effect in oder modes.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1039",
 					"maxclass" : "flonum",
@@ -13930,7 +14290,7 @@
 					"bgcolor" : [ 0.352941176470588, 0.352941176470588, 0.352941176470588, 1.0 ],
 					"elementcolor" : [ 0.23921568627451, 0.23921568627451, 0.23921568627451, 1.0 ],
 					"floatoutput" : 1,
-					"hint" : "Parameter current value. Can be changed manually, and the associate device parameter update immediately. Do not change when the dataset is being generated.",
+					"hint" : "Parameter current value. Can be changed manually, and the associate device parameter update immediately. Can be changed when tuning individual parameters set to Enabled in Manual mode. Do not change when the dataset is being generated in other modes.",
 					"id" : "obj-1068",
 					"knobcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"maxclass" : "slider",
@@ -13951,7 +14311,7 @@
 					"fontface" : 1,
 					"fontsize" : 10.0,
 					"format" : 6,
-					"hint" : "Parameter current value. Can be changed manually, and the associate device parameter update immediately. Do not change when the dataset is being generated.",
+					"hint" : "Parameter current value. Can be changed manually, and the associate device parameter update immediately. Can be changed when tuning individual parameters set to Enabled in Manual mode. Do not change when the dataset is being generated in other modes.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1069",
 					"maxclass" : "flonum",
@@ -14047,7 +14407,7 @@
 					"fontface" : 1,
 					"fontsize" : 10.0,
 					"format" : 6,
-					"hint" : "Frequency of the triangular wave sweeping the parameter between the minimum and maximum value. in Sweep mode. It hhas no effect in oder modes.",
+					"hint" : "Frequency of the triangular wave sweeping the parameter between the minimum and maximum value in Sweep mode. It has no effect in oder modes.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1077",
 					"maxclass" : "flonum",
@@ -14309,7 +14669,7 @@
 					"bgcolor" : [ 0.352941176470588, 0.352941176470588, 0.352941176470588, 1.0 ],
 					"elementcolor" : [ 0.23921568627451, 0.23921568627451, 0.23921568627451, 1.0 ],
 					"floatoutput" : 1,
-					"hint" : "Parameter current value. Can be changed manually, and the associate device parameter update immediately. Do not change when the dataset is being generated.",
+					"hint" : "Parameter current value. Can be changed manually, and the associate device parameter update immediately. Can be changed when tuning individual parameters set to Enabled in Manual mode. Do not change when the dataset is being generated in other modes.",
 					"id" : "obj-1101",
 					"knobcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"maxclass" : "slider",
@@ -14330,7 +14690,7 @@
 					"fontface" : 1,
 					"fontsize" : 10.0,
 					"format" : 6,
-					"hint" : "Parameter current value. Can be changed manually, and the associate device parameter update immediately. Do not change when the dataset is being generated.",
+					"hint" : "Parameter current value. Can be changed manually, and the associate device parameter update immediately. Can be changed when tuning individual parameters set to Enabled in Manual mode. Do not change when the dataset is being generated in other modes.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1103",
 					"maxclass" : "flonum",
@@ -14426,7 +14786,7 @@
 					"fontface" : 1,
 					"fontsize" : 10.0,
 					"format" : 6,
-					"hint" : "Frequency of the triangular wave sweeping the parameter between the minimum and maximum value. in Sweep mode. It hhas no effect in oder modes.",
+					"hint" : "Frequency of the triangular wave sweeping the parameter between the minimum and maximum value in Sweep mode. It has no effect in oder modes.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1113",
 					"maxclass" : "flonum",
@@ -14688,7 +15048,7 @@
 					"bgcolor" : [ 0.352941176470588, 0.352941176470588, 0.352941176470588, 1.0 ],
 					"elementcolor" : [ 0.23921568627451, 0.23921568627451, 0.23921568627451, 1.0 ],
 					"floatoutput" : 1,
-					"hint" : "Parameter current value. Can be changed manually, and the associate device parameter update immediately. Do not change when the dataset is being generated.",
+					"hint" : "Parameter current value. Can be changed manually, and the associate device parameter update immediately. Can be changed when tuning individual parameters set to Enabled in Manual mode. Do not change when the dataset is being generated in other modes.",
 					"id" : "obj-1134",
 					"knobcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"maxclass" : "slider",
@@ -14709,7 +15069,7 @@
 					"fontface" : 1,
 					"fontsize" : 10.0,
 					"format" : 6,
-					"hint" : "Parameter current value. Can be changed manually, and the associate device parameter update immediately. Do not change when the dataset is being generated.",
+					"hint" : "Parameter current value. Can be changed manually, and the associate device parameter update immediately. Can be changed when tuning individual parameters set to Enabled in Manual mode. Do not change when the dataset is being generated in other modes.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-664",
 					"maxclass" : "flonum",
@@ -14805,7 +15165,7 @@
 					"fontface" : 1,
 					"fontsize" : 10.0,
 					"format" : 6,
-					"hint" : "Frequency of the triangular wave sweeping the parameter between the minimum and maximum value. in Sweep mode. It hhas no effect in oder modes.",
+					"hint" : "Frequency of the triangular wave sweeping the parameter between the minimum and maximum value in Sweep mode. It has no effect in oder modes.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-682",
 					"maxclass" : "flonum",
@@ -15067,7 +15427,7 @@
 					"bgcolor" : [ 0.352941176470588, 0.352941176470588, 0.352941176470588, 1.0 ],
 					"elementcolor" : [ 0.23921568627451, 0.23921568627451, 0.23921568627451, 1.0 ],
 					"floatoutput" : 1,
-					"hint" : "Parameter current value. Can be changed manually, and the associate device parameter update immediately. Do not change when the dataset is being generated.",
+					"hint" : "Parameter current value. Can be changed manually, and the associate device parameter update immediately. Can be changed when tuning individual parameters set to Enabled in Manual mode. Do not change when the dataset is being generated in other modes.",
 					"id" : "obj-736",
 					"knobcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"maxclass" : "slider",
@@ -15088,7 +15448,7 @@
 					"fontface" : 1,
 					"fontsize" : 10.0,
 					"format" : 6,
-					"hint" : "Parameter current value. Can be changed manually, and the associate device parameter update immediately. Do not change when the dataset is being generated.",
+					"hint" : "Parameter current value. Can be changed manually, and the associate device parameter update immediately. Can be changed when tuning individual parameters set to Enabled in Manual mode. Do not change when the dataset is being generated in other modes.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-538",
 					"maxclass" : "flonum",
@@ -15184,7 +15544,7 @@
 					"fontface" : 1,
 					"fontsize" : 10.0,
 					"format" : 6,
-					"hint" : "Frequency of the triangular wave sweeping the parameter between the minimum and maximum value. in Sweep mode. It hhas no effect in oder modes.",
+					"hint" : "Frequency of the triangular wave sweeping the parameter between the minimum and maximum value in Sweep mode. It has no effect in oder modes.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-596",
 					"maxclass" : "flonum",
@@ -15446,7 +15806,7 @@
 					"bgcolor" : [ 0.352941176470588, 0.352941176470588, 0.352941176470588, 1.0 ],
 					"elementcolor" : [ 0.23921568627451, 0.23921568627451, 0.23921568627451, 1.0 ],
 					"floatoutput" : 1,
-					"hint" : "Parameter current value. Can be changed manually, and the associate device parameter update immediately. Do not change when the dataset is being generated.",
+					"hint" : "Parameter current value. Can be changed manually, and the associate device parameter update immediately. Can be changed when tuning individual parameters set to Enabled in Manual mode. Do not change when the dataset is being generated in other modes.",
 					"id" : "obj-625",
 					"knobcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"maxclass" : "slider",
@@ -15467,7 +15827,7 @@
 					"fontface" : 1,
 					"fontsize" : 10.0,
 					"format" : 6,
-					"hint" : "Parameter current value. Can be changed manually, and the associate device parameter update immediately. Do not change when the dataset is being generated.",
+					"hint" : "Parameter current value. Can be changed manually, and the associate device parameter update immediately. Can be changed when tuning individual parameters set to Enabled in Manual mode. Do not change when the dataset is being generated in other modes.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-627",
 					"maxclass" : "flonum",
@@ -15563,7 +15923,7 @@
 					"fontface" : 1,
 					"fontsize" : 10.0,
 					"format" : 6,
-					"hint" : "Frequency of the triangular wave sweeping the parameter between the minimum and maximum value. in Sweep mode. It hhas no effect in oder modes.",
+					"hint" : "Frequency of the triangular wave sweeping the parameter between the minimum and maximum value in Sweep mode. It has no effect in oder modes.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-641",
 					"maxclass" : "flonum",
@@ -15825,7 +16185,7 @@
 					"bgcolor" : [ 0.352941176470588, 0.352941176470588, 0.352941176470588, 1.0 ],
 					"elementcolor" : [ 0.23921568627451, 0.23921568627451, 0.23921568627451, 1.0 ],
 					"floatoutput" : 1,
-					"hint" : "Parameter current value. Can be changed manually, and the associate device parameter update immediately. Do not change when the dataset is being generated.",
+					"hint" : "Parameter current value. Can be changed manually, and the associate device parameter update immediately. Can be changed when tuning individual parameters set to Enabled in Manual mode. Do not change when the dataset is being generated in other modes.",
 					"id" : "obj-661",
 					"knobcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"maxclass" : "slider",
@@ -15846,7 +16206,7 @@
 					"fontface" : 1,
 					"fontsize" : 10.0,
 					"format" : 6,
-					"hint" : "Parameter current value. Can be changed manually, and the associate device parameter update immediately. Do not change when the dataset is being generated.",
+					"hint" : "Parameter current value. Can be changed manually, and the associate device parameter update immediately. Can be changed when tuning individual parameters set to Enabled in Manual mode. Do not change when the dataset is being generated in other modes.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-82",
 					"maxclass" : "flonum",
@@ -15942,7 +16302,7 @@
 					"fontface" : 1,
 					"fontsize" : 10.0,
 					"format" : 6,
-					"hint" : "Frequency of the triangular wave sweeping the parameter between the minimum and maximum value. in Sweep mode. It hhas no effect in oder modes.",
+					"hint" : "Frequency of the triangular wave sweeping the parameter between the minimum and maximum value in Sweep mode. It has no effect in oder modes.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-323",
 					"maxclass" : "flonum",
@@ -16204,7 +16564,7 @@
 					"bgcolor" : [ 0.352941176470588, 0.352941176470588, 0.352941176470588, 1.0 ],
 					"elementcolor" : [ 0.23921568627451, 0.23921568627451, 0.23921568627451, 1.0 ],
 					"floatoutput" : 1,
-					"hint" : "Parameter current value. Can be changed manually, and the associate device parameter update immediately. Do not change when the dataset is being generated.",
+					"hint" : "Parameter current value. Can be changed manually, and the associate device parameter update immediately. Can be changed when tuning individual parameters set to Enabled in Manual mode. Do not change when the dataset is being generated in other modes.",
 					"id" : "obj-533",
 					"knobcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"maxclass" : "slider",
@@ -16245,7 +16605,7 @@
 					"fontface" : 1,
 					"fontsize" : 10.0,
 					"format" : 6,
-					"hint" : "Parameter current value. Can be changed manually, and the associate device parameter update immediately. Do not change when the dataset is being generated.",
+					"hint" : "Parameter current value. Can be changed manually, and the associate device parameter update immediately. Can be changed when tuning individual parameters set to Enabled in Manual mode. Do not change when the dataset is being generated in other modes.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-37",
 					"maxclass" : "flonum",
@@ -16268,13 +16628,14 @@
 					"fontsize" : 10.0,
 					"hint" : "",
 					"id" : "obj-102",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 5166.0, 2881.0, 77.505795355566079, 18.0 ],
+					"patching_rect" : [ 5854.838751554489136, 3307.451636552810669, 77.505795355566079, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 359.0, 694.0, 58.543860375881195, 18.0 ],
-					"text" : "MIDI Port",
+					"presentation_rect" : [ 359.677421927452087, 764.0, 132.411936523422582, 18.0 ],
+					"text" : "MIDI Pitch Display Format",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -16283,7 +16644,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "",
+					"hint" : "MIDI output channel.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-92",
 					"maxclass" : "number",
@@ -16295,7 +16656,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 5666.0, 2942.0, 38.090909361839294, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 543.0, 739.0, 29.34774476100506, 20.0 ],
+					"presentation_rect" : [ 543.702262045845373, 718.000000178813934, 29.34774476100506, 20.0 ],
 					"varname" : "midi-cc-out-ch"
 				}
 
@@ -16311,7 +16672,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 5285.0, 2996.0, 68.431300179963728, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 543.0, 694.0, 29.767039833560602, 18.0 ],
+					"presentation_rect" : [ 543.702262045845373, 673.645161151885986, 29.767039833560602, 18.0 ],
 					"text" : "Ch",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
@@ -16321,7 +16682,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Channel number on input sourncard to receive the Left channel (or Mono) audio output from the external device. It has no effect with internal plugin device.",
+					"hint" : "Channel number on input sourncard to receive the Right channel from the output of the external device. It has no effect with internal plugin devices.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-33",
 					"maxclass" : "number",
@@ -16342,7 +16703,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Show/Hide the internal plugin GUI.",
+					"hint" : "Show/Hide the internal plugin graphical interface.",
 					"id" : "obj-189",
 					"maxclass" : "textbutton",
 					"mode" : 1,
@@ -16401,7 +16762,7 @@
 					"fontface" : 1,
 					"fontsize" : 10.0,
 					"format" : 6,
-					"hint" : "Parameter current value. Can be changed manually, and the associate device parameter update immediately. Do not change when the dataset is being generated.",
+					"hint" : "Monitored parameter current value. Can be changed manually, and the associate device parameter update immediately. Do not change when the dataset is being generated.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-702",
 					"maxclass" : "flonum",
@@ -16422,7 +16783,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "",
+					"hint" : "MIDI input channel.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-537",
 					"maxclass" : "number",
@@ -16434,7 +16795,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 5285.0, 3018.0, 37.484848737716675, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 543.0, 714.0, 29.34774476100506, 20.0 ],
+					"presentation_rect" : [ 543.702262045845373, 693.0, 29.34774476100506, 20.0 ],
 					"varname" : "midi-cc-in-ch"
 				}
 
@@ -16452,7 +16813,7 @@
 					"fontface" : 1,
 					"fontname" : "Lato Bold",
 					"fontsize" : 10.0,
-					"hint" : "Select target device to between internal software plugin or external hardware device.",
+					"hint" : "Select target device between internal software plugin or external hardware device.",
 					"id" : "obj-190",
 					"items" : [ "Internal", "Plugin", ",", "External" ],
 					"maxclass" : "umenu",
@@ -16544,7 +16905,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Export all presets to a file. This is necessary before closing the application as presets are not stored internally in the software.",
+					"hint" : "Export all presets to a file.",
 					"id" : "obj-454",
 					"maxclass" : "textbutton",
 					"numinlets" : 1,
@@ -16605,7 +16966,7 @@
 					"bordercolor" : [ 0.5, 0.5, 0.5, 1.0 ],
 					"fontname" : "Arial",
 					"fontsize" : 10.0,
-					"hint" : "Associate a name to preset, before storing.",
+					"hint" : "Associate a name to the preset, before storing.",
 					"id" : "obj-460",
 					"maxclass" : "textedit",
 					"numinlets" : 1,
@@ -16683,7 +17044,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Channel number on output sourncard seected to preview the Right channel.",
+					"hint" : "Channel number on output soundcard to listen the Right device output channel.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-493",
 					"maxclass" : "number",
@@ -16753,7 +17114,7 @@
 					"fontface" : 1,
 					"fontname" : "Lato Bold",
 					"fontsize" : 10.0,
-					"hint" : "Record dataset in Mono (Left device output channel only) or Stereo (Left and Right). Mono can work also with a Stereo audio input source. Stereo requires a Stereo audio input source.",
+					"hint" : "Record dataset in Mono (Left device output channel only) or Stereo (Left and Right).",
 					"id" : "obj-531",
 					"items" : [ "Mono", ",", "Stereo" ],
 					"maxclass" : "umenu",
@@ -16800,7 +17161,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 3969.0, 3597.0, 96.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 931.0, 724.0, 80.615384936332703, 18.0 ],
+					"presentation_rect" : [ 932.000027775764465, 724.000021576881409, 80.615384936332703, 18.0 ],
 					"text" : "Listen to Device",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
@@ -16810,7 +17171,7 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 10.0,
-					"hint" : "Gain and meter of the audio from the device output. The recorded output files are post gain.",
+					"hint" : "Gain and meter of the audio from the device output. The recorded output files are post gain. The meters always displays both Left and Right channels if these are received from the device, independent of the Channels setting the the dataset generation(Mono or Stereo).\n",
 					"id" : "obj-535",
 					"lastchannelcount" : 0,
 					"maxclass" : "live.gain~",
@@ -16915,7 +17276,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Press to save the .csv file with all dataset parameter combinations. The file is automatically saved at the end of the dataset generation for Step, Random and Sweep modes. For Manual mode, an updated version of the file is generated everytime a new output recording is generated.\n\nFor Step mode, the file can be manually saved anytime, before or after generating the collection of output wave files, but after defining parameter settings and pressing \"Compute Step Combinations\". For Random, Manual and Sweel modes, the file can be manually saved only when the the dataset has been generated, which means after the wave files has been saved.\n\nIn Sweep mode, the generated .csv sile include only the parameter's name, when an internal plugin device is selected.",
+					"hint" : "Press to save the .csv file with all dataset parameter combinations. The file is automatically saved at the end of the dataset generation for Step, Random and Sweep modes. For Manual mode, an updated version of the file is generated everytime a new output recording is generated.\n\nFor Step mode, the file can be manually saved anytime, before or after generating the collection of output wave files, but after defining parameter settings and pressing Update next to thwre the total number of combination is shown. For Random, Manual and Sweep modes, the file can be manually saved only when the the dataset has been generated, which means after the wave files has been saved.\n\nIn Sweep mode, the generated .csv sile include only the parameter's name, when an internal plugin device is selected, and the values of Pitch, Velocity and Duration utilized to trigger the note at each repetition. These are either Fixed, or samples from the sweeping triangular waves associated with each parameter.",
 					"id" : "obj-576",
 					"maxclass" : "textbutton",
 					"numinlets" : 1,
@@ -17215,7 +17576,7 @@
 					"fontface" : 1,
 					"fontname" : "Lato Bold",
 					"fontsize" : 10.0,
-					"hint" : "If \"Monitor Plugin\" is Disables, you can select a parameter from this menu and control it from the number box or slidet at the bottom. This can help to understand how the range 0 to 1 is mapped to a specific device value.\n\nIf \"Monitor Plugin\" is Enabled, you can change a parameter on the internal plugin GUI, and the name of the modified parameter will show here, and the associated value will be displayed on the number box and slider slidet at the bottom. This can help to find parameters which internal name is different than the one on the GUI.",
+					"hint" : "If Monitor Plugin is Disabled, select a parameter from this menu and control it from the number box or slidet at the bottom. This can help to understand how the range 0 to 1 is mapped to a specific device value.\n\nIf Monitor Plugin is Enabled, change a parameter on the internal plugin graphical interface (press on Show Plugin), and the name of the modified parameter will be shown here, as well as the associated value on the number box and slider slidet at the bottom. This can help to find parameters which internal name is different than the one on the plugin graphical interface.",
 					"id" : "obj-1219",
 					"items" : "<empty>",
 					"maxclass" : "umenu",
@@ -17246,7 +17607,7 @@
 					"fontface" : 1,
 					"fontname" : "Lato Bold",
 					"fontsize" : 10.0,
-					"hint" : "Select a plugin from those found in default system folders.",
+					"hint" : "Select an internal plugin from those found in default system folders.",
 					"id" : "obj-1220",
 					"items" : "<empty>",
 					"maxclass" : "umenu",
@@ -17303,7 +17664,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Refresh all drop-down menus listing the internal plugin parameters.",
+					"hint" : "Refresh all drop-down menus listing the internal plugin parameters' names.",
 					"id" : "obj-1229",
 					"maxclass" : "textbutton",
 					"numinlets" : 1,
@@ -17436,8 +17797,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 5529.0, 2942.0, 59.342204867725741, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 359.0, 739.5, 25.278678685426712, 18.0 ],
-					"text" : "Out",
+					"presentation_rect" : [ 359.831292988762243, 718.806451797485352, 50.806451976299286, 18.0 ],
+					"text" : "MIDI Out",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -17455,9 +17816,9 @@
 					"fontface" : 1,
 					"fontname" : "Lato Bold",
 					"fontsize" : 10.0,
-					"hint" : "",
+					"hint" : "Output MIDI port for controlling the external device. This can be utilized for controlling parameters via MIDI CC messages and/or Pitch, Velocity (Note On/Off of a given Duration), Pitch Bend and Aftertouch. \n\n",
 					"id" : "obj-1241",
-					"items" : [ "AU DLS Synth 1", ",", "IAC Driver Bus 1", ",", "Arturia KeyStep 32", ",", "USB MIDI Interface", ",", "from Max 1", ",", "from Max 2" ],
+					"items" : [ "AU DLS Synth 1", ",", "IAC Driver Bus 1", ",", "Arturia KeyStep 32", ",", "from Max 1", ",", "from Max 2" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -17467,7 +17828,7 @@
 					"pattrmode" : 1,
 					"prefix_mode" : 2,
 					"presentation" : 1,
-					"presentation_rect" : [ 386.5, 738.0, 104.740405839746018, 20.0 ],
+					"presentation_rect" : [ 408.218390109047277, 717.193548560142517, 83.870968341827393, 20.0 ],
 					"prototypename" : "Lato9",
 					"style" : "AudioStatus_Menu",
 					"varname" : "midi-cc-out-port"
@@ -17485,8 +17846,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 5198.0, 2981.0, 53.778755009174347, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 359.0, 716.5, 24.620783954858666, 18.0 ],
-					"text" : "In",
+					"presentation_rect" : [ 359.831292988762243, 695.419354856014252, 43.548387408256531, 18.0 ],
+					"text" : "MIDI In",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -17504,19 +17865,19 @@
 					"fontface" : 1,
 					"fontname" : "Lato Bold",
 					"fontsize" : 10.0,
-					"hint" : "",
+					"hint" : "Input MIDI port for optionally controlling the device while tuning the dataset generation settings. Do not use the midi input while generating the dataset.",
 					"id" : "obj-1243",
-					"items" : [ "IAC Driver Bus 1", ",", "Arturia KeyStep 32", ",", "USB MIDI Interface", ",", "to Max 1", ",", "to Max 2" ],
+					"items" : [ "IAC Driver Bus 1", ",", "Arturia KeyStep 32", ",", "to Max 1", ",", "to Max 2" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 5071.133736491203308, 2942.267876386642456, 84.698412895202637, 20.0 ],
+					"patching_rect" : [ 5071.200075566768646, 2942.400043845176697, 84.698412895202637, 20.0 ],
 					"pattrmode" : 1,
 					"prefix_mode" : 2,
 					"presentation" : 1,
-					"presentation_rect" : [ 386.5, 714.0, 104.740405839746018, 20.0 ],
+					"presentation_rect" : [ 409.024841727718695, 693.0, 83.064516723155975, 20.0 ],
 					"prototypename" : "Lato9",
 					"style" : "AudioStatus_Menu",
 					"varname" : "midi-cc-in-port"
@@ -17565,7 +17926,7 @@
 					"fontface" : 1,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"hint" : "In Step, Random and Sweep mode, it starts the automatic dataset generation (a second press will interrupt it). In Manual mode, it triggers the playback of the audio source which is recorded after passing through the device.",
+					"hint" : "In Step, Random and Sweep mode, it starts the automatic dataset generation (a second press will interrupt it). In Manual mode, it triggers and record a single note with the current Value settings of enabled parameters, while the Pitch, Verocity and Duration are the taken from Value detting if they are in Variable mode, of from the Fixed setting if they are in Fixed  mode.",
 					"id" : "obj-1252",
 					"maxclass" : "textbutton",
 					"mode" : 1,
@@ -17611,7 +17972,6 @@
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1261",
 					"maxclass" : "number",
-					"maximum" : 5,
 					"minimum" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 2,
@@ -17706,7 +18066,7 @@
 					"cantchange" : 1,
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Automatically computed in Step mode. Must be set in Random and Sweep mode. No effect (and not visible) in Step and Manual modes. In Random and Swwp modes it determines how many times the source file will be sent to the device and the output recorded.",
+					"hint" : "Automatically computed in Step mode. Must be set in Random and Sweep mode. No effect (and not visible) in Step and Manual modes. In Random and Sweep modes it determines how many times the sa note will be triggered while recording the output of the device.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1271",
 					"maxclass" : "number",
@@ -17745,7 +18105,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Only for Sweep mode, when using an internal plugin or external device with MIDI interface. The parameters are sweeped at audio rate, but they are sampled with this interval (expresses in number of audio samples) before being sent to the device. This value should not be smaller than \"Signal vector Size\". If using an external with CV parameter control, this has no effect, as the actual audio signal are sent out to the soundcard generating the CV signals.",
+					"hint" : "Only for Sweep mode, when using an internal plugin or external device with MIDI interface. The parameters are sweeped at audio rate, but they are sampled with this interval (expresses in number of audio samples) before being sent to the device. This value should not be smaller than \"Signal vector Size\". If using an external with CV parameter control, this has no effect, as the actual audio signal are sent out to the soundcard generating the CV signals. Independent of this setting, in Sweep mode the Pitch, Velocity and Duration, if not Fixed, are sampled at the time a note is triggered.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1273",
 					"maxclass" : "number",
@@ -17783,7 +18143,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "For Step and Random modes this value represents the delay (in millisecond) between sending a new set of parameter to the device and starting the next playback of audio source and simultaneous recording of output of the device. For these modes, the value is automatically set to a minimum recommended value to be used when working with internal plugins. In Sweep mode, this value determines a delay in the recorded audio effect output. In both cases, the maximum allowed value is 5000 ms. It has no effect on Manual mode.\n\nNO EFFECT ON SWEEP",
+					"hint" : "Delay (in millisecond) between sending a new set of parameter to the device and triggering the note that will in turn enerate audio at the output of the device. In Sweep mode, this value determines a delay in the recorded sound synthesizer's output. In both cases, the maximum allowed value is 5000 ms. In Manual mode it can be safely set to zero.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1275",
 					"maxclass" : "number",
@@ -17848,7 +18208,7 @@
 					"fontface" : 1,
 					"fontname" : "Lato Bold",
 					"fontsize" : 10.0,
-					"hint" : "Set the mode in which parameters are changed to generate the dataset. The phase of all triangula oscillators driving the parameters in Sweep mode is reset to 0 when the mode is selected. In Sweep mode, two audio files are saved for each repetition: one containing the device output, and one containing the enabled sweeping paramaters.",
+					"hint" : "Set the mode in which parameters are changed to generate the dataset. The phase of all triangula oscillators driving the parameters in Sweep mode is reset to 0 when the mode is selected, as well as when the Generate Dataset button is pressed. In Sweep mode, two audio files are saved for each repetition: one containing the device output, and one containing the enabled sweeping paramaters. In Sweep mode, a .csv file is saved as well, showing only the exact values of Pitch, Velocity and Duration sampled from the triangular waves at the time at which the note was triggered.",
 					"id" : "obj-1296",
 					"items" : [ "Step", ",", "Random", ",", "Manual", ",", "Sweep" ],
 					"maxclass" : "umenu",
@@ -17946,7 +18306,7 @@
 					"bgoncolor" : [ 0.898039, 0.898039, 0.898039, 1.0 ],
 					"bordercolor" : [ 0.352941176470588, 0.352941176470588, 0.352941176470588, 1.0 ],
 					"fontsize" : 10.0,
-					"hint" : "Enable or disable individual parameters in the dataset generation. Only values of enabled parameters are changed when generating the dataset.",
+					"hint" : "Enable or Disable individual parameters in the dataset generation. Only values of Enabled parameters are changed when generating the dataset.",
 					"id" : "obj-1303",
 					"maxclass" : "live.text",
 					"numinlets" : 1,
@@ -18032,7 +18392,7 @@
 					"fontface" : 1,
 					"fontsize" : 10.0,
 					"format" : 6,
-					"hint" : "Frequency of the triangular wave sweeping the parameter between the minimum and maximum value. in Sweep mode. It hhas no effect in oder modes.",
+					"hint" : "Frequency of the triangular wave sweeping the parameter between the minimum and maximum value in Sweep mode. It has no effect in oder modes.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1305",
 					"maxclass" : "flonum",
@@ -18113,7 +18473,7 @@
 					"fontface" : 1,
 					"fontsize" : 10.0,
 					"format" : 6,
-					"hint" : "Maximum parameter value, for Step, Random and Sweep modes. It has no effect on Manual mode.",
+					"hint" : "Maximum Pitch value, for Step, Random and Sweep modes. It has no effect on Manual mode.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1321",
 					"maxclass" : "flonum",
@@ -18215,7 +18575,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-1331",
-					"items" : [ "", ",", "volume", ",", "filtertype", ",", "cutoff", ",", "resonance", ",", "keyfollow", ",", "filtercontour", ",", "filterattack", ",", "filterdecay", ",", "filtersustain", ",", "filterrelease", ",", "ampattack", ",", "ampdecay", ",", "ampsustain", ",", "amprelease", ",", "osc1volume", ",", "osc2volume", ",", "osc3volume", ",", "oscmastertune", ",", "osc1tune", ",", "osc2tune", ",", "osc1finetune", ",", "osc2finetune", ",", "osc1waveform", ",", "osc2waveform", ",", "oscsync", ",", "lfo1waveform", ",", "lfo2waveform", ",", "lfo1rate", ",", "lfo2rate", ",", "lfo1amount", ",", "lfo2amount", ",", "lfo1destination", ",", "lfo2destination", ",", "lfo1phase", ",", "lfo2phase", ",", "osc2fm", ",", "osc2phase", ",", "osc1pw", ",", "osc1phase", ",", "transpose", ",", "freeadattack", ",", "freeaddecay", ",", "freeadamount", ",", "freeaddestination", ",", "lfo1sync", ",", "lfo1keytrigger", ",", "lfo2sync", ",", "lfo2keytrigger", ",", "portamento", ",", "portamentomode", ",", "voices", ",", "velocityvolume", ",", "velocitycontour", ",", "velocitycutoff", ",", "pitchwheelcutoff", ",", "pitchwheelpitch", ",", "ringmodulation", ",", "chorus1enable", ",", "chorus2enable", ",", "reverbwet", ",", "reverbdecay", ",", "reverbpredelay", ",", "reverbhighcut", ",", "reverblowcut", ",", "oscbitcrusher", ",", "highpass", ",", "detune", ",", "vintagenoise", ",", "", ",", "", ",", "envelopeeditordest1", ",", "envelopeeditorspeed", ",", "envelopeeditoramount", ",", "envelopeoneshot", ",", "envelopefixtempo", ",", "", ",", "", ",", "", ",", "", ",", "", ",", "filterdrive", ",", "delaywet", ",", "delaytime", ",", "delaysync", ",", "delayfactorl", ",", "delayfactorr", ",", "delayhighshelf", ",", "delaylowshelf", ",", "delayfeedback", ",", "", ",", "" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -19129,7 +19489,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 4709.0, 1432.0, 318.648514436867117, 20.0 ],
-					"text" : "1. 0.5 1. 1. 1. 1. 1. 1. 1. 1. 75 127 500 127 127"
+					"text" : "1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 72 127 1000 8191 127"
 				}
 
 			}
@@ -19141,7 +19501,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 4458.0, 1391.0, 318.648514436867117, 20.0 ],
-					"text" : "0.25 0.04 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 8 70 42 1 1"
+					"text" : "0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 1 1 1 1 1"
 				}
 
 			}
@@ -19245,7 +19605,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 2454.0, 673.0, 112.0, 20.0 ],
+					"patching_rect" : [ 2454.0, 661.0, 112.0, 20.0 ],
 					"text" : "if $i1 == 2 then 1 else 0"
 				}
 
@@ -19260,7 +19620,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 2454.0, 643.0, 114.0, 20.0 ],
+					"patching_rect" : [ 2454.0, 631.0, 114.0, 20.0 ],
 					"text" : "r _DGMDparamChange"
 				}
 
@@ -20479,7 +20839,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 4300.0, 1818.0, 50.0, 20.0 ],
-					"text" : "2"
+					"text" : "3"
 				}
 
 			}
@@ -20780,7 +21140,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 4301.0, 1574.0, 318.648514436867117, 20.0 ],
-					"text" : "0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 6.875 0.914286 7.142857 83. 100."
+					"text" : "0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 60. 100. 500. 0. 100."
 				}
 
 			}
@@ -22860,13 +23220,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-1083",
-					"linecount" : 6,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 3882.0, 4209.0, 50.0, 76.0 ],
-					"text" : "write /Users/stefanof/Desktop/TEST/test-2.wav"
+					"patching_rect" : [ 3882.0, 4209.0, 50.0, 20.0 ]
 				}
 
 			}
@@ -27424,7 +27782,7 @@
 					"bgcolor" : [ 0.352941176470588, 0.352941176470588, 0.352941176470588, 1.0 ],
 					"elementcolor" : [ 0.23921568627451, 0.23921568627451, 0.23921568627451, 1.0 ],
 					"floatoutput" : 1,
-					"hint" : "Parameter current value. Can be changed manually, and the associate device parameter update immediately. Do not change when the dataset is being generated.",
+					"hint" : "Monitored parameter current value. Can be changed manually, and the associate device parameter update immediately. Do not change when the dataset is being generated.",
 					"id" : "obj-604",
 					"knobcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"maxclass" : "slider",
@@ -27837,7 +28195,7 @@
 					"active1" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"bubblesize" : 12,
 					"emptycolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"hint" : "Displays active preset (blue), stored presets (gray), empty preset (white). The first row represents presets from 1 to 13 (left to right), the second row 14 to 26.",
+					"hint" : "Display active preset (light blue), stored presets (gray), empty preset (white). The first row represents presets from 1 to 13 (left to right), the second row 14 to 26.\n",
 					"id" : "obj-700",
 					"ignoreclick" : 1,
 					"maxclass" : "preset",
@@ -28266,7 +28624,7 @@
 					"bgcolor" : [ 0.352941176470588, 0.352941176470588, 0.352941176470588, 1.0 ],
 					"elementcolor" : [ 0.23921568627451, 0.23921568627451, 0.23921568627451, 1.0 ],
 					"floatoutput" : 1,
-					"hint" : "Parameter current value. Can be changed manually, and the associate device parameter update immediately. Do not change when the dataset is being generated.",
+					"hint" : "Parameter current value. Can be changed manually, and the associate device parameter update immediately. Can be changed when tuning individual parameters set to Enabled in Manual mode. Do not change when the dataset is being generated in other modes.",
 					"id" : "obj-486",
 					"knobcolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"maxclass" : "slider",
@@ -28360,7 +28718,7 @@
 					"bgoncolor" : [ 0.898039, 0.898039, 0.898039, 1.0 ],
 					"bordercolor" : [ 0.352941176470588, 0.352941176470588, 0.352941176470588, 1.0 ],
 					"fontsize" : 10.0,
-					"hint" : "Enable or disable individual parameters in the dataset generation. Only values of enabled parameters are changed when generating the dataset.",
+					"hint" : "Enable or Disable individual parameters in the dataset generation. Only values of Enabled parameters are changed when generating the dataset.",
 					"id" : "obj-1111",
 					"maxclass" : "live.text",
 					"numinlets" : 1,
@@ -28430,7 +28788,7 @@
 					"bgoncolor" : [ 0.898039, 0.898039, 0.898039, 1.0 ],
 					"bordercolor" : [ 0.352941176470588, 0.352941176470588, 0.352941176470588, 1.0 ],
 					"fontsize" : 10.0,
-					"hint" : "Enable or disable individual parameters in the dataset generation. Only values of enabled parameters are changed when generating the dataset.",
+					"hint" : "Enable or Disable individual parameters in the dataset generation. Only values of Enabled parameters are changed when generating the dataset.",
 					"id" : "obj-639",
 					"maxclass" : "live.text",
 					"numinlets" : 1,
@@ -28500,7 +28858,7 @@
 					"bgoncolor" : [ 0.898039, 0.898039, 0.898039, 1.0 ],
 					"bordercolor" : [ 0.352941176470588, 0.352941176470588, 0.352941176470588, 1.0 ],
 					"fontsize" : 10.0,
-					"hint" : "Enable or disable individual parameters in the dataset generation. Only values of enabled parameters are changed when generating the dataset.",
+					"hint" : "Enable or Disable individual parameters in the dataset generation. Only values of Enabled parameters are changed when generating the dataset.",
 					"id" : "obj-561",
 					"maxclass" : "live.text",
 					"numinlets" : 1,
@@ -28570,7 +28928,7 @@
 					"bgoncolor" : [ 0.898039, 0.898039, 0.898039, 1.0 ],
 					"bordercolor" : [ 0.352941176470588, 0.352941176470588, 0.352941176470588, 1.0 ],
 					"fontsize" : 10.0,
-					"hint" : "Enable or disable individual parameters in the dataset generation. Only values of enabled parameters are changed when generating the dataset.",
+					"hint" : "Enable or Disable individual parameters in the dataset generation. Only values of Enabled parameters are changed when generating the dataset.",
 					"id" : "obj-801",
 					"maxclass" : "live.text",
 					"numinlets" : 1,
@@ -28640,7 +28998,7 @@
 					"bgoncolor" : [ 0.898039, 0.898039, 0.898039, 1.0 ],
 					"bordercolor" : [ 0.352941176470588, 0.352941176470588, 0.352941176470588, 1.0 ],
 					"fontsize" : 10.0,
-					"hint" : "Enable or disable individual parameters in the dataset generation. Only values of enabled parameters are changed when generating the dataset.",
+					"hint" : "Enable or Disable individual parameters in the dataset generation. Only values of Enabled parameters are changed when generating the dataset.",
 					"id" : "obj-296",
 					"maxclass" : "live.text",
 					"numinlets" : 1,
@@ -28710,7 +29068,7 @@
 					"bgoncolor" : [ 0.898039, 0.898039, 0.898039, 1.0 ],
 					"bordercolor" : [ 0.352941176470588, 0.352941176470588, 0.352941176470588, 1.0 ],
 					"fontsize" : 10.0,
-					"hint" : "Enable or disable individual parameters in the dataset generation. Only values of enabled parameters are changed when generating the dataset.",
+					"hint" : "Enable or Disable individual parameters in the dataset generation. Only values of Enabled parameters are changed when generating the dataset.",
 					"id" : "obj-1037",
 					"maxclass" : "live.text",
 					"numinlets" : 1,
@@ -28780,7 +29138,7 @@
 					"bgoncolor" : [ 0.898039, 0.898039, 0.898039, 1.0 ],
 					"bordercolor" : [ 0.352941176470588, 0.352941176470588, 0.352941176470588, 1.0 ],
 					"fontsize" : 10.0,
-					"hint" : "Enable or disable individual parameters in the dataset generation. Only values of enabled parameters are changed when generating the dataset.",
+					"hint" : "Enable or Disable individual parameters in the dataset generation. Only values of Enabled parameters are changed when generating the dataset.",
 					"id" : "obj-1075",
 					"maxclass" : "live.text",
 					"numinlets" : 1,
@@ -28850,7 +29208,7 @@
 					"bgoncolor" : [ 0.898039, 0.898039, 0.898039, 1.0 ],
 					"bordercolor" : [ 0.352941176470588, 0.352941176470588, 0.352941176470588, 1.0 ],
 					"fontsize" : 10.0,
-					"hint" : "Enable or disable individual parameters in the dataset generation. Only values of enabled parameters are changed when generating the dataset.",
+					"hint" : "Enable or Disable individual parameters in the dataset generation. Only values of Enabled parameters are changed when generating the dataset.",
 					"id" : "obj-678",
 					"maxclass" : "live.text",
 					"numinlets" : 1,
@@ -28926,7 +29284,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-503",
-					"items" : [ "", ",", "volume", ",", "filtertype", ",", "cutoff", ",", "resonance", ",", "keyfollow", ",", "filtercontour", ",", "filterattack", ",", "filterdecay", ",", "filtersustain", ",", "filterrelease", ",", "ampattack", ",", "ampdecay", ",", "ampsustain", ",", "amprelease", ",", "osc1volume", ",", "osc2volume", ",", "osc3volume", ",", "oscmastertune", ",", "osc1tune", ",", "osc2tune", ",", "osc1finetune", ",", "osc2finetune", ",", "osc1waveform", ",", "osc2waveform", ",", "oscsync", ",", "lfo1waveform", ",", "lfo2waveform", ",", "lfo1rate", ",", "lfo2rate", ",", "lfo1amount", ",", "lfo2amount", ",", "lfo1destination", ",", "lfo2destination", ",", "lfo1phase", ",", "lfo2phase", ",", "osc2fm", ",", "osc2phase", ",", "osc1pw", ",", "osc1phase", ",", "transpose", ",", "freeadattack", ",", "freeaddecay", ",", "freeadamount", ",", "freeaddestination", ",", "lfo1sync", ",", "lfo1keytrigger", ",", "lfo2sync", ",", "lfo2keytrigger", ",", "portamento", ",", "portamentomode", ",", "voices", ",", "velocityvolume", ",", "velocitycontour", ",", "velocitycutoff", ",", "pitchwheelcutoff", ",", "pitchwheelpitch", ",", "ringmodulation", ",", "chorus1enable", ",", "chorus2enable", ",", "reverbwet", ",", "reverbdecay", ",", "reverbpredelay", ",", "reverbhighcut", ",", "reverblowcut", ",", "oscbitcrusher", ",", "highpass", ",", "detune", ",", "vintagenoise", ",", "", ",", "", ",", "envelopeeditordest1", ",", "envelopeeditorspeed", ",", "envelopeeditoramount", ",", "envelopeoneshot", ",", "envelopefixtempo", ",", "", ",", "", ",", "", ",", "", ",", "", ",", "filterdrive", ",", "delaywet", ",", "delaytime", ",", "delaysync", ",", "delayfactorl", ",", "delayfactorr", ",", "delayhighshelf", ",", "delaylowshelf", ",", "delayfeedback", ",", "", ",", "" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -28957,7 +29315,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-657",
-					"items" : [ "", ",", "volume", ",", "filtertype", ",", "cutoff", ",", "resonance", ",", "keyfollow", ",", "filtercontour", ",", "filterattack", ",", "filterdecay", ",", "filtersustain", ",", "filterrelease", ",", "ampattack", ",", "ampdecay", ",", "ampsustain", ",", "amprelease", ",", "osc1volume", ",", "osc2volume", ",", "osc3volume", ",", "oscmastertune", ",", "osc1tune", ",", "osc2tune", ",", "osc1finetune", ",", "osc2finetune", ",", "osc1waveform", ",", "osc2waveform", ",", "oscsync", ",", "lfo1waveform", ",", "lfo2waveform", ",", "lfo1rate", ",", "lfo2rate", ",", "lfo1amount", ",", "lfo2amount", ",", "lfo1destination", ",", "lfo2destination", ",", "lfo1phase", ",", "lfo2phase", ",", "osc2fm", ",", "osc2phase", ",", "osc1pw", ",", "osc1phase", ",", "transpose", ",", "freeadattack", ",", "freeaddecay", ",", "freeadamount", ",", "freeaddestination", ",", "lfo1sync", ",", "lfo1keytrigger", ",", "lfo2sync", ",", "lfo2keytrigger", ",", "portamento", ",", "portamentomode", ",", "voices", ",", "velocityvolume", ",", "velocitycontour", ",", "velocitycutoff", ",", "pitchwheelcutoff", ",", "pitchwheelpitch", ",", "ringmodulation", ",", "chorus1enable", ",", "chorus2enable", ",", "reverbwet", ",", "reverbdecay", ",", "reverbpredelay", ",", "reverbhighcut", ",", "reverblowcut", ",", "oscbitcrusher", ",", "highpass", ",", "detune", ",", "vintagenoise", ",", "", ",", "", ",", "envelopeeditordest1", ",", "envelopeeditorspeed", ",", "envelopeeditoramount", ",", "envelopeoneshot", ",", "envelopefixtempo", ",", "", ",", "", ",", "", ",", "", ",", "", ",", "filterdrive", ",", "delaywet", ",", "delaytime", ",", "delaysync", ",", "delayfactorl", ",", "delayfactorr", ",", "delayhighshelf", ",", "delaylowshelf", ",", "delayfeedback", ",", "", ",", "" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -28988,7 +29346,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-623",
-					"items" : [ "", ",", "volume", ",", "filtertype", ",", "cutoff", ",", "resonance", ",", "keyfollow", ",", "filtercontour", ",", "filterattack", ",", "filterdecay", ",", "filtersustain", ",", "filterrelease", ",", "ampattack", ",", "ampdecay", ",", "ampsustain", ",", "amprelease", ",", "osc1volume", ",", "osc2volume", ",", "osc3volume", ",", "oscmastertune", ",", "osc1tune", ",", "osc2tune", ",", "osc1finetune", ",", "osc2finetune", ",", "osc1waveform", ",", "osc2waveform", ",", "oscsync", ",", "lfo1waveform", ",", "lfo2waveform", ",", "lfo1rate", ",", "lfo2rate", ",", "lfo1amount", ",", "lfo2amount", ",", "lfo1destination", ",", "lfo2destination", ",", "lfo1phase", ",", "lfo2phase", ",", "osc2fm", ",", "osc2phase", ",", "osc1pw", ",", "osc1phase", ",", "transpose", ",", "freeadattack", ",", "freeaddecay", ",", "freeadamount", ",", "freeaddestination", ",", "lfo1sync", ",", "lfo1keytrigger", ",", "lfo2sync", ",", "lfo2keytrigger", ",", "portamento", ",", "portamentomode", ",", "voices", ",", "velocityvolume", ",", "velocitycontour", ",", "velocitycutoff", ",", "pitchwheelcutoff", ",", "pitchwheelpitch", ",", "ringmodulation", ",", "chorus1enable", ",", "chorus2enable", ",", "reverbwet", ",", "reverbdecay", ",", "reverbpredelay", ",", "reverbhighcut", ",", "reverblowcut", ",", "oscbitcrusher", ",", "highpass", ",", "detune", ",", "vintagenoise", ",", "", ",", "", ",", "envelopeeditordest1", ",", "envelopeeditorspeed", ",", "envelopeeditoramount", ",", "envelopeoneshot", ",", "envelopefixtempo", ",", "", ",", "", ",", "", ",", "", ",", "", ",", "filterdrive", ",", "delaywet", ",", "delaytime", ",", "delaysync", ",", "delayfactorl", ",", "delayfactorr", ",", "delayhighshelf", ",", "delaylowshelf", ",", "delayfeedback", ",", "", ",", "" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -29019,7 +29377,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-733",
-					"items" : [ "", ",", "volume", ",", "filtertype", ",", "cutoff", ",", "resonance", ",", "keyfollow", ",", "filtercontour", ",", "filterattack", ",", "filterdecay", ",", "filtersustain", ",", "filterrelease", ",", "ampattack", ",", "ampdecay", ",", "ampsustain", ",", "amprelease", ",", "osc1volume", ",", "osc2volume", ",", "osc3volume", ",", "oscmastertune", ",", "osc1tune", ",", "osc2tune", ",", "osc1finetune", ",", "osc2finetune", ",", "osc1waveform", ",", "osc2waveform", ",", "oscsync", ",", "lfo1waveform", ",", "lfo2waveform", ",", "lfo1rate", ",", "lfo2rate", ",", "lfo1amount", ",", "lfo2amount", ",", "lfo1destination", ",", "lfo2destination", ",", "lfo1phase", ",", "lfo2phase", ",", "osc2fm", ",", "osc2phase", ",", "osc1pw", ",", "osc1phase", ",", "transpose", ",", "freeadattack", ",", "freeaddecay", ",", "freeadamount", ",", "freeaddestination", ",", "lfo1sync", ",", "lfo1keytrigger", ",", "lfo2sync", ",", "lfo2keytrigger", ",", "portamento", ",", "portamentomode", ",", "voices", ",", "velocityvolume", ",", "velocitycontour", ",", "velocitycutoff", ",", "pitchwheelcutoff", ",", "pitchwheelpitch", ",", "ringmodulation", ",", "chorus1enable", ",", "chorus2enable", ",", "reverbwet", ",", "reverbdecay", ",", "reverbpredelay", ",", "reverbhighcut", ",", "reverblowcut", ",", "oscbitcrusher", ",", "highpass", ",", "detune", ",", "vintagenoise", ",", "", ",", "", ",", "envelopeeditordest1", ",", "envelopeeditorspeed", ",", "envelopeeditoramount", ",", "envelopeoneshot", ",", "envelopefixtempo", ",", "", ",", "", ",", "", ",", "", ",", "", ",", "filterdrive", ",", "delaywet", ",", "delaytime", ",", "delaysync", ",", "delayfactorl", ",", "delayfactorr", ",", "delayhighshelf", ",", "delaylowshelf", ",", "delayfeedback", ",", "", ",", "" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -29050,7 +29408,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-1131",
-					"items" : [ "", ",", "volume", ",", "filtertype", ",", "cutoff", ",", "resonance", ",", "keyfollow", ",", "filtercontour", ",", "filterattack", ",", "filterdecay", ",", "filtersustain", ",", "filterrelease", ",", "ampattack", ",", "ampdecay", ",", "ampsustain", ",", "amprelease", ",", "osc1volume", ",", "osc2volume", ",", "osc3volume", ",", "oscmastertune", ",", "osc1tune", ",", "osc2tune", ",", "osc1finetune", ",", "osc2finetune", ",", "osc1waveform", ",", "osc2waveform", ",", "oscsync", ",", "lfo1waveform", ",", "lfo2waveform", ",", "lfo1rate", ",", "lfo2rate", ",", "lfo1amount", ",", "lfo2amount", ",", "lfo1destination", ",", "lfo2destination", ",", "lfo1phase", ",", "lfo2phase", ",", "osc2fm", ",", "osc2phase", ",", "osc1pw", ",", "osc1phase", ",", "transpose", ",", "freeadattack", ",", "freeaddecay", ",", "freeadamount", ",", "freeaddestination", ",", "lfo1sync", ",", "lfo1keytrigger", ",", "lfo2sync", ",", "lfo2keytrigger", ",", "portamento", ",", "portamentomode", ",", "voices", ",", "velocityvolume", ",", "velocitycontour", ",", "velocitycutoff", ",", "pitchwheelcutoff", ",", "pitchwheelpitch", ",", "ringmodulation", ",", "chorus1enable", ",", "chorus2enable", ",", "reverbwet", ",", "reverbdecay", ",", "reverbpredelay", ",", "reverbhighcut", ",", "reverblowcut", ",", "oscbitcrusher", ",", "highpass", ",", "detune", ",", "vintagenoise", ",", "", ",", "", ",", "envelopeeditordest1", ",", "envelopeeditorspeed", ",", "envelopeeditoramount", ",", "envelopeoneshot", ",", "envelopefixtempo", ",", "", ",", "", ",", "", ",", "", ",", "", ",", "filterdrive", ",", "delaywet", ",", "delaytime", ",", "delaysync", ",", "delayfactorl", ",", "delayfactorr", ",", "delayhighshelf", ",", "delaylowshelf", ",", "delayfeedback", ",", "", ",", "" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -29081,7 +29439,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-1098",
-					"items" : [ "", ",", "volume", ",", "filtertype", ",", "cutoff", ",", "resonance", ",", "keyfollow", ",", "filtercontour", ",", "filterattack", ",", "filterdecay", ",", "filtersustain", ",", "filterrelease", ",", "ampattack", ",", "ampdecay", ",", "ampsustain", ",", "amprelease", ",", "osc1volume", ",", "osc2volume", ",", "osc3volume", ",", "oscmastertune", ",", "osc1tune", ",", "osc2tune", ",", "osc1finetune", ",", "osc2finetune", ",", "osc1waveform", ",", "osc2waveform", ",", "oscsync", ",", "lfo1waveform", ",", "lfo2waveform", ",", "lfo1rate", ",", "lfo2rate", ",", "lfo1amount", ",", "lfo2amount", ",", "lfo1destination", ",", "lfo2destination", ",", "lfo1phase", ",", "lfo2phase", ",", "osc2fm", ",", "osc2phase", ",", "osc1pw", ",", "osc1phase", ",", "transpose", ",", "freeadattack", ",", "freeaddecay", ",", "freeadamount", ",", "freeaddestination", ",", "lfo1sync", ",", "lfo1keytrigger", ",", "lfo2sync", ",", "lfo2keytrigger", ",", "portamento", ",", "portamentomode", ",", "voices", ",", "velocityvolume", ",", "velocitycontour", ",", "velocitycutoff", ",", "pitchwheelcutoff", ",", "pitchwheelpitch", ",", "ringmodulation", ",", "chorus1enable", ",", "chorus2enable", ",", "reverbwet", ",", "reverbdecay", ",", "reverbpredelay", ",", "reverbhighcut", ",", "reverblowcut", ",", "oscbitcrusher", ",", "highpass", ",", "detune", ",", "vintagenoise", ",", "", ",", "", ",", "envelopeeditordest1", ",", "envelopeeditorspeed", ",", "envelopeeditoramount", ",", "envelopeoneshot", ",", "envelopefixtempo", ",", "", ",", "", ",", "", ",", "", ",", "", ",", "filterdrive", ",", "delaywet", ",", "delaytime", ",", "delaysync", ",", "delayfactorl", ",", "delayfactorr", ",", "delayhighshelf", ",", "delaylowshelf", ",", "delayfeedback", ",", "", ",", "" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -29112,7 +29470,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-1066",
-					"items" : [ "", ",", "volume", ",", "filtertype", ",", "cutoff", ",", "resonance", ",", "keyfollow", ",", "filtercontour", ",", "filterattack", ",", "filterdecay", ",", "filtersustain", ",", "filterrelease", ",", "ampattack", ",", "ampdecay", ",", "ampsustain", ",", "amprelease", ",", "osc1volume", ",", "osc2volume", ",", "osc3volume", ",", "oscmastertune", ",", "osc1tune", ",", "osc2tune", ",", "osc1finetune", ",", "osc2finetune", ",", "osc1waveform", ",", "osc2waveform", ",", "oscsync", ",", "lfo1waveform", ",", "lfo2waveform", ",", "lfo1rate", ",", "lfo2rate", ",", "lfo1amount", ",", "lfo2amount", ",", "lfo1destination", ",", "lfo2destination", ",", "lfo1phase", ",", "lfo2phase", ",", "osc2fm", ",", "osc2phase", ",", "osc1pw", ",", "osc1phase", ",", "transpose", ",", "freeadattack", ",", "freeaddecay", ",", "freeadamount", ",", "freeaddestination", ",", "lfo1sync", ",", "lfo1keytrigger", ",", "lfo2sync", ",", "lfo2keytrigger", ",", "portamento", ",", "portamentomode", ",", "voices", ",", "velocityvolume", ",", "velocitycontour", ",", "velocitycutoff", ",", "pitchwheelcutoff", ",", "pitchwheelpitch", ",", "ringmodulation", ",", "chorus1enable", ",", "chorus2enable", ",", "reverbwet", ",", "reverbdecay", ",", "reverbpredelay", ",", "reverbhighcut", ",", "reverblowcut", ",", "oscbitcrusher", ",", "highpass", ",", "detune", ",", "vintagenoise", ",", "", ",", "", ",", "envelopeeditordest1", ",", "envelopeeditorspeed", ",", "envelopeeditoramount", ",", "envelopeoneshot", ",", "envelopefixtempo", ",", "", ",", "", ",", "", ",", "", ",", "", ",", "filterdrive", ",", "delaywet", ",", "delaytime", ",", "delaysync", ",", "delayfactorl", ",", "delayfactorr", ",", "delayhighshelf", ",", "delaylowshelf", ",", "delayfeedback", ",", "", ",", "" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -29143,7 +29501,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-993",
-					"items" : [ "", ",", "volume", ",", "filtertype", ",", "cutoff", ",", "resonance", ",", "keyfollow", ",", "filtercontour", ",", "filterattack", ",", "filterdecay", ",", "filtersustain", ",", "filterrelease", ",", "ampattack", ",", "ampdecay", ",", "ampsustain", ",", "amprelease", ",", "osc1volume", ",", "osc2volume", ",", "osc3volume", ",", "oscmastertune", ",", "osc1tune", ",", "osc2tune", ",", "osc1finetune", ",", "osc2finetune", ",", "osc1waveform", ",", "osc2waveform", ",", "oscsync", ",", "lfo1waveform", ",", "lfo2waveform", ",", "lfo1rate", ",", "lfo2rate", ",", "lfo1amount", ",", "lfo2amount", ",", "lfo1destination", ",", "lfo2destination", ",", "lfo1phase", ",", "lfo2phase", ",", "osc2fm", ",", "osc2phase", ",", "osc1pw", ",", "osc1phase", ",", "transpose", ",", "freeadattack", ",", "freeaddecay", ",", "freeadamount", ",", "freeaddestination", ",", "lfo1sync", ",", "lfo1keytrigger", ",", "lfo2sync", ",", "lfo2keytrigger", ",", "portamento", ",", "portamentomode", ",", "voices", ",", "velocityvolume", ",", "velocitycontour", ",", "velocitycutoff", ",", "pitchwheelcutoff", ",", "pitchwheelpitch", ",", "ringmodulation", ",", "chorus1enable", ",", "chorus2enable", ",", "reverbwet", ",", "reverbdecay", ",", "reverbpredelay", ",", "reverbhighcut", ",", "reverblowcut", ",", "oscbitcrusher", ",", "highpass", ",", "detune", ",", "vintagenoise", ",", "", ",", "", ",", "envelopeeditordest1", ",", "envelopeeditorspeed", ",", "envelopeeditoramount", ",", "envelopeoneshot", ",", "envelopefixtempo", ",", "", ",", "", ",", "", ",", "", ",", "", ",", "filterdrive", ",", "delaywet", ",", "delaytime", ",", "delaysync", ",", "delayfactorl", ",", "delayfactorr", ",", "delayhighshelf", ",", "delaylowshelf", ",", "delayfeedback", ",", "", ",", "" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -29174,7 +29532,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select the parameter, for internal plugins only.",
 					"id" : "obj-790",
-					"items" : [ "", ",", "volume", ",", "filtertype", ",", "cutoff", ",", "resonance", ",", "keyfollow", ",", "filtercontour", ",", "filterattack", ",", "filterdecay", ",", "filtersustain", ",", "filterrelease", ",", "ampattack", ",", "ampdecay", ",", "ampsustain", ",", "amprelease", ",", "osc1volume", ",", "osc2volume", ",", "osc3volume", ",", "oscmastertune", ",", "osc1tune", ",", "osc2tune", ",", "osc1finetune", ",", "osc2finetune", ",", "osc1waveform", ",", "osc2waveform", ",", "oscsync", ",", "lfo1waveform", ",", "lfo2waveform", ",", "lfo1rate", ",", "lfo2rate", ",", "lfo1amount", ",", "lfo2amount", ",", "lfo1destination", ",", "lfo2destination", ",", "lfo1phase", ",", "lfo2phase", ",", "osc2fm", ",", "osc2phase", ",", "osc1pw", ",", "osc1phase", ",", "transpose", ",", "freeadattack", ",", "freeaddecay", ",", "freeadamount", ",", "freeaddestination", ",", "lfo1sync", ",", "lfo1keytrigger", ",", "lfo2sync", ",", "lfo2keytrigger", ",", "portamento", ",", "portamentomode", ",", "voices", ",", "velocityvolume", ",", "velocitycontour", ",", "velocitycutoff", ",", "pitchwheelcutoff", ",", "pitchwheelpitch", ",", "ringmodulation", ",", "chorus1enable", ",", "chorus2enable", ",", "reverbwet", ",", "reverbdecay", ",", "reverbpredelay", ",", "reverbhighcut", ",", "reverblowcut", ",", "oscbitcrusher", ",", "highpass", ",", "detune", ",", "vintagenoise", ",", "", ",", "", ",", "envelopeeditordest1", ",", "envelopeeditorspeed", ",", "envelopeeditoramount", ",", "envelopeoneshot", ",", "envelopefixtempo", ",", "", ",", "", ",", "", ",", "", ",", "", ",", "filterdrive", ",", "delaywet", ",", "delaytime", ",", "delaysync", ",", "delayfactorl", ",", "delayfactorr", ",", "delayhighshelf", ",", "delaylowshelf", ",", "delayfeedback", ",", "", ",", "" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -29210,7 +29568,7 @@
 , 			{
 				"box" : 				{
 					"blinkcolor" : [ 1.0, 0.392156862745098, 0.0, 1.0 ],
-					"hint" : "Blinks indicates cliping of the post gain audio from the device output. which is recorded to the output files.",
+					"hint" : "Blinks indicates cliping of the post gain audio from the device output, which is recorded to the output files.",
 					"id" : "obj-10",
 					"ignoreclick" : 1,
 					"maxclass" : "button",
@@ -29754,7 +30112,7 @@
 					"bgoncolor" : [ 0.898039, 0.898039, 0.898039, 1.0 ],
 					"bordercolor" : [ 0.352941176470588, 0.352941176470588, 0.352941176470588, 1.0 ],
 					"fontsize" : 10.0,
-					"hint" : "Enables/disables audio I/O and internal signal processing. Must be on for generating dataset, previewing audio, and control parameters via CV signals.",
+					"hint" : "Enables/disables audio I/O and internal signal processing. Must be on for generating dataset, previewing audio, and send control parameters via CV signals.",
 					"id" : "obj-75",
 					"maxclass" : "live.text",
 					"numinlets" : 1,
@@ -29819,7 +30177,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Channel number on input sourncard to receive the Left channel (or Mono) audio output from the external device. It has no effect with internal plugin device.",
+					"hint" : "Channel number on input sourncard to receive the Left channel (or Mono) from the output of the external device. It has no effect with internal plugin devices.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-14",
 					"maxclass" : "number",
@@ -29968,7 +30326,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Channel number on output sourncard seected to preview the Left channel (or Mono).",
+					"hint" : "Channel number on output soundcard to listen the Left device output channel (or Mono).",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-489",
 					"maxclass" : "number",
@@ -30060,7 +30418,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "Select input and output audio devices and advanced audio settings.",
+					"hint" : "Shows advanced audio settings.",
 					"id" : "obj-536",
 					"maxclass" : "textbutton",
 					"numinlets" : 1,
@@ -30095,6 +30453,7 @@
 			}
 , 			{
 				"box" : 				{
+					"hint" : "On screen keyboard to test the device. This should not be utilized while generating the dataset. The keyboard is monophonic and chords can be set only utilizing the offsets in the Chord section. Also external MIDI keyboards are forced to be monophonic. Notes played with an external MIDI keyboard or during the dataset generation are also visualized here.",
 					"id" : "obj-1575",
 					"inputmode" : 1,
 					"maxclass" : "kslider",
@@ -30104,11 +30463,23 @@
 					"offset" : 0,
 					"outlettype" : [ "int", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 6870.873692214488983, 4079.807828485965729, 740.0, 45.0 ],
+					"patching_rect" : [ 6870.967791080474854, 4079.838738858699799, 740.0, 45.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 336.5, 590.0, 740.0, 45.0 ],
 					"range" : 127,
 					"selectioncolor" : [ 0.929411764705882, 0.929411764705882, 0.352941176470588, 0.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1818",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 4282.0, 3351.200049936771393, 79.0, 20.0 ],
+					"text" : "pitchdetection 1"
 				}
 
 			}
@@ -31163,6 +31534,105 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1501", 0 ],
+					"midpoints" : [ 8950.300133228302002, 3596.100026100873947, 6866.5, 3596.100026100873947 ],
+					"order" : 10,
+					"source" : [ "obj-111", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1550", 0 ],
+					"midpoints" : [ 8950.300133228302002, 3596.100026100873947, 7069.5, 3596.100026100873947 ],
+					"order" : 9,
+					"source" : [ "obj-111", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1574", 0 ],
+					"midpoints" : [ 8950.300133228302002, 3596.100026100873947, 7264.5, 3596.100026100873947 ],
+					"order" : 8,
+					"source" : [ "obj-111", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1586", 0 ],
+					"midpoints" : [ 8950.300133228302002, 3596.100026100873947, 7463.5, 3596.100026100873947 ],
+					"order" : 7,
+					"source" : [ "obj-111", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1599", 0 ],
+					"midpoints" : [ 8950.300133228302002, 3596.100026100873947, 7655.5, 3596.100026100873947 ],
+					"order" : 6,
+					"source" : [ "obj-111", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1610", 0 ],
+					"midpoints" : [ 8950.300133228302002, 3596.100026100873947, 7854.5, 3596.100026100873947 ],
+					"order" : 5,
+					"source" : [ "obj-111", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1640", 0 ],
+					"midpoints" : [ 8950.300133228302002, 3596.100026100873947, 8838.5, 3596.100026100873947 ],
+					"order" : 0,
+					"source" : [ "obj-111", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1654", 0 ],
+					"midpoints" : [ 8950.300133228302002, 3596.100026100873947, 8646.5, 3596.100026100873947 ],
+					"order" : 1,
+					"source" : [ "obj-111", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1666", 0 ],
+					"midpoints" : [ 8950.300133228302002, 3596.100026100873947, 8447.5, 3596.100026100873947 ],
+					"order" : 2,
+					"source" : [ "obj-111", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1679", 0 ],
+					"midpoints" : [ 8950.300133228302002, 3596.100026100873947, 8252.5, 3596.100026100873947 ],
+					"order" : 3,
+					"source" : [ "obj-111", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1690", 0 ],
+					"midpoints" : [ 8950.300133228302002, 3596.100026100873947, 8049.5, 3596.100026100873947 ],
+					"order" : 4,
+					"source" : [ "obj-111", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1173", 1 ],
 					"midpoints" : [ 752.769255578517914, 1238.100029677152634, 763.269255578517914, 1238.100029677152634 ],
 					"order" : 1,
@@ -32209,6 +32679,105 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1505", 0 ],
+					"midpoints" : [ 9035.100134491920471, 3621.600026100873947, 6935.5, 3621.600026100873947 ],
+					"order" : 10,
+					"source" : [ "obj-122", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1549", 0 ],
+					"midpoints" : [ 9035.100134491920471, 3621.600026100873947, 7138.5, 3621.600026100873947 ],
+					"order" : 9,
+					"source" : [ "obj-122", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1573", 0 ],
+					"midpoints" : [ 9035.100134491920471, 3621.600026100873947, 7333.5, 3621.600026100873947 ],
+					"order" : 8,
+					"source" : [ "obj-122", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1585", 0 ],
+					"midpoints" : [ 9035.100134491920471, 3621.600026100873947, 7532.5, 3621.600026100873947 ],
+					"order" : 7,
+					"source" : [ "obj-122", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1598", 0 ],
+					"midpoints" : [ 9035.100134491920471, 3621.600026100873947, 7724.5, 3621.600026100873947 ],
+					"order" : 6,
+					"source" : [ "obj-122", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1609", 0 ],
+					"midpoints" : [ 9035.100134491920471, 3621.600026100873947, 7923.5, 3621.600026100873947 ],
+					"order" : 5,
+					"source" : [ "obj-122", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1639", 0 ],
+					"midpoints" : [ 9035.100134491920471, 3621.600026100873947, 8907.5, 3621.600026100873947 ],
+					"order" : 0,
+					"source" : [ "obj-122", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1653", 0 ],
+					"midpoints" : [ 9035.100134491920471, 3621.600026100873947, 8715.5, 3621.600026100873947 ],
+					"order" : 1,
+					"source" : [ "obj-122", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1665", 0 ],
+					"midpoints" : [ 9035.100134491920471, 3621.600026100873947, 8516.5, 3621.600026100873947 ],
+					"order" : 2,
+					"source" : [ "obj-122", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1678", 0 ],
+					"midpoints" : [ 9035.100134491920471, 3621.600026100873947, 8321.5, 3621.600026100873947 ],
+					"order" : 3,
+					"source" : [ "obj-122", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1689", 0 ],
+					"midpoints" : [ 9035.100134491920471, 3621.600026100873947, 8118.5, 3621.600026100873947 ],
+					"order" : 4,
+					"source" : [ "obj-122", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-302", 0 ],
 					"midpoints" : [ 1296.350710064172745, 3502.776684939861298, 1126.5, 3502.776684939861298 ],
 					"order" : 1,
@@ -32458,8 +33027,17 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1209", 0 ],
+					"order" : 1,
+					"source" : [ "obj-1235", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1736", 0 ],
-					"midpoints" : [ 6322.627330839633942, 3419.262124508619308, 6397.0, 3419.262124508619308 ],
+					"midpoints" : [ 6311.900093913078308, 3419.262124508619308, 6397.0, 3419.262124508619308 ],
+					"order" : 0,
 					"source" : [ "obj-1235", 0 ]
 				}
 
@@ -32467,6 +33045,16 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-127", 0 ],
+					"order" : 0,
+					"source" : [ "obj-1238", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1423", 0 ],
+					"midpoints" : [ 6381.5, 2717.007698237895966, 6302.127330839633942, 2717.007698237895966 ],
+					"order" : 1,
 					"source" : [ "obj-1238", 0 ]
 				}
 
@@ -32611,7 +33199,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1091", 0 ],
-					"midpoints" : [ 7047.96177339553833, 4280.331875175237656, 6880.928677916526794, 4280.331875175237656 ],
+					"midpoints" : [ 7048.700104892253876, 4280.331875175237656, 6880.928677916526794, 4280.331875175237656 ],
 					"order" : 1,
 					"source" : [ "obj-1251", 0 ]
 				}
@@ -32620,7 +33208,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1467", 0 ],
-					"midpoints" : [ 7047.96177339553833, 4253.409715175628662, 6995.56537389755249, 4253.409715175628662, 6995.56537389755249, 4167.68840503692627, 6943.106359004974365, 4167.68840503692627 ],
+					"midpoints" : [ 7048.700104892253876, 4253.409715175628662, 6995.56537389755249, 4253.409715175628662, 6995.56537389755249, 4167.68840503692627, 6943.106359004974365, 4167.68840503692627 ],
 					"order" : 0,
 					"source" : [ "obj-1251", 0 ]
 				}
@@ -33667,6 +34255,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-321", 0 ],
+					"source" : [ "obj-135", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-253", 11 ],
 					"source" : [ "obj-1350", 0 ]
 				}
@@ -33877,7 +34472,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1835", 1 ],
-					"midpoints" : [ 7525.5, 3008.057791978120804, 6826.5, 3008.057791978120804 ],
+					"midpoints" : [ 7525.661338925361633, 3008.057791978120804, 6826.5, 3008.057791978120804 ],
 					"source" : [ "obj-1375", 1 ]
 				}
 
@@ -33893,7 +34488,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1505", 0 ],
 					"midpoints" : [ 7068.5, 3572.5, 6935.5, 3572.5 ],
-					"order" : 11,
+					"order" : 10,
 					"source" : [ "obj-1377", 1 ]
 				}
 
@@ -33902,7 +34497,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1549", 0 ],
 					"midpoints" : [ 7068.5, 3572.5, 7138.5, 3572.5 ],
-					"order" : 10,
+					"order" : 9,
 					"source" : [ "obj-1377", 1 ]
 				}
 
@@ -33911,7 +34506,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1573", 0 ],
 					"midpoints" : [ 7068.5, 3572.5, 7333.5, 3572.5 ],
-					"order" : 9,
+					"order" : 8,
 					"source" : [ "obj-1377", 1 ]
 				}
 
@@ -33920,7 +34515,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1585", 0 ],
 					"midpoints" : [ 7068.5, 3572.5, 7532.5, 3572.5 ],
-					"order" : 8,
+					"order" : 7,
 					"source" : [ "obj-1377", 1 ]
 				}
 
@@ -33929,7 +34524,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1598", 0 ],
 					"midpoints" : [ 7068.5, 3572.5, 7724.5, 3572.5 ],
-					"order" : 7,
+					"order" : 6,
 					"source" : [ "obj-1377", 1 ]
 				}
 
@@ -33938,16 +34533,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1609", 0 ],
 					"midpoints" : [ 7068.5, 3572.5, 7923.5, 3572.5 ],
-					"order" : 6,
-					"source" : [ "obj-1377", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1624", 0 ],
-					"midpoints" : [ 7068.5, 3572.5, 9106.5, 3572.5 ],
-					"order" : 0,
+					"order" : 5,
 					"source" : [ "obj-1377", 1 ]
 				}
 
@@ -33956,7 +34542,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1639", 0 ],
 					"midpoints" : [ 7068.5, 3572.5, 8907.5, 3572.5 ],
-					"order" : 1,
+					"order" : 0,
 					"source" : [ "obj-1377", 1 ]
 				}
 
@@ -33965,7 +34551,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1653", 0 ],
 					"midpoints" : [ 7068.5, 3572.5, 8715.5, 3572.5 ],
-					"order" : 2,
+					"order" : 1,
 					"source" : [ "obj-1377", 1 ]
 				}
 
@@ -33974,7 +34560,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1665", 0 ],
 					"midpoints" : [ 7068.5, 3572.5, 8516.5, 3572.5 ],
-					"order" : 3,
+					"order" : 2,
 					"source" : [ "obj-1377", 1 ]
 				}
 
@@ -33983,7 +34569,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1678", 0 ],
 					"midpoints" : [ 7068.5, 3572.5, 8321.5, 3572.5 ],
-					"order" : 4,
+					"order" : 3,
 					"source" : [ "obj-1377", 1 ]
 				}
 
@@ -33992,7 +34578,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1689", 0 ],
 					"midpoints" : [ 7068.5, 3572.5, 8118.5, 3572.5 ],
-					"order" : 5,
+					"order" : 4,
 					"source" : [ "obj-1377", 1 ]
 				}
 
@@ -34039,6 +34625,21 @@
 					"midpoints" : [ 5155.5, 3147.5, 5255.5, 3147.5 ],
 					"order" : 1,
 					"source" : [ "obj-1379", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1394", 0 ],
+					"source" : [ "obj-1380", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1708", 0 ],
+					"midpoints" : [ 4243.5, 3414.5, 4301.5, 3414.5 ],
+					"source" : [ "obj-1380", 4 ]
 				}
 
 			}
@@ -34098,6 +34699,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1380", 0 ],
+					"source" : [ "obj-1389", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1083", 0 ],
 					"midpoints" : [ 3993.5, 4112.5, 3891.5, 4112.5 ],
 					"source" : [ "obj-139", 0 ]
@@ -34106,9 +34714,23 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1389", 0 ],
+					"source" : [ "obj-1390", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-306", 1 ],
 					"midpoints" : [ 5468.154028356075287, 1352.713878651790765, 5657.460435493613659, 1352.713878651790765, 5657.460435493613659, 1310.352063179016113, 5617.038645505905151, 1310.352063179016113 ],
 					"source" : [ "obj-1393", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1828", 0 ],
+					"source" : [ "obj-1394", 1 ]
 				}
 
 			}
@@ -34816,7 +35438,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1384", 1 ],
 					"midpoints" : [ 6601.5, 3555.0, 6879.5, 3555.0 ],
-					"order" : 11,
+					"order" : 10,
 					"source" : [ "obj-1473", 0 ]
 				}
 
@@ -34841,7 +35463,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1501", 0 ],
 					"midpoints" : [ 6612.0, 3503.0, 6866.5, 3503.0 ],
-					"order" : 11,
+					"order" : 10,
 					"source" : [ "obj-1473", 1 ]
 				}
 
@@ -34850,7 +35472,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1505", 0 ],
 					"midpoints" : [ 6643.5, 3528.5, 6935.5, 3528.5 ],
-					"order" : 11,
+					"order" : 10,
 					"source" : [ "obj-1473", 4 ]
 				}
 
@@ -34859,7 +35481,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1549", 0 ],
 					"midpoints" : [ 6643.5, 3528.5, 7138.5, 3528.5 ],
-					"order" : 10,
+					"order" : 9,
 					"source" : [ "obj-1473", 4 ]
 				}
 
@@ -34868,7 +35490,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1550", 0 ],
 					"midpoints" : [ 6612.0, 3503.0, 7069.5, 3503.0 ],
-					"order" : 10,
+					"order" : 9,
 					"source" : [ "obj-1473", 1 ]
 				}
 
@@ -34877,7 +35499,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1553", 1 ],
 					"midpoints" : [ 6601.5, 3555.0, 7082.5, 3555.0 ],
-					"order" : 10,
+					"order" : 9,
 					"source" : [ "obj-1473", 0 ]
 				}
 
@@ -34886,7 +35508,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1573", 0 ],
 					"midpoints" : [ 6643.5, 3528.5, 7333.5, 3528.5 ],
-					"order" : 9,
+					"order" : 8,
 					"source" : [ "obj-1473", 4 ]
 				}
 
@@ -34895,7 +35517,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1574", 0 ],
 					"midpoints" : [ 6612.0, 3503.0, 7264.5, 3503.0 ],
-					"order" : 9,
+					"order" : 8,
 					"source" : [ "obj-1473", 1 ]
 				}
 
@@ -34904,7 +35526,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1577", 1 ],
 					"midpoints" : [ 6601.5, 3555.0, 7277.5, 3555.0 ],
-					"order" : 9,
+					"order" : 8,
 					"source" : [ "obj-1473", 0 ]
 				}
 
@@ -34913,7 +35535,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1585", 0 ],
 					"midpoints" : [ 6643.5, 3528.5, 7532.5, 3528.5 ],
-					"order" : 8,
+					"order" : 7,
 					"source" : [ "obj-1473", 4 ]
 				}
 
@@ -34922,7 +35544,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1586", 0 ],
 					"midpoints" : [ 6612.0, 3503.0, 7463.5, 3503.0 ],
-					"order" : 8,
+					"order" : 7,
 					"source" : [ "obj-1473", 1 ]
 				}
 
@@ -34931,7 +35553,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1589", 1 ],
 					"midpoints" : [ 6601.5, 3555.0, 7476.5, 3555.0 ],
-					"order" : 8,
+					"order" : 7,
 					"source" : [ "obj-1473", 0 ]
 				}
 
@@ -34940,7 +35562,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1598", 0 ],
 					"midpoints" : [ 6643.5, 3528.5, 7724.5, 3528.5 ],
-					"order" : 7,
+					"order" : 6,
 					"source" : [ "obj-1473", 4 ]
 				}
 
@@ -34949,7 +35571,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1599", 0 ],
 					"midpoints" : [ 6612.0, 3503.0, 7655.5, 3503.0 ],
-					"order" : 7,
+					"order" : 6,
 					"source" : [ "obj-1473", 1 ]
 				}
 
@@ -34958,7 +35580,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1602", 1 ],
 					"midpoints" : [ 6601.5, 3555.0, 7668.5, 3555.0 ],
-					"order" : 7,
+					"order" : 6,
 					"source" : [ "obj-1473", 0 ]
 				}
 
@@ -34967,7 +35589,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1609", 0 ],
 					"midpoints" : [ 6643.5, 3528.5, 7923.5, 3528.5 ],
-					"order" : 6,
+					"order" : 5,
 					"source" : [ "obj-1473", 4 ]
 				}
 
@@ -34976,7 +35598,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1610", 0 ],
 					"midpoints" : [ 6612.0, 3503.0, 7854.5, 3503.0 ],
-					"order" : 6,
+					"order" : 5,
 					"source" : [ "obj-1473", 1 ]
 				}
 
@@ -34985,34 +35607,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1614", 1 ],
 					"midpoints" : [ 6601.5, 3555.0, 7867.5, 3555.0 ],
-					"order" : 6,
-					"source" : [ "obj-1473", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1624", 0 ],
-					"midpoints" : [ 6643.5, 3528.5, 9106.5, 3528.5 ],
-					"order" : 0,
-					"source" : [ "obj-1473", 4 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1629", 0 ],
-					"midpoints" : [ 6612.0, 3503.0, 9037.5, 3503.0 ],
-					"order" : 0,
-					"source" : [ "obj-1473", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1632", 1 ],
-					"midpoints" : [ 6601.5, 3555.0, 9050.5, 3555.0 ],
-					"order" : 0,
+					"order" : 5,
 					"source" : [ "obj-1473", 0 ]
 				}
 
@@ -35021,7 +35616,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1639", 0 ],
 					"midpoints" : [ 6643.5, 3528.5, 8907.5, 3528.5 ],
-					"order" : 1,
+					"order" : 0,
 					"source" : [ "obj-1473", 4 ]
 				}
 
@@ -35030,7 +35625,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1640", 0 ],
 					"midpoints" : [ 6612.0, 3503.0, 8838.5, 3503.0 ],
-					"order" : 1,
+					"order" : 0,
 					"source" : [ "obj-1473", 1 ]
 				}
 
@@ -35039,7 +35634,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1644", 1 ],
 					"midpoints" : [ 6601.5, 3555.0, 8851.5, 3555.0 ],
-					"order" : 1,
+					"order" : 0,
 					"source" : [ "obj-1473", 0 ]
 				}
 
@@ -35048,7 +35643,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1653", 0 ],
 					"midpoints" : [ 6643.5, 3528.5, 8715.5, 3528.5 ],
-					"order" : 2,
+					"order" : 1,
 					"source" : [ "obj-1473", 4 ]
 				}
 
@@ -35057,7 +35652,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1654", 0 ],
 					"midpoints" : [ 6612.0, 3503.0, 8646.5, 3503.0 ],
-					"order" : 2,
+					"order" : 1,
 					"source" : [ "obj-1473", 1 ]
 				}
 
@@ -35066,7 +35661,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1657", 1 ],
 					"midpoints" : [ 6601.5, 3555.0, 8659.5, 3555.0 ],
-					"order" : 2,
+					"order" : 1,
 					"source" : [ "obj-1473", 0 ]
 				}
 
@@ -35075,7 +35670,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1665", 0 ],
 					"midpoints" : [ 6643.5, 3528.5, 8516.5, 3528.5 ],
-					"order" : 3,
+					"order" : 2,
 					"source" : [ "obj-1473", 4 ]
 				}
 
@@ -35084,7 +35679,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1666", 0 ],
 					"midpoints" : [ 6612.0, 3503.0, 8447.5, 3503.0 ],
-					"order" : 3,
+					"order" : 2,
 					"source" : [ "obj-1473", 1 ]
 				}
 
@@ -35093,7 +35688,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1669", 1 ],
 					"midpoints" : [ 6601.5, 3555.0, 8460.5, 3555.0 ],
-					"order" : 3,
+					"order" : 2,
 					"source" : [ "obj-1473", 0 ]
 				}
 
@@ -35102,7 +35697,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1678", 0 ],
 					"midpoints" : [ 6643.5, 3528.5, 8321.5, 3528.5 ],
-					"order" : 4,
+					"order" : 3,
 					"source" : [ "obj-1473", 4 ]
 				}
 
@@ -35111,7 +35706,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1679", 0 ],
 					"midpoints" : [ 6612.0, 3503.0, 8252.5, 3503.0 ],
-					"order" : 4,
+					"order" : 3,
 					"source" : [ "obj-1473", 1 ]
 				}
 
@@ -35120,7 +35715,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1682", 1 ],
 					"midpoints" : [ 6601.5, 3555.0, 8265.5, 3555.0 ],
-					"order" : 4,
+					"order" : 3,
 					"source" : [ "obj-1473", 0 ]
 				}
 
@@ -35129,7 +35724,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1689", 0 ],
 					"midpoints" : [ 6643.5, 3528.5, 8118.5, 3528.5 ],
-					"order" : 5,
+					"order" : 4,
 					"source" : [ "obj-1473", 4 ]
 				}
 
@@ -35138,7 +35733,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1690", 0 ],
 					"midpoints" : [ 6612.0, 3503.0, 8049.5, 3503.0 ],
-					"order" : 5,
+					"order" : 4,
 					"source" : [ "obj-1473", 1 ]
 				}
 
@@ -35147,7 +35742,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1693", 1 ],
 					"midpoints" : [ 6601.5, 3555.0, 8062.5, 3555.0 ],
-					"order" : 5,
+					"order" : 4,
 					"source" : [ "obj-1473", 0 ]
 				}
 
@@ -35156,7 +35751,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-62", 0 ],
 					"midpoints" : [ 6601.5, 3416.0, 6745.5, 3416.0 ],
-					"order" : 12,
+					"order" : 11,
 					"source" : [ "obj-1473", 0 ]
 				}
 
@@ -35288,7 +35883,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1396", 1 ],
 					"midpoints" : [ 6935.713497281074524, 3629.75728052854538, 6935.5, 3629.75728052854538 ],
-					"order" : 11,
+					"order" : 10,
 					"source" : [ "obj-1489", 0 ]
 				}
 
@@ -35297,7 +35892,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1554", 1 ],
 					"midpoints" : [ 6935.713497281074524, 3629.75728052854538, 7138.5, 3629.75728052854538 ],
-					"order" : 10,
+					"order" : 9,
 					"source" : [ "obj-1489", 0 ]
 				}
 
@@ -35306,7 +35901,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1578", 1 ],
 					"midpoints" : [ 6935.713497281074524, 3629.75728052854538, 7333.5, 3629.75728052854538 ],
-					"order" : 9,
+					"order" : 8,
 					"source" : [ "obj-1489", 0 ]
 				}
 
@@ -35315,7 +35910,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1590", 1 ],
 					"midpoints" : [ 6935.713497281074524, 3629.75728052854538, 7532.5, 3629.75728052854538 ],
-					"order" : 8,
+					"order" : 7,
 					"source" : [ "obj-1489", 0 ]
 				}
 
@@ -35324,7 +35919,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1603", 1 ],
 					"midpoints" : [ 6935.713497281074524, 3629.75728052854538, 7724.5, 3629.75728052854538 ],
-					"order" : 7,
+					"order" : 6,
 					"source" : [ "obj-1489", 0 ]
 				}
 
@@ -35333,16 +35928,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1617", 1 ],
 					"midpoints" : [ 6935.713497281074524, 3629.75728052854538, 7923.5, 3629.75728052854538 ],
-					"order" : 6,
-					"source" : [ "obj-1489", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1633", 1 ],
-					"midpoints" : [ 6935.713497281074524, 3629.75728052854538, 9106.5, 3629.75728052854538 ],
-					"order" : 0,
+					"order" : 5,
 					"source" : [ "obj-1489", 0 ]
 				}
 
@@ -35351,7 +35937,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1645", 1 ],
 					"midpoints" : [ 6935.713497281074524, 3629.75728052854538, 8907.5, 3629.75728052854538 ],
-					"order" : 1,
+					"order" : 0,
 					"source" : [ "obj-1489", 0 ]
 				}
 
@@ -35360,7 +35946,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1659", 1 ],
 					"midpoints" : [ 6935.713497281074524, 3629.75728052854538, 8715.5, 3629.75728052854538 ],
-					"order" : 2,
+					"order" : 1,
 					"source" : [ "obj-1489", 0 ]
 				}
 
@@ -35369,7 +35955,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1670", 1 ],
 					"midpoints" : [ 6935.713497281074524, 3629.75728052854538, 8516.5, 3629.75728052854538 ],
-					"order" : 3,
+					"order" : 2,
 					"source" : [ "obj-1489", 0 ]
 				}
 
@@ -35378,7 +35964,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1683", 1 ],
 					"midpoints" : [ 6935.713497281074524, 3629.75728052854538, 8321.5, 3629.75728052854538 ],
-					"order" : 4,
+					"order" : 3,
 					"source" : [ "obj-1489", 0 ]
 				}
 
@@ -35387,7 +35973,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1694", 1 ],
 					"midpoints" : [ 6935.713497281074524, 3629.75728052854538, 8118.5, 3629.75728052854538 ],
-					"order" : 5,
+					"order" : 4,
 					"source" : [ "obj-1489", 0 ]
 				}
 
@@ -35463,7 +36049,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1398", 1 ],
 					"midpoints" : [ 6782.5, 3557.5, 6877.0, 3557.5 ],
-					"order" : 11,
+					"order" : 10,
 					"source" : [ "obj-1496", 0 ]
 				}
 
@@ -35471,7 +36057,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1472", 0 ],
-					"order" : 12,
+					"order" : 11,
 					"source" : [ "obj-1496", 0 ]
 				}
 
@@ -35480,7 +36066,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1559", 1 ],
 					"midpoints" : [ 6782.5, 3557.5, 7080.0, 3557.5 ],
-					"order" : 10,
+					"order" : 9,
 					"source" : [ "obj-1496", 0 ]
 				}
 
@@ -35489,7 +36075,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1581", 1 ],
 					"midpoints" : [ 6782.5, 3557.5, 7275.0, 3557.5 ],
-					"order" : 9,
+					"order" : 8,
 					"source" : [ "obj-1496", 0 ]
 				}
 
@@ -35498,7 +36084,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1593", 1 ],
 					"midpoints" : [ 6782.5, 3557.5, 7474.0, 3557.5 ],
-					"order" : 8,
+					"order" : 7,
 					"source" : [ "obj-1496", 0 ]
 				}
 
@@ -35507,7 +36093,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1605", 1 ],
 					"midpoints" : [ 6782.5, 3557.5, 7666.0, 3557.5 ],
-					"order" : 7,
+					"order" : 6,
 					"source" : [ "obj-1496", 0 ]
 				}
 
@@ -35516,16 +36102,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1619", 1 ],
 					"midpoints" : [ 6782.5, 3557.5, 7865.0, 3557.5 ],
-					"order" : 6,
-					"source" : [ "obj-1496", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1635", 1 ],
-					"midpoints" : [ 6782.5, 3557.5, 9048.0, 3557.5 ],
-					"order" : 0,
+					"order" : 5,
 					"source" : [ "obj-1496", 0 ]
 				}
 
@@ -35534,7 +36111,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1648", 1 ],
 					"midpoints" : [ 6782.5, 3557.5, 8849.0, 3557.5 ],
-					"order" : 1,
+					"order" : 0,
 					"source" : [ "obj-1496", 0 ]
 				}
 
@@ -35543,7 +36120,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1661", 1 ],
 					"midpoints" : [ 6782.5, 3557.5, 8657.0, 3557.5 ],
-					"order" : 2,
+					"order" : 1,
 					"source" : [ "obj-1496", 0 ]
 				}
 
@@ -35552,7 +36129,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1672", 1 ],
 					"midpoints" : [ 6782.5, 3557.5, 8458.0, 3557.5 ],
-					"order" : 3,
+					"order" : 2,
 					"source" : [ "obj-1496", 0 ]
 				}
 
@@ -35561,7 +36138,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1685", 1 ],
 					"midpoints" : [ 6782.5, 3557.5, 8263.0, 3557.5 ],
-					"order" : 4,
+					"order" : 3,
 					"source" : [ "obj-1496", 0 ]
 				}
 
@@ -35570,7 +36147,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1696", 1 ],
 					"midpoints" : [ 6782.5, 3557.5, 8060.0, 3557.5 ],
-					"order" : 5,
+					"order" : 4,
 					"source" : [ "obj-1496", 0 ]
 				}
 
@@ -36342,7 +36919,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1260", 0 ],
-					"midpoints" : [ 6880.373692214488983, 4151.248116761445999, 7048.024388790130615, 4151.248116761445999 ],
+					"midpoints" : [ 6880.467791080474854, 4151.248116761445999, 7048.024388790130615, 4151.248116761445999 ],
 					"order" : 0,
 					"source" : [ "obj-1575", 0 ]
 				}
@@ -36351,7 +36928,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1467", 0 ],
-					"midpoints" : [ 6880.373692214488983, 4151.248116761445999, 6943.106359004974365, 4151.248116761445999 ],
+					"midpoints" : [ 6880.467791080474854, 4151.248116761445999, 6943.106359004974365, 4151.248116761445999 ],
 					"order" : 1,
 					"source" : [ "obj-1575", 0 ]
 				}
@@ -36360,7 +36937,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1575", 1 ],
-					"midpoints" : [ 6908.373692214488983, 4070.277672946453094, 7601.373692214488983, 4070.277672946453094 ],
+					"midpoints" : [ 6908.373692214488983, 4070.277672946453094, 7601.467791080474854, 4070.277672946453094 ],
 					"source" : [ "obj-1576", 1 ]
 				}
 
@@ -36934,43 +37511,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1624", 0 ],
-					"source" : [ "obj-1621", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1624", 0 ],
-					"source" : [ "obj-1622", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1621", 0 ],
-					"order" : 0,
-					"source" : [ "obj-1623", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1622", 0 ],
-					"order" : 1,
-					"source" : [ "obj-1623", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1633", 1 ],
-					"source" : [ "obj-1624", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-1565", 0 ],
 					"midpoints" : [ 3517.5, 1165.916531085968018, 3411.5, 1165.916531085968018 ],
 					"source" : [ "obj-1625", 2 ]
@@ -37026,31 +37566,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1623", 0 ],
-					"midpoints" : [ 9037.5, 3700.0, 9072.0, 3700.0, 9072.0, 3596.0, 9106.5, 3596.0 ],
-					"order" : 0,
-					"source" : [ "obj-1629", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1632", 0 ],
-					"order" : 1,
-					"source" : [ "obj-1629", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1635", 0 ],
-					"order" : 2,
-					"source" : [ "obj-1629", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-161", 0 ],
 					"source" : [ "obj-163", 0 ]
 				}
@@ -37087,37 +37602,6 @@
 					"midpoints" : [ 5828.547709226608276, 2803.056909769773483, 5664.0, 2803.056909769773483 ],
 					"order" : 2,
 					"source" : [ "obj-1631", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1634", 0 ],
-					"source" : [ "obj-1632", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1634", 1 ],
-					"midpoints" : [ 9089.5, 3809.5, 9050.5, 3809.5 ],
-					"source" : [ "obj-1633", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1421", 0 ],
-					"midpoints" : [ 9037.5, 3882.208710998296738, 6745.422237753868103, 3882.208710998296738 ],
-					"source" : [ "obj-1634", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1633", 0 ],
-					"midpoints" : [ 9037.5, 3757.0, 9089.5, 3757.0 ],
-					"source" : [ "obj-1635", 0 ]
 				}
 
 			}
@@ -38068,6 +38552,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1760", 0 ],
+					"source" : [ "obj-1708", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1734", 1 ],
 					"midpoints" : [ 3070.077025234699249, 446.769244313240051, 3055.192407667636871, 446.769244313240051, 3055.192407667636871, 394.769244313240051, 3040.307790100574493, 394.769244313240051 ],
 					"source" : [ "obj-1709", 0 ]
@@ -38498,6 +38989,16 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1222", 0 ],
 					"midpoints" : [ 2463.5, 814.185768604278564, 2582.013624720580992, 814.185768604278564, 2582.013624720580992, 175.199974536895752, 2900.846250355243683, 175.199974536895752 ],
+					"order" : 0,
+					"source" : [ "obj-175", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-452", 0 ],
+					"midpoints" : [ 2463.5, 936.5, 2291.5, 936.5 ],
+					"order" : 1,
 					"source" : [ "obj-175", 0 ]
 				}
 
@@ -38585,6 +39086,13 @@
 					"destination" : [ "obj-1395", 0 ],
 					"order" : 1,
 					"source" : [ "obj-176", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1812", 0 ],
+					"source" : [ "obj-1760", 1 ]
 				}
 
 			}
@@ -39435,8 +39943,23 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1380", 0 ],
+					"midpoints" : [ 4291.5, 3379.100024968385696, 4201.5, 3379.100024968385696 ],
+					"source" : [ "obj-1818", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1675", 0 ],
 					"source" : [ "obj-182", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1818", 0 ],
+					"source" : [ "obj-1820", 0 ]
 				}
 
 			}
@@ -39484,6 +40007,13 @@
 					"destination" : [ "obj-386", 2 ],
 					"midpoints" : [ 5399.717288494110107, 2118.734482674342871, 5320.5, 2118.734482674342871 ],
 					"source" : [ "obj-1827", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1399", 0 ],
+					"source" : [ "obj-1828", 0 ]
 				}
 
 			}
@@ -39625,6 +40155,13 @@
 					"midpoints" : [ 6899.192536592483521, 3092.6731798350811, 6938.072316467761993, 3092.6731798350811 ],
 					"order" : 0,
 					"source" : [ "obj-1849", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1899", 0 ],
+					"source" : [ "obj-1850", 0 ]
 				}
 
 			}
@@ -40076,7 +40613,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1920", 0 ],
-					"midpoints" : [ 4175.0, 3809.952623277902603, 4789.749261260032654, 3809.952623277902603 ],
+					"midpoints" : [ 4175.0, 3809.952623277902603, 4716.154002904891968, 3809.952623277902603 ],
 					"order" : 0,
 					"source" : [ "obj-1878", 0 ]
 				}
@@ -40119,7 +40656,17 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-135", 0 ],
+					"midpoints" : [ 4576.5, 3734.0, 4716.154002904891968, 3734.0 ],
+					"order" : 0,
+					"source" : [ "obj-1880", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1940", 1 ],
+					"order" : 1,
 					"source" : [ "obj-1880", 0 ]
 				}
 
@@ -40127,6 +40674,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1922", 0 ],
+					"midpoints" : [ 4867.5, 3687.0, 4716.154002904891968, 3687.0 ],
 					"order" : 0,
 					"source" : [ "obj-1882", 0 ]
 				}
@@ -40135,7 +40683,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1937", 1 ],
-					"midpoints" : [ 4789.749261260032654, 4409.684544116258621, 3883.0, 4409.684544116258621 ],
+					"midpoints" : [ 4867.5, 4409.684544116258621, 3883.0, 4409.684544116258621 ],
 					"order" : 1,
 					"source" : [ "obj-1882", 0 ]
 				}
@@ -40277,6 +40825,29 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1928", 0 ],
+					"source" : [ "obj-1899", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1938", 0 ],
+					"midpoints" : [ 5818.284987588723197, 3375.629056334495544, 5864.338751554489136, 3375.629056334495544 ],
+					"source" : [ "obj-1899", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1945", 0 ],
+					"midpoints" : [ 5804.618320922057137, 3375.693557143211365, 5827.241977095603943, 3375.693557143211365 ],
+					"source" : [ "obj-1899", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1024", 0 ],
 					"source" : [ "obj-190", 0 ]
 				}
@@ -40321,6 +40892,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1948", 0 ],
+					"source" : [ "obj-1907", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1935", 0 ],
 					"source" : [ "obj-1908", 0 ]
 				}
@@ -40352,7 +40930,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1375", 0 ],
-					"midpoints" : [ 6998.923310220241547, 2899.403942823410034, 6804.5, 2899.403942823410034 ],
+					"midpoints" : [ 6998.923310220241547, 2899.403942823410034, 6804.661338925361633, 2899.403942823410034 ],
 					"source" : [ "obj-1912", 0 ]
 				}
 
@@ -40374,17 +40952,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1932", 0 ],
-					"order" : 0,
-					"source" : [ "obj-1916", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-1996", 0 ],
-					"midpoints" : [ 4631.654002904891968, 3934.962770223617554, 4566.500135809183121, 3934.962770223617554 ],
-					"order" : 1,
+					"midpoints" : [ 4631.654002904891968, 3934.962770223617554, 4631.76938408613205, 3934.962770223617554 ],
 					"source" : [ "obj-1916", 0 ]
 				}
 
@@ -40421,14 +40990,14 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1920", 1 ],
+					"destination" : [ "obj-135", 1 ],
 					"source" : [ "obj-1922", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1920", 0 ],
+					"destination" : [ "obj-135", 0 ],
 					"source" : [ "obj-1922", 0 ]
 				}
 
@@ -40476,8 +41045,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1907", 0 ],
+					"midpoints" : [ 5790.951654255390167, 3418.435492932796478, 5790.951654255390167, 3418.435492932796478 ],
+					"source" : [ "obj-1928", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1916", 1 ],
-					"midpoints" : [ 4800.249261260032654, 3887.452862918376923, 4726.654002904891968, 3887.452862918376923 ],
+					"midpoints" : [ 4726.654002904891968, 3887.452862918376923, 4726.654002904891968, 3887.452862918376923 ],
 					"source" : [ "obj-1929", 1 ]
 				}
 
@@ -40485,7 +41062,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1916", 0 ],
-					"midpoints" : [ 4789.749261260032654, 3887.452862918376923, 4631.654002904891968, 3887.452862918376923 ],
+					"midpoints" : [ 4716.154002904891968, 3887.452862918376923, 4631.654002904891968, 3887.452862918376923 ],
 					"source" : [ "obj-1929", 0 ]
 				}
 
@@ -40507,7 +41084,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1882", 0 ],
-					"midpoints" : [ 4789.749261260032654, 3713.929794788360596, 4789.749261260032654, 3713.929794788360596 ],
+					"midpoints" : [ 4867.5, 3630.500740051269531, 4867.5, 3630.500740051269531 ],
 					"source" : [ "obj-1931", 0 ]
 				}
 
@@ -40545,6 +41122,14 @@
 				"patchline" : 				{
 					"destination" : [ "obj-215", 0 ],
 					"source" : [ "obj-1937", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1907", 0 ],
+					"midpoints" : [ 5864.338751554489136, 3418.370992124080658, 5790.951654255390167, 3418.370992124080658 ],
+					"source" : [ "obj-1938", 0 ]
 				}
 
 			}
@@ -40616,6 +41201,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1907", 0 ],
+					"midpoints" : [ 5827.241977095603943, 3418.435492932796478, 5790.951654255390167, 3418.435492932796478 ],
+					"source" : [ "obj-1945", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-474", 0 ],
 					"source" : [ "obj-1946", 0 ]
 				}
@@ -40644,6 +41237,14 @@
 					"midpoints" : [ 5251.5, 4052.0, 5067.25, 4052.0, 5067.25, 3892.810024082660675, 4883.0, 3892.810024082660675 ],
 					"order" : 1,
 					"source" : [ "obj-1947", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-34", 0 ],
+					"midpoints" : [ 6713.422237753868103, 4211.012949645519257, 6943.100103318691254, 4211.012949645519257 ],
+					"source" : [ "obj-1949", 0 ]
 				}
 
 			}
@@ -40734,6 +41335,37 @@
 					"midpoints" : [ 27.769231379032135, 1327.800028830766678, 1090.269266843795776, 1327.800028830766678 ],
 					"order" : 1,
 					"source" : [ "obj-195", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1188", 0 ],
+					"order" : 0,
+					"source" : [ "obj-1950", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1189", 0 ],
+					"order" : 1,
+					"source" : [ "obj-1950", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1399", 0 ],
+					"midpoints" : [ 4382.887128055095673, 3486.300000816583633, 4249.0, 3486.300000816583633 ],
+					"source" : [ "obj-1951", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1850", 0 ],
+					"source" : [ "obj-1953", 0 ]
 				}
 
 			}
@@ -40831,6 +41463,14 @@
 					"midpoints" : [ 3022.230870425701141, 2185.865518420934677, 3446.643297612667084, 2185.865518420934677 ],
 					"order" : 0,
 					"source" : [ "obj-1960", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1988", 0 ],
+					"midpoints" : [ 4483.309593141078949, 4150.5, 4632.51594465970993, 4150.5 ],
+					"source" : [ "obj-1961", 0 ]
 				}
 
 			}
@@ -40982,7 +41622,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1988", 0 ],
-					"midpoints" : [ 4684.5, 4141.166726529598236, 4632.5, 4141.166726529598236 ],
+					"midpoints" : [ 4838.865154206752777, 4150.5, 4632.51594465970993, 4150.5 ],
 					"source" : [ "obj-1992", 0 ]
 				}
 
@@ -40990,14 +41630,33 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1988", 0 ],
+					"midpoints" : [ 4632.5, 4150.5, 4632.51594465970993, 4150.5 ],
 					"source" : [ "obj-1994", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1988", 0 ],
+					"midpoints" : [ 4723.785787343978882, 4150.5, 4632.51594465970993, 4150.5 ],
+					"source" : [ "obj-1995", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1961", 0 ],
+					"midpoints" : [ 4631.76938408613205, 4036.100029349327087, 4483.309593141078949, 4036.100029349327087 ],
+					"order" : 1,
+					"source" : [ "obj-1996", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1992", 0 ],
-					"midpoints" : [ 4582.500135809183121, 3984.057758182287216, 4684.5, 3984.057758182287216 ],
+					"midpoints" : [ 4647.76938408613205, 4036.100029349327087, 4838.865154206752777, 4036.100029349327087 ],
+					"order" : 0,
 					"source" : [ "obj-1996", 1 ]
 				}
 
@@ -41005,8 +41664,18 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1994", 0 ],
-					"midpoints" : [ 4566.500135809183121, 3984.057758182287216, 4632.5, 3984.057758182287216 ],
+					"midpoints" : [ 4631.76938408613205, 4036.100029349327087, 4632.5, 4036.100029349327087 ],
+					"order" : 0,
 					"source" : [ "obj-1996", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1995", 0 ],
+					"midpoints" : [ 4647.76938408613205, 4036.100029349327087, 4723.785787343978882, 4036.100029349327087 ],
+					"order" : 1,
+					"source" : [ "obj-1996", 1 ]
 				}
 
 			}
@@ -42085,15 +42754,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1175", 0 ],
 					"midpoints" : [ 3702.5, 3891.780569642782211, 3679.5, 3891.780569642782211 ],
-					"order" : 1,
-					"source" : [ "obj-260", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-484", 0 ],
-					"order" : 0,
 					"source" : [ "obj-260", 0 ]
 				}
 
@@ -42797,6 +43457,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1920", 1 ],
+					"source" : [ "obj-321", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1920", 0 ],
+					"source" : [ "obj-321", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1511", 0 ],
 					"source" : [ "obj-322", 0 ]
 				}
@@ -42951,7 +43625,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1091", 0 ],
-					"midpoints" : [ 6943.106359004974365, 4280.922039121389389, 6880.928677916526794, 4280.922039121389389 ],
+					"midpoints" : [ 6943.100103318691254, 4280.922039121389389, 6880.928677916526794, 4280.922039121389389 ],
 					"order" : 1,
 					"source" : [ "obj-34", 0 ]
 				}
@@ -42960,7 +43634,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1260", 0 ],
-					"midpoints" : [ 6943.106359004974365, 4254.590043067932129, 6993.926029682159424, 4254.590043067932129, 6993.926029682159424, 4167.68840503692627, 7048.024388790130615, 4167.68840503692627 ],
+					"midpoints" : [ 6943.100103318691254, 4254.590043067932129, 6993.926029682159424, 4254.590043067932129, 6993.926029682159424, 4167.68840503692627, 7048.024388790130615, 4167.68840503692627 ],
 					"order" : 0,
 					"source" : [ "obj-34", 0 ]
 				}
@@ -44466,8 +45140,18 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1389", 1 ],
+					"midpoints" : [ 3831.5, 3574.0, 4506.40000718832016, 3574.0, 4506.40000718832016, 3340.200049936771393, 4216.5, 3340.200049936771393 ],
+					"order" : 0,
+					"source" : [ "obj-535", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-393", 0 ],
 					"midpoints" : [ 3831.5, 3637.998388171195984, 3702.5, 3637.998388171195984 ],
+					"order" : 1,
 					"source" : [ "obj-535", 0 ]
 				}
 
@@ -44789,6 +45473,14 @@
 				"patchline" : 				{
 					"destination" : [ "obj-752", 0 ],
 					"source" : [ "obj-563", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1893", 0 ],
+					"midpoints" : [ 4896.456428527832031, 2249.70001682639122, 4859.900072276592255, 2249.70001682639122 ],
+					"source" : [ "obj-564", 0 ]
 				}
 
 			}
@@ -49123,6 +49815,7 @@
 			"obj-1111" : [ "live.text[9]", "live.text", 0 ],
 			"obj-1217" : [ "live.numbox", "live.numbox", 0 ],
 			"obj-1303" : [ "live.text[19]", "live.text", 0 ],
+			"obj-1390" : [ "live.text[21]", "live.text", 0 ],
 			"obj-1725" : [ "live.text[33]", "live.text", 0 ],
 			"obj-1727" : [ "live.text[34]", "live.text", 0 ],
 			"obj-18" : [ "live.text[10]", "live.text", 0 ],
