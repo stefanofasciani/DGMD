@@ -19168,7 +19168,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 10.0,
-					"hint" : "This value allows to continue a previously interrupted dataset generation, starting the generation from the indicated combination or repetition. The number must be lower than the number of combinations or repetitions.",
+					"hint" : "This value allows to continue a previously interrupted dataset generation, starting the generation from the indicated combination or repetition. The number must be lower than the total number of combinations or repetitions.",
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1261",
 					"maxclass" : "number",
