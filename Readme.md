@@ -23,7 +23,7 @@ S. Fasciani, R. Simionato, A. Tidemann  "A Universal Tool for Generating Dataset
 in Proceedings of Sound and Music Computing Conference 2024, Porto, Portugal.
 
 S. Fasciani "A Universal Tool for Generating Datasets from Sound Synthesizers"
-in Proceedings of Sound and Music Computing Conference 2025, Graz, Austria.
+in Submitted to Sound and Music Computing Conference 2025, Graz, Austria.
 
 Audio Effects Version
 ![DGMD_effects](https://stefanofasciani.com/wp-content/uploads/2024/01/DGMD_effects.png)
