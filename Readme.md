@@ -29,4 +29,4 @@ Audio Effects Version
 ![DGMD_effects](https://stefanofasciani.com/wp-content/uploads/2024/01/DGMD_effects.png)
 
 Sound Synthesizers Version
-![DGMD_synthesizers](https://stefanofasciani.com/wp-content/uploads/2025/01/DGMD_synthesizers.png)
+![DGMD_synthesizers](https://stefanofasciani.com/wp-content/uploads/2025/02/DGMD_synthesizers.png)
