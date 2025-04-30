@@ -23,7 +23,7 @@ its authors by adding a reference to these publications:
 @inproceedings{fasciani_dgmd_2024,
 	author = {Fasciani, Stefano and Simionato, Riccardo and Tidemann, Aleksander},
 	title = {A Universal Tool for Generating Datasets from Audio Effects},
-	booktitle = {Proceedings of the 21th Sound and Music Computing Conference},
+	booktitle = {Proceedings of the 21st Sound and Music Computing Conference},
 	year = {2024},
     address = {Porto, Portugal},
 }
@@ -31,7 +31,7 @@ its authors by adding a reference to these publications:
 @inproceedings{fasciani_dgmd_2025,
 	author = {Fasciani, Stefano},
 	title = {A Universal Tool for Generating Datasets from Sound Synthesizers},
-	booktitle = {Proceedings of the 22th Sound and Music Computing Conference},
+	booktitle = {Proceedings of the 22nd Sound and Music Computing Conference},
 	year = {2025},
     address = {Graz, Austria},
 }
