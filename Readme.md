@@ -18,12 +18,24 @@ A short presentation and video tutorial on how to use the DGMG is available for 
 
 If you use the DGMD or any part of it in any system or publication, please acknowledge 
 its authors by adding a reference to these publications:
- 
-S. Fasciani, R. Simionato, A. Tidemann  "A Universal Tool for Generating Datasets from Audio Effects"
-in Proceedings of Sound and Music Computing Conference 2024, Porto, Portugal.
 
-S. Fasciani "A Universal Tool for Generating Datasets from Sound Synthesizers"
-submitted to Sound and Music Computing Conference 2025, Graz, Austria.
+```
+@inproceedings{fasciani_dgmd_2024,
+	author = {Fasciani, Stefano and Simionato, Riccardo and Tidemann, Aleksander},
+	title = {A Universal Tool for Generating Datasets from Audio Effects},
+	booktitle = {Proceedings of the 21th Sound and Music Computing Conference},
+	year = {2024},
+    address = {Porto, Portugal},
+}
+
+@inproceedings{fasciani_dgmd_2025,
+	author = {Fasciani, Stefano},
+	title = {A Universal Tool for Generating Datasets from Sound Synthesizers},
+	booktitle = {Proceedings of the 22th Sound and Music Computing Conference},
+	year = {2025},
+    address = {Graz, Austria},
+}
+```
 
 Audio Effects Version
 ![DGMD_effects](https://stefanofasciani.com/wp-content/uploads/2024/01/DGMD_effects.png)
