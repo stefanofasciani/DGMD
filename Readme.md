@@ -8,13 +8,13 @@ There are two version of the DGMD:
 
 The folder Utilities contains a project for the electromechanical control of manual parameters via MIDI CC.
 
-The DGMD requires [Cyclyng'74 Max](https://cycling74.com/products/max). To use the DGMD you do not need a Max license.
+The DGMD is cross-platform and implemented in [Cyclyng'74 Max](https://cycling74.com/products/max) and Javascript.
 
 To run the DGMD, open the *.maxpat* file in the respective subfolder or download the standalone applications for Windows or Max OSX from the [releases](https://github.com/stefanofasciani/DGMD/releases/) section. 
 
 DGMD Copyright (C) 2025 Stefano Fasciani, Aleksander Tidemann, Riccardo Simionato, University of Oslo.
 
-A short presentation and video tutorial on how to use the DGMG is available for the [audio effects version](https://stefanofasciani.com/2023/09/17/dataset-generator-for-musical-devices-effects/) and for the [sound synthesizers version](https://stefanofasciani.com/2025/01/26/dataset-generator-for-musical-devices-sound-synthesizers/).
+Short presentations and video tutorials on how to use the DGMG are available for the [audio effects version](https://stefanofasciani.com/2023/09/17/dataset-generator-for-musical-devices-effects/) and for the [sound synthesizers version](https://stefanofasciani.com/2025/01/26/dataset-generator-for-musical-devices-sound-synthesizers/).
 
 If you use the DGMD or any part of it in any system or publication, please acknowledge 
 its authors by adding a reference to these publications:
