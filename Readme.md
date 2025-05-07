@@ -25,7 +25,7 @@ its authors by adding a reference to these publications:
 	title = {A Universal Tool for Generating Datasets from Audio Effects},
 	booktitle = {Proceedings of the 21st Sound and Music Computing Conference},
 	year = {2024},
-    address = {Porto, Portugal},
+    	address = {Porto, Portugal},
 }
 
 @inproceedings{fasciani_dgmd_2025,
@@ -33,9 +33,11 @@ its authors by adding a reference to these publications:
 	title = {A Universal Tool for Generating Datasets from Sound Synthesizers},
 	booktitle = {Proceedings of the 22nd Sound and Music Computing Conference},
 	year = {2025},
-    address = {Graz, Austria},
+    	address = {Graz, Austria},
 }
 ```
+
+Direct links to publications: [audio effects version](https://app.cristin.no/results/show.jsf?id=2282495#) - [sound synthesizer version](https://app.cristin.no/results/show.jsf?id=2377574#)
 
 Audio Effects Version
 ![DGMD_effects](https://stefanofasciani.com/wp-content/uploads/2024/01/DGMD_effects.png)
