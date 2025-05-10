@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 87.0, 1585.0, 800.0 ],
+		"rect" : [ 0.0, 52.0, 1440.0, 688.0 ],
 		"openrect" : [ 0.0, 0.0, 1657.799999999999955, 800.66922999999997 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -47,7 +47,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 4525.5, 2930.0, 150.0, 96.0 ],
+					"patching_rect" : [ 4525.5, 2930.0, 153.0, 96.0 ],
 					"text" : "utilizing multiple dac~ instead of a single mc.dac~ was necessary due to the mc.dac~ object getting initialized (and stuck) to 10 channels due to the mc.gate~ object linked to the Note Triggering option being closed by default."
 				}
 
@@ -4504,7 +4504,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 4623.0, 4114.0, 79.0, 20.0 ],
-					"presentation_linecount" : 2,
 					"text" : "set \"Timing OK\""
 				}
 
@@ -4534,7 +4533,7 @@
 					"patching_rect" : [ 4623.0, 4168.0, 132.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 804.0, 78.5, 221.0, 18.0 ],
-					"text" : "Tming OK",
+					"text" : "Timing OK",
 					"textcolor" : [ 0.969, 0.969, 0.969, 1.0 ],
 					"textjustification" : 1
 				}
@@ -8047,7 +8046,6 @@
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1878",
 					"maxclass" : "number",
-					"maximum" : 10000,
 					"minimum" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 2,
