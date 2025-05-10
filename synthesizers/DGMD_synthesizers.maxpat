@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 67.0, 87.0, 1370.0, 772.0 ],
+		"rect" : [ 34.0, 86.0, 1403.0, 620.0 ],
 		"openrect" : [ 0.0, 0.0, 1657.799999999999955, 800.66922999999997 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -41,6 +41,18 @@
 		"assistshowspatchername" : 0,
 		"title" : "DGMD - Dataset Generator for Musical Devices - Sound Synthesizers",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-735",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "multichannelsignal" ],
+					"patching_rect" : [ 5121.0, 2797.874987125396729, 71.0, 20.0 ],
+					"text" : "mc.resize~ 12"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-600",
 					"maxclass" : "newobj",
@@ -1039,8 +1051,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 6703.5, 1655.0, 56.0, 64.0 ],
-					"text" : "0.2 0. 0. 0. 0. 0. 0. 0. 0. 0. 60 100 500 0 0"
+					"patching_rect" : [ 6703.5, 1655.0, 59.0, 64.0 ],
+					"text" : "0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 60 100 500 0 0"
 				}
 
 			}
@@ -3675,7 +3687,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 7805.0, 2451.0, 106.0, 20.0 ],
-					"text" : "0 100 500 0"
+					"text" : "60 100 500 0"
 				}
 
 			}
@@ -5814,7 +5826,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 6294.0, 2342.0, 106.0, 20.0 ],
-					"text" : "0 100 500 0"
+					"text" : "60 100 500 0"
 				}
 
 			}
@@ -9645,7 +9657,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 8829.0, 3826.0, 32.0, 20.0 ],
-					"text" : "60 0"
+					"text" : "0 0"
 				}
 
 			}
@@ -9773,7 +9785,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 8637.0, 3826.0, 32.0, 20.0 ],
-					"text" : "60 0"
+					"text" : "0 0"
 				}
 
 			}
@@ -9901,7 +9913,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 8438.0, 3826.0, 32.0, 20.0 ],
-					"text" : "60 0"
+					"text" : "0 0"
 				}
 
 			}
@@ -10029,7 +10041,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 8243.0, 3826.0, 32.0, 20.0 ],
-					"text" : "60 0"
+					"text" : "0 0"
 				}
 
 			}
@@ -10157,7 +10169,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 8040.0, 3826.0, 32.0, 20.0 ],
-					"text" : "60 0"
+					"text" : "0 0"
 				}
 
 			}
@@ -10285,7 +10297,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 7845.0, 3826.0, 32.0, 20.0 ],
-					"text" : "60 0"
+					"text" : "0 0"
 				}
 
 			}
@@ -10413,7 +10425,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 7646.0, 3826.0, 32.0, 20.0 ],
-					"text" : "60 0"
+					"text" : "0 0"
 				}
 
 			}
@@ -10541,7 +10553,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 7454.0, 3826.0, 32.0, 20.0 ],
-					"text" : "60 0"
+					"text" : "0 0"
 				}
 
 			}
@@ -10669,7 +10681,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 7255.0, 3826.0, 32.0, 20.0 ],
-					"text" : "60 0"
+					"text" : "0 0"
 				}
 
 			}
@@ -10797,7 +10809,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 7060.0, 3826.0, 32.0, 20.0 ],
-					"text" : "60 0"
+					"text" : "0 0"
 				}
 
 			}
@@ -10984,7 +10996,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 6857.0, 3826.0, 32.0, 20.0 ],
-					"text" : "60 0"
+					"text" : "0 0"
 				}
 
 			}
@@ -11362,7 +11374,7 @@
 					"patching_rect" : [ 1267.619210064411163, 1223.116324663162231, 34.523808896541595, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 3.333333432674408, 571.333350360393524, 85.0, 18.0 ],
-					"text" : "Min",
+					"text" : "Fixed",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
 				}
 
@@ -12777,13 +12789,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-126",
-					"linecount" : 3,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 4070.0, 4180.0, 50.0, 42.0 ],
-					"text" : "write Sweep-32.wav"
+					"patching_rect" : [ 4070.0, 4180.0, 50.0, 20.0 ]
 				}
 
 			}
@@ -19931,7 +19941,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Select an internal plugin from those found in default system folders.",
 					"id" : "obj-1220",
-					"items" : "<empty>",
+					"items" : [ "AUAudioFilePlayer", ",", "AUBandpass", ",", "AUDelay", ",", "AUDistortion", ",", "AUDynamicsProcessor", ",", "AUFilter", ",", "AUGraphicEQ", ",", "AUHighShelfFilter", ",", "AUHipass", ",", "AULowpass", ",", "AULowShelfFilter", ",", "AUMatrixReverb", ",", "AUMIDISynth", ",", "AUMultibandCompressor", ",", "AUNBandEQ", ",", "AUNetReceive", ",", "AUNetSend", ",", "AUNewPitch", ",", "AUParametricEQ", ",", "AUPeakLimiter", ",", "AUPitch", ",", "AUReverb2", ",", "AURogerBeep", ",", "AURoundTripAAC", ",", "AUSampleDelay", ",", "AUSampler", ",", "AUScheduledSoundPlayer", ",", "AUSoundFieldPanner", ",", "AUSoundIsolation", ",", "AUSpeechSynthesis", ",", "AUSphericalHeadPanner", ",", "AUVectorPanner", ",", "DLSMusicDevice", ",", "Frohmager", ",", "HRTFPanner", ",", "Krush", ",", "MadFilter", ",", "OSL Chorus", ",", "Protoverb", ",", "RoughRider3", ",", "SonoBus", ",", "TAL NoiseMaker Plugin", ",", "TyrellN6", ",", "Frohmager", ",", "Krush", ",", "MadFilter", ",", "RoughRider3", ",", "SonoBus", ",", "SonoBusInstrument", ",", "Frohmager", ",", "HY-Filter4 free", ",", "JACK-insert", ",", "Krush", ",", "OSL Chorus", ",", "OSL-Chorus", ",", "Protoverb", ",", "SonoBus", ",", "TAL-NoiseMaker", ",", "TyrellN6", ",", "Wormhole2" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -21794,7 +21804,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 4709.0, 1432.0, 318.648514436867117, 20.0 ],
-					"text" : "1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 127 127 1000 8191 127"
+					"text" : "1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 72 127 1000 8191 127"
 				}
 
 			}
@@ -21806,7 +21816,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 4458.0, 1391.0, 318.648514436867117, 20.0 ],
-					"text" : "0.2 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 12 1 100 1 1"
+					"text" : "0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 1 1 100 1 1"
 				}
 
 			}
@@ -23445,7 +23455,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 4301.0, 1574.0, 318.648514436867117, 20.0 ],
-					"text" : "0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 100. 5. 0. 100."
+					"text" : "0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 60. 100. 500. 0. 100."
 				}
 
 			}
@@ -24056,7 +24066,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 5079.0, 2808.0, 47.0, 20.0 ],
+					"patching_rect" : [ 5078.776365518569946, 2833.568042516708374, 47.0, 20.0 ],
 					"text" : "mc.dac~"
 				}
 
@@ -25525,13 +25535,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-1083",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 3882.0, 4209.0, 50.0, 31.0 ],
-					"text" : "write -32.wav"
+					"patching_rect" : [ 3882.0, 4209.0, 50.0, 20.0 ]
 				}
 
 			}
@@ -32312,7 +32320,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Soundcard for audio output. This is used to preview audio to loudspeakers, with both internal plugins and external devices. When using external devices this is used to send the audio source to the input of the external device. This soundcard is also used to generate the CV signals controlling the external device paramaters.",
 					"id" : "obj-749",
-					"items" : "<empty>",
+					"items" : [ "None", ",", "BlackHole 16ch", ",", "MacBook Pro Speakers", ",", "Microsoft Teams Audio", ",", "WebexMediaAudioDevice", ",", "ZoomAudioDevice" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -32344,7 +32352,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Soundcard for audio input. This is used only with external devices to record the output of the device.",
 					"id" : "obj-499",
-					"items" : "<empty>",
+					"items" : [ "None", ",", "BlackHole 16ch", ",", "MacBook Pro Microphone", ",", "Microsoft Teams Audio", ",", "WebexMediaAudioDevice", ",", "ZoomAudioDevice" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -32393,7 +32401,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Buffer size or number of audio samples exchanged with the soundcard driver at a time. It has an impact on the overall latency of external devices.\n\nIt is recommended to keep this value as low as possible and to a value equal to \"Signal Vector Size\".",
 					"id" : "obj-565",
-					"items" : "<empty>",
+					"items" : [ 32, ",", 64, ",", 128, ",", 256, ",", 512, ",", 1024, ",", 2048 ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -32516,7 +32524,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Audio driver. When using an internal plugin, selecting NonReamTime can significantly speedup the dataset generation. In this case sound can not be previewed while generating the dataset.",
 					"id" : "obj-698",
-					"items" : "<empty>",
+					"items" : [ "None", ",", "Core Audio", ",", "NonRealTime", ",", "ad_portaudio", "Core Audio" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -32565,7 +32573,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Buffer size or number of audio samples processed by the software internally at a time. It has an impact on the latency of internal plugins. It mus be equal or smaller than \"I/O Vector Size\".\n\nIt is recommended to keep this value as low as possible and to a value equal to \"I/O Vector Size\".",
 					"id" : "obj-696",
-					"items" : "<empty>",
+					"items" : [ 1, ",", 2, ",", 4, ",", 8, ",", 16, ",", 32, ",", 64, ",", 128, ",", 256, ",", 512, ",", 1024, ",", 2048, ",", 4096 ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -32596,7 +32604,7 @@
 					"fontsize" : 10.0,
 					"hint" : "Audio sampling rate. Output audio .wav files will be recorded with this sampling rate.",
 					"id" : "obj-695",
-					"items" : "<empty>",
+					"items" : [ 44100, ",", 48000, ",", 88200, ",", 96000 ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -38315,8 +38323,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1477", 0 ],
-					"midpoints" : [ 5130.5, 2792.795975361706041, 5088.5, 2792.795975361706041 ],
+					"destination" : [ "obj-735", 0 ],
 					"source" : [ "obj-1478", 0 ]
 				}
 
@@ -51589,6 +51596,14 @@
 					"midpoints" : [ 997.5, 2033.269081604278654, 957.5, 2033.269081604278654 ],
 					"order" : 1,
 					"source" : [ "obj-733", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1477", 0 ],
+					"midpoints" : [ 5130.5, 2825.221514821052551, 5088.276365518569946, 2825.221514821052551 ],
+					"source" : [ "obj-735", 0 ]
 				}
 
 			}
