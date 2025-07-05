@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 87.0, 1658.0, 575.0 ],
+		"rect" : [ 68.0, 121.0, 1662.0, 581.0 ],
 		"openrect" : [ 0.0, 0.0, 1657.799999999999955, 574.16922999999997 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -315,8 +315,8 @@
 					"patching_rect" : [ 1053.711014986038208, 122.122404813766479, 57.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"allwindowsactive" : 0,
-						"appicon_mac" : "C:/Users/aleks/Downloads/DGMD-main/effects/dgmd.icns",
-						"appicon_win" : "C:/Users/aleks/Downloads/DGMD-main/effects/dgmd.ico",
+						"appicon_mac" : "Macintosh HD:/Users/stefanof/Documents/Github/DGMD/effects/dgmd.icns",
+						"appicon_win" : "Macintosh HD:/Users/stefanof/Documents/Github/DGMD/effects/dgmd.ico",
 						"audiosupport" : 1,
 						"bundleidentifier" : "com.mycompany.myprogram",
 						"cantclosetoplevelpatchers" : 1,
