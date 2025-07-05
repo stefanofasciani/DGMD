@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 61.0, 92.0, 1658.0, 575.0 ],
+		"rect" : [ 34.0, 87.0, 1658.0, 575.0 ],
 		"openrect" : [ 0.0, 0.0, 1657.799999999999955, 574.16922999999997 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -41,6 +41,18 @@
 		"assistshowspatchername" : 0,
 		"title" : "DGMD - Dataset Generator for Musical Devices - Audio Effects",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-1184",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 621.419316530227661, 3984.0, 57.0, 20.0 ],
+					"text" : "delay 1000"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-1154",
 					"maxclass" : "message",
@@ -25511,6 +25523,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1154", 0 ],
+					"source" : [ "obj-1184", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-287", 1 ],
 					"source" : [ "obj-1187", 0 ]
 				}
@@ -31929,7 +31948,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1154", 0 ],
+					"destination" : [ "obj-1184", 0 ],
 					"midpoints" : [ 1054.565181016921997, 3755.307567119598389, 630.919316530227661, 3755.307567119598389 ],
 					"order" : 1,
 					"source" : [ "obj-456", 0 ]
