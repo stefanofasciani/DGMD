@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 0.0, 52.0, 1440.0, 688.0 ],
+		"rect" : [ 34.0, 87.0, 1658.0, 800.0 ],
 		"openrect" : [ 0.0, 0.0, 1657.799999999999955, 800.66922999999997 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -42,12 +42,60 @@
 		"title" : "DGMD - Dataset Generator for Musical Devices - Sound Synthesizers",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-1758",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1419.0, 4081.0, 63.0, 20.0 ],
+					"text" : "1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1743",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 1266.0, 4051.0, 57.0, 20.0 ],
+					"text" : "delay 1000"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1622",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1266.0, 4081.0, 54.0, 20.0 ],
+					"text" : "1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1386",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1340.0, 4113.0, 63.0, 20.0 ],
+					"text" : "snapshot $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-1043",
 					"linecount" : 8,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 4525.5, 2930.0, 153.0, 96.0 ],
+					"patching_rect" : [ 4525.5, 2930.0, 161.0, 96.0 ],
 					"text" : "utilizing multiple dac~ instead of a single mc.dac~ was necessary due to the mc.dac~ object getting initialized (and stuck) to 10 channels due to the mc.gate~ object linked to the Note Triggering option being closed by default."
 				}
 
@@ -1055,8 +1103,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 7176.5, 1648.5, 56.0, 64.0 ],
-					"text" : "1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 48 100 500 0 0"
+					"patching_rect" : [ 7176.5, 1648.5, 59.0, 64.0 ],
+					"text" : "0.56 0. 0. 0. 0. 1. 0.5 0.5 0.5 0.5 53 42 600 0 0"
 				}
 
 			}
@@ -1134,13 +1182,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-2028",
-					"linecount" : 4,
+					"linecount" : 5,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 6882.0, 1624.0, 53.0, 53.0 ],
-					"text" : "0.2 0 0 0 0 0 0 0 0 0 60 100 500 0 0"
+					"patching_rect" : [ 6882.0, 1624.0, 53.0, 64.0 ],
+					"text" : "0.2 0.5 0.2 0.2 0 0 0 0 0 0 36 100 800 0 0"
 				}
 
 			}
@@ -5535,7 +5583,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 4957.0, 1818.0, 50.0, 20.0 ],
-					"text" : "5"
+					"text" : "2"
 				}
 
 			}
@@ -7204,13 +7252,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-1709",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 3060.577025234699249, 405.769244313240051, 29.5, 31.0 ],
-					"text" : "1000"
+					"patching_rect" : [ 3060.577025234699249, 405.769244313240051, 29.5, 20.0 ],
+					"text" : "700"
 				}
 
 			}
@@ -7717,7 +7764,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 6559.0, 2680.746073305606842, 29.5, 31.0 ],
-					"text" : "60 100"
+					"text" : "36 100"
 				}
 
 			}
@@ -11259,7 +11306,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 6773.0, 3375.0, 29.5, 20.0 ],
-					"text" : "60"
+					"text" : "53"
 				}
 
 			}
@@ -11355,7 +11402,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 6736.0, 3496.0, 29.5, 20.0 ],
-					"text" : "60 0"
+					"text" : "53 0"
 				}
 
 			}
@@ -11926,14 +11973,14 @@
 					"hint" : "This shows the selected path where output files (.wav and .csv) are saved.",
 					"id" : "obj-897",
 					"ignoreclick" : 1,
-					"linecount" : 6,
+					"linecount" : 8,
 					"maxclass" : "textedit",
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 3623.0, 3588.0, 49.509721994400024, 108.856635332107544 ],
-					"text" : "\"Macintosh HD:/Users/stefanof/Desktop/TEST/\"",
+					"text" : "\"Macintosh HD:/Users/stefanof/Desktop/DGMD_Demo/test/\"",
 					"textcolor" : [ 0.701960784313725, 0.701960784313725, 0.701960784313725, 1.0 ]
 				}
 
@@ -12283,7 +12330,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1756.0, 4227.0, 102.0, 20.0 ],
+					"patching_rect" : [ 1801.0, 4227.0, 102.0, 20.0 ],
 					"text" : "r _DGMDclearMenus"
 				}
 
@@ -13595,7 +13642,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1684.0, 4437.0, 38.0, 20.0 ],
+					"patching_rect" : [ 1729.0, 4437.0, 38.0, 20.0 ],
 					"text" : "set $1"
 				}
 
@@ -13608,7 +13655,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1496.0, 4437.0, 38.0, 20.0 ],
+					"patching_rect" : [ 1541.0, 4437.0, 38.0, 20.0 ],
 					"text" : "set $1"
 				}
 
@@ -14525,7 +14572,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 1487.0, 4088.0, 49.0, 21.0 ],
+					"patching_rect" : [ 1532.0, 4088.0, 49.0, 21.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1186.5, 763.0, 54.967460364756107, 21.964129626750946 ],
 					"saved_attribute_attributes" : 					{
@@ -19403,7 +19450,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1684.0, 4401.0, 49.5, 20.0 ],
+					"patching_rect" : [ 1729.0, 4401.0, 49.5, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1186.5, 741.0, 54.425669195561113, 20.0 ],
 					"textcolor" : [ 0.968627450980392, 0.968627450980392, 0.968627450980392, 1.0 ]
@@ -20215,7 +20262,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1600.0, 4279.0, 88.28222599999981, 20.0 ],
+					"patching_rect" : [ 1645.0, 4279.0, 88.28222599999981, 20.0 ],
 					"pattrmode" : 1,
 					"prefix_mode" : 2,
 					"presentation" : 1,
@@ -20265,7 +20312,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1584.0, 4401.0, 77.0, 18.0 ],
+					"patching_rect" : [ 1629.0, 4401.0, 77.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1083.0, 741.0, 36.0, 18.0 ],
 					"text" : "Value",
@@ -20283,7 +20330,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1626.0, 4313.0, 75.0, 29.0 ],
+					"patching_rect" : [ 1671.0, 4313.0, 75.0, 29.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1083.0, 717.0, 105.0, 18.0 ],
 					"text" : "Monitored Parameter",
@@ -20357,7 +20404,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1540.0, 4091.0, 87.0, 18.0 ],
+					"patching_rect" : [ 1585.0, 4091.0, 87.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1083.0, 765.0, 90.0, 18.0 ],
 					"text" : "Monitor Plugin",
@@ -20603,7 +20650,7 @@
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1261",
 					"maxclass" : "number",
-					"maximum" : 66,
+					"maximum" : 50,
 					"minimum" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 2,
@@ -20741,7 +20788,7 @@
 					"htricolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
 					"id" : "obj-1273",
 					"maxclass" : "number",
-					"minimum" : 32,
+					"minimum" : 128,
 					"numdecimalplaces" : 3,
 					"numinlets" : 1,
 					"numoutlets" : 2,
@@ -22545,7 +22592,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1779.0, 4098.0, 80.0, 20.0 ],
+					"patching_rect" : [ 1824.0, 4098.0, 80.0, 20.0 ],
 					"text" : "r _DGMDdevice"
 				}
 
@@ -22557,7 +22604,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 1779.0, 4127.0, 43.0, 20.0 ],
+					"patching_rect" : [ 1824.0, 4127.0, 43.0, 20.0 ],
 					"text" : "select 1"
 				}
 
@@ -23453,7 +23500,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 4300.0, 1818.0, 50.0, 20.0 ],
-					"text" : "32"
+					"text" : "3"
 				}
 
 			}
@@ -28925,7 +28972,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1187.0, 1947.0, 29.5, 20.0 ],
-					"text" : "0"
+					"text" : "62"
 				}
 
 			}
@@ -29124,7 +29171,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 932.0, 1947.0, 29.5, 20.0 ],
-					"text" : "0"
+					"text" : "69"
 				}
 
 			}
@@ -29323,7 +29370,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 664.0, 1947.0, 29.5, 20.0 ],
-					"text" : "0"
+					"text" : "59"
 				}
 
 			}
@@ -29522,7 +29569,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 411.0, 1947.0, 29.5, 20.0 ],
-					"text" : "84"
+					"text" : "58"
 				}
 
 			}
@@ -29721,7 +29768,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 160.0, 1947.0, 38.0, 20.0 ],
-					"text" : "68"
+					"text" : "56"
 				}
 
 			}
@@ -30110,7 +30157,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1556.0, 4212.0, 125.0, 20.0 ],
+					"patching_rect" : [ 1601.0, 4212.0, 125.0, 20.0 ],
 					"text" : "s _DGMDparamFeedback"
 				}
 
@@ -30138,7 +30185,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ -88.0, 1947.0, 38.0, 20.0 ],
-					"text" : "62"
+					"text" : "55"
 				}
 
 			}
@@ -30276,7 +30323,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1712.0, 4279.0, 110.0, 20.0 ],
+					"patching_rect" : [ 1757.0, 4279.0, 110.0, 20.0 ],
 					"text" : "s _DGMDvstParamList"
 				}
 
@@ -30373,7 +30420,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1412.0, 4481.0, 74.0, 20.0 ],
+					"patching_rect" : [ 1457.0, 4481.0, 74.0, 20.0 ],
 					"text" : "s _DGMDtovst"
 				}
 
@@ -30392,7 +30439,7 @@
 					"orientation" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1496.0, 4403.0, 83.0, 18.0 ],
+					"patching_rect" : [ 1541.0, 4403.0, 83.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1241.0, 741.0, 85.796977303105677, 19.710137613774805 ],
 					"size" : 1.0,
@@ -30411,7 +30458,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1657.0, 4127.0, 95.0, 20.0 ],
+					"patching_rect" : [ 1702.0, 4127.0, 95.0, 20.0 ],
 					"text" : "r _DGMDvstReload"
 				}
 
@@ -30819,7 +30866,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "int", "int" ],
-					"patching_rect" : [ 1600.0, 4127.0, 43.0, 20.0 ],
+					"patching_rect" : [ 1645.0, 4127.0, 43.0, 20.0 ],
 					"text" : "change"
 				}
 
@@ -30832,7 +30879,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1487.0, 4206.0, 30.0, 20.0 ],
+					"patching_rect" : [ 1532.0, 4206.0, 30.0, 20.0 ],
 					"text" : "gate"
 				}
 
@@ -30845,7 +30892,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1412.0, 4362.0, 38.0, 20.0 ],
+					"patching_rect" : [ 1457.0, 4362.0, 38.0, 20.0 ],
 					"text" : "set $1"
 				}
 
@@ -30858,7 +30905,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 1487.0, 4353.0, 27.0, 20.0 ],
+					"patching_rect" : [ 1532.0, 4353.0, 27.0, 20.0 ],
 					"text" : "+ 1"
 				}
 
@@ -30871,7 +30918,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 1571.0, 4174.0, 26.0, 20.0 ],
+					"patching_rect" : [ 1616.0, 4174.0, 26.0, 20.0 ],
 					"text" : "- 1"
 				}
 
@@ -30884,7 +30931,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1412.0, 4403.0, 38.0, 20.0 ],
+					"patching_rect" : [ 1457.0, 4403.0, 38.0, 20.0 ],
 					"text" : "set $1"
 				}
 
@@ -30897,7 +30944,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1412.0, 4442.0, 47.0, 20.0 ],
+					"patching_rect" : [ 1457.0, 4442.0, 47.0, 20.0 ],
 					"text" : "prepend"
 				}
 
@@ -30910,7 +30957,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1487.0, 4174.0, 58.0, 20.0 ],
+					"patching_rect" : [ 1532.0, 4174.0, 58.0, 20.0 ],
 					"text" : "append $1"
 				}
 
@@ -30923,7 +30970,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1657.0, 4174.0, 32.0, 20.0 ],
+					"patching_rect" : [ 1702.0, 4174.0, 32.0, 20.0 ],
 					"text" : "clear"
 				}
 
@@ -30937,7 +30984,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "float" ],
-					"patching_rect" : [ 1421.0, 4323.0, 102.0, 20.0 ],
+					"patching_rect" : [ 1466.0, 4323.0, 102.0, 20.0 ],
 					"text" : "unpack 0 0."
 				}
 
@@ -31051,6 +31098,199 @@
 						"autosave" : 0,
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
+					}
+,
+					"snapshot" : 					{
+						"filetype" : "C74Snapshot",
+						"version" : 2,
+						"minorversion" : 0,
+						"name" : "snapshotlist",
+						"origin" : "vst~",
+						"type" : "list",
+						"subtype" : "Undefined",
+						"embed" : 1,
+						"snapshot" : 						{
+							"pluginname" : "TyrellN6.vstinfo",
+							"plugindisplayname" : "TyrellN6 3.0.0",
+							"pluginsavedname" : "",
+							"pluginsaveduniqueid" : 0,
+							"version" : 1,
+							"isbank" : 0,
+							"isbase64" : 1,
+							"blob" : "3113.CMlaKA....fQPMDZ....APWVtYC...P.....ALSYk8kPxE1byIC..........................rP6unBPsUFcgofBAUGcn8lb5nvIyTVYmnfBDU1biIWZvQWZu4lNJbhPxE1byoCHlEFcr.xavUlafP2atUFKfHlbocFZzUlbmnfBUMWXmUlNJbRSWARKfXUZhIWXz81IJnfJunfBiDTS8PUdxUFar4jMJLhUkI2b8DCLvDCLJLRQtQVZg4VOrkFczwVYJLhas0SL2nvHsMWOt8lakovHsMWOM8FYWgFaJLRay0CToQ2XnckBiz1b8HjbkEFcnovHsMWOXAmbkM2bJLRay0yQgQWYJLRay0iUkw1aikFc4ovHsMWOPIWYyMWcxUlBiz1b8rTY4Yzarw1a2ovHsMWOKUVdF8Far81cxnvHsMWOAwFckImagQWYJLRay0iTg4FYu0lBiz1b8LEcgM1ZV8VZiUlBiz1b8DDQSIULJLRay0SPDMkTxnvHsMWOLYzSwnvHsMWOLYzSxnvHtYWOxnvHsYWOGEFckovHsYWOAQzTREiBiLVa8zVXo4lBCM1Sv0SLyHiKv.iBiLDZxMWL8.iBiLVa8.0PuIWYJzTSTESOTkmbkwFa5PUSDAGcwnPSMMUL8XiBM0DQwzSLx3BLvnPSMY0TwzCNJzTSVQTL8TCMt.CLJzTSTISOTkmbkwFa5HUSV8FaJzTSSISOwPiBM0DQxzSLv.iKv.iBM0jUSISO1nPSMYEQxzyLx3BLvnvTBE1bk0CMJL0co41Y8.iKv.iBSQkbocVOwn.TS8lam0CLJ.kQuwFY8.iBPYTZrUVOwnvQFkFak0iLJbzTiEFak0CLJLDZLEVd8.iBSUmbx8TOwnfTkYWOyfSN4n.SEQTOv3BLvn.TAcTQ8.iBPE1YkM2St0CLJLzaxUlS8LiBSwVZiUVOznPUI80av0yLJzTZjkVP8TiBMkFYoAUO1nvHi0VOVMzPJX0aoMVZtcVOwnPSuQVY8.iBP8lbzEVS8.iBP8lbzEVOv3BLvn.TuIGcgISO13BLvn.TRElamUVOw.CLt.CLJ.kP8TiBPIDQ8TiBDImYz0SLJzDU041T8.iBMQUct4TO2nPSTUmaT0CNJPkbyAWOvn.Txk1ax0CLJzTcC8lbk0CLJLzatQWQt0SLJHkSuQWY8.iBRYUYr0CLJLxXs0SQNYULJDDcq0SLz3BLvn.QkMVO3DiKv.iBSU2b8TCLt.CLJXjT8.iKv.iBRUFa8HiLt.CLJXUYr0iL43BLvnfTM8FY8.iKv.iBLElXkwVO4n.Uxk1Y8.iBiLVa8TjSVIiBAQ2Z8fiKvHiBDU1X8HCLt.CLJLUcy0CLt.CLJXjT8.iKv.iBRUFa8HCNt.CLJXUYr0iL23RMvnfTM8FY8.iKv.iBLElXkwVOw.iBTIWZm0CLJLxXs0CSF8TLJLUdtMVOyn.Uxk1Y8DiBWElck0CLJ.EZyUVOv3BLvn.TuwVXx0CLJPDa40CNy3BLvn.QMMUL8DiBD0DQwzSLv.iKv.iBREFck0CLtPCLJXTSSESOvnfQMQTL8.iKv.iBiLVa8vjQOIiBSkmai0SMJPkbocVOwnvUgYWY8DiBPg1bk0yLy3BLvn.TuwVXx0CLJPDa40SMv3RMvn.QMMUL8.iBD0DQwzCLt.CLJHUXzUVOv3BLvnfQMMUL8fiBF0DQwzSLtTCLJLxXs0CU4IWYrwlBSgFbwzyLt.CLJPUSSI2XwzSLzn.UMQDbzESOv3BLvnvTnAmL8DiKyPiBTUmakISOv3BLvnfQo4VYxzCLt.CLJPUSSI2XxzSL1n.UMQDbzISOv3RLwn.TWQDbz0yL13BLvn.TWMkbi0SL1n.QkQWctUVOv3BLvnvT441X8.iKv.iBVQ2aD0SMt.CLJHUSoESO0nfTMklL8.iBFITZt0CLJ3zaoMWY8DiK2.iBOM2XV8FawzSKyLiKv.iBOM2XV8FaxzSKybiK0.iBSUmXV8Fa8zxL23RMvnfSyUlUuwVOsjSMt.CLJHUSV8Fa8zxL23RMvnfQBY0ar0SKybiK0.iBVMjQs8FY8DiBVMjQP8Fa8HiBCUGcuYlY8jCLt.CLJXTSSI2XwzSLznfQMQDbzESOsTiLt.CLJXTSSI2XxziMJXTSDAGcxzSMtDCMJrTY4Yzar0yLy3BLvnfTkMWOy.iKv.iBMg2Tv0yM33BLvnPS3MEbSI2X8.iBAI0TxMVOvnPPRQTYyQWOxnPPRQDbz0CLt.CLJDjTM8FY8.iBiLVa8X0PAEiBVMTP8DiBAQGcS0SLJLxXs0yPnI2bwn.U4AWY8.iBREFck0SMv3BLvn.QkAGcn0SMv3BLvnvUkQWOw.CLt.CLJnfBJ7xKfLUYiQWZu4FHl8lbfT2YrkGHi8VavIWYyMWYjAhXo4VXxkGHDEFcgovKu.BQO4zITABUOU0PHABUHkzTJn.IjPBIwXSMxnvOvkFZvEVXgElNmQ1YiUlakIlNvgFZvEVXgElNkEVXgEVXgElNqMVZmElXgElNgE1YgEVXgElNgEVXgkVXjAmNJDVXgIVXgEVX5TVXoA2ZtwFY5.WavoFZqI1Z5DVX5T1X5TlX5TVX5H1Z5rla5LVX5vFY5nVX5rVX5.WX5DlX5flBgoSZgoSagoyamoiXgoSYkoiYsoyagoSXkoiXkoyXooCYioCYjoCYkEhb3EzMk01YvcFYmI1YsMFbYclYwDzanoPQwEzM0EzL4Mmdw0TZvYDRyA0Yng1ZEEGQuolVSEWP2vTRFgzb0EzLVE1anYVQwojals1XLY2RusFYlMUbAUCbJ.WLO41YrElYoEWP2rTRFgzboMlZisFbEE2RpIlQHMGSko1YgEDMlElXtQ1YSEGZs41aPUTbRkjQHMWYpEjMZkjBFgzbJ4lYqMFS1cTRFgzbs81anAUQwwVYWgFZEEWPFQlaQYmbzEzMYclYwXFbBg1XmIFZjECVi81YogUSAkScAovL4Mmdw0TZvYDRyA0Yng1ZEEmbzEzMwHGcAcyat81auA2RvIFbiAGYvUFblA2YvgFboAmZvsFbrAWav4FbuAGbJDDSgMVXjUUXlE1YggVXoElZgsVXrEVag4VXuEFbQIlXhMlXjYkXlI1YhglXoIlZEIFah0lXtI1ahA2QiI1XiMlBjMVYiY1XmMFZWMlZis1XrMVaxUUPw.yYhAGZhMVPxgWP2j0YlESPxTiLx4TPwLCNxQWPzLycAICQAECQwDTLNo.QAEiRDETLOQTPwPEQxETXiETM2EzL2EjLDETLDESPw3DQAEiRDETLOQTPwPEcCETLQMTPwbzPAECYgMTPwPzPJDTLlE1PAEyYgMTPwzzPAEiSCETLok1PAESRCETLpk1PAEiRCETLqk1PAECagMTPwvVZCETLOMTPwzVZCETLtElBCETLtk1PAECUCETLuk1PAEyRCETLvk1PAIiPAESUBETLgklPAESXsITPwDkPAEiUBETLhklPAEiXsITPwbjPAoPLiUlPAEyUBETLi0lPAECYgITPwnkPAECYoITPwPVaBETLDITPwHkPAESYoITPwTVaBETLlElPAEiYkITPwXVZJHTPwLkPAEyYgITPwbVYBETLmklPAEyYsITPwzjPAECZkITPwfVZBETLn0lPAEiSBETLoMlPAESZkITPwj1YBEjBwjVZBETLoslPAESZsITPwj1aBETLIITPwn1XBETLpUlPAEiZmITPwnVZBETLpslPAEiZsITPwn1aBETLJITPwnvZiITPwrVYBETLqclPAEyZoITPwr1ZBETLq0lPAEyZuITPwvVXBETLrMlPAECakITPwv1YBETLrklPAECaqITPJDCasITPwv1aBETLOITPwz1XBETLsUlPAESamITPwzVZBETLsslPAESasITPwz1aBETLtElPAEiaiITPw3VYBEjBw31YBETLtklPAEiaqITPw3VaBETLt8lPAECUBETLuMlPAEyakITPw.kPAEyaoITPw71ZBETLu0lPAEyauITPwnvRBETLvMlPAECbkITPw.2YBETLvklPAECbqITPw.WaBETLv8lPxcTPw.yPRYFYlM1QjIVPxTibGETLvLjTlQlYJL1QXEjL0zSLvDSN3biB..."
+						}
+,
+						"snapshotlist" : 						{
+							"current_snapshot" : 0,
+							"entries" : [ 								{
+									"filetype" : "C74Snapshot",
+									"version" : 2,
+									"minorversion" : 0,
+									"name" : "TyrellN6 3.0.0",
+									"origin" : "TyrellN6.vstinfo",
+									"type" : "VST",
+									"subtype" : "Instrument",
+									"embed" : 0,
+									"fileref" : 									{
+										"name" : "TyrellN6 3.0.0",
+										"filename" : "TyrellN6 3.0.0.maxsnap",
+										"filepath" : "~/Documents/Max 8/Snapshots",
+										"filepos" : -1,
+										"snapshotfileid" : "fd03cd1f1198ca90c41ee09aa9ec0620"
+									}
+
+								}
+, 								{
+									"filetype" : "C74Snapshot",
+									"version" : 2,
+									"minorversion" : 0,
+									"name" : "TyrellN6 3.0.0",
+									"origin" : "TyrellN6.vstinfo",
+									"type" : "VST",
+									"subtype" : "Instrument",
+									"embed" : 0,
+									"fileref" : 									{
+										"name" : "TyrellN6 3.0.0",
+										"filename" : "TyrellN6 3.0.0_20250705_1.maxsnap",
+										"filepath" : "~/Documents/Max 8/Snapshots",
+										"filepos" : -1,
+										"snapshotfileid" : "ad6f177399a78a5cbf28f952721c549b"
+									}
+
+								}
+, 								{
+									"filetype" : "C74Snapshot",
+									"version" : 2,
+									"minorversion" : 0,
+									"name" : "TyrellN6 3.0.0",
+									"origin" : "TyrellN6.vstinfo",
+									"type" : "VST",
+									"subtype" : "Instrument",
+									"embed" : 0,
+									"fileref" : 									{
+										"name" : "TyrellN6 3.0.0",
+										"filename" : "TyrellN6 3.0.0_20250705_3.maxsnap",
+										"filepath" : "~/Documents/Max 8/Snapshots",
+										"filepos" : -1,
+										"snapshotfileid" : "1177e03dc601e1fd66d1f04f200b65b4"
+									}
+
+								}
+, 								{
+									"filetype" : "C74Snapshot",
+									"version" : 2,
+									"minorversion" : 0,
+									"name" : "TyrellN6 3.0.0",
+									"origin" : "TyrellN6.vstinfo",
+									"type" : "VST",
+									"subtype" : "Instrument",
+									"embed" : 0,
+									"fileref" : 									{
+										"name" : "TyrellN6 3.0.0",
+										"filename" : "TyrellN6 3.0.0_20250705_5.maxsnap",
+										"filepath" : "~/Documents/Max 8/Snapshots",
+										"filepos" : -1,
+										"snapshotfileid" : "e2a952395f355a69cd744e3490223265"
+									}
+
+								}
+, 								{
+									"filetype" : "C74Snapshot",
+									"version" : 2,
+									"minorversion" : 0,
+									"name" : "TyrellN6 3.0.0",
+									"origin" : "TyrellN6.vstinfo",
+									"type" : "VST",
+									"subtype" : "Instrument",
+									"embed" : 0,
+									"fileref" : 									{
+										"name" : "TyrellN6 3.0.0",
+										"filename" : "TyrellN6 3.0.0_20250705_7.maxsnap",
+										"filepath" : "~/Documents/Max 8/Snapshots",
+										"filepos" : -1,
+										"snapshotfileid" : "997d6efa4551dea6a56c90bcc5cbe8eb"
+									}
+
+								}
+, 								{
+									"filetype" : "C74Snapshot",
+									"version" : 2,
+									"minorversion" : 0,
+									"name" : "TyrellN6 3.0.0",
+									"origin" : "TyrellN6.vstinfo",
+									"type" : "VST",
+									"subtype" : "Instrument",
+									"embed" : 0,
+									"fileref" : 									{
+										"name" : "TyrellN6 3.0.0",
+										"filename" : "TyrellN6 3.0.0_20250705_9.maxsnap",
+										"filepath" : "~/Documents/Max 8/Snapshots",
+										"filepos" : -1,
+										"snapshotfileid" : "39fb1dc398b011b495b4d3ec2c2edbfc"
+									}
+
+								}
+, 								{
+									"filetype" : "C74Snapshot",
+									"version" : 2,
+									"minorversion" : 0,
+									"name" : "TyrellN6 3.0.0",
+									"origin" : "TyrellN6.vstinfo",
+									"type" : "VST",
+									"subtype" : "Instrument",
+									"embed" : 0,
+									"snapshot" : 									{
+										"pluginname" : "TyrellN6.vstinfo",
+										"plugindisplayname" : "TyrellN6 3.0.0",
+										"pluginsavedname" : "",
+										"pluginsaveduniqueid" : 0,
+										"version" : 1,
+										"isbank" : 0,
+										"isbase64" : 1,
+										"blob" : "3108.CMlaKA....fQPMDZ....APWVtYC...P.....ALSYk8kPxE1byIC..........................r.5unBPsUFcgofBAUGcn8lb5nvIyTVYmnfBDU1biIWZvQWZu4lNJbhPxE1byoCHlEFcr.xavUlafP2atUFKfHlbocFZzUlbmnfBUMWXmUlNJbRSWARKfXUZhIWXz81IJnfJunfBiDTS8PUdxUFar4jMJLhUkI2b8DCLvDCLJLRQtQVZg4VOrkFczwVYJLhas0SL2nvHsMWOt8lakovHsMWOM8FYWgFaJLRay0CToQ2XnckBiz1b8HjbkEFcnovHsMWOXAmbkM2bJLRay0yQgQWYJLRay0iUkw1aikFc4ovHsMWOPIWYyMWcxUlBiz1b8rTY4Yzarw1a2ovHsMWOKUVdF8Far81cxnvHsMWOAwFckImagQWYJLRay0iTg4FYu0lBiz1b8LEcgM1ZV8VZiUlBiz1b8DDQSIULJLRay0SPDMkTxnvHsMWOLYzSwnvHsMWOLYzSxnvHtYWOxnvHsYWOGEFckovHsYWOAQzTREiBiLVa8zVXo4lBCM1Sv0SLyHiKv.iBiLDZxMWL8.iBiLVa8.0PuIWYJzTSTESOTkmbkwFa5PUSDAGcwnPSMMUL8XiBM0DQwzSLx3BLvnPSMY0TwzCNJzTSVQTL8TCMt.CLJzTSTISOTkmbkwFa5HUSV8FaJzTSSISOwPiBM0DQxzSLv.iKv.iBM0jUSISO1nPSMYEQxzyLx3BLvnvTBE1bk0CMJL0co41Y8.iKv.iBSQkbocVOwn.TS8lam0CLJ.kQuwFY8.iBPYTZrUVOwnvQFkFak0iLJbzTiEFak0CLJLDZLEVd8.iBSUmbx8TOwnfTkYWOyfSN4n.SEQTOv3BLvn.TAcTQ8.iBPE1YkM2St0CLJLzaxUlS8LiBSwVZiUVOznPUI80av0SLJzTZjkVP8TiBMkFYoAUO1nvHi0VOVMzPJX0aoMVZtcVOwnPSuQVY8.iBP8lbzEVS8.iBP8lbzEVOv3BLvn.TuIGcgISO13BLvn.TRElamUVOw.CLt.CLJ.kP8TiBPIDQ8TiBDImYz0SLJzDU041T8.iBMQUct4TO2nPSTUmaT0CNJPkbyAWOvn.Txk1ax0CLJzTcC8lbk0CLJLzatQWQt0SLJHkSuQWY8.iBRYUYr0CLJLxXs0SQNYULJDDcq0SLz3BLvn.QkMVO3DiKv.iBSU2b8TCLt.CLJXjT8.iKv.iBRUFa8HiLt.CLJXUYr0iL43BLvnfTM8FY8.iKv.iBLElXkwVO4n.Uxk1Y8.iBiLVa8TjSVIiBAQ2Z8fiKvHiBDU1X8HCLt.CLJLUcy0CLt.CLJXjT8.iKv.iBRUFa8HCNt.CLJXUYr0iL23RMvnfTM8FY8.iKv.iBLElXkwVOw.iBTIWZm0CLJLxXs0CSF8TLJLUdtMVOyn.Uxk1Y8DiBWElck0CLJ.EZyUVOv3BLvn.TuwVXx0CLJPDa40CNy3BLvn.QMMUL8DiBD0DQwzSLv.iKv.iBREFck0CLtPCLJXTSSESOvnfQMQTL8.iKv.iBiLVa8vjQOIiBSkmai0SMJPkbocVOwnvUgYWY8DiBPg1bk0yLy3BLvn.TuwVXx0CLJPDa40SMv3RMvn.QMMUL8.iBD0DQwzCLt.CLJHUXzUVOv3BLvnfQMMUL8fiBF0DQwzSLtTCLJLxXs0CU4IWYrwlBSgFbwzyLt.CLJPUSSI2XwzSLzn.UMQDbzESOv3BLvnvTnAmL8DiKyPiBTUmakISOv3BLvnfQo4VYxzCLt.CLJPUSSI2XxzSL1n.UMQDbzISOv3RLwn.TWQDbz0yL13BLvn.TWMkbi0SL1n.QkQWctUVOv3BLvnvT441X8.iKv.iBVQ2aD0SMt.CLJHUSoESO0nfTMklL8.iBFITZt0CLJ3zaoMWY8DiK2.iBOM2XV8FawzSKyLiKv.iBOM2XV8FaxzSK1DiKv.iBSUmXV8Fa8zRLv.iKv.iBNMWYV8Fa8zRN03BLvnfTMY0ar0SK4HiKv.iBFIjUuwVOsfCNt.CLJX0PF01aj0SLJX0PFA0ar0iLJLTcz8lYl0SNv3BLvnfQMMkbiESOwPiBF0DQvQWL8zRMx3BLvnfQMMkbiISO1nfQMQDbzISO03RLznvRkkmQuwVOyLiKv.iBRU1b8LCLt.CLJzDdSAWO2fiKv.iBMg2TvMkbi0CLJDjTSI2X8.iBAIEQkMGc8HiBAIEQvQWOv3BLvnPPR0zaj0CLJLxXs0iUCETLJX0PA0SLJDDczMUOwnvHi0VOCglbyEiBTkGbk0CLJHUXzUVO0.iKv.iBDUFbzgVO0.iKv.iBWUFc8DCLv3BLvnfBJ7xKfLUYiQWZu4FHl8lbfT2YrkGHi8VavIWYyMWYjAhXo4VXxkGHDEFcgovKu.BQO4zITABUOU0PHABUHkzTJn.IjPBIwXSMxnvOvkFZvEVXgElNmQ1YiUlakIlNvgFZvEVXgElNkEVXgEVXgElNqMVZmElXgElNgE1YgEVXgElNgEVXgkVXjAmNJDVXgIVXgEVX5TVXmAWYmwFb5.WavoFZqI1Z5DVX5T1X5TlX5TVX5fVX5H1Z5LVX5T1Y5vFb5zVX5.WX5jVX57lBmoSXhoSXioSYkoiYsoyZgoyagoCbkoSXkoiXgoiXkoyXooCYioCYjEhb3EzMk01YvcFYmI1YsMFbZclYwDzanofQwEzM0EzL4MmdwUzYvgTRy0zYng1ZFEGQuoFYkEUbAciSEgTRyUWPybUXuglYFEmRTU1aOY2RusFYlEUbAUCbJ.WLJ41YrElYoEWP2rTQHkzboMlZisFbFE2RnIFRIMmSko1YgEDMlElXtQ1YQEGZs41aMYTbPUDRIMWYpEjMjUlBEgTRyoDUk81S1cTQHkzbs81an0jQwwVYXgFZFEWPi8VZlIFZ1IGcAciVmYVLlAmPnM1YhgFYwj0XucVZYUTP4nPcAMSdyoWbEcFbHkzbMcFZnslQwIGcAcSLxQWP27lau81avsDbhA2XvQFUvYFbmAGZvkFbpA2ZvwFbsAmav8FbJ.WPN8TXjUUXlE1YggVXoElZgsVXrEVag4VXuEFbVIlXhMlXjckXlI1YhglXoIlZFIFah0lXtI1ahA2QiI1XiMlBjMVYiY1XmMFZXMlZis1XrMVaxUUP4fWPxgWP2n0YlESPxTiLxwTPwLCNxQWPzLycAICQAECQwDTLLQTPwHEQAoPLJQTPwLEQxEzSAUycAMycAICQAECQwDTLLQTPwHEQAEiRDETLSQ2PAEiUCETLGMTPwPVXCETLDMTPwXVXCETLJbVXCETLEMTPwvzPAESZoMTPwnVXCETLpk1PAEiTCETLqk1PAECagMTPwvVZCETLJMTPwzVZCETLtE1PAEiaoMjBAEyTCETLuk1PAEyRCETLvk1PAIiPAESUBETLgklPAESXsITPwXkPAEyUBETLhklPAEiXsITPwbjPAEyXkITPwn.VBETLi0lPAECYgITPwPVYBETLjklPAECYsITPwPjPAECTBETLkklPAESYsITPwXVXBETLlUlPAEiYoITPwDkPJDTLmElPAEyYkITPwbVZBETLm0lPAESQBETLnUlPAECZoITPwfVaBETLLITPwj1XBETLoUlPAESZmITPwjVZBEjBwj1ZBETLo0lPAESZuITPwnVXBETLpMlPAEiZkITPwn1YBETLpklPAEiZqITPwnVaBETLp8lPAEiTBETLqMlPAoPLqUlPAEyZmITPwrVZBETLqslPAEyZsITPwr1aBETLrElPAECaiITPwvVYBETLrclPAECaoITPwv1ZBETLr0lPJDTLr8lPAEiRBETLsMlPAESakITPwz1YBETLsklPAESaqITPwzVaBETLs8lPAEiagITPw31XBETLtUlPAEiamIjBAEiaoITPw31ZBETLt0lPAEiauITPwLkPAEyaiITPw7VYBETLMITPw7VZBETLuslPAEyasITPw71aBETLKITPwn.biITPwPkPAECbmITPw.WZBETLvslPAECbsITPw.2aBI2QAECLCAkYjY1XGQlXAISMxcTPw.yPPYFYlM1QYEjLJTSOw.SL0LyMJ..."
+									}
+,
+									"fileref" : 									{
+										"name" : "TyrellN6 3.0.0",
+										"filename" : "TyrellN6 3.0.0_20250705_11.maxsnap",
+										"filepath" : "~/Documents/Max 8/Snapshots",
+										"filepos" : -1,
+										"snapshotfileid" : "34f2788fd23ac412dbdefe387810af35"
+									}
+
+								}
+, 								{
+									"filetype" : "C74Snapshot",
+									"version" : 2,
+									"minorversion" : 0,
+									"name" : "TyrellN6 3.0.0",
+									"origin" : "TyrellN6.vstinfo",
+									"type" : "VST",
+									"subtype" : "Instrument",
+									"embed" : 0,
+									"snapshot" : 									{
+										"pluginname" : "TyrellN6.vstinfo",
+										"plugindisplayname" : "TyrellN6 3.0.0",
+										"pluginsavedname" : "",
+										"pluginsaveduniqueid" : 0,
+										"version" : 1,
+										"isbank" : 0,
+										"isbase64" : 1,
+										"blob" : "3113.CMlaKA....fQPMDZ....APWVtYC...P.....ALSYk8kPxE1byIC..........................rP6unBPsUFcgofBAUGcn8lb5nvIyTVYmnfBDU1biIWZvQWZu4lNJbhPxE1byoCHlEFcr.xavUlafP2atUFKfHlbocFZzUlbmnfBUMWXmUlNJbRSWARKfXUZhIWXz81IJnfJunfBiDTS8PUdxUFar4jMJLhUkI2b8DCLvDCLJLRQtQVZg4VOrkFczwVYJLhas0SL2nvHsMWOt8lakovHsMWOM8FYWgFaJLRay0CToQ2XnckBiz1b8HjbkEFcnovHsMWOXAmbkM2bJLRay0yQgQWYJLRay0iUkw1aikFc4ovHsMWOPIWYyMWcxUlBiz1b8rTY4Yzarw1a2ovHsMWOKUVdF8Far81cxnvHsMWOAwFckImagQWYJLRay0iTg4FYu0lBiz1b8LEcgM1ZV8VZiUlBiz1b8DDQSIULJLRay0SPDMkTxnvHsMWOLYzSwnvHsMWOLYzSxnvHtYWOxnvHsYWOGEFckovHsYWOAQzTREiBiLVa8zVXo4lBCM1Sv0SLyHiKv.iBiLDZxMWL8.iBiLVa8.0PuIWYJzTSTESOTkmbkwFa5PUSDAGcwnPSMMUL8XiBM0DQwzSLx3BLvnPSMY0TwzCNJzTSVQTL8TCMt.CLJzTSTISOTkmbkwFa5HUSV8FaJzTSSISOwPiBM0DQxzSLv.iKv.iBM0jUSISO1nPSMYEQxzyLx3BLvnvTBE1bk0CMJL0co41Y8.iKv.iBSQkbocVOwn.TS8lam0CLJ.kQuwFY8.iBPYTZrUVOwnvQFkFak0iLJbzTiEFak0CLJLDZLEVd8.iBSUmbx8TOwnfTkYWOyfSN4n.SEQTOv3BLvn.TAcTQ8.iBPE1YkM2St0CLJLzaxUlS8LiBSwVZiUVOznPUI80av0SLJzTZjkVP8TiBMkFYoAUO1nvHi0VOVMzPJX0aoMVZtcVOwnPSuQVY8.iBP8lbzEVS8.iBP8lbzEVOv3BLvn.TuIGcgISO13BLvn.TRElamUVOw.CLt.CLJ.kP8TiBPIDQ8TiBDImYz0SLJzDU041T8.iBMQUct4TO2nPSTUmaT0CNJPkbyAWOvn.Txk1ax0CLJzTcC8lbk0CLJLzatQWQt0SLJHkSuQWY8.iBRYUYr0CLJLxXs0SQNYULJDDcq0SLz3BLvn.QkMVO3DiKv.iBSU2b8TCLt.CLJXjT8.iKv.iBRUFa8HiLt.CLJXUYr0iL43BLvnfTM8FY8.iKv.iBLElXkwVO4n.Uxk1Y8.iBiLVa8TjSVIiBAQ2Z8fiKvHiBDU1X8HCLt.CLJLUcy0CLt.CLJXjT8.iKv.iBRUFa8HCNt.CLJXUYr0iL23RMvnfTM8FY8.iKv.iBLElXkwVOw.iBTIWZm0CLJLxXs0CSF8TLJLUdtMVOyn.Uxk1Y8DiBWElck0CLJ.EZyUVOv3BLvn.TuwVXx0CLJPDa40CNy3BLvn.QMMUL8DiBD0DQwzSLv.iKv.iBREFck0CLtPCLJXTSSESOvnfQMQTL8.iKv.iBiLVa8vjQOIiBSkmai0SMJPkbocVOwnvUgYWY8DiBPg1bk0yLy3BLvn.TuwVXx0CLJPDa40SMv3RMvn.QMMUL8.iBD0DQwzCLt.CLJHUXzUVOv3BLvnfQMMUL8fiBF0DQwzSLtTCLJLxXs0CU4IWYrwlBSgFbwzyLt.CLJPUSSI2XwzSLzn.UMQDbzESOv3BLvnvTnAmL8DiKyPiBTUmakISOv3BLvnfQo4VYxzCLt.CLJPUSSI2XxzSL1n.UMQDbzISOv3RLwn.TWQDbz0yL13BLvn.TWMkbi0SL1n.QkQWctUVOv3BLvnvT441X8.iKv.iBVQ2aD0SMt.CLJHUSoESO0nfTMklL8.iBFITZt0CLJ3zaoMWY8DiK2.iBOM2XV8FawzSKyLiKv.iBOM2XV8FaxzSK1DiKv.iBSUmXV8Fa8zRLv.iKv.iBNMWYV8Fa8zRN03BLvnfTMY0ar0SK4HiKv.iBFIjUuwVOsfCNt.CLJX0PF01aj0SLJX0PFA0ar0iLJLTcz8lYl0SNv3BLvnfQMMkbiESOwPiBF0DQvQWL8zRMx3BLvnfQMMkbiISO1nfQMQDbzISO03RLznvRkkmQuwVOyLiKv.iBRU1b8LCLt.CLJzDdSAWO2fiKv.iBMg2TvMkbi0CLJDjTSI2X8.iBAIEQkMGc8HiBAIEQvQWOv3BLvnPPR0zaj0CLJLxXs0iUCETLJX0PA0SLJDDczMUOwnvHi0VOCglbyEiBTkGbk0CLJHUXzUVO0.iKv.iBDUFbzgVO0.iKv.iBWUFc8DCLv3BLvnfBJ7xKfLUYiQWZu4FHl8lbfT2YrkGHi8VavIWYyMWYjAhXo4VXxkGHDEFcgovKu.BQO4zITABUOU0PHABUHkzTJn.IjPBIwXSMxnvOvkFZvEVXgElNmQ1YiUlakIlNvgFZvEVXgElNkEVXgEVXgElNqMVZmElXgElNgE1YgEVXgElNgEVXgkVXjAmNJDVXgIVXgEVX5TVXsAGYgwlZ5.WavoFZqI1Z5DVX5T1X5TlX5TVX5PVX5H1Z5LVX5vlZ5zVX53VX5.WX5fVX5jlBgoyamoSXioSYkoiYsoyZgoyagoSXhoSXkoiXgoiXkoiXsoyXooCYiEhb3EzMk01YvcFYmI1YsMFbjQ1YlESPuo.ZFEWP2TWPyj2b5EGSsAWQHMmSmgFZqYTbD8lZjUVTwEzMToTQHMWcAMyUg8FZlYTbIw1YuY1S1szaqQlYQEWPJTCbvESRtcFagYVZwEzMKoTQHMWZio1XqAmQwsjahUDRyQUYpcVXAQiYgIlajcVTwgVat8lSFEGTJUDRyUlZAYiBjUlREgzbIw1YuY1S1cjREgzbs81an4jQwwVYYgFZFEGQX4lXhQlcxQWP2PFYmYVLlAmPnM1YhgFYwn0XucVZZo.SAkScAMSdyoWbL0FbEgzbNcFZnslQwIGcAcSLxQWP27lau81avsDbhA2XvQFbkAmYvcFbnAWZvoFbqAGav0FbJ3FbuAGbAQ0SgQVUgYVXmEFZgkVXpE1ZgwVXsElag8VXvYkXhI1XhQ1UhYlXmIFZhklXpYjXrgkXtI1ahA2QiIlBiM1XjMVYiY1XmMFZYMlZis1XrMVaxUUPw.CahIlXAEib3EzMjQ1YlESPxTiLx0TPwLCNxQWPzLycAICQAECQwnPPwzDQAEiTDETLIQTPwLEQxEzSAUycAMycAICQAECQwDTLMQTPwHEQAESRDETLSQ2PAEiUCETLGMTPwTzPAECQJLTPwXVXCETLmE1PAECSCETLMMTPwjVZCETLpE1PAEiZoMTPwH0PAEyZoMTPwvVXCETLrk1PAESRCETLsk1PAEiBJMTPw3VZCETLSMTPw7VZCETLKMTPw.WZCEjLBETLUITPwDVZBETLg0lPAEiUBETLWITPwHVZBETLXITPwbjPAoPLiUlPAESVBETLi0lPAESQBETLjUlPAECYoITPwPVaBETLDITPw.kPAESYoITPwTVaBETLlElPAEiYkITPwXVZJHTPwDkPAEyYgITPwbVYBETLmklPAEyYsITPwvjPAECZkITPwfVZBETLn0lPAESSBETLoMlPAESZkITPwj1YBEjBwjVZBETLoslPAESZsITPwj1aBETLpElPAEiZiITPwnVYBETLpclPAEiZoITPwn1ZBETLp0lPAEiZuITPwHkPAoPLqMlPAEyZkITPwr1YBETLqklPAEyZqITPwrVaBETLq8lPAECagITPwv1XBETLrUlPAECamITPwvVZBETLrslPJDTLr0lPAECauITPwjjPAESaiITPwzVYBETLsclPAESaoITPwz1ZBETLs0lPAESauITPwnjPAEiaiITPw3VYBEjBw31YBETLtklPAEiaqITPw3VaBETLt8lPAEyTBETLuMlPAEyakITPw3jPAEyaoITPw71ZBETLu0lPAEyauITPwnvRBETLvMlPAECbkITPw.2YBETLvklPAECbqITPw.WaBETLv8lPxcTPw.yPPYFYlM1QjIVPxTibGETLvLDTlQlYJL1QZEjL0zSLvDSNxPiB..."
+									}
+,
+									"fileref" : 									{
+										"name" : "TyrellN6 3.0.0",
+										"filename" : "TyrellN6 3.0.0_20250705_13.maxsnap",
+										"filepath" : "~/Documents/Max 8/Snapshots",
+										"filepos" : -1,
+										"snapshotfileid" : "b717d4cdbb050e357ac1f96618e235ca"
+									}
+
+								}
+ ]
+						}
+
 					}
 ,
 					"text" : "vst~",
@@ -33084,6 +33324,42 @@
 				}
 
 			}
+, 			{
+				"box" : 				{
+					"id" : "obj-511",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1340.0, 4081.0, 63.0, 20.0 ],
+					"text" : "1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1477",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1266.0, 4113.0, 54.0, 20.0 ],
+					"text" : "restore $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1632",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1419.0, 4113.0, 90.0, 20.0 ],
+					"text" : "deletesnapshot $1"
+				}
+
+			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
@@ -34088,6 +34364,33 @@
 					"midpoints" : [ 1505.5, 2033.269081604278654, 1465.5, 2033.269081604278654 ],
 					"order" : 1,
 					"source" : [ "obj-1098", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1622", 1 ],
+					"midpoints" : [ 1937.5, 3835.5, 1310.5, 3835.5 ],
+					"order" : 4,
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1758", 1 ],
+					"midpoints" : [ 1937.5, 3835.5, 1472.5, 3835.5 ],
+					"order" : 2,
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-511", 1 ],
+					"midpoints" : [ 1937.5, 3835.5, 1393.5, 3835.5 ],
+					"order" : 3,
+					"source" : [ "obj-11", 0 ]
 				}
 
 			}
@@ -35364,7 +35667,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-708", 0 ],
-					"midpoints" : [ 1609.5, 4325.379577189683914, 1496.5, 4325.379577189683914 ],
+					"midpoints" : [ 1654.5, 4325.379577189683914, 1541.5, 4325.379577189683914 ],
 					"source" : [ "obj-1219", 0 ]
 				}
 
@@ -37459,6 +37762,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-724", 0 ],
+					"midpoints" : [ 1349.5, 4175.0, 1275.5, 4175.0 ],
+					"source" : [ "obj-1386", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-329", 0 ],
 					"order" : 0,
 					"source" : [ "obj-1387", 0 ]
@@ -38604,6 +38915,13 @@
 					"midpoints" : [ 7781.857718944549561, 4308.14741849899292, 7729.171910285949707, 4308.14741849899292, 7729.171910285949707, 4222.426108360290527, 7676.712895393371582, 4222.426108360290527 ],
 					"order" : 0,
 					"source" : [ "obj-1476", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-724", 0 ],
+					"source" : [ "obj-1477", 0 ]
 				}
 
 			}
@@ -40439,6 +40757,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1477", 0 ],
+					"source" : [ "obj-1622", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1044", 0 ],
 					"source" : [ "obj-1623", 1 ]
 				}
@@ -40579,6 +40904,14 @@
 					"midpoints" : [ 5827.386175394058228, 2803.056909769773483, 5664.0, 2803.056909769773483 ],
 					"order" : 2,
 					"source" : [ "obj-1631", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-724", 0 ],
+					"midpoints" : [ 1428.5, 4175.0, 1275.5, 4175.0 ],
+					"source" : [ "obj-1632", 0 ]
 				}
 
 			}
@@ -42040,6 +42373,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1622", 0 ],
+					"source" : [ "obj-1743", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1748", 0 ],
 					"midpoints" : [ -315.761946380138397, 2291.0, -174.880973190069199, 2291.0, -174.880973190069199, 2132.0, -34.0, 2132.0 ],
 					"source" : [ "obj-1744", 0 ]
@@ -42162,6 +42502,13 @@
 					"destination" : [ "obj-1778", 0 ],
 					"order" : 1,
 					"source" : [ "obj-1757", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1632", 0 ],
+					"source" : [ "obj-1758", 0 ]
 				}
 
 			}
@@ -44526,7 +44873,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-702", 0 ],
-					"midpoints" : [ 1505.5, 4467.847128689289093, 1675.324938144859061, 4467.847128689289093, 1675.324938144859061, 4389.919971287250519, 1693.5, 4389.919971287250519 ],
+					"midpoints" : [ 1550.5, 4467.847128689289093, 1720.324938144859061, 4467.847128689289093, 1720.324938144859061, 4389.919971287250519, 1738.5, 4389.919971287250519 ],
 					"source" : [ "obj-192", 0 ]
 				}
 
@@ -45178,7 +45525,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-604", 0 ],
-					"midpoints" : [ 1693.5, 4467.847128689289093, 1599.497117247756705, 4467.847128689289093, 1599.497117247756705, 4391.979577362537384, 1505.5, 4391.979577362537384 ],
+					"midpoints" : [ 1738.5, 4467.847128689289093, 1644.497117247756705, 4467.847128689289093, 1644.497117247756705, 4391.979577362537384, 1550.5, 4391.979577362537384 ],
 					"source" : [ "obj-198", 0 ]
 				}
 
@@ -48537,6 +48884,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-511", 0 ],
+					"midpoints" : [ 1600.5, 3853.5, 1349.5, 3853.5 ],
+					"order" : 2,
+					"source" : [ "obj-359", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-669", 1 ],
 					"midpoints" : [ 1600.5, 3979.83223283290863, 1994.5, 3979.83223283290863 ],
 					"order" : 0,
@@ -49105,7 +49461,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-713", 0 ],
-					"midpoints" : [ 1788.5, 4159.929576396942139, 1666.5, 4159.929576396942139 ],
+					"midpoints" : [ 1833.5, 4159.929576396942139, 1711.5, 4159.929576396942139 ],
 					"source" : [ "obj-416", 0 ]
 				}
 
@@ -49369,7 +49725,17 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1758", 0 ],
+					"midpoints" : [ 1793.5, 3835.5, 1428.5, 3835.5 ],
+					"order" : 1,
+					"source" : [ "obj-455", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-692", 0 ],
+					"order" : 0,
 					"source" : [ "obj-455", 0 ]
 				}
 
@@ -49377,6 +49743,16 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1404", 0 ],
+					"order" : 0,
+					"source" : [ "obj-456", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1743", 0 ],
+					"midpoints" : [ 1699.5, 3786.5, 1275.5, 3786.5 ],
+					"order" : 1,
 					"source" : [ "obj-456", 0 ]
 				}
 
@@ -50001,6 +50377,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-541", 0 ],
 					"source" : [ "obj-510", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1386", 0 ],
+					"source" : [ "obj-511", 0 ]
 				}
 
 			}
@@ -50826,7 +51209,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-711", 0 ],
-					"midpoints" : [ 1505.5, 4430.979577362537384, 1421.5, 4430.979577362537384 ],
+					"midpoints" : [ 1550.5, 4430.979577362537384, 1466.5, 4430.979577362537384 ],
 					"order" : 1,
 					"source" : [ "obj-604", 0 ]
 				}
@@ -51791,7 +52174,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-711", 0 ],
-					"midpoints" : [ 1693.5, 4430.949774324893951, 1421.5, 4430.949774324893951 ],
+					"midpoints" : [ 1738.5, 4430.949774324893951, 1466.5, 4430.949774324893951 ],
 					"order" : 1,
 					"source" : [ "obj-702", 0 ]
 				}
@@ -51833,7 +52216,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-709", 0 ],
-					"midpoints" : [ 1609.5, 4157.76941305398941, 1580.5, 4157.76941305398941 ],
+					"midpoints" : [ 1654.5, 4157.76941305398941, 1625.5, 4157.76941305398941 ],
 					"source" : [ "obj-705", 0 ]
 				}
 
@@ -51841,7 +52224,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-714", 0 ],
-					"midpoints" : [ 1496.5, 4273.829576879739761, 1430.5, 4273.829576879739761 ],
+					"midpoints" : [ 1541.5, 4273.829576879739761, 1475.5, 4273.829576879739761 ],
 					"source" : [ "obj-706", 0 ]
 				}
 
@@ -51849,7 +52232,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-604", 0 ],
-					"midpoints" : [ 1421.5, 4391.979577362537384, 1505.5, 4391.979577362537384 ],
+					"midpoints" : [ 1466.5, 4391.979577362537384, 1550.5, 4391.979577362537384 ],
 					"order" : 1,
 					"source" : [ "obj-707", 0 ]
 				}
@@ -51858,7 +52241,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-702", 0 ],
-					"midpoints" : [ 1421.5, 4392.274277746677399, 1693.5, 4392.274277746677399 ],
+					"midpoints" : [ 1466.5, 4392.274277746677399, 1738.5, 4392.274277746677399 ],
 					"order" : 0,
 					"source" : [ "obj-707", 0 ]
 				}
@@ -51867,7 +52250,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-710", 0 ],
-					"midpoints" : [ 1496.5, 4387.729577362537384, 1421.5, 4387.729577362537384 ],
+					"midpoints" : [ 1541.5, 4387.729577362537384, 1466.5, 4387.729577362537384 ],
 					"source" : [ "obj-708", 0 ]
 				}
 
@@ -51875,7 +52258,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1219", 0 ],
-					"midpoints" : [ 1580.5, 4235.479576706886292, 1609.5, 4235.479576706886292 ],
+					"midpoints" : [ 1625.5, 4235.479576706886292, 1654.5, 4235.479576706886292 ],
 					"source" : [ "obj-709", 0 ]
 				}
 
@@ -51897,7 +52280,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1219", 0 ],
-					"midpoints" : [ 1496.5, 4245.479576706886292, 1609.5, 4245.479576706886292 ],
+					"midpoints" : [ 1541.5, 4245.479576706886292, 1654.5, 4245.479576706886292 ],
 					"order" : 1,
 					"source" : [ "obj-712", 0 ]
 				}
@@ -51906,7 +52289,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-744", 0 ],
-					"midpoints" : [ 1496.5, 4200.279576182365417, 1721.5, 4200.279576182365417 ],
+					"midpoints" : [ 1541.5, 4200.279576182365417, 1766.5, 4200.279576182365417 ],
 					"order" : 0,
 					"source" : [ "obj-712", 0 ]
 				}
@@ -51915,7 +52298,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1219", 0 ],
-					"midpoints" : [ 1666.5, 4241.079576790332794, 1609.5, 4241.079576790332794 ],
+					"midpoints" : [ 1711.5, 4241.079576790332794, 1654.5, 4241.079576790332794 ],
 					"order" : 1,
 					"source" : [ "obj-713", 0 ]
 				}
@@ -51924,7 +52307,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-744", 0 ],
-					"midpoints" : [ 1666.5, 4208.479576706886292, 1721.5, 4208.479576706886292 ],
+					"midpoints" : [ 1711.5, 4208.479576706886292, 1766.5, 4208.479576706886292 ],
 					"order" : 0,
 					"source" : [ "obj-713", 0 ]
 				}
@@ -51933,7 +52316,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-705", 0 ],
-					"midpoints" : [ 1430.5, 4352.479577362537384, 1520.231824228854748, 4352.479577362537384, 1520.231824228854748, 4116.179576396942139, 1609.5, 4116.179576396942139 ],
+					"midpoints" : [ 1475.5, 4352.479577362537384, 1565.231824228854748, 4352.479577362537384, 1565.231824228854748, 4116.179576396942139, 1654.5, 4116.179576396942139 ],
 					"source" : [ "obj-714", 0 ]
 				}
 
@@ -51941,7 +52324,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-707", 0 ],
-					"midpoints" : [ 1513.5, 4351.729577362537384, 1421.5, 4351.729577362537384 ],
+					"midpoints" : [ 1558.5, 4351.729577362537384, 1466.5, 4351.729577362537384 ],
 					"source" : [ "obj-714", 1 ]
 				}
 
@@ -52075,7 +52458,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-107", 0 ],
-					"midpoints" : [ 1302.071428571428669, 4248.179576396942139, 1438.612380011597452, 4248.179576396942139, 1438.612380011597452, 4195.179576396942139, 1565.5, 4195.179576396942139 ],
+					"midpoints" : [ 1302.071428571428669, 4248.179576396942139, 1438.612380011597452, 4248.179576396942139, 1438.612380011597452, 4195.179576396942139, 1610.5, 4195.179576396942139 ],
 					"order" : 0,
 					"source" : [ "obj-724", 3 ]
 				}
@@ -52098,7 +52481,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-706", 1 ],
-					"midpoints" : [ 1302.071428571428669, 4248.179576396942139, 1405.408651514569101, 4248.179576396942139, 1405.408651514569101, 4195.179576396942139, 1507.5, 4195.179576396942139 ],
+					"midpoints" : [ 1302.071428571428669, 4248.179576396942139, 1405.408651514569101, 4248.179576396942139, 1405.408651514569101, 4195.179576396942139, 1552.5, 4195.179576396942139 ],
 					"order" : 1,
 					"source" : [ "obj-724", 3 ]
 				}
@@ -52107,7 +52490,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-712", 0 ],
-					"midpoints" : [ 1293.214285714285779, 4248.179576396942139, 1395.480080085997997, 4248.179576396942139, 1395.480080085997997, 4162.679576396942139, 1496.5, 4162.679576396942139 ],
+					"midpoints" : [ 1293.214285714285779, 4248.179576396942139, 1395.480080085997997, 4248.179576396942139, 1395.480080085997997, 4162.679576396942139, 1541.5, 4162.679576396942139 ],
 					"source" : [ "obj-724", 2 ]
 				}
 
@@ -53695,7 +54078,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1219", 0 ],
-					"midpoints" : [ 1765.5, 4268.229576706886292, 1609.5, 4268.229576706886292 ],
+					"midpoints" : [ 1810.5, 4268.229576706886292, 1654.5, 4268.229576706886292 ],
 					"order" : 1,
 					"source" : [ "obj-880", 0 ]
 				}
@@ -53704,7 +54087,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-975", 0 ],
-					"midpoints" : [ 1765.5, 4267.14473283290863, 2350.111158784631698, 4267.14473283290863, 2350.111158784631698, 4047.185768604278564, 2373.5, 4047.185768604278564 ],
+					"midpoints" : [ 1810.5, 4267.14473283290863, 2350.111158784631698, 4267.14473283290863, 2350.111158784631698, 4047.185768604278564, 2373.5, 4047.185768604278564 ],
 					"order" : 0,
 					"source" : [ "obj-880", 0 ]
 				}
@@ -55263,6 +55646,62 @@
 				"bootpath" : "~/Documents/Github/DGMD/synthesizers",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "TyrellN6 3.0.0.maxsnap",
+				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../../Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "TyrellN6 3.0.0_20250705_1.maxsnap",
+				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../../Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "TyrellN6 3.0.0_20250705_11.maxsnap",
+				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../../Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "TyrellN6 3.0.0_20250705_13.maxsnap",
+				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../../Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "TyrellN6 3.0.0_20250705_3.maxsnap",
+				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../../Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "TyrellN6 3.0.0_20250705_5.maxsnap",
+				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../../Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "TyrellN6 3.0.0_20250705_7.maxsnap",
+				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../../Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "TyrellN6 3.0.0_20250705_9.maxsnap",
+				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../../Max 8/Snapshots",
+				"type" : "mx@s",
 				"implicit" : 1
 			}
 , 			{
