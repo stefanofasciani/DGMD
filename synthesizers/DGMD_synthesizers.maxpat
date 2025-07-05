@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 87.0, 1658.0, 800.0 ],
+		"rect" : [ 34.0, 87.0, 1820.0, 800.0 ],
 		"openrect" : [ 0.0, 0.0, 1657.799999999999955, 800.66922999999997 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -12054,8 +12054,8 @@
 					"patching_rect" : [ 1072.0, 107.0, 57.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"allwindowsactive" : 0,
-						"appicon_mac" : "",
-						"appicon_win" : "",
+						"appicon_mac" : "Macintosh HD:/Users/stefanof/Documents/Github/DGMD/synthesizers/dgmd.icns",
+						"appicon_win" : "Macintosh HD:/Users/stefanof/Documents/Github/DGMD/synthesizers/dgmd.ico",
 						"audiosupport" : 1,
 						"bundleidentifier" : "com.mycompany.myprogram",
 						"cantclosetoplevelpatchers" : 1,
