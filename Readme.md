@@ -10,7 +10,9 @@ The folder Utilities contains a project for the electromechanical control of man
 
 The DGMD is cross-platform and implemented in [Cyclyng'74 Max](https://cycling74.com/products/max) and Javascript.
 
-To run the DGMD, open the *.maxpat* file in the respective subfolder or download the standalone applications for Windows or Max OSX from the [releases](https://github.com/stefanofasciani/DGMD/releases/) section. 
+To run the DGMD, open the *.maxpat* file in the respective subfolder or download the standalone applications for Windows or MacOS from the [releases](https://github.com/stefanofasciani/DGMD/releases/) section. The MacOS standalone application requires to run the command 'xattr -d com.apple.quarantine /path/to/app' in the Terminal to remove the com.apple.quarantine extended attribute from the downloaded application.
+
+To run the DGMD, open the *.maxpat* file in the respective subfolder or download the standalone applications for Windows or MacOS from the [releases](https://github.com/stefanofasciani/DGMD/releases/) section. The MacOS standalone application requires you to run the command `xattr -d com.apple.quarantine /path/to/app` in the Terminal to bypass the security check.
 
 DGMD Copyright (C) 2025 Stefano Fasciani, Aleksander Tidemann, Riccardo Simionato, University of Oslo.
 
